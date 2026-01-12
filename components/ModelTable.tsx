@@ -19,6 +19,7 @@ import {
 import Fuse from 'fuse.js'
 import { Model, Provider, formatPrice, formatContextWindow } from '@/lib/types'
 import { getProviderColor } from '@/lib/gradients'
+import { PRIORITY_PROVIDERS } from '@/lib/models'
 
 interface ModelTableProps {
   models: Model[]
@@ -70,20 +71,40 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
       result = result.filter(m => m.features.reasoning)
     }
 
-    // Filter out models with 0 input AND 0 output price
-    result = result.filter(m => {
+    // Helper to check if a model has pricing
+    const hasPricing = (m: Model) => {
       const inputPrice = m.pricing?.input || 0
       const outputPrice = m.pricing?.output || 0
       return !(inputPrice === 0 && outputPrice === 0)
-    })
+    }
+
+    // Helper to get provider priority (lower = higher priority)
+    const getProviderPriority = (providerId: string) => {
+      const idx = PRIORITY_PROVIDERS.indexOf(providerId)
+      return idx === -1 ? PRIORITY_PROVIDERS.length : idx
+    }
 
     // Apply sorting
     result = [...result].sort((a, b) => {
+      // First: models with pricing come before models without pricing
+      const aHasPricing = hasPricing(a)
+      const bHasPricing = hasPricing(b)
+      if (aHasPricing !== bHasPricing) {
+        return aHasPricing ? -1 : 1
+      }
+
       let comparison = 0
       
       switch (sortField) {
         case 'provider':
-          comparison = a.providerDisplayName.localeCompare(b.providerDisplayName)
+          // Sort by priority first, then alphabetically
+          const aPriority = getProviderPriority(a.provider)
+          const bPriority = getProviderPriority(b.provider)
+          if (aPriority !== bPriority) {
+            comparison = aPriority - bPriority
+          } else {
+            comparison = a.providerDisplayName.localeCompare(b.providerDisplayName)
+          }
           break
         case 'name':
           comparison = a.name.localeCompare(b.name)

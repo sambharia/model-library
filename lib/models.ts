@@ -276,6 +276,9 @@ export async function getAllModels(): Promise<Model[]> {
   return models
 }
 
+// Priority providers to show first (in order)
+const PRIORITY_PROVIDERS = ['openai', 'anthropic',  'google', 'bedrock', 'azure-openai', 'x-ai', 'vertex-ai', `azure-ai`, ]
+
 export async function getProviders(): Promise<Provider[]> {
   if (cachedProviders) return cachedProviders
 
@@ -300,11 +303,27 @@ export async function getProviders(): Promise<Provider[]> {
     modelCount: data.count,
   }))
 
-  providers.sort((a, b) => b.modelCount - a.modelCount)
+  // Sort with priority providers first, then by model count
+  providers.sort((a, b) => {
+    const aPriority = PRIORITY_PROVIDERS.indexOf(a.id)
+    const bPriority = PRIORITY_PROVIDERS.indexOf(b.id)
+    
+    // If both are priority providers, sort by priority order
+    if (aPriority !== -1 && bPriority !== -1) {
+      return aPriority - bPriority
+    }
+    // Priority providers come first
+    if (aPriority !== -1) return -1
+    if (bPriority !== -1) return 1
+    // Non-priority providers sorted by model count
+    return b.modelCount - a.modelCount
+  })
 
   cachedProviders = providers
   return providers
 }
+
+export { PRIORITY_PROVIDERS }
 
 export async function getModelsByProvider(providerId: string): Promise<Model[]> {
   const models = await getAllModels()

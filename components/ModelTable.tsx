@@ -78,11 +78,6 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
       result = result.filter(m => m.features.reasoning)
     }
 
-    // Apply top models filter (only show popular/famous models)
-    if (showTopModelsOnly) {
-      result = result.filter(m => getModelPriority(m.id) !== -1)
-    }
-
     // Helper to check if a model has pricing
     const hasPricing = (m: Model) => {
       const inputPrice = m.pricing?.input || 0
@@ -96,13 +91,45 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
       return idx === -1 ? PRIORITY_PROVIDERS.length : idx
     }
 
+    // Helper to check if model is a top/priority model
+    const isTopModel = (m: Model) => getModelPriority(m.id) !== -1
+
     // Apply sorting
     result = [...result].sort((a, b) => {
-      // First: models with pricing come before models without pricing
-      const aHasPricing = hasPricing(a)
-      const bHasPricing = hasPricing(b)
-      if (aHasPricing !== bHasPricing) {
-        return aHasPricing ? -1 : 1
+      // When "Top Models" filter is active, sort in 3 tiers:
+      // 1. Top models with pricing
+      // 2. Other models with pricing  
+      // 3. Models without pricing
+      if (showTopModelsOnly) {
+        const aHasPricing = hasPricing(a)
+        const bHasPricing = hasPricing(b)
+        const aIsTop = isTopModel(a)
+        const bIsTop = isTopModel(b)
+        
+        // Tier 1: Top models with pricing (highest priority)
+        const aIsTier1 = aIsTop && aHasPricing
+        const bIsTier1 = bIsTop && bHasPricing
+        
+        // Tier 2: Other models with pricing
+        const aIsTier2 = !aIsTop && aHasPricing
+        const bIsTier2 = !bIsTop && bHasPricing
+        
+        // Tier 3: Models without pricing (lowest priority)
+        const aIsTier3 = !aHasPricing
+        const bIsTier3 = !bHasPricing
+        
+        // Compare tiers
+        if (aIsTier1 && !bIsTier1) return -1
+        if (!aIsTier1 && bIsTier1) return 1
+        if (aIsTier2 && bIsTier3) return -1
+        if (aIsTier3 && bIsTier2) return 1
+      } else {
+        // When filter is off, just prioritize models with pricing
+        const aHasPricing = hasPricing(a)
+        const bHasPricing = hasPricing(b)
+        if (aHasPricing !== bHasPricing) {
+          return aHasPricing ? -1 : 1
+        }
       }
 
       let comparison = 0

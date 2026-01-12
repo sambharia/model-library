@@ -28,7 +28,6 @@ import monsterapiData from '@/combined/monsterapi.json'
 import nebiusData from '@/combined/nebius.json'
 import nomicData from '@/combined/nomic.json'
 import novitaAiData from '@/combined/novita-ai.json'
-import openAiData from '@/combined/open-ai.json'
 import openaiData from '@/combined/openai.json'
 import openrouterData from '@/combined/openrouter.json'
 import oracleData from '@/combined/oracle.json'
@@ -76,7 +75,6 @@ const providerDataMap: Record<string, unknown> = {
   'nebius': nebiusData,
   'nomic': nomicData,
   'novita-ai': novitaAiData,
-  'open-ai': openAiData,
   'openai': openaiData,
   'openrouter': openrouterData,
   'oracle': oracleData,

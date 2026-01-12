@@ -1,4 +1,4 @@
-import { Model, Provider, ModelPricing, ModelFeatures } from './types'
+import { Model, Provider, ModelPricing, ModelFeatures, AdditionalUnit, formatUnitDisplayName, getUnitCategory } from './types'
 
 // Static imports for all provider JSON files
 // This makes the data available in Cloudflare Workers
@@ -217,6 +217,18 @@ export async function getAllModels(): Promise<Model[]> {
             const p = model.pricing as Record<string, unknown>
             const tokens = p.tokens as Record<string, unknown> | undefined
             if (tokens) {
+              // Parse additional units
+              let additional: AdditionalUnit[] | undefined
+              const additionalData = p.additional as { prices?: Record<string, { price: number }> } | undefined
+              if (additionalData?.prices) {
+                additional = Object.entries(additionalData.prices).map(([name, data]) => ({
+                  name,
+                  price: data.price,
+                  displayName: formatUnitDisplayName(name),
+                  category: getUnitCategory(name),
+                }))
+              }
+
               pricing = {
                 input: typeof tokens.input === 'number' ? tokens.input : 0,
                 output: typeof tokens.output === 'number' ? tokens.output : 0,
@@ -224,6 +236,7 @@ export async function getAllModels(): Promise<Model[]> {
                 cache_write: typeof tokens.cache_write === 'number' ? tokens.cache_write : undefined,
                 unit: (tokens.unit as string) || 'USD_per_million_tokens',
                 currency: (p.currency as string) || 'USD',
+                additional,
               }
             }
           }

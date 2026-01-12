@@ -14,10 +14,16 @@ import {
   ArrowUpDown,
   X,
   SlidersHorizontal,
-  ExternalLink
+  ExternalLink,
+  Globe,
+  Headphones,
+  Video,
+  Image,
+  Sparkles,
+  Zap
 } from 'lucide-react'
 import Fuse from 'fuse.js'
-import { Model, Provider, formatPrice, formatContextWindow } from '@/lib/types'
+import { Model, Provider, formatPrice, AdditionalUnit, formatAdditionalPrice } from '@/lib/types'
 import { getProviderColor } from '@/lib/gradients'
 import { PRIORITY_PROVIDERS } from '@/lib/models'
 
@@ -26,7 +32,7 @@ interface ModelTableProps {
   providers: Provider[]
 }
 
-type SortField = 'provider' | 'name' | 'context' | 'inputPrice' | 'outputPrice'
+type SortField = 'provider' | 'name' | 'inputPrice' | 'outputPrice' | 'cacheRead' | 'cacheWrite'
 type SortDirection = 'asc' | 'desc'
 
 export default function ModelTable({ models, providers }: ModelTableProps) {
@@ -109,14 +115,17 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
         case 'name':
           comparison = a.name.localeCompare(b.name)
           break
-        case 'context':
-          comparison = (a.maxOutputTokens || 0) - (b.maxOutputTokens || 0)
-          break
         case 'inputPrice':
           comparison = (a.pricing?.input || 0) - (b.pricing?.input || 0)
           break
         case 'outputPrice':
           comparison = (a.pricing?.output || 0) - (b.pricing?.output || 0)
+          break
+        case 'cacheRead':
+          comparison = (a.pricing?.cached_input || 0) - (b.pricing?.cached_input || 0)
+          break
+        case 'cacheWrite':
+          comparison = (a.pricing?.cache_write || 0) - (b.pricing?.cache_write || 0)
           break
       }
       
@@ -125,6 +134,11 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
 
     return result
   }, [models, search, selectedProviders, selectedFeatures, sortField, sortDirection, fuse])
+
+  // Get models with additional pricing
+  const modelsWithExtras = useMemo(() => {
+    return filteredModels.filter(m => m.pricing?.additional && m.pricing.additional.length > 0)
+  }, [filteredModels])
 
   const handleSort = (field: SortField) => {
     if (sortField === field) {
@@ -170,6 +184,18 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
       : <ChevronDown className="w-3 h-3 text-accent-primary" />
   }
 
+  // Get icon for additional unit category
+  const getCategoryIcon = (category: AdditionalUnit['category']) => {
+    switch (category) {
+      case 'search': return <Globe className="w-3.5 h-3.5" />
+      case 'audio': return <Headphones className="w-3.5 h-3.5" />
+      case 'video': return <Video className="w-3.5 h-3.5" />
+      case 'image': return <Image className="w-3.5 h-3.5" />
+      case 'thinking': return <Sparkles className="w-3.5 h-3.5" />
+      default: return <Zap className="w-3.5 h-3.5" />
+    }
+  }
+
   const hasActiveFilters = selectedProviders.length > 0 || selectedFeatures.length > 0 || search.trim()
   const activeFilterCount = selectedProviders.length + selectedFeatures.length + (search ? 1 : 0)
 
@@ -179,7 +205,7 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
       <div className="mb-4 space-y-3">
         <div className="flex items-center gap-3">
           {/* Search */}
-          <div className="relative flex-1 max-w-sm">
+          <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
             <input
               type="text"
@@ -311,7 +337,7 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
         )}
       </div>
 
-      {/* Table */}
+      {/* Main Pricing Table */}
       <div className="rounded-xl border border-border-primary overflow-hidden bg-bg-primary">
         <div className="overflow-x-auto">
           <table className="data-table w-full">
@@ -353,6 +379,24 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
                     <SortIcon field="outputPrice" />
                   </div>
                 </th>
+                <th 
+                  className="cursor-pointer hover:bg-bg-hover transition-colors"
+                  onClick={() => handleSort('cacheRead')}
+                >
+                  <div className="flex items-center gap-1.5">
+                    Cache Read $/M
+                    <SortIcon field="cacheRead" />
+                  </div>
+                </th>
+                <th 
+                  className="cursor-pointer hover:bg-bg-hover transition-colors"
+                  onClick={() => handleSort('cacheWrite')}
+                >
+                  <div className="flex items-center gap-1.5">
+                    Cache Write $/M
+                    <SortIcon field="cacheWrite" />
+                  </div>
+                </th>
                 <th>Features</th>
                 <th className="w-10"></th>
               </tr>
@@ -391,6 +435,12 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
                     </td>
                     <td className="font-mono">
                       <span className="text-text-primary">{formatPrice(model.pricing?.output)}</span>
+                    </td>
+                    <td className="font-mono">
+                      <span className="text-text-primary">{formatPrice(model.pricing?.cached_input)}</span>
+                    </td>
+                    <td className="font-mono">
+                      <span className="text-text-primary">{formatPrice(model.pricing?.cache_write)}</span>
                     </td>
                     <td>
                       <div className="flex items-center gap-1">
@@ -446,6 +496,75 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
           </div>
         )}
       </div>
+
+      {/* Additional Pricing Section */}
+      {modelsWithExtras.length > 0 && (
+        <div className="mt-8">
+          <h3 className="heading-md text-text-primary mb-4">
+            Additional Pricing
+            <span className="ml-2 text-sm font-normal text-text-muted">
+              ({modelsWithExtras.length} models with extra costs)
+            </span>
+          </h3>
+          <div className="rounded-xl border border-border-primary overflow-hidden bg-bg-primary">
+            <div className="overflow-x-auto">
+              <table className="data-table w-full">
+                <thead>
+                  <tr>
+                    <th>Provider</th>
+                    <th>Model ID</th>
+                    <th>Unit Type</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {modelsWithExtras.flatMap((model) => {
+                    const providerStyle = getProviderColor(model.provider)
+                    return (model.pricing?.additional || []).map((unit, idx) => (
+                      <tr key={`${model.provider}-${model.id}-${unit.name}`}>
+                        {idx === 0 ? (
+                          <>
+                            <td rowSpan={model.pricing?.additional?.length}>
+                              <div className="flex items-center gap-2">
+                                <span 
+                                  className="w-2 h-2 rounded-full flex-shrink-0"
+                                  style={{ backgroundColor: providerStyle.color }}
+                                />
+                                <span className="text-text-secondary">
+                                  {model.providerDisplayName}
+                                </span>
+                              </div>
+                            </td>
+                            <td rowSpan={model.pricing?.additional?.length}>
+                              <Link 
+                                href={`/models/${encodeURIComponent(model.provider)}/${encodeURIComponent(model.id)}`}
+                                className="text-text-primary hover:text-accent-primary transition-colors"
+                              >
+                                {model.id}
+                              </Link>
+                            </td>
+                          </>
+                        ) : null}
+                        <td>
+                          <div className="flex items-center gap-2">
+                            <span className={`badge badge-${unit.category}`}>
+                              {getCategoryIcon(unit.category)}
+                            </span>
+                            <span className="text-text-secondary">{unit.displayName}</span>
+                          </div>
+                        </td>
+                        <td className="font-mono text-text-primary">
+                          {formatAdditionalPrice(unit.price)}
+                        </td>
+                      </tr>
+                    ))
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

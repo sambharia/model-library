@@ -5,21 +5,21 @@ import './globals.css'
 import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
-  title: 'AI Model Directory | Portkey',
-  description: 'The open source AI model directory. Compare pricing, features, and capabilities across 600+ models from 40+ providers.',
-  keywords: ['AI models', 'LLM pricing', 'GPT-4', 'Claude', 'Gemini', 'model comparison', 'AI API'],
+  title: 'Portkey Models - AI Model Pricing & Comparison for 2000+ LLMs',
+  description: 'Accurate pricing for 2000+ AI models across 40+ providers including OpenAI GPT-4, Claude, Gemini, Llama, Mistral. Compare LLM costs, features, and context windows.',
+  keywords: ['AI model pricing', 'LLM pricing comparison', 'GPT-4 pricing', 'Claude pricing', 'Gemini pricing', 'AI API costs', 'LLM cost calculator', 'AI model comparison', 'OpenAI pricing', 'Anthropic pricing'],
   authors: [{ name: 'Portkey', url: 'https://portkey.ai' }],
   openGraph: {
-    title: 'AI Model Directory | Portkey',
-    description: 'Compare pricing, features, and capabilities across 600+ models from 40+ providers.',
+    title: 'Portkey Models - AI Model Pricing & Comparison for 2000+ LLMs',
+    description: 'Accurate pricing for 2000+ AI models across 40+ providers. Compare costs, features, and capabilities.',
     type: 'website',
-    siteName: 'Portkey Model Library',
+    siteName: 'Portkey Models',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Model Directory | Portkey',
-    description: 'Compare pricing, features, and capabilities across 600+ models from 40+ providers.',
+    title: 'Portkey Models - AI Model Pricing & Comparison for 2000+ LLMs',
+    description: 'Accurate pricing for 2000+ AI models across 40+ providers. Compare costs, features, and capabilities.',
     creator: '@portkeyai',
   },
   robots: {

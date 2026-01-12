@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { ArrowRight, Github, ExternalLink, Menu, X } from 'lucide-react'
+import { Github, ExternalLink, Menu, X, Star } from 'lucide-react'
 import { useState } from 'react'
 
 interface HeroProps {
@@ -269,18 +269,11 @@ function HeroHeader({ onHowToUseClick }: { onHowToUseClick: () => void }) {
   )
 }
 
-export default function Hero({ modelCount = 2334, providerCount = 39 }: HeroProps) {
+export default function Hero({ modelCount = 2334, providerCount = 40 }: HeroProps) {
   const [showHowToUse, setShowHowToUse] = useState(false)
 
-  const scrollToModels = () => {
-    const modelsSection = document.querySelector('.model-table-section')
-    if (modelsSection) {
-      modelsSection.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   return (
-    <section className="relative min-h-[65vh] overflow-hidden bg-[#100E0C]">
+    <section className="relative min-h-[57.67vh] overflow-hidden bg-[#100E0C]">
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Left blob - Purple/Blue */}
@@ -328,32 +321,32 @@ export default function Hero({ modelCount = 2334, providerCount = 39 }: HeroProp
       <HeroHeader onHowToUseClick={() => setShowHowToUse(true)} />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-[65vh] px-4 md:px-6 pt-14">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-[51vh] px-4 md:px-6 pt-14">
         <div className="max-w-[900px] mx-auto text-center">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#EDECEC] tracking-tight mb-4 leading-[1.1]">
-            AI Model Library
+            Portkey Models
           </h1>
           
           {/* Subtitle */}
-          <p className="text-base md:text-lg text-[#EDECEC]/70 max-w-2xl mx-auto mb-3">
-            The open-source directory with{' '}
-            <span className="text-[#EDECEC] font-medium">{modelCount.toLocaleString()}+ models</span> from{' '}
-            <span className="text-[#EDECEC] font-medium">{providerCount}+ providers</span>
-          </p>
-          
-          <p className="text-sm md:text-base text-[#EDECEC]/50 max-w-xl mx-auto mb-8">
-            Compare pricing, features, and capabilities across all major AI providers
+          <p className="text-lg md:text-xl lg:text-2xl text-[#EDECEC]/80 max-w-3xl mx-auto font-medium">
+            Accurate pricing for{' '}
+            <span className="text-[#EDECEC]">{modelCount.toLocaleString()}+</span> models across{' '}
+            <span className="text-[#EDECEC]">{providerCount}+</span> providers
           </p>
           
           {/* CTA Button */}
-          <button 
-            onClick={scrollToModels}
-            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#EDECEC] text-[#100E0C] font-semibold text-sm hover:bg-white hover:scale-[1.02] transition-all duration-200 shadow-lg shadow-white/10"
-          >
-            Explore Models
-            <ArrowRight className="w-4 h-4" />
-          </button>
+          <div className="flex justify-center mt-6">
+            <a
+              href="https://github.com/portkey-ai/models"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white/10 text-[#EDECEC] font-medium text-sm hover:bg-white/15 hover:scale-[1.02] transition-all duration-200 border border-white/10 hover:border-white/20"
+            >
+              <Star className="w-4 h-4" />
+              Star on GitHub
+            </a>
+          </div>
         </div>
       </div>
 

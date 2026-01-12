@@ -15,10 +15,6 @@ export default async function Home() {
       />
       <LogoRibbon />
       <section className="model-table-section px-4 md:px-6 py-12 max-w-[1400px] mx-auto">
-        <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-text-primary mb-2">All Models</h2>
-          <p className="text-text-muted">Browse and filter the complete directory</p>
-        </div>
         <ModelTable models={models} providers={providers} />
       </section>
       

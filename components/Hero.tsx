@@ -346,7 +346,7 @@ export default function Hero({ modelCount = 2334, providerCount = 40 }: HeroProp
           {/* Subtitle */}
           <p className="text-lg md:text-xl lg:text-2xl text-[#EDECEC]/80 max-w-3xl mx-auto font-medium">
             Accurate pricing for{' '}
-            <span className="text-[#EDECEC]">{modelCount.toLocaleString()}+</span> models across{' '}
+            <span className="text-[#EDECEC]">{modelCount.toLocaleString()}</span> models across{' '}
             <span className="text-[#EDECEC]">{providerCount}+</span> providers
           </p>
           

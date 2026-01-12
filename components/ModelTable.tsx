@@ -70,6 +70,13 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
       result = result.filter(m => m.features.reasoning)
     }
 
+    // Filter out models with 0 input AND 0 output price
+    result = result.filter(m => {
+      const inputPrice = m.pricing?.input || 0
+      const outputPrice = m.pricing?.output || 0
+      return !(inputPrice === 0 && outputPrice === 0)
+    })
+
     // Apply sorting
     result = [...result].sort((a, b) => {
       let comparison = 0

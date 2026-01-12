@@ -1,164 +1,277 @@
 'use client'
 
-import { useRef } from 'react'
 import Link from 'next/link'
-import { ArrowRight, TrendingUp, Star, Eye, Wrench, Brain } from 'lucide-react'
-import { Model, Provider, formatPrice } from '@/lib/types'
-import { getProviderColor } from '@/lib/gradients'
+import Image from 'next/image'
+import { usePathname } from 'next/navigation'
+import { ArrowRight, Github, ExternalLink, Menu, X } from 'lucide-react'
+import { useState } from 'react'
 
 interface HeroProps {
   modelCount?: number
   providerCount?: number
-  featuredModels?: Model[]
-  providers?: Provider[]
 }
 
-// 3D-style animated icon component
-function HeroIcon() {
+// How to Use Modal
+function HowToUseModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+  if (!isOpen) return null
+
   return (
-    <div className="relative w-24 h-24 mx-auto mb-8">
-      {/* Glow effect */}
-      <div className="absolute inset-0 bg-accent-primary/20 rounded-2xl blur-2xl animate-pulse" />
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+      {/* Backdrop */}
+      <div 
+        className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+        onClick={onClose}
+      />
       
-      {/* Main cube */}
-      <div className="relative w-full h-full">
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          {/* Back face */}
-          <polygon 
-            points="20,30 50,15 80,30 80,70 50,85 20,70" 
-            fill="none" 
-            stroke="rgba(14, 165, 233, 0.3)" 
-            strokeWidth="1.5"
-          />
-          {/* Left face */}
-          <polygon 
-            points="20,30 50,45 50,85 20,70" 
-            fill="rgba(14, 165, 233, 0.1)" 
-            stroke="rgba(14, 165, 233, 0.5)" 
-            strokeWidth="1.5"
-          />
-          {/* Right face */}
-          <polygon 
-            points="50,45 80,30 80,70 50,85" 
-            fill="rgba(14, 165, 233, 0.15)" 
-            stroke="rgba(14, 165, 233, 0.5)" 
-            strokeWidth="1.5"
-          />
-          {/* Top face */}
-          <polygon 
-            points="20,30 50,15 80,30 50,45" 
-            fill="rgba(14, 165, 233, 0.2)" 
-            stroke="rgba(14, 165, 233, 0.8)" 
-            strokeWidth="1.5"
-          />
-          {/* Inner lines */}
-          <line x1="50" y1="45" x2="50" y2="85" stroke="rgba(14, 165, 233, 0.4)" strokeWidth="1" />
+      {/* Modal */}
+      <div className="relative bg-[#1A1918] border border-white/10 rounded-xl max-w-2xl w-full max-h-[85vh] overflow-y-auto shadow-2xl">
+        {/* Header */}
+        <div className="sticky top-0 bg-[#1A1918] border-b border-white/10 px-6 py-4 flex items-center justify-between">
+          <h2 className="text-lg font-semibold text-white uppercase tracking-wide">How to Use</h2>
+          <button 
+            onClick={onClose}
+            className="p-1 rounded-md text-white/60 hover:text-white hover:bg-white/10 transition-all"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Content */}
+        <div className="px-6 py-5 space-y-6 text-[#EDECEC]/90">
+          <p>
+            This is a comprehensive open-source database of AI model specifications, pricing, and features.
+          </p>
           
-          {/* Floating particles */}
-          <circle cx="35" cy="25" r="2" fill="#0EA5E9" className="animate-float-slow" />
-          <circle cx="70" cy="35" r="1.5" fill="#F54E00" className="animate-float-medium" />
-          <circle cx="25" cy="55" r="1" fill="#10B981" className="animate-float-fast" />
-        </svg>
+          <p>
+            There's no single database with information about all the available AI models. We started this as a community-contributed project to address this. The data powers{' '}
+            <a 
+              href="https://github.com/Portkey-AI/gateway" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white underline decoration-dotted underline-offset-2 hover:decoration-solid"
+            >
+              Portkey's AI Gateway
+            </a>.
+          </p>
+
+          {/* API Section */}
+          <div>
+            <h3 className="text-white font-semibold text-base mb-2">API</h3>
+            <p className="mb-3">You can access this data through a free API — no authentication required.</p>
+            <div className="bg-[#0D0D0C] rounded-lg p-4 font-mono text-sm">
+              <span className="text-white/50">curl </span>
+              <a 
+                href="https://api.portkey.ai/model-configs/pricing/openai/gpt-4o"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white underline decoration-dotted underline-offset-2 hover:decoration-solid"
+              >
+                https://api.portkey.ai/model-configs/pricing/openai/gpt-4o
+              </a>
+            </div>
+            <p className="mt-3 text-sm text-[#EDECEC]/70">
+              Use the <span className="text-white font-medium">Model ID</span> field to do a lookup on any model. 
+              Replace <code className="bg-white/10 px-1.5 py-0.5 rounded text-xs">{'{provider}'}</code> and <code className="bg-white/10 px-1.5 py-0.5 rounded text-xs">{'{model}'}</code> in the URL.
+            </p>
+          </div>
+
+          {/* API Endpoints */}
+          <div>
+            <h3 className="text-white font-semibold text-base mb-2">API Endpoints</h3>
+            <div className="bg-[#0D0D0C] rounded-lg p-4 font-mono text-sm space-y-2">
+              <div>
+                <span className="text-white/50"># Get pricing config</span>
+                <br />
+                <span className="text-white">/model-configs/pricing/{'{provider}'}/{'{model}'}</span>
+              </div>
+              <div>
+                <span className="text-white/50"># Get general config</span>
+                <br />
+                <span className="text-white">/model-configs/general/{'{provider}'}/{'{model}'}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Start */}
+          <div>
+            <h3 className="text-white font-semibold text-base mb-2">Quick Start</h3>
+            <div className="bg-[#0D0D0C] rounded-lg p-4 font-mono text-sm overflow-x-auto">
+              <pre className="text-white/90">{`// JavaScript
+const response = await fetch(
+  'https://api.portkey.ai/model-configs/pricing/openai/gpt-4o'
+);
+const pricing = await response.json();
+
+const inputCost = tokens.input * pricing.pay_as_you_go.request_token.price;
+const outputCost = tokens.output * pricing.pay_as_you_go.response_token.price;`}</pre>
+            </div>
+          </div>
+
+          {/* Contribute Section */}
+          <div>
+            <h3 className="text-white font-semibold text-base mb-2">Contribute</h3>
+            <p>
+              The data is stored in the{' '}
+              <a 
+                href="https://github.com/portkey-ai/models" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white underline decoration-dotted underline-offset-2 hover:decoration-solid"
+              >
+                GitHub repo
+              </a>
+              {' '}as JSON files, organized by provider and model.
+            </p>
+            <p className="mt-2">
+              We need your help keeping this up to date. Feel free to edit the data and submit a pull request. Refer to the{' '}
+              <a 
+                href="https://github.com/portkey-ai/models#readme" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white underline decoration-dotted underline-offset-2 hover:decoration-solid"
+              >
+                README
+              </a>
+              {' '}for more information.
+            </p>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="border-t border-white/10 px-6 py-4 flex items-center justify-between text-sm text-[#EDECEC]/50">
+          <a 
+            href="https://github.com/portkey-ai/models" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            Edit on GitHub
+          </a>
+          <span>
+            Built by{' '}
+            <a 
+              href="https://portkey.ai" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              Portkey
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   )
 }
 
-// Helper to get display name - model.name is already formatted during data load
-function getModelDisplayName(model: Model): string {
-  return model.name || model.id
-}
+// Integrated Header for Hero
+function HeroHeader({ onHowToUseClick }: { onHowToUseClick: () => void }) {
+  const pathname = usePathname()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-// Featured model card component - cursor.directory style
-function FeaturedModelCard({ model }: { model: Model }) {
-  const providerStyle = getProviderColor(model.provider)
-  const hasVision = model.features.vision
-  const hasTools = model.features.function_calling
-  const hasReasoning = model.features.reasoning
-  
+  const navItems: { href: string; label: string }[] = []
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/'
+    return pathname.startsWith(href)
+  }
+
   return (
-    <Link 
-      href={`/models/${encodeURIComponent(model.provider)}/${encodeURIComponent(model.id)}`}
-      className="group block p-5 rounded-xl bg-bg-primary border border-border-primary hover:border-border-hover hover:bg-bg-secondary transition-all duration-200"
-    >
-      {/* Provider Badge */}
-      <div className="flex items-center gap-2 mb-3">
-        <span 
-          className="w-2 h-2 rounded-full flex-shrink-0"
-          style={{ backgroundColor: providerStyle.color }}
-        />
-        <span className="text-xs text-text-muted uppercase tracking-wider">
-          {model.providerDisplayName}
-        </span>
-        <ArrowRight className="w-3.5 h-3.5 text-text-faint group-hover:text-accent-primary group-hover:translate-x-0.5 transition-all ml-auto" />
+    <header className="absolute top-0 left-0 right-0 h-14 z-50">
+      <div className="max-w-[1400px] mx-auto h-full px-4 md:px-6 flex items-center justify-between">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2 group">
+          <Image 
+            src="/assets/Full Logo Light.png" 
+            alt="Portkey" 
+            width={100} 
+            height={24}
+            className="h-6 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+          />
+        </Link>
+        
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-1">
+          {navItems.map((item) => (
+            <Link 
+              key={item.href}
+              href={item.href} 
+              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
+                isActive(item.href)
+                  ? 'text-text-primary bg-white/10'
+                  : 'text-text-secondary hover:text-text-primary hover:bg-white/5'
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+        
+        {/* Actions */}
+        <div className="flex items-center gap-2">
+          <a 
+            href="https://portkey.ai/docs" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-md text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all text-sm font-medium"
+          >
+            Docs
+            <ExternalLink className="w-3 h-3 opacity-50" />
+          </a>
+          <a 
+            href="https://github.com/portkey-ai/models" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all text-sm font-medium"
+          >
+            <Github className="w-4 h-4" />
+            <span className="hidden sm:inline">GitHub</span>
+          </a>
+          <button 
+            onClick={onHowToUseClick}
+            className="btn btn-primary btn-sm"
+          >
+            How to Use
+          </button>
+          
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 rounded-md text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all"
+          >
+            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
       </div>
-      
-      {/* Model Name */}
-      <h3 className="text-text-primary font-medium mb-3 group-hover:text-accent-primary transition-colors line-clamp-1">
-        {getModelDisplayName(model)}
-      </h3>
-      
-      {/* Pricing */}
-      <div className="flex items-center gap-3 text-sm mb-3">
-        <span className="text-text-muted">
-          <span className="text-text-secondary font-mono">{formatPrice(model.pricing?.input)}</span>
-          <span className="text-text-faint text-xs">/M in</span>
-        </span>
-        <span className="text-text-muted">
-          <span className="text-text-secondary font-mono">{formatPrice(model.pricing?.output)}</span>
-          <span className="text-text-faint text-xs">/M out</span>
-        </span>
-      </div>
-      
-      {/* Features */}
-      {(hasVision || hasTools || hasReasoning) && (
-        <div className="flex items-center gap-1.5">
-          {hasVision && (
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs bg-accent-primary/10 text-accent-primary">
-              <Eye className="w-3 h-3" />
-              Vision
-            </span>
-          )}
-          {hasTools && (
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs bg-accent-secondary/10 text-accent-secondary">
-              <Wrench className="w-3 h-3" />
-              Tools
-            </span>
-          )}
-          {hasReasoning && (
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs bg-yellow-500/10 text-yellow-500">
-              <Brain className="w-3 h-3" />
-              Reasoning
-            </span>
-          )}
+
+      {/* Mobile Navigation */}
+      {mobileMenuOpen && (
+        <div className="md:hidden absolute top-14 left-0 right-0 bg-bg-base/95 backdrop-blur-xl border-b border-border-secondary">
+          <nav className="flex flex-col p-4 gap-1">
+            {navItems.map((item) => (
+              <Link 
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`px-4 py-3 rounded-lg text-sm font-medium transition-all ${
+                  isActive(item.href)
+                    ? 'text-text-primary bg-bg-elevated'
+                    : 'text-text-secondary hover:text-text-primary hover:bg-bg-elevated/50'
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       )}
-    </Link>
+    </header>
   )
 }
 
-// Provider pill component
-function ProviderPill({ provider }: { provider: Provider }) {
-  const providerStyle = getProviderColor(provider.id)
-  
-  return (
-    <Link
-      href={`/models/${encodeURIComponent(provider.id)}`}
-      className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-bg-primary border border-border-primary hover:border-border-hover hover:bg-bg-secondary transition-all text-sm"
-    >
-      <span 
-        className="w-2 h-2 rounded-full"
-        style={{ backgroundColor: providerStyle.color }}
-      />
-      <span className="text-text-secondary">{provider.name}</span>
-      <span className="text-text-faint text-xs">({provider.modelCount})</span>
-    </Link>
-  )
-}
+export default function Hero({ modelCount = 2334, providerCount = 39 }: HeroProps) {
+  const [showHowToUse, setShowHowToUse] = useState(false)
 
-export default function Hero({ modelCount = 2334, providerCount = 39, featuredModels = [], providers = [] }: HeroProps) {
-  const modelsRef = useRef<HTMLDivElement>(null)
-  
   const scrollToModels = () => {
     const modelsSection = document.querySelector('.model-table-section')
     if (modelsSection) {
@@ -166,67 +279,89 @@ export default function Hero({ modelCount = 2334, providerCount = 39, featuredMo
     }
   }
 
-  // Get top providers by model count
-  const topProviders = providers
-    .sort((a, b) => b.modelCount - a.modelCount)
-    .slice(0, 8)
-
-  // Get featured models - ensure variety of providers
-  const displayModels = featuredModels.slice(0, 9)
-
   return (
-    <section className="relative pt-24 pb-8 px-4 md:px-6">
-      <div className="max-w-[1100px] mx-auto">
-        {/* Hero Icon */}
-        <HeroIcon />
+    <section className="relative min-h-[65vh] overflow-hidden bg-[#100E0C]">
+      {/* Animated Gradient Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Left blob - Purple/Blue */}
+        <div 
+          className="absolute -left-[20%] top-[5%] w-[60%] h-[80%] rounded-full blur-[120px] opacity-60 animate-blob-1"
+          style={{
+            background: 'linear-gradient(135deg, #66668F 0%, #3384B3 100%)',
+          }}
+        />
         
-        {/* Main Headline - Centered */}
-        <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-text-primary tracking-tight mb-4 leading-[1.1]">
-            AI Model Directory
-            <br />
-            <span className="text-text-muted">for your project</span>
+        {/* Top right blob - Red/Purple */}
+        <div 
+          className="absolute right-[5%] -top-[20%] w-[50%] h-[60%] rounded-full blur-[120px] opacity-50 animate-blob-2"
+          style={{
+            background: 'linear-gradient(135deg, #C62E42 0%, #904D6C 100%)',
+          }}
+        />
+        
+        {/* Right blob - Purple/Blue */}
+        <div 
+          className="absolute -right-[15%] top-[30%] w-[50%] h-[70%] rounded-full blur-[120px] opacity-40 animate-blob-3"
+          style={{
+            background: 'linear-gradient(135deg, #66668F 0%, #3384B3 100%)',
+          }}
+        />
+
+        {/* Additional subtle blob for depth */}
+        <div 
+          className="absolute left-[30%] top-[60%] w-[40%] h-[50%] rounded-full blur-[150px] opacity-30 animate-blob-4"
+          style={{
+            background: 'linear-gradient(135deg, #904D6C 0%, #66668F 100%)',
+          }}
+        />
+      </div>
+
+      {/* Noise texture overlay for depth */}
+      <div 
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+        }}
+      />
+
+      {/* Header */}
+      <HeroHeader onHowToUseClick={() => setShowHowToUse(true)} />
+
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-[65vh] px-4 md:px-6 pt-14">
+        <div className="max-w-[900px] mx-auto text-center">
+          {/* Main Headline */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#EDECEC] tracking-tight mb-4 leading-[1.1]">
+            AI Model Library
           </h1>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
+          
+          {/* Subtitle */}
+          <p className="text-base md:text-lg text-[#EDECEC]/70 max-w-2xl mx-auto mb-3">
             The open-source directory with{' '}
-            <span className="text-text-primary font-medium">{modelCount.toLocaleString()}+ models</span> from{' '}
-            <span className="text-text-primary font-medium">{providerCount}+ providers</span>.
-            Compare pricing, features, and capabilities.
+            <span className="text-[#EDECEC] font-medium">{modelCount.toLocaleString()}+ models</span> from{' '}
+            <span className="text-[#EDECEC] font-medium">{providerCount}+ providers</span>
           </p>
           
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-3 mb-16">
-            <button 
-              onClick={scrollToModels}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-text-primary text-bg-base font-medium hover:opacity-90 transition-all"
-            >
-              Explore Models
-              <ArrowRight className="w-4 h-4" />
-            </button>
-            <Link 
-              href="/compare"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-bg-primary border border-border-primary text-text-primary font-medium hover:bg-bg-secondary hover:border-border-hover transition-all"
-            >
-              Compare Models
-            </Link>
-          </div>
+          <p className="text-sm md:text-base text-[#EDECEC]/50 max-w-xl mx-auto mb-8">
+            Compare pricing, features, and capabilities across all major AI providers
+          </p>
+          
+          {/* CTA Button */}
+          <button 
+            onClick={scrollToModels}
+            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#EDECEC] text-[#100E0C] font-semibold text-sm hover:bg-white hover:scale-[1.02] transition-all duration-200 shadow-lg shadow-white/10"
+          >
+            Explore Models
+            <ArrowRight className="w-4 h-4" />
+          </button>
         </div>
-
-        {/* Featured Providers - Pills */}
-        {topProviders.length > 0 && (
-          <div className="mb-16">
-            <div className="flex items-center justify-center gap-2 mb-5">
-              <Star className="w-4 h-4 text-text-muted" />
-              <span className="text-sm text-text-muted uppercase tracking-wider">Popular Providers</span>
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-2">
-              {topProviders.map(provider => (
-                <ProviderPill key={provider.id} provider={provider} />
-              ))}
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* Bottom gradient fade to content */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-bg-base to-transparent pointer-events-none" />
+
+      {/* How to Use Modal */}
+      <HowToUseModal isOpen={showHowToUse} onClose={() => setShowHowToUse(false)} />
     </section>
   )
 }

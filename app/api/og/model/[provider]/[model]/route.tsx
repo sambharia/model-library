@@ -1,7 +1,6 @@
 import { ImageResponse } from '@vercel/og'
 import { getModel } from '@/lib/models'
-import { formatPrice, formatContextWindow } from '@/lib/types'
-import { getProviderColor } from '@/lib/gradients'
+import { formatPrice } from '@/lib/types'
 
 export const runtime = 'nodejs'
 
@@ -15,8 +14,6 @@ export async function GET(
   if (!model) {
     return new Response('Model not found', { status: 404 })
   }
-
-  const providerStyle = getProviderColor(provider)
 
   // Get capabilities
   const capabilities = []
@@ -33,164 +30,143 @@ export async function GET(
           height: '100%',
           width: '100%',
           display: 'flex',
-          background: '#1A1915',
+          background: '#100E0C',
           fontFamily: 'system-ui, sans-serif',
+          position: 'relative',
+          overflow: 'hidden',
         }}
       >
-        {/* Vertical Lines Background */}
+        {/* Gradient Blob - Left Purple/Blue */}
         <div
           style={{
             position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundImage: 'linear-gradient(to right, rgba(237,236,236,0.03) 1px, transparent 1px)',
-            backgroundSize: '60px 100%',
+            left: '-15%',
+            top: '5%',
+            width: '60%',
+            height: '90%',
+            borderRadius: '50%',
+            background: 'linear-gradient(135deg, #66668F 0%, #3384B3 100%)',
+            filter: 'blur(100px)',
+            opacity: 0.5,
+          }}
+        />
+        
+        {/* Gradient Blob - Top Right Red/Purple */}
+        <div
+          style={{
+            position: 'absolute',
+            right: '5%',
+            top: '-20%',
+            width: '50%',
+            height: '60%',
+            borderRadius: '50%',
+            background: 'linear-gradient(135deg, #C62E42 0%, #904D6C 100%)',
+            filter: 'blur(100px)',
+            opacity: 0.4,
+          }}
+        />
+        
+        {/* Gradient Blob - Bottom Right */}
+        <div
+          style={{
+            position: 'absolute',
+            right: '-10%',
+            bottom: '-10%',
+            width: '50%',
+            height: '60%',
+            borderRadius: '50%',
+            background: 'linear-gradient(135deg, #904D6C 0%, #66668F 100%)',
+            filter: 'blur(120px)',
+            opacity: 0.35,
           }}
         />
 
-        <div style={{ display: 'flex', width: '100%', height: '100%', padding: '50px' }}>
-          {/* Left Side - Content */}
-          <div style={{ display: 'flex', flexDirection: 'column', flex: 1, paddingRight: '40px' }}>
-            {/* Provider */}
-            <div
-              style={{
-                fontSize: '16px',
-                color: 'rgba(237, 236, 236, 0.5)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.1em',
-                marginBottom: '40px',
-              }}
-            >
-              {model.providerDisplayName}
-            </div>
+        {/* Content */}
+        <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '60px', position: 'relative', zIndex: 1 }}>
+          {/* Provider */}
+          <div
+            style={{
+              fontSize: '18px',
+              color: 'rgba(237, 236, 236, 0.6)',
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
+              marginBottom: '24px',
+            }}
+          >
+            {model.providerDisplayName}
+          </div>
 
-            {/* Capabilities */}
-            <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '40px' }}>
-              <div
-                style={{
-                  fontSize: '12px',
-                  color: 'rgba(237, 236, 236, 0.4)',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.15em',
-                  marginBottom: '16px',
-                }}
-              >
-                Capabilities
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                {capabilities.slice(0, 3).map((cap, i) => (
-                  <div key={cap} style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                    <span style={{ color: 'rgba(237, 236, 236, 0.4)', fontSize: '16px', fontFamily: 'monospace', width: '20px' }}>
-                      {i + 1}
-                    </span>
-                    <span style={{ color: '#EDECEC', fontSize: '18px', fontWeight: 500 }}>
-                      {cap}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+          {/* Model Name */}
+          <div style={{ fontSize: '56px', fontWeight: 600, color: '#EDECEC', marginBottom: '40px', lineHeight: 1.1 }}>
+            {model.name || model.id}
+          </div>
 
-            {/* Stats Grid */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '32px', marginBottom: '40px' }}>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <div style={{ fontSize: '12px', color: 'rgba(237, 236, 236, 0.4)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>
-                  Input
-                </div>
-                <div style={{ fontSize: '32px', fontWeight: 600, color: '#EDECEC', fontFamily: 'monospace' }}>
+          {/* Stats */}
+          <div style={{ display: 'flex', gap: '60px', marginBottom: '40px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontSize: '14px', color: 'rgba(237, 236, 236, 0.4)', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '8px' }}>
+                Input
+              </div>
+              <div style={{ display: 'flex', alignItems: 'baseline' }}>
+                <span style={{ fontSize: '48px', fontWeight: 600, color: '#EDECEC', fontFamily: 'monospace' }}>
                   {formatPrice(model.pricing?.input)}
-                </div>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <div style={{ fontSize: '12px', color: 'rgba(237, 236, 236, 0.4)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>
-                  Output
-                </div>
-                <div style={{ fontSize: '32px', fontWeight: 600, color: '#EDECEC', fontFamily: 'monospace' }}>
-                  {formatPrice(model.pricing?.output)}
-                </div>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <div style={{ fontSize: '12px', color: 'rgba(237, 236, 236, 0.4)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>
-                  Tokens
-                </div>
-                <div style={{ fontSize: '32px', fontWeight: 600, color: '#EDECEC', fontFamily: 'monospace' }}>
-                  {formatContextWindow(model.maxOutputTokens) || '—'}
-                </div>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <div style={{ fontSize: '12px', color: 'rgba(237, 236, 236, 0.4)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>
-                  Type
-                </div>
-                <div style={{ fontSize: '32px', fontWeight: 600, color: '#EDECEC', textTransform: 'capitalize' }}>
-                  {model.type}
-                </div>
+                </span>
+                <span style={{ fontSize: '20px', color: 'rgba(237, 236, 236, 0.5)', marginLeft: '4px' }}>/M</span>
               </div>
             </div>
-
-            {/* Model Name */}
-            <div style={{ display: 'flex', flexDirection: 'column', marginTop: 'auto', borderTop: '1px solid rgba(237, 236, 236, 0.08)', paddingTop: '24px' }}>
-              <div style={{ fontSize: '36px', fontWeight: 600, color: '#EDECEC', marginBottom: '8px' }}>
-                {model.name || model.id}
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontSize: '14px', color: 'rgba(237, 236, 236, 0.4)', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '8px' }}>
+                Output
               </div>
-              
-              {/* Footer */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '12px' }}>
-                <div
-                  style={{
-                    width: '24px',
-                    height: '24px',
-                    borderRadius: '6px',
-                    background: providerStyle.color,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: 'white',
-                    fontSize: '12px',
-                    fontWeight: 700,
-                  }}
-                >
-                  P
-                </div>
-                <span style={{ fontSize: '14px', color: 'rgba(237, 236, 236, 0.4)' }}>
-                  portkey.ai/models
+              <div style={{ display: 'flex', alignItems: 'baseline' }}>
+                <span style={{ fontSize: '48px', fontWeight: 600, color: '#EDECEC', fontFamily: 'monospace' }}>
+                  {formatPrice(model.pricing?.output)}
                 </span>
+                <span style={{ fontSize: '20px', color: 'rgba(237, 236, 236, 0.5)', marginLeft: '4px' }}>/M</span>
               </div>
             </div>
           </div>
 
-          {/* Right Side - Dot Matrix (simplified to rows of dots) */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-end', paddingTop: '60px' }}>
-            {Array.from({ length: 14 }).map((_, rowIndex) => (
-              <div key={rowIndex} style={{ display: 'flex', gap: '8px' }}>
-                {Array.from({ length: 12 }).map((_, colIndex) => {
-                  let color = 'rgba(237, 236, 236, 0.08)'
-                  
-                  if (colIndex === 11) {
-                    if (model.features.vision && rowIndex >= 0 && rowIndex <= 3) {
-                      color = providerStyle.color
-                    } else if (model.features.function_calling && rowIndex >= 4 && rowIndex <= 7) {
-                      color = providerStyle.color
-                    } else if ((model.features.reasoning || (model.pricing?.input || 0) > 5) && rowIndex >= 8 && rowIndex <= 11) {
-                      color = '#F54E00'
-                    }
-                  }
-                  
-                  return (
-                    <div
-                      key={colIndex}
-                      style={{
-                        width: '10px',
-                        height: '10px',
-                        borderRadius: '50%',
-                        background: color,
-                      }}
-                    />
-                  )
-                })}
+          {/* Capabilities */}
+          <div style={{ display: 'flex', gap: '12px', marginBottom: 'auto' }}>
+            {capabilities.slice(0, 4).map((cap) => (
+              <div
+                key={cap}
+                style={{
+                  padding: '10px 20px',
+                  borderRadius: '100px',
+                  background: 'rgba(237, 236, 236, 0.1)',
+                  color: 'rgba(237, 236, 236, 0.8)',
+                  fontSize: '16px',
+                  fontWeight: 500,
+                }}
+              >
+                {cap}
               </div>
             ))}
+          </div>
+
+          {/* Footer */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', paddingTop: '24px', borderTop: '1px solid rgba(237, 236, 236, 0.1)' }}>
+            <div
+              style={{
+                width: '32px',
+                height: '32px',
+                borderRadius: '8px',
+                background: '#10B981',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white',
+                fontSize: '16px',
+                fontWeight: 700,
+              }}
+            >
+              P
+            </div>
+            <span style={{ fontSize: '18px', color: 'rgba(237, 236, 236, 0.5)' }}>
+              portkey.ai/models
+            </span>
           </div>
         </div>
       </div>

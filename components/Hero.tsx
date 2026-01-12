@@ -309,6 +309,20 @@ export default function Hero({ modelCount = 2334, providerCount = 40 }: HeroProp
         />
       </div>
 
+      {/* Grid pattern overlay - fades toward center */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px)
+          `,
+          backgroundSize: '80px 80px',
+          maskImage: 'radial-gradient(ellipse 80% 70% at 50% 50%, transparent 30%, black 100%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 80% 70% at 50% 50%, transparent 30%, black 100%)',
+        }}
+      />
+
       {/* Noise texture overlay for depth */}
       <div 
         className="absolute inset-0 opacity-[0.03] pointer-events-none"

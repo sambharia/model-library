@@ -25,7 +25,7 @@ import {
 import Fuse from 'fuse.js'
 import { Model, Provider, formatPrice, AdditionalUnit, formatAdditionalPrice } from '@/lib/types'
 import { getProviderColor } from '@/lib/gradients'
-import { PRIORITY_PROVIDERS } from '@/lib/models'
+import { PRIORITY_PROVIDERS, getModelPriority } from '@/lib/models'
 
 interface ModelTableProps {
   models: Model[]
@@ -43,6 +43,7 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc')
   const [copiedId, setCopiedId] = useState<string | null>(null)
   const [showFilters, setShowFilters] = useState(false)
+  const [showTopModelsOnly, setShowTopModelsOnly] = useState(true) // ON by default
 
   // Fuse.js for fuzzy search
   const fuse = useMemo(() => new Fuse(models, {
@@ -77,6 +78,11 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
       result = result.filter(m => m.features.reasoning)
     }
 
+    // Apply top models filter (only show popular/famous models)
+    if (showTopModelsOnly) {
+      result = result.filter(m => getModelPriority(m.id) !== -1)
+    }
+
     // Helper to check if a model has pricing
     const hasPricing = (m: Model) => {
       const inputPrice = m.pricing?.input || 0
@@ -103,13 +109,31 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
       
       switch (sortField) {
         case 'provider':
-          // Sort by priority first, then alphabetically
-          const aPriority = getProviderPriority(a.provider)
-          const bPriority = getProviderPriority(b.provider)
-          if (aPriority !== bPriority) {
-            comparison = aPriority - bPriority
+          // Sort by provider priority first
+          const aProviderPriority = getProviderPriority(a.provider)
+          const bProviderPriority = getProviderPriority(b.provider)
+          if (aProviderPriority !== bProviderPriority) {
+            comparison = aProviderPriority - bProviderPriority
           } else {
-            comparison = a.providerDisplayName.localeCompare(b.providerDisplayName)
+            // Same provider - sort by model priority (top models first)
+            const aModelPriority = getModelPriority(a.id)
+            const bModelPriority = getModelPriority(b.id)
+            
+            // Priority models come first (-1 means not a priority model)
+            const aIsPriority = aModelPriority !== -1
+            const bIsPriority = bModelPriority !== -1
+            
+            if (aIsPriority && !bIsPriority) {
+              comparison = -1
+            } else if (!aIsPriority && bIsPriority) {
+              comparison = 1
+            } else if (aIsPriority && bIsPriority) {
+              // Both are priority models - sort by their priority order
+              comparison = aModelPriority - bModelPriority
+            } else {
+              // Neither are priority models - sort alphabetically
+              comparison = a.id.localeCompare(b.id)
+            }
           }
           break
         case 'name':
@@ -133,7 +157,7 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
     })
 
     return result
-  }, [models, search, selectedProviders, selectedFeatures, sortField, sortDirection, fuse])
+  }, [models, search, selectedProviders, selectedFeatures, sortField, sortDirection, fuse, showTopModelsOnly])
 
   // Get models with additional pricing
   const modelsWithExtras = useMemo(() => {
@@ -175,6 +199,7 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
     setSelectedProviders([])
     setSelectedFeatures([])
     setSearch('')
+    setShowTopModelsOnly(true) // Reset to default (top models only)
   }
 
   const SortIcon = ({ field }: { field: SortField }) => {
@@ -224,11 +249,28 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
             )}
           </div>
 
+          {/* Top Models Toggle */}
+          <button
+            onClick={() => setShowTopModelsOnly(!showTopModelsOnly)}
+            className={`flex items-center gap-2 px-3 py-2.5 rounded-md border text-sm font-medium transition-all ${
+              showTopModelsOnly
+                ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-400'
+                : 'border-border-primary bg-bg-secondary text-text-secondary hover:text-text-primary hover:border-border-hover'
+            }`}
+            title={showTopModelsOnly ? 'Showing top models only. Click to show all models.' : 'Showing all models. Click to show top models only.'}
+          >
+            <Sparkles className="w-4 h-4" />
+            <span className="hidden sm:inline">Top Models</span>
+            {showTopModelsOnly && (
+              <span className="w-2 h-2 rounded-full bg-emerald-400" />
+            )}
+          </button>
+
           {/* Filter Toggle */}
           <button
             onClick={() => setShowFilters(!showFilters)}
             className={`flex items-center gap-2 px-3 py-2.5 rounded-md border text-sm font-medium transition-all ${
-              showFilters || hasActiveFilters
+              showFilters || (hasActiveFilters && showTopModelsOnly)
                 ? 'border-accent-primary/50 bg-accent-primary/10 text-accent-primary'
                 : 'border-border-primary bg-bg-secondary text-text-secondary hover:text-text-primary hover:border-border-hover'
             }`}

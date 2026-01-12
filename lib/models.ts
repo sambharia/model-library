@@ -292,6 +292,80 @@ export async function getAllModels(): Promise<Model[]> {
 // Priority providers to show first (in order)
 const PRIORITY_PROVIDERS = ['openai', 'anthropic',  'google', 'bedrock', 'azure-openai', 'x-ai', 'vertex-ai', `azure-ai`, ]
 
+// Priority model patterns - latest/top models to show first (2026)
+// These patterns are matched against model IDs (case-insensitive)
+const PRIORITY_MODEL_PATTERNS = [
+  // OpenAI GPT-5 Series (newest first)
+  'gpt-5.2',
+  'gpt-5.1', 
+  'gpt-5',
+  'gpt-5-codex',
+  'gpt-5-chat',
+  'gpt-5-mini',
+  'gpt-5-nano',
+  'o3',
+  'o1',
+  
+  // Anthropic Claude Series (newest first)
+  'claude-opus-4.5',
+  'claude-4.5-opus',
+  'claude-4-opus',
+  'claude-opus-4',
+  'claude-sonnet-4',
+  'claude-4-sonnet',
+  'claude-haiku-4.5',
+  'claude-4.5-haiku',
+  'claude-haiku-4',
+  'claude-4-haiku',
+  'claude-3.5-sonnet',
+  'claude-3-5-sonnet',
+  
+  // Google Gemini 3 Series
+  'gemini-3',
+  'gemini-3.0',
+  'gemini-3-pro',
+  'gemini-3-flash',
+  'gemini-3-deep',
+  'gemini-2.0',
+  'gemini-2',
+  'gemini-exp',
+  
+  // xAI Grok Series  
+  'grok-5',
+  'grok-4',
+  'grok-3',
+  'grok-2',
+  
+  // Meta Llama 4 Series
+  'llama-4',
+  'llama4',
+  'Llama-4',
+  
+  // DeepSeek
+  'deepseek-v4',
+  'deepseek-v3',
+  'deepseek-r1',
+  'deepseek-chat',
+  'deepseek-coder',
+  
+  // Mistral top models
+  'mistral-large',
+  'mistral-medium',
+  'pixtral',
+  'codestral',
+]
+
+// Get priority score for a model (lower = higher priority, -1 = not a priority model)
+export function getModelPriority(modelId: string): number {
+  const lowerModelId = modelId.toLowerCase()
+  for (let i = 0; i < PRIORITY_MODEL_PATTERNS.length; i++) {
+    if (lowerModelId.includes(PRIORITY_MODEL_PATTERNS[i].toLowerCase())) {
+      return i
+    }
+  }
+  return -1 // Not a priority model
+}
+
 export async function getProviders(): Promise<Provider[]> {
   if (cachedProviders) return cachedProviders
 

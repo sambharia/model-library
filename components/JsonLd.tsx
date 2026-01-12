@@ -6,7 +6,7 @@ interface JsonLdProps {
 }
 
 export default function JsonLd({ model, type }: JsonLdProps) {
-  const baseUrl = 'https://portkey.ai'
+  const baseUrl = 'https://portkey.ai/models'
 
   if (type === 'website') {
     const data = {

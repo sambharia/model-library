@@ -450,7 +450,7 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
                   <tr key={`${model.provider}-${model.id}`} className="group">
                     <td>
                       <Link 
-                        href={`/models/${model.provider}`}
+                        href={`/${model.provider}`}
                         className="inline-flex items-center gap-2 hover:text-accent-primary transition-colors group/provider"
                       >
                         <span 
@@ -465,7 +465,7 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
                     </td>
                     <td>
                       <Link 
-                        href={`/models/${encodeURIComponent(model.provider)}/${encodeURIComponent(model.id)}`}
+                        href={`/${encodeURIComponent(model.provider)}/${encodeURIComponent(model.id)}`}
                         className="inline-flex items-center gap-2 font-medium text-text-primary hover:text-accent-primary transition-colors group/model"
                       >
                         {model.id}

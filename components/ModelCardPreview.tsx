@@ -1,9 +1,10 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import Image from 'next/image'
 import { Link as LinkIcon, Check } from 'lucide-react'
 import { Model, formatPrice } from '@/lib/types'
+
+const basePath = '/models'
 
 interface ModelCardPreviewProps {
   model: Model
@@ -12,7 +13,7 @@ interface ModelCardPreviewProps {
 export default function ModelCardPreview({ model }: ModelCardPreviewProps) {
   const [copied, setCopied] = useState(false)
   
-  const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/models/${model.provider}/${model.id}`
+  const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/${model.provider}/${model.id}`
 
   const copyLink = async () => {
     await navigator.clipboard.writeText(shareUrl)
@@ -120,8 +121,8 @@ export default function ModelCardPreview({ model }: ModelCardPreviewProps) {
 
           {/* Footer */}
           <div className="flex items-center gap-2.5 pt-4 border-t border-[#EDECEC]/10">
-            <Image 
-              src="/assets/Full Logo Light.png" 
+            <img 
+              src={`${basePath}/assets/Full Logo Light.png`}
               alt="Portkey" 
               width={80} 
               height={20}

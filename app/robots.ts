@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://portkey.ai/sitemap.xml',
+    sitemap: 'https://portkey.ai/models/sitemap.xml',
   }
 }
 

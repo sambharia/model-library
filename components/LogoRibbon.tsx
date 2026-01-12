@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+const basePath = '/models'
 
 const customerLogos = [
   { src: '/assets/Bain.png', alt: 'Bain & Company' },
@@ -40,8 +40,8 @@ export default function LogoRibbon() {
           <div className="flex items-center gap-14 shrink-0 px-6">
             {customerLogos.map((logo, index) => (
               <div key={`logo-1-${index}`} className="flex items-center justify-center flex-shrink-0">
-                <Image 
-                  src={logo.src}
+                <img 
+                  src={`${basePath}${logo.src}`}
                   alt={logo.alt}
                   width={140}
                   height={48}
@@ -55,8 +55,8 @@ export default function LogoRibbon() {
           <div className="flex items-center gap-14 shrink-0 px-6">
             {customerLogos.map((logo, index) => (
               <div key={`logo-2-${index}`} className="flex items-center justify-center flex-shrink-0">
-                <Image 
-                  src={logo.src}
+                <img 
+                  src={`${basePath}${logo.src}`}
                   alt={logo.alt}
                   width={140}
                   height={48}

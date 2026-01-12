@@ -211,12 +211,21 @@ function HeroHeader({ onHowToUseClick }: { onHowToUseClick: () => void }) {
         {/* Actions */}
         <div className="flex items-center gap-2">
           <a 
-            href="https://portkey.ai/docs" 
+            href="https://portkey.ai/docs/product/model-catalog/portkey-models" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-md text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all text-sm font-medium"
           >
-            Docs
+            Use the API
+            <ExternalLink className="w-3 h-3 opacity-50" />
+          </a>
+          <a 
+            href="https://portkey.ai/rankings" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-md text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all text-sm font-medium"
+          >
+            Trending Models
             <ExternalLink className="w-3 h-3 opacity-50" />
           </a>
           <a 
@@ -249,20 +258,26 @@ function HeroHeader({ onHowToUseClick }: { onHowToUseClick: () => void }) {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-14 left-0 right-0 bg-bg-base/95 backdrop-blur-xl border-b border-border-secondary">
           <nav className="flex flex-col p-4 gap-1">
-            {navItems.map((item) => (
-              <Link 
-                key={item.href}
-                href={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`px-4 py-3 rounded-lg text-sm font-medium transition-all ${
-                  isActive(item.href)
-                    ? 'text-text-primary bg-bg-elevated'
-                    : 'text-text-secondary hover:text-text-primary hover:bg-bg-elevated/50'
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            <a 
+              href="https://portkey.ai/docs/product/model-catalog/portkey-models"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2 px-4 py-3 rounded-lg text-sm font-medium text-text-secondary hover:text-text-primary hover:bg-bg-elevated/50 transition-all"
+            >
+              Use the API
+              <ExternalLink className="w-3 h-3 opacity-50" />
+            </a>
+            <a 
+              href="https://portkey.ai/rankings"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2 px-4 py-3 rounded-lg text-sm font-medium text-text-secondary hover:text-text-primary hover:bg-bg-elevated/50 transition-all"
+            >
+              Trending Models
+              <ExternalLink className="w-3 h-3 opacity-50" />
+            </a>
           </nav>
         </div>
       )}

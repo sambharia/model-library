@@ -13,7 +13,7 @@ interface ModelCardPreviewProps {
 export default function ModelCardPreview({ model }: ModelCardPreviewProps) {
   const [copied, setCopied] = useState(false)
   
-  const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/${model.provider}/${model.id}`
+  const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/models/${model.provider}/${model.id}`
 
   const copyLink = async () => {
     await navigator.clipboard.writeText(shareUrl)

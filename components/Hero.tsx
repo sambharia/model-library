@@ -43,14 +43,14 @@ function HowToUseModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
           </p>
           
           <p>
-            There's no single database with information about all the available AI models. We started this as a community-contributed project to address this. The data powers{' '}
+            There&apos;s no single database with information about all the available AI models. We started this as a community-contributed project to address this. The data powers{' '}
             <a 
               href="https://github.com/Portkey-AI/gateway" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white underline decoration-dotted underline-offset-2 hover:decoration-solid"
             >
-              Portkey's AI Gateway
+              Portkey&apos;s AI Gateway
             </a>.
           </p>
 

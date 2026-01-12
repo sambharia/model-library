@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect, Fragment } from 'react'
 import Link from 'next/link'
 import { 
   Search, 
@@ -20,7 +20,11 @@ import {
   Video,
   Image,
   Sparkles,
-  Zap
+  Zap,
+  ChevronLeft,
+  ChevronRight,
+  ChevronsLeft,
+  ChevronsRight
 } from 'lucide-react'
 import Fuse from 'fuse.js'
 import { Model, Provider, formatPrice, AdditionalUnit, formatAdditionalPrice } from '@/lib/types'
@@ -35,6 +39,8 @@ interface ModelTableProps {
 type SortField = 'provider' | 'name' | 'inputPrice' | 'outputPrice' | 'cacheRead' | 'cacheWrite'
 type SortDirection = 'asc' | 'desc'
 
+const PAGE_SIZE = 200
+
 export default function ModelTable({ models, providers }: ModelTableProps) {
   const [search, setSearch] = useState('')
   const [selectedProviders, setSelectedProviders] = useState<string[]>([])
@@ -44,6 +50,8 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
   const [copiedId, setCopiedId] = useState<string | null>(null)
   const [showFilters, setShowFilters] = useState(false)
   const [showTopModelsOnly, setShowTopModelsOnly] = useState(true) // ON by default
+  const [currentPage, setCurrentPage] = useState(1)
+  const [expandedRows, setExpandedRows] = useState<Set<string>>(new Set())
 
   // Fuse.js for fuzzy search
   const fuse = useMemo(() => new Fuse(models, {
@@ -186,10 +194,33 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
     return result
   }, [models, search, selectedProviders, selectedFeatures, sortField, sortDirection, fuse, showTopModelsOnly])
 
-  // Get models with additional pricing
-  const modelsWithExtras = useMemo(() => {
-    return filteredModels.filter(m => m.pricing?.additional && m.pricing.additional.length > 0)
-  }, [filteredModels])
+  // Reset page when filters change
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [search, selectedProviders, selectedFeatures, sortField, sortDirection, showTopModelsOnly])
+
+  // Calculate pagination
+  const totalPages = Math.ceil(filteredModels.length / PAGE_SIZE)
+  const showPagination = filteredModels.length > PAGE_SIZE
+  
+  // Get paginated models
+  const paginatedModels = useMemo(() => {
+    if (!showPagination) return filteredModels
+    const startIndex = (currentPage - 1) * PAGE_SIZE
+    return filteredModels.slice(startIndex, startIndex + PAGE_SIZE)
+  }, [filteredModels, currentPage, showPagination])
+
+  const toggleRowExpanded = (modelKey: string) => {
+    setExpandedRows(prev => {
+      const newSet = new Set(prev)
+      if (newSet.has(modelKey)) {
+        newSet.delete(modelKey)
+      } else {
+        newSet.add(modelKey)
+      }
+      return newSet
+    })
+  }
 
   const handleSort = (field: SortField) => {
     if (sortField === field) {
@@ -471,82 +502,137 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
               </tr>
             </thead>
             <tbody>
-              {filteredModels.map((model) => {
+              {paginatedModels.map((model) => {
                 const providerStyle = getProviderColor(model.provider)
+                const modelKey = `${model.provider}-${model.id}`
+                const hasAdditionalPricing = model.pricing?.additional && model.pricing.additional.length > 0
+                const isExpanded = expandedRows.has(modelKey)
+                
                 return (
-                  <tr key={`${model.provider}-${model.id}`} className="group">
-                    <td>
-                      <Link 
-                        href={`/${model.provider}`}
-                        className="inline-flex items-center gap-2 hover:text-accent-primary transition-colors group/provider"
-                      >
-                        <span 
-                          className="w-2 h-2 rounded-full flex-shrink-0"
-                          style={{ backgroundColor: providerStyle.color }}
-                        />
-                        <span className="text-text-secondary group-hover/provider:text-accent-primary transition-colors">
-                          {model.providerDisplayName}
-                        </span>
-                        <ExternalLink className="w-3 h-3 text-text-faint group-hover/provider:text-accent-primary transition-colors" />
-                      </Link>
-                    </td>
-                    <td>
-                      <Link 
-                        href={`/${encodeURIComponent(model.provider)}/${encodeURIComponent(model.id)}`}
-                        className="inline-flex items-center gap-2 font-medium text-text-primary hover:text-accent-primary transition-colors group/model"
-                      >
-                        {model.id}
-                        <ExternalLink className="w-3 h-3 text-text-faint group-hover/model:text-accent-primary transition-colors" />
-                      </Link>
-                    </td>
-                    <td className="font-mono">
-                      <span className="text-text-primary">{formatPrice(model.pricing?.input)}</span>
-                    </td>
-                    <td className="font-mono">
-                      <span className="text-text-primary">{formatPrice(model.pricing?.output)}</span>
-                    </td>
-                    <td className="font-mono">
-                      <span className="text-text-primary">{formatPrice(model.pricing?.cached_input)}</span>
-                    </td>
-                    <td className="font-mono">
-                      <span className="text-text-primary">{formatPrice(model.pricing?.cache_write)}</span>
-                    </td>
-                    <td>
-                      <div className="flex items-center gap-1">
-                        {model.features.vision && (
-                          <span className="badge badge-vision" title="Vision">
-                            <Eye className="w-3 h-3" />
-                          </span>
-                        )}
-                        {model.features.function_calling && (
-                          <span className="badge badge-tools" title="Tool Calling">
-                            <Wrench className="w-3 h-3" />
-                          </span>
-                        )}
-                        {model.features.reasoning && (
-                          <span className="badge badge-reasoning" title="Reasoning">
-                            <Brain className="w-3 h-3" />
-                          </span>
-                        )}
-                        {!model.features.vision && !model.features.function_calling && !model.features.reasoning && (
-                          <span className="text-text-faint">—</span>
-                        )}
-                      </div>
-                    </td>
-                    <td>
-                      <button
-                        onClick={() => copyToClipboard(model.id, model.id)}
-                        className="p-1.5 rounded-md hover:bg-bg-elevated text-text-muted hover:text-text-primary transition-all opacity-0 group-hover:opacity-100"
-                        title="Copy model ID"
-                      >
-                        {copiedId === model.id ? (
-                          <Check className="w-3.5 h-3.5 text-success" />
-                        ) : (
-                          <Copy className="w-3.5 h-3.5" />
-                        )}
-                      </button>
-                    </td>
-                  </tr>
+                  <Fragment key={modelKey}>
+                    <tr className="group">
+                      <td>
+                        <div className="flex items-center gap-1">
+                          {hasAdditionalPricing ? (
+                            <button
+                              onClick={() => toggleRowExpanded(modelKey)}
+                              className="p-1 rounded hover:bg-bg-elevated text-text-muted hover:text-text-primary transition-all"
+                              title={isExpanded ? "Hide additional pricing" : "Show additional pricing"}
+                            >
+                              <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
+                            </button>
+                          ) : (
+                            <span className="w-5.5" />
+                          )}
+                          <Link 
+                            href={`/${model.provider}`}
+                            className="inline-flex items-center gap-2 hover:text-accent-primary transition-colors group/provider"
+                          >
+                            <span 
+                              className="w-2 h-2 rounded-full flex-shrink-0"
+                              style={{ backgroundColor: providerStyle.color }}
+                            />
+                            <span className="text-text-secondary group-hover/provider:text-accent-primary transition-colors">
+                              {model.providerDisplayName}
+                            </span>
+                            <ExternalLink className="w-3 h-3 text-text-faint group-hover/provider:text-accent-primary transition-colors" />
+                          </Link>
+                        </div>
+                      </td>
+                      <td>
+                        <div className="flex items-center gap-2">
+                          <Link 
+                            href={`/${encodeURIComponent(model.provider)}/${encodeURIComponent(model.id)}`}
+                            className="inline-flex items-center gap-2 font-medium text-text-primary hover:text-accent-primary transition-colors group/model"
+                          >
+                            {model.id}
+                            <ExternalLink className="w-3 h-3 text-text-faint group-hover/model:text-accent-primary transition-colors" />
+                          </Link>
+                          {hasAdditionalPricing && (
+                            <span 
+                              className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-xs bg-amber-500/10 text-amber-400 border border-amber-500/20 cursor-pointer hover:bg-amber-500/20 transition-colors"
+                              onClick={() => toggleRowExpanded(modelKey)}
+                              title="Click to see additional pricing"
+                            >
+                              <Zap className="w-3 h-3" />
+                              +{model.pricing?.additional?.length}
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                      <td className="font-mono">
+                        <span className="text-text-primary">{formatPrice(model.pricing?.input)}</span>
+                      </td>
+                      <td className="font-mono">
+                        <span className="text-text-primary">{formatPrice(model.pricing?.output)}</span>
+                      </td>
+                      <td className="font-mono">
+                        <span className="text-text-primary">{formatPrice(model.pricing?.cached_input)}</span>
+                      </td>
+                      <td className="font-mono">
+                        <span className="text-text-primary">{formatPrice(model.pricing?.cache_write)}</span>
+                      </td>
+                      <td>
+                        <div className="flex items-center gap-1">
+                          {model.features.vision && (
+                            <span className="badge badge-vision" title="Vision">
+                              <Eye className="w-3 h-3" />
+                            </span>
+                          )}
+                          {model.features.function_calling && (
+                            <span className="badge badge-tools" title="Tool Calling">
+                              <Wrench className="w-3 h-3" />
+                            </span>
+                          )}
+                          {model.features.reasoning && (
+                            <span className="badge badge-reasoning" title="Reasoning">
+                              <Brain className="w-3 h-3" />
+                            </span>
+                          )}
+                          {!model.features.vision && !model.features.function_calling && !model.features.reasoning && (
+                            <span className="text-text-faint">—</span>
+                          )}
+                        </div>
+                      </td>
+                      <td>
+                        <button
+                          onClick={() => copyToClipboard(model.id, model.id)}
+                          className="p-1.5 rounded-md hover:bg-bg-elevated text-text-muted hover:text-text-primary transition-all opacity-0 group-hover:opacity-100"
+                          title="Copy model ID"
+                        >
+                          {copiedId === model.id ? (
+                            <Check className="w-3.5 h-3.5 text-success" />
+                          ) : (
+                            <Copy className="w-3.5 h-3.5" />
+                          )}
+                        </button>
+                      </td>
+                    </tr>
+                    {/* Expanded row for additional pricing */}
+                    {hasAdditionalPricing && isExpanded && (
+                      <tr key={`${modelKey}-expanded`} className="bg-bg-secondary/50">
+                        <td colSpan={8} className="!py-3 !px-4">
+                          <div className="pl-6">
+                            <div className="text-xs text-text-muted mb-2 font-medium uppercase tracking-wide">Additional Pricing</div>
+                            <div className="flex flex-wrap gap-3">
+                              {model.pricing?.additional?.map((unit) => (
+                                <div 
+                                  key={unit.name}
+                                  className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-bg-primary border border-border-primary"
+                                >
+                                  <span className={`badge badge-${unit.category}`}>
+                                    {getCategoryIcon(unit.category)}
+                                  </span>
+                                  <span className="text-sm text-text-secondary">{unit.displayName}</span>
+                                  <span className="text-sm font-mono text-text-primary">{formatAdditionalPrice(unit.price)}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    )}
+                  </Fragment>
                 )
               })}
             </tbody>
@@ -566,74 +652,114 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
         )}
       </div>
 
-      {/* Additional Pricing Section */}
-      {modelsWithExtras.length > 0 && (
-        <div className="mt-8">
-          <h3 className="heading-md text-text-primary mb-4">
-            Additional Pricing
-            <span className="ml-2 text-sm font-normal text-text-muted">
-              ({modelsWithExtras.length} models with extra costs)
-            </span>
-          </h3>
-          <div className="rounded-xl border border-border-primary overflow-hidden bg-bg-primary">
-            <div className="overflow-x-auto">
-              <table className="data-table w-full">
-                <thead>
-                  <tr>
-                    <th>Provider</th>
-                    <th>Model ID</th>
-                    <th>Unit Type</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {modelsWithExtras.flatMap((model) => {
-                    const providerStyle = getProviderColor(model.provider)
-                    return (model.pricing?.additional || []).map((unit, idx) => (
-                      <tr key={`${model.provider}-${model.id}-${unit.name}`}>
-                        {idx === 0 ? (
-                          <>
-                            <td rowSpan={model.pricing?.additional?.length}>
-                              <div className="flex items-center gap-2">
-                                <span 
-                                  className="w-2 h-2 rounded-full flex-shrink-0"
-                                  style={{ backgroundColor: providerStyle.color }}
-                                />
-                                <span className="text-text-secondary">
-                                  {model.providerDisplayName}
-                                </span>
-                              </div>
-                            </td>
-                            <td rowSpan={model.pricing?.additional?.length}>
-                              <Link 
-                                href={`/models/${encodeURIComponent(model.provider)}/${encodeURIComponent(model.id)}`}
-                                className="text-text-primary hover:text-accent-primary transition-colors"
-                              >
-                                {model.id}
-                              </Link>
-                            </td>
-                          </>
-                        ) : null}
-                        <td>
-                          <div className="flex items-center gap-2">
-                            <span className={`badge badge-${unit.category}`}>
-                              {getCategoryIcon(unit.category)}
-                            </span>
-                            <span className="text-text-secondary">{unit.displayName}</span>
-                          </div>
-                        </td>
-                        <td className="font-mono text-text-primary">
-                          {formatAdditionalPrice(unit.price)}
-                        </td>
-                      </tr>
-                    ))
-                  })}
-                </tbody>
-              </table>
+      {/* Pagination Controls */}
+      {showPagination && (
+        <div className="mt-4 flex items-center justify-between gap-4 px-2">
+          <div className="text-sm text-text-muted">
+            Showing {((currentPage - 1) * PAGE_SIZE) + 1}–{Math.min(currentPage * PAGE_SIZE, filteredModels.length)} of {filteredModels.length.toLocaleString()} models
+          </div>
+          
+          <div className="flex items-center gap-1">
+            {/* First page */}
+            <button
+              onClick={() => setCurrentPage(1)}
+              disabled={currentPage === 1}
+              className="p-2 rounded-md border border-border-primary bg-bg-secondary text-text-secondary hover:bg-bg-elevated hover:text-text-primary disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-bg-secondary disabled:hover:text-text-secondary transition-all"
+              title="First page"
+            >
+              <ChevronsLeft className="w-4 h-4" />
+            </button>
+            
+            {/* Previous page */}
+            <button
+              onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+              disabled={currentPage === 1}
+              className="p-2 rounded-md border border-border-primary bg-bg-secondary text-text-secondary hover:bg-bg-elevated hover:text-text-primary disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-bg-secondary disabled:hover:text-text-secondary transition-all"
+              title="Previous page"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            
+            {/* Page numbers */}
+            <div className="flex items-center gap-1 mx-2">
+              {(() => {
+                const pages: (number | 'ellipsis')[] = []
+                const showPages = 5
+                
+                if (totalPages <= showPages + 2) {
+                  // Show all pages if few enough
+                  for (let i = 1; i <= totalPages; i++) pages.push(i)
+                } else {
+                  // Always show first page
+                  pages.push(1)
+                  
+                  // Calculate range around current page
+                  let start = Math.max(2, currentPage - 1)
+                  let end = Math.min(totalPages - 1, currentPage + 1)
+                  
+                  // Adjust if at edges
+                  if (currentPage <= 3) {
+                    end = Math.min(4, totalPages - 1)
+                  } else if (currentPage >= totalPages - 2) {
+                    start = Math.max(totalPages - 3, 2)
+                  }
+                  
+                  // Add ellipsis before middle pages
+                  if (start > 2) pages.push('ellipsis')
+                  
+                  // Add middle pages
+                  for (let i = start; i <= end; i++) pages.push(i)
+                  
+                  // Add ellipsis after middle pages
+                  if (end < totalPages - 1) pages.push('ellipsis')
+                  
+                  // Always show last page
+                  pages.push(totalPages)
+                }
+                
+                return pages.map((page, idx) => 
+                  page === 'ellipsis' ? (
+                    <span key={`ellipsis-${idx}`} className="px-2 text-text-muted">…</span>
+                  ) : (
+                    <button
+                      key={page}
+                      onClick={() => setCurrentPage(page)}
+                      className={`min-w-[36px] h-9 px-3 rounded-md text-sm font-medium transition-all ${
+                        currentPage === page
+                          ? 'bg-accent-primary text-white'
+                          : 'border border-border-primary bg-bg-secondary text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  )
+                )
+              })()}
             </div>
+            
+            {/* Next page */}
+            <button
+              onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+              disabled={currentPage === totalPages}
+              className="p-2 rounded-md border border-border-primary bg-bg-secondary text-text-secondary hover:bg-bg-elevated hover:text-text-primary disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-bg-secondary disabled:hover:text-text-secondary transition-all"
+              title="Next page"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+            
+            {/* Last page */}
+            <button
+              onClick={() => setCurrentPage(totalPages)}
+              disabled={currentPage === totalPages}
+              className="p-2 rounded-md border border-border-primary bg-bg-secondary text-text-secondary hover:bg-bg-elevated hover:text-text-primary disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-bg-secondary disabled:hover:text-text-secondary transition-all"
+              title="Last page"
+            >
+              <ChevronsRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
       )}
+
     </div>
   )
 }

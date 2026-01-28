@@ -3,6 +3,8 @@
 const basePath = '/models'
 
 const customerLogos = [
+  { src: '/assets/Phreesia.png', alt: 'Phreesia' },
+  { src: '/assets/Snorkel.png', alt: 'Snorkel AI' },
   { src: '/assets/Bain.png', alt: 'Bain & Company' },
   { src: '/assets/Paloalto.png', alt: 'Palo Alto Networks' },
   { src: '/assets/Postman.png', alt: 'Postman' },
@@ -13,11 +15,9 @@ const customerLogos = [
   { src: '/assets/HackerRank.png', alt: 'HackerRank' },
   { src: '/assets/Clearcover.png', alt: 'Clearcover' },
   { src: '/assets/Cyera.png', alt: 'Cyera' },
-  { src: '/assets/Doordash.png', alt: 'DoorDash' },
-  { src: '/assets/Elsevier.png', alt: 'Elsevier' },
-  { src: '/assets/PG&E.png', alt: 'PG&E' },
-  { src: '/assets/Snorkel.png', alt: 'Snorkel AI' },
+  { src: '/assets/Qoala.png', alt: 'Qoala' },
   { src: '/assets/Syngenta.png', alt: 'Syngenta' },
+  { src: '/assets/Vistaprint.png', alt: 'Vistaprint' },
 ]
 
 export default function LogoRibbon() {

@@ -24,35 +24,32 @@
         "maxValue": 8,
         "minValue": 1
       }
-    ],
-    "pricing_formula": {
-      "request": {
-        "operands": [
-          {
-            "value": "input_tokens"
-          },
-          {
-            "value": "rates.request_token"
-          }
-        ],
-        "operation": "multiply"
-      },
-      "response": {
-        "operands": [
-          {
-            "value": "output_tokens"
-          },
-          {
-            "value": "rates.response_token"
-          }
-        ],
-        "operation": "multiply"
-      }
-    }
+    ]
   },
   "id": "palm",
   "models": {
     "chat-bison-001": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 0.2,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "candidateCount",
+          "maxValue": 8,
+          "minValue": 1
+        }
+      ],
       "id": "chat-bison-001",
       "modality": {
         "input": [
@@ -66,6 +63,7 @@
     },
     "models/chat-bison-001": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "models/chat-bison-001",
       "pricing": {
         "currency": "USD",
@@ -80,6 +78,7 @@
     },
     "models/text-bison-001": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "models/text-bison-001",
       "pricing": {
         "currency": "USD",
@@ -93,6 +92,27 @@
       "type": "chat"
     },
     "text-bison-001": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 0.2,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "candidateCount",
+          "maxValue": 8,
+          "minValue": 1
+        }
+      ],
       "id": "text-bison-001",
       "modality": {
         "input": [

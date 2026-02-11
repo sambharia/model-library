@@ -1,0 +1,82 @@
+name: Update Model Data
+
+on:
+  # Run every hour
+  schedule:
+    - cron: '0 * * * *'
+
+  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
+    inputs:
+      models_ref:
+        description: 'Branch/tag/SHA of Portkey-AI/models to use (default: main)'
+        required: false
+        default: 'main'
+
+  # Allow trigger from the models repo via repository_dispatch
+  # To trigger from models repo, send:
+  #   curl -X POST -H "Authorization: token $TOKEN" \
+  #     -H "Accept: application/vnd.github.v3+json" \
+  #     https://api.github.com/repos/Portkey-AI/model-library/dispatches \
+  #     -d '{"event_type":"models-updated"}'
+  repository_dispatch:
+    types: [models-updated]
+
+permissions:
+  contents: write
+
+jobs:
+  update-models:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout model-library
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Determine models ref
+        id: ref
+        run: |
+          REF="${{ github.event.inputs.models_ref || 'main' }}"
+          echo "models_ref=$REF" >> "$GITHUB_OUTPUT"
+
+      - name: Clone Portkey-AI/models
+        run: |
+          git clone --branch ${{ steps.ref.outputs.models_ref }} \
+            https://github.com/Portkey-AI/models.git models-repo
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate combined JSON files
+        run: node scripts/generate-combined.js models-repo
+
+      - name: Clean up cloned repo
+        run: rm -rf models-repo
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add combined/
+          if git diff --cached --quiet; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "No changes detected in combined/ files."
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            CHANGED=$(git diff --cached --stat | tail -1)
+            echo "changes_summary=$CHANGED" >> "$GITHUB_OUTPUT"
+            echo "Changes detected: $CHANGED"
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update model data from Portkey-AI/models
+
+          Auto-generated from https://github.com/Portkey-AI/models
+          Changes: ${{ steps.changes.outputs.changes_summary }}"
+          git push

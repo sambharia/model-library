@@ -43,6 +43,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Cloned models repo (temporary, used for generating combined/)
+models/
+
 # Misc
 *.pem
 

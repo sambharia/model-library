@@ -86,6 +86,7 @@
   "id": "fireworks",
   "models": {
     "accounts/fireworks/models/bleat-adapter": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -176,6 +177,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/chinese-llama-2-lora-7b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -266,6 +268,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/codegemma-2b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -356,6 +359,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/dbrx-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -446,6 +450,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/deepseek-r1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -536,6 +541,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/deepseek-v3": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -626,6 +632,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/firefunction-v1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -719,6 +726,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/firellava-13b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -796,15 +804,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "accounts/fireworks/models/firellava-13b",
       "max_output_tokens": 8192,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -813,6 +817,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/gemma-7b-it": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -903,6 +908,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/gpt-oss-120b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -996,6 +1002,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/gpt-oss-20b": {
+      "_lastUpdated": "2026-02-02T07:19:18.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1089,6 +1096,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/hermes-2-pro-mistral-7b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1178,7 +1186,99 @@
       },
       "type": "chat"
     },
+    "accounts/fireworks/models/kimi-k2p5": {
+      "_lastUpdated": "2026-02-02T07:19:18.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "accounts/fireworks/models/kimi-k2p5",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "accounts/fireworks/models/llama-2-13b-fp16-french": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1269,6 +1369,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/llama-2-13b-guanaco-peft": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1359,6 +1460,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/llama-v2-13b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1449,6 +1551,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/llama-v2-13b-chat": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1539,6 +1642,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v2-70b-chat": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1629,6 +1733,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v2-7b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1719,6 +1824,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/llama-v2-7b-chat": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1809,6 +1915,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v3-70b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1899,6 +2006,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v3-70b-instruct-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1989,6 +2097,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v3-8b-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2079,6 +2188,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/llama-v3-8b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2169,6 +2279,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v3-8b-instruct-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2259,45 +2370,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v3p1-405b-instruct": {
-      "id": "accounts/fireworks/models/llama-v3p1-405b-instruct",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "type": "chat"
-    },
-    "accounts/fireworks/models/llama-v3p1-70b-instruct": {
-      "id": "accounts/fireworks/models/llama-v3p1-70b-instruct",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "type": "chat"
-    },
-    "accounts/fireworks/models/llama-v3p1-8b-instruct": {
-      "id": "accounts/fireworks/models/llama-v3p1-8b-instruct",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "type": "chat"
-    },
-    "accounts/fireworks/models/llama-v3p2-11b-vision-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2375,15 +2448,284 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
+      "id": "accounts/fireworks/models/llama-v3p1-405b-instruct",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
       },
+      "type": "chat"
+    },
+    "accounts/fireworks/models/llama-v3p1-70b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "accounts/fireworks/models/llama-v3p1-70b-instruct",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "accounts/fireworks/models/llama-v3p1-8b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "accounts/fireworks/models/llama-v3p1-8b-instruct",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "accounts/fireworks/models/llama-v3p2-11b-vision-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
       "id": "accounts/fireworks/models/llama-v3p2-11b-vision-instruct",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -2392,6 +2734,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v3p2-1b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2482,6 +2825,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v3p2-3b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2572,6 +2916,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v3p2-90b-vision-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2649,15 +2994,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "accounts/fireworks/models/llama-v3p2-90b-vision-instruct",
       "max_output_tokens": 8192,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -2666,6 +3007,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama-v3p3-70b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2756,6 +3098,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama2-7b-summarize": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2846,6 +3189,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/llama4-maverick-instruct-basic": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2923,15 +3267,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "accounts/fireworks/models/llama4-maverick-instruct-basic",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -2940,6 +3280,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llama4-scout-instruct-basic": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3017,15 +3358,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "accounts/fireworks/models/llama4-scout-instruct-basic",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -3034,6 +3371,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/llava-yi-34b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3111,15 +3449,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "accounts/fireworks/models/llava-yi-34b",
       "max_output_tokens": 8192,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -3128,6 +3462,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/mistral-7b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3218,6 +3553,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/mistral-7b-instruct-4k": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3308,6 +3644,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/mistral-7b-instruct-v0p2": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3398,6 +3735,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/mistral-7b-instruct-v3": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3488,6 +3826,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/mixtral-8x22b-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3578,6 +3917,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/mixtral-8x22b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3668,6 +4008,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/mixtral-8x22b-instruct-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3758,6 +4099,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/mixtral-8x7b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3848,6 +4190,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/mixtral-8x7b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3938,6 +4281,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/mixtral-8x7b-instruct-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4028,6 +4372,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/mythomax-l2-13b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4118,6 +4463,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/nous-hermes-2-mixtral-8x7b-dpo-fp8": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4208,6 +4554,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/phi-3-vision-128k-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4285,15 +4632,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "accounts/fireworks/models/phi-3-vision-128k-instruct",
       "max_output_tokens": 128000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4302,6 +4645,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/qwen1p5-72b-chat": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4392,6 +4736,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/qwen2-72b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4482,6 +4827,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/starcoder-16b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4572,6 +4918,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/starcoder-7b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4662,6 +5009,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/traditional-chinese-qlora-llama2": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4752,6 +5100,7 @@
       "type": "text"
     },
     "accounts/fireworks/models/yi-34b-200k-capybara": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4842,6 +5191,7 @@
       "type": "chat"
     },
     "accounts/stability/models/japanese-stablelm-instruct-beta-70b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4932,6 +5282,7 @@
       "type": "chat"
     },
     "accounts/stability/models/japanese-stablelm-instruct-gamma-7b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5022,6 +5373,7 @@
       "type": "chat"
     },
     "accounts/stability/models/stablelm-2-zephyr-2b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5112,6 +5464,7 @@
       "type": "chat"
     },
     "accounts/stability/models/stablelm-zephyr-3b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

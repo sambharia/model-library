@@ -3,6 +3,7 @@
   "id": "deepbricks",
   "models": {
     "Claude-3.5-Sonnet": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "Claude-3.5-Sonnet",
       "modality": {
@@ -24,7 +25,54 @@
       },
       "type": "chat"
     },
+    "Claude-HaiKu-4.5": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Claude-HaiKu-4.5",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.5,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "Claude-Sonnet-4.5": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Claude-Sonnet-4.5",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1.5,
+          "output": 7.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "GPT-3.5-turbo": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "GPT-3.5-turbo",
       "modality": {
@@ -47,6 +95,7 @@
       "type": "chat"
     },
     "GPT-3.5-turbo-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "GPT-3.5-turbo-instruct",
       "modality": {
@@ -69,6 +118,7 @@
       "type": "chat"
     },
     "GPT-4-turbo": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "GPT-4-turbo",
       "modality": {
@@ -90,7 +140,54 @@
       },
       "type": "chat"
     },
+    "GPT-4.1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "GPT-4.1",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1,
+          "output": 4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "GPT-4.1-mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "GPT-4.1-mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.4,
+          "output": 1.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "GPT-4o": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "GPT-4o",
       "modality": {
@@ -113,6 +210,7 @@
       "type": "chat"
     },
     "GPT-4o-2024-08-06": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "GPT-4o-2024-08-06",
       "modality": {
@@ -135,6 +233,7 @@
       "type": "chat"
     },
     "GPT-4o-mini": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "GPT-4o-mini",
       "modality": {
@@ -156,7 +255,54 @@
       },
       "type": "chat"
     },
+    "GPT-5-Chat": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "GPT-5-Chat",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.65,
+          "output": 50,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "GPT-5.1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "GPT-5.1",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.65,
+          "output": 50,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "LLama-3-70b": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [],
       "id": "LLama-3-70b",
       "modality": {
@@ -179,6 +325,7 @@
       "type": "chat"
     },
     "LLama-3.1-405b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "LLama-3.1-405b",
       "modality": {
@@ -201,6 +348,7 @@
       "type": "chat"
     },
     "LLama-3.1-70b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "LLama-3.1-70b",
       "modality": {
@@ -216,6 +364,159 @@
         "tokens": {
           "input": 0.4,
           "output": 0.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "dall-e-3": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "dall-e-3",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 150,
+          "output": 150,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gemini-2.5-flash": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "gemini-2.5-flash",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.1,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gemini-2.5-pro": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "gemini-2.5-pro",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.5,
+          "output": 40,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "o1": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "id": "o1",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 7.5,
+          "output": 300,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "o1-mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "o1-mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.55,
+          "output": 22,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "o3-mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "o3-mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 5.5,
+          "output": 22,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "o4-mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "o4-mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 5.5,
+          "output": 2.2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

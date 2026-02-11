@@ -4,6 +4,7 @@
   "models": {
     "21b": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "21b",
       "pricing": {
         "currency": "USD",
@@ -18,6 +19,7 @@
     },
     "70b": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "70b",
       "pricing": {
         "currency": "USD",
@@ -32,6 +34,7 @@
     },
     "7b": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "7b",
       "pricing": {
         "currency": "USD",
@@ -46,6 +49,7 @@
     },
     "mixtral-8x7b-instruct-v0-1": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "mixtral-8x7b-instruct-v0-1",
       "pricing": {
         "currency": "USD",
@@ -60,6 +64,7 @@
     },
     "mixtral-8x7b-v0-1": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "mixtral-8x7b-v0-1",
       "pricing": {
         "currency": "USD",

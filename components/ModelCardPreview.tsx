@@ -6,6 +6,13 @@ import { Model, formatPrice } from '@/lib/types'
 
 const basePath = '/models'
 
+// X (Twitter) icon component
+const XIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+)
+
 interface ModelCardPreviewProps {
   model: Model
 }
@@ -13,12 +20,20 @@ interface ModelCardPreviewProps {
 export default function ModelCardPreview({ model }: ModelCardPreviewProps) {
   const [copied, setCopied] = useState(false)
   
-  const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/models/${model.provider}/${model.id}`
+  const shareUrl = typeof window !== 'undefined' 
+    ? `${window.location.origin}/${model.provider}/${model.id}`
+    : ''
 
   const copyLink = async () => {
     await navigator.clipboard.writeText(shareUrl)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
+  }
+
+  const shareOnX = () => {
+    const text = `Check out ${model.id} by ${model.providerDisplayName}\n\nInput: ${formatPrice(model.pricing?.input)}/M\nOutput: ${formatPrice(model.pricing?.output)}/M\n\n`
+    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`
+    window.open(url, '_blank', 'noopener,noreferrer')
   }
 
   // Get capabilities list
@@ -37,7 +52,7 @@ export default function ModelCardPreview({ model }: ModelCardPreviewProps) {
       <div>
         <h2 className="heading-md text-text-primary mb-1">Share This Model</h2>
         <p className="text-sm text-text-muted">
-          Download or share on social media
+          Share on X or copy the link
         </p>
       </div>
 
@@ -132,8 +147,15 @@ export default function ModelCardPreview({ model }: ModelCardPreviewProps) {
         </div>
       </div>
 
-      {/* Action Button */}
+      {/* Action Buttons */}
       <div className="flex gap-3">
+        <button
+          onClick={shareOnX}
+          className="flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-black text-white font-medium text-sm hover:bg-black/80 transition-all border border-white/10"
+        >
+          <XIcon className="w-4 h-4" />
+          Share on X
+        </button>
         <button
           onClick={copyLink}
           className="flex-1 flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-text-primary text-bg-base font-medium text-sm hover:opacity-90 transition-all"

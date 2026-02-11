@@ -120,9 +120,9 @@
       }
     ]
   },
-  "id": "jina",
+  "id": "sambanova",
   "models": {
-    "ReaderLM-v2": {
+    "deepseek/deepseek-r1-0528": {
       "_parameters": [
         {
           "defaultValue": 128,
@@ -236,7 +236,7 @@
           "type": "string"
         }
       ],
-      "id": "ReaderLM-v2",
+      "id": "deepseek/deepseek-r1-0528",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
@@ -248,7 +248,7 @@
       },
       "type": "chat"
     },
-    "jina-clip-v1": {
+    "deepseek/deepseek-r1-distill-llama-70b": {
       "_parameters": [
         {
           "defaultValue": 128,
@@ -362,7 +362,7 @@
           "type": "string"
         }
       ],
-      "id": "jina-clip-v1",
+      "id": "deepseek/deepseek-r1-distill-llama-70b",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
@@ -374,7 +374,7 @@
       },
       "type": "chat"
     },
-    "jina-clip-v2": {
+    "deepseek/deepseek-v3-0324": {
       "_parameters": [
         {
           "defaultValue": 128,
@@ -488,7 +488,7 @@
           "type": "string"
         }
       ],
-      "id": "jina-clip-v2",
+      "id": "deepseek/deepseek-v3-0324",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
@@ -500,7 +500,7 @@
       },
       "type": "chat"
     },
-    "jina-code-embeddings-0.5b": {
+    "deepseek/deepseek-v3.1": {
       "_parameters": [
         {
           "defaultValue": 128,
@@ -614,2383 +614,7 @@
           "type": "string"
         }
       ],
-      "_playground_disabled": true,
-      "id": "jina-code-embeddings-0.5b",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "type": "embedding"
-    },
-    "jina-code-embeddings-1.5b": {
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-code-embeddings-1.5b",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "type": "embedding"
-    },
-    "jina-colbert-v1-en": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-colbert-v1-en",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.02,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "rerank"
-    },
-    "jina-colbert-v2": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-colbert-v2",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.02,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "rerank"
-    },
-    "jina-embedding-b-en-v1": {
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-embedding-b-en-v1",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "type": "embedding"
-    },
-    "jina-embeddings-v2-base-code": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-embeddings-v2-base-code",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.02,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "embedding"
-    },
-    "jina-embeddings-v2-base-de": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-embeddings-v2-base-de",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.02,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "embedding"
-    },
-    "jina-embeddings-v2-base-en": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-embeddings-v2-base-en",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.02,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "embedding"
-    },
-    "jina-embeddings-v2-base-es": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-embeddings-v2-base-es",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.02,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "embedding"
-    },
-    "jina-embeddings-v2-base-zh": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-embeddings-v2-base-zh",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.02,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "embedding"
-    },
-    "jina-embeddings-v3": {
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-embeddings-v3",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "type": "embedding"
-    },
-    "jina-embeddings-v4": {
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-embeddings-v4",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "type": "embedding"
-    },
-    "jina-reranker-m0": {
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-reranker-m0",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "type": "rerank"
-    },
-    "jina-reranker-v1-base-en": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-reranker-v1-base-en",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.02,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "rerank"
-    },
-    "jina-reranker-v1-tiny-en": {
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-reranker-v1-tiny-en",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "type": "rerank"
-    },
-    "jina-reranker-v1-turbo-en": {
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-reranker-v1-turbo-en",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "type": "rerank"
-    },
-    "jina-reranker-v2-base-multilingual": {
-      "_lastUpdated": "2026-01-27T18:55:54.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-reranker-v2-base-multilingual",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.02,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "rerank"
-    },
-    "jina-reranker-v3": {
-      "_lastUpdated": "2026-01-27T18:55:54.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "jina-reranker-v3",
-      "max_output_tokens": 4096,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.05,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "rerank"
-    },
-    "jina-vlm-1.5b": {
-      "_parameters": [
-        {
-          "defaultValue": 128,
-          "key": "max_tokens",
-          "maxValue": 4096,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.8,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": 0.1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "n",
-          "maxValue": 10,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0,
-          "key": "frequency_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": 0,
-          "key": "presence_penalty",
-          "maxValue": 2,
-          "minValue": -2
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "tool_choice",
-          "options": [
-            {
-              "name": "None",
-              "value": "none"
-            },
-            {
-              "name": "Auto",
-              "value": "auto"
-            },
-            {
-              "name": "Required",
-              "value": "required"
-            },
-            {
-              "name": "Custom",
-              "schema": {
-                "type": "json"
-              },
-              "value": "custom"
-            }
-          ],
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": null,
-              "then": "auto"
-            }
-          },
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "non-view-manage-data"
-        },
-        {
-          "defaultValue": true,
-          "key": "parallel_tool_calls",
-          "rule": {
-            "default": {
-              "condition": "tools",
-              "else": true,
-              "then": true
-            }
-          },
-          "skipValues": [
-            null,
-            true
-          ],
-          "type": "boolean"
-        },
-        {
-          "defaultValue": null,
-          "key": "logit_bias",
-          "skipValues": [
-            null
-          ],
-          "type": "string"
-        }
-      ],
-      "id": "jina-vlm-1.5b",
+      "id": "deepseek/deepseek-v3.1",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
@@ -3002,7 +626,7 @@
       },
       "type": "chat"
     },
-    "reader-lm-0.5b": {
+    "intfloat/e5-mistral-7b-instruct": {
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3116,7 +740,135 @@
           "type": "string"
         }
       ],
-      "id": "reader-lm-0.5b",
+      "_playground_disabled": true,
+      "id": "intfloat/e5-mistral-7b-instruct",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "type": "embedding"
+    },
+    "meta/llama-4-maverick-17b-128e-instruct": {
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "meta/llama-4-maverick-17b-128e-instruct",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
@@ -3128,7 +880,7 @@
       },
       "type": "chat"
     },
-    "reader-lm-1.5b": {
+    "meta/meta-llama-3.1-8b-instruct": {
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3242,7 +994,764 @@
           "type": "string"
         }
       ],
-      "id": "reader-lm-1.5b",
+      "id": "meta/meta-llama-3.1-8b-instruct",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "meta/meta-llama-3.3-70b-instruct": {
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "id": "meta/meta-llama-3.3-70b-instruct",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "openai/gpt-oss-120b": {
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "id": "openai/gpt-oss-120b",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "openai/whisper-large-v3": {
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "openai/whisper-large-v3",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "type": "audio"
+    },
+    "qwen/qwen3-235b-a22b-instruct-2507": {
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "id": "qwen/qwen3-235b-a22b-instruct-2507",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "qwen/qwen3-32b": {
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "id": "qwen/qwen3-32b",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "tokyotech-llm/llama-3.3-swallow-70b-instruct-v0.4": {
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "id": "tokyotech-llm/llama-3.3-swallow-70b-instruct-v0.4",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
@@ -3255,6 +1764,6 @@
       "type": "chat"
     }
   },
-  "name": "jina",
+  "name": "sambanova",
   "schema_version": "2.0"
 }

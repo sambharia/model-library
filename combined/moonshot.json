@@ -9,13 +9,13 @@
       {
         "defaultValue": 256,
         "key": "max_tokens",
-        "maxValue": 32768,
+        "maxValue": 262144,
         "minValue": 1
       },
       {
         "defaultValue": 0.7,
         "key": "temperature",
-        "maxValue": 2,
+        "maxValue": 1,
         "minValue": 0
       },
       {
@@ -25,10 +25,10 @@
         "minValue": 0
       },
       {
-        "defaultValue": null,
-        "key": "seed",
-        "maxValue": 1,
-        "minValue": 0
+        "defaultValue": 1,
+        "key": "n",
+        "maxValue": 10,
+        "minValue": 1
       },
       {
         "defaultValue": null,
@@ -41,31 +41,26 @@
       },
       {
         "defaultValue": true,
-        "key": "safe_prompt",
-        "type": "boolean"
-      },
-      {
-        "defaultValue": true,
         "key": "stream",
         "type": "boolean"
       }
     ]
   },
-  "id": "mistral-ai",
+  "id": "moonshot",
   "models": {
-    "magistral-medium-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+    "kimi-k2-0711-preview": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 32768,
+          "maxValue": 262144,
           "minValue": 1
         },
         {
           "defaultValue": 0.7,
           "key": "temperature",
-          "maxValue": 2,
+          "maxValue": 1,
           "minValue": 0
         },
         {
@@ -75,10 +70,10 @@
           "minValue": 0
         },
         {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
         },
         {
           "defaultValue": null,
@@ -91,8 +86,67 @@
         },
         {
           "defaultValue": true,
-          "key": "safe_prompt",
+          "key": "stream",
           "type": "boolean"
+        }
+      ],
+      "id": "kimi-k2-0711-preview",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.15,
+          "input": 0.6,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "kimi-k2-0905-preview": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
         },
         {
           "defaultValue": true,
@@ -100,8 +154,490 @@
           "type": "boolean"
         }
       ],
-      "id": "magistral-medium-latest",
-      "max_output_tokens": 32768,
+      "id": "kimi-k2-0905-preview",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.15,
+          "input": 0.6,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "kimi-k2-thinking": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "kimi-k2-thinking",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.15,
+          "input": 0.6,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "kimi-k2-thinking-preview": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "kimi-k2-thinking-preview",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "kimi-k2-thinking-turbo": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "kimi-k2-thinking-turbo",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.15,
+          "input": 1.15,
+          "output": 8,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "kimi-k2-thinking-turbo-preview": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "kimi-k2-thinking-turbo-preview",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "kimi-k2-turbo-preview": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "kimi-k2-turbo-preview",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.15,
+          "input": 1.15,
+          "output": 8,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "kimi-k2.5": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "kimi-k2.5",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.1,
+          "input": 0.6,
+          "output": 3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "kimi-k2.5-vision-preview": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "kimi-k2.5-vision-preview",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "moonshot-v1-128k": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "moonshot-v1-128k",
+      "max_output_tokens": 262144,
       "modality": {
         "input": [
           "text"
@@ -121,19 +657,19 @@
       },
       "type": "chat"
     },
-    "magistral-small-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+    "moonshot-v1-128k-vision-preview": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 32768,
+          "maxValue": 262144,
           "minValue": 1
         },
         {
           "defaultValue": 0.7,
           "key": "temperature",
-          "maxValue": 2,
+          "maxValue": 1,
           "minValue": 0
         },
         {
@@ -143,10 +679,10 @@
           "minValue": 0
         },
         {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
         },
         {
           "defaultValue": null,
@@ -159,17 +695,12 @@
         },
         {
           "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
           "key": "stream",
           "type": "boolean"
         }
       ],
-      "id": "magistral-small-latest",
-      "max_output_tokens": 32768,
+      "id": "moonshot-v1-128k-vision-preview",
+      "max_output_tokens": 262144,
       "modality": {
         "input": [
           "text"
@@ -181,27 +712,27 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.5,
-          "output": 1.5,
+          "input": 2,
+          "output": 5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
       },
       "type": "chat"
     },
-    "mistral-embed": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+    "moonshot-v1-32k": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 32768,
+          "maxValue": 262144,
           "minValue": 1
         },
         {
           "defaultValue": 0.7,
           "key": "temperature",
-          "maxValue": 2,
+          "maxValue": 1,
           "minValue": 0
         },
         {
@@ -211,10 +742,10 @@
           "minValue": 0
         },
         {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
         },
         {
           "defaultValue": null,
@@ -227,357 +758,12 @@
         },
         {
           "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
           "key": "stream",
           "type": "boolean"
         }
       ],
-      "_playground_disabled": true,
-      "id": "mistral-embed",
-      "max_output_tokens": 32768,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "embedding"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.1,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "embedding"
-    },
-    "mistral-large-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 256,
-          "key": "max_tokens",
-          "maxValue": 32768,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.7,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        }
-      ],
-      "id": "mistral-large-latest",
-      "max_output_tokens": 32768,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 4,
-          "output": 12,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "chat"
-    },
-    "mistral-medium": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 256,
-          "key": "max_tokens",
-          "maxValue": 32768,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.7,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        }
-      ],
-      "id": "mistral-medium",
-      "max_output_tokens": 32768,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 2.7,
-          "output": 8.1,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "chat"
-    },
-    "mistral-medium-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 256,
-          "key": "max_tokens",
-          "maxValue": 32768,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.7,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        }
-      ],
-      "id": "mistral-medium-latest",
-      "max_output_tokens": 32768,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 2.7,
-          "output": 8.1,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "chat"
-    },
-    "mistral-small": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 256,
-          "key": "max_tokens",
-          "maxValue": 32768,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.7,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        }
-      ],
-      "id": "mistral-small",
-      "max_output_tokens": 32768,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.7,
-          "output": 0.7,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "chat"
-    },
-    "mistral-small-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 256,
-          "key": "max_tokens",
-          "maxValue": 32768,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.7,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        }
-      ],
-      "id": "mistral-small-latest",
-      "max_output_tokens": 32768,
+      "id": "moonshot-v1-32k",
+      "max_output_tokens": 262144,
       "modality": {
         "input": [
           "text"
@@ -597,19 +783,19 @@
       },
       "type": "chat"
     },
-    "mistral-tiny": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+    "moonshot-v1-32k-vision-preview": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 32768,
+          "maxValue": 262144,
           "minValue": 1
         },
         {
           "defaultValue": 0.7,
           "key": "temperature",
-          "maxValue": 2,
+          "maxValue": 1,
           "minValue": 0
         },
         {
@@ -619,10 +805,10 @@
           "minValue": 0
         },
         {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
         },
         {
           "defaultValue": null,
@@ -635,17 +821,12 @@
         },
         {
           "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
           "key": "stream",
           "type": "boolean"
         }
       ],
-      "id": "mistral-tiny",
-      "max_output_tokens": 32768,
+      "id": "moonshot-v1-32k-vision-preview",
+      "max_output_tokens": 262144,
       "modality": {
         "input": [
           "text"
@@ -657,27 +838,27 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.25,
-          "output": 0.25,
+          "input": 1,
+          "output": 3,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
       },
       "type": "chat"
     },
-    "open-mistral-7b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+    "moonshot-v1-8k": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 32768,
+          "maxValue": 262144,
           "minValue": 1
         },
         {
           "defaultValue": 0.7,
           "key": "temperature",
-          "maxValue": 2,
+          "maxValue": 1,
           "minValue": 0
         },
         {
@@ -687,10 +868,10 @@
           "minValue": 0
         },
         {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
         },
         {
           "defaultValue": null,
@@ -703,18 +884,12 @@
         },
         {
           "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
           "key": "stream",
           "type": "boolean"
         }
       ],
-      "_playground_disabled": true,
-      "id": "open-mistral-7b",
-      "max_output_tokens": 32768,
+      "id": "moonshot-v1-8k",
+      "max_output_tokens": 262144,
       "modality": {
         "input": [
           "text"
@@ -726,27 +901,27 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.25,
-          "output": 0.25,
+          "input": 0.2,
+          "output": 2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
       },
       "type": "chat"
     },
-    "open-mixtral-8x22b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+    "moonshot-v1-8k-vision-preview": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 32768,
+          "maxValue": 262144,
           "minValue": 1
         },
         {
           "defaultValue": 0.7,
           "key": "temperature",
-          "maxValue": 2,
+          "maxValue": 1,
           "minValue": 0
         },
         {
@@ -756,10 +931,10 @@
           "minValue": 0
         },
         {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
         },
         {
           "defaultValue": null,
@@ -772,18 +947,12 @@
         },
         {
           "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
           "key": "stream",
           "type": "boolean"
         }
       ],
-      "_playground_disabled": true,
-      "id": "open-mixtral-8x22b",
-      "max_output_tokens": 32768,
+      "id": "moonshot-v1-8k-vision-preview",
+      "max_output_tokens": 262144,
       "modality": {
         "input": [
           "text"
@@ -795,77 +964,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 2,
-          "output": 6,
-          "unit": "USD_per_million_tokens"
-        },
-        "type": "pay_as_you_go"
-      },
-      "type": "chat"
-    },
-    "open-mixtral-8x7b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
-      "_parameters": [
-        {
-          "defaultValue": 256,
-          "key": "max_tokens",
-          "maxValue": 32768,
-          "minValue": 1
-        },
-        {
-          "defaultValue": 0.7,
-          "key": "temperature",
-          "maxValue": 2,
-          "minValue": 0
-        },
-        {
-          "defaultValue": 1,
-          "key": "top_p",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "seed",
-          "maxValue": 1,
-          "minValue": 0
-        },
-        {
-          "defaultValue": null,
-          "key": "stop",
-          "skipValues": [
-            null,
-            []
-          ],
-          "type": "array-of-strings"
-        },
-        {
-          "defaultValue": true,
-          "key": "safe_prompt",
-          "type": "boolean"
-        },
-        {
-          "defaultValue": true,
-          "key": "stream",
-          "type": "boolean"
-        }
-      ],
-      "_playground_disabled": true,
-      "id": "open-mixtral-8x7b",
-      "max_output_tokens": 32768,
-      "modality": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "pricing": {
-        "currency": "USD",
-        "tokens": {
-          "input": 0.7,
-          "output": 0.7,
+          "input": 0.2,
+          "output": 2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -873,6 +973,6 @@
       "type": "chat"
     }
   },
-  "name": "mistral-ai",
+  "name": "moonshot",
   "schema_version": "2.0"
 }

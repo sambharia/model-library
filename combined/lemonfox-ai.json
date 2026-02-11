@@ -3,6 +3,7 @@
   "id": "lemonfox-ai",
   "models": {
     "llama-70b-chat": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "llama-70b-chat",
       "modality": {
@@ -16,6 +17,7 @@
       "type": "chat"
     },
     "llama-8b-chat": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "llama-8b-chat",
       "modality": {
@@ -29,6 +31,7 @@
       "type": "chat"
     },
     "mixtral-chat": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "mixtral-chat",
       "modality": {

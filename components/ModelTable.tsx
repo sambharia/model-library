@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useMemo, useEffect, Fragment } from 'react'
+import { useState, useMemo, useEffect, Fragment, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { 
   Search, 
@@ -13,8 +14,6 @@ import {
   Check,
   ArrowUpDown,
   X,
-  SlidersHorizontal,
-  ExternalLink,
   Globe,
   Headphones,
   Video,
@@ -24,7 +23,13 @@ import {
   ChevronLeft,
   ChevronRight,
   ChevronsLeft,
-  ChevronsRight
+  ChevronsRight,
+  Filter,
+  CheckCircle2,
+  Clock,
+  ArrowDownAZ,
+  DollarSign,
+  Building2,
 } from 'lucide-react'
 import Fuse from 'fuse.js'
 import { Model, Provider, formatPrice, AdditionalUnit, formatAdditionalPrice } from '@/lib/types'
@@ -36,22 +41,55 @@ interface ModelTableProps {
   providers: Provider[]
 }
 
-type SortField = 'provider' | 'name' | 'inputPrice' | 'outputPrice' | 'cacheRead' | 'cacheWrite'
+type SortField = 'provider' | 'name' | 'inputPrice' | 'outputPrice' | 'cacheRead' | 'cacheWrite' | 'topModels' | 'lastUpdated' | 'alphabetical'
 type SortDirection = 'asc' | 'desc'
+type FeatureFilter = 'vision' | 'tools' | 'reasoning'
 
 const PAGE_SIZE = 200
 
 export default function ModelTable({ models, providers }: ModelTableProps) {
+  const router = useRouter()
   const [search, setSearch] = useState('')
+  const [providerSearch, setProviderSearch] = useState('')
   const [selectedProviders, setSelectedProviders] = useState<string[]>([])
-  const [selectedFeatures, setSelectedFeatures] = useState<string[]>([])
-  const [sortField, setSortField] = useState<SortField>('provider')
+  const [selectedFeatures, setSelectedFeatures] = useState<FeatureFilter[]>([])
+  const [sortField, setSortField] = useState<SortField>('topModels')
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc')
   const [copiedId, setCopiedId] = useState<string | null>(null)
-  const [showFilters, setShowFilters] = useState(false)
-  const [showTopModelsOnly, setShowTopModelsOnly] = useState(true) // ON by default
   const [currentPage, setCurrentPage] = useState(1)
   const [expandedRows, setExpandedRows] = useState<Set<string>>(new Set())
+  
+  // Dropdown states
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  
+  // Refs for dropdowns
+  const providerDropdownRef = useRef<HTMLDivElement>(null)
+  const featuresDropdownRef = useRef<HTMLDivElement>(null)
+  const sortDropdownRef = useRef<HTMLDivElement>(null)
+  
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (openDropdown === 'provider' && providerDropdownRef.current && !providerDropdownRef.current.contains(event.target as Node)) {
+        setOpenDropdown(null)
+      }
+      if (openDropdown === 'features' && featuresDropdownRef.current && !featuresDropdownRef.current.contains(event.target as Node)) {
+        setOpenDropdown(null)
+      }
+      if (openDropdown === 'sort' && sortDropdownRef.current && !sortDropdownRef.current.contains(event.target as Node)) {
+        setOpenDropdown(null)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [openDropdown])
+  
+  // Filter providers based on search
+  const filteredProviders = useMemo(() => {
+    if (!providerSearch.trim()) return providers
+    const searchLower = providerSearch.toLowerCase()
+    return providers.filter(p => p.name.toLowerCase().includes(searchLower) || p.id.toLowerCase().includes(searchLower))
+  }, [providers, providerSearch])
 
   // Fuse.js for fuzzy search
   const fuse = useMemo(() => new Fuse(models, {
@@ -59,6 +97,42 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
     threshold: 0.3,
     ignoreLocation: true,
   }), [models])
+
+  // Featured providers: top 4 models from each shown first in default sort
+  const FEATURED_PROVIDERS = ['openai', 'anthropic', 'google', 'bedrock', 'azure-openai', 'vertex-ai', 'together-ai']
+  const MODELS_PER_PROVIDER = 4
+
+  // Pre-compute the featured model keys (top 4 per featured provider)
+  const featuredModelMap = useMemo(() => {
+    // Map of "provider-modelId" → sort position (0-based across all featured)
+    const map = new Map<string, number>()
+    let position = 0
+
+    for (const providerId of FEATURED_PROVIDERS) {
+      const providerModels = models
+        .filter(m => m.provider === providerId)
+        .sort((a, b) => {
+          // Priority pattern models first
+          const aPriority = getModelPriority(a.id)
+          const bPriority = getModelPriority(b.id)
+          if (aPriority !== -1 && bPriority === -1) return -1
+          if (aPriority === -1 && bPriority !== -1) return 1
+          if (aPriority !== -1 && bPriority !== -1) return aPriority - bPriority
+          // Then models with pricing first
+          const aHasPrice = (a.pricing?.input || 0) + (a.pricing?.output || 0) > 0
+          const bHasPrice = (b.pricing?.input || 0) + (b.pricing?.output || 0) > 0
+          if (aHasPrice !== bHasPrice) return aHasPrice ? -1 : 1
+          return a.id.localeCompare(b.id)
+        })
+        .slice(0, MODELS_PER_PROVIDER)
+
+      for (const m of providerModels) {
+        map.set(`${m.provider}-${m.id}`, position++)
+      }
+    }
+
+    return map
+  }, [models])
 
   // Filter and sort models
   const filteredModels = useMemo(() => {
@@ -75,7 +149,7 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
       result = result.filter(m => selectedProviders.includes(m.provider))
     }
 
-    // Apply feature filters
+    // Apply feature filters (combined)
     if (selectedFeatures.includes('vision')) {
       result = result.filter(m => m.features.vision)
     }
@@ -99,62 +173,59 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
       return idx === -1 ? PRIORITY_PROVIDERS.length : idx
     }
 
-    // Helper to check if model is a top/priority model
-    const isTopModel = (m: Model) => getModelPriority(m.id) !== -1
+    // Helper for date comparison
+    const getUpdatedTime = (m: Model) => m.lastUpdated ? new Date(m.lastUpdated).getTime() : 0
 
     // Apply sorting
     result = [...result].sort((a, b) => {
-      // When "Top Models" filter is active, sort in 3 tiers:
-      // 1. Top models with pricing
-      // 2. Other models with pricing  
-      // 3. Models without pricing
-      if (showTopModelsOnly) {
-        const aHasPricing = hasPricing(a)
-        const bHasPricing = hasPricing(b)
-        const aIsTop = isTopModel(a)
-        const bIsTop = isTopModel(b)
-        
-        // Tier 1: Top models with pricing (highest priority)
-        const aIsTier1 = aIsTop && aHasPricing
-        const bIsTier1 = bIsTop && bHasPricing
-        
-        // Tier 2: Other models with pricing
-        const aIsTier2 = !aIsTop && aHasPricing
-        const bIsTier2 = !bIsTop && bHasPricing
-        
-        // Tier 3: Models without pricing (lowest priority)
-        const aIsTier3 = !aHasPricing
-        const bIsTier3 = !bHasPricing
-        
-        // Compare tiers
-        if (aIsTier1 && !bIsTier1) return -1
-        if (!aIsTier1 && bIsTier1) return 1
-        if (aIsTier2 && bIsTier3) return -1
-        if (aIsTier3 && bIsTier2) return 1
-      } else {
-        // When filter is off, just prioritize models with pricing
-        const aHasPricing = hasPricing(a)
-        const bHasPricing = hasPricing(b)
-        if (aHasPricing !== bHasPricing) {
-          return aHasPricing ? -1 : 1
-        }
+      // Always prioritize models with pricing first
+      const aHasPricing = hasPricing(a)
+      const bHasPricing = hasPricing(b)
+      if (aHasPricing !== bHasPricing) {
+        return aHasPricing ? -1 : 1
       }
 
       let comparison = 0
       
       switch (sortField) {
-        case 'provider':
+        case 'topModels': {
+          // Featured models (top 4 per provider) first, then rest alphabetically
+          const aKey = `${a.provider}-${a.id}`
+          const bKey = `${b.provider}-${b.id}`
+          const aFeatured = featuredModelMap.has(aKey)
+          const bFeatured = featuredModelMap.has(bKey)
+
+          if (aFeatured && bFeatured) {
+            // Both featured — use pre-computed position
+            comparison = featuredModelMap.get(aKey)! - featuredModelMap.get(bKey)!
+          } else if (aFeatured !== bFeatured) {
+            comparison = aFeatured ? -1 : 1
+          } else {
+            // Both non-featured — alphabetical by id
+            comparison = a.id.localeCompare(b.id)
+          }
+          break
+        }
+        case 'lastUpdated': {
+          comparison = getUpdatedTime(b) - getUpdatedTime(a)
+          if (comparison === 0) comparison = a.id.localeCompare(b.id)
+          break
+        }
+        case 'alphabetical': {
+          comparison = a.id.localeCompare(b.id)
+          break
+        }
+        case 'provider': {
           // Sort by provider priority first
           const aProviderPriority = getProviderPriority(a.provider)
           const bProviderPriority = getProviderPriority(b.provider)
           if (aProviderPriority !== bProviderPriority) {
             comparison = aProviderPriority - bProviderPriority
           } else {
-            // Same provider - sort by model priority (top models first)
+            // Same provider — priority models first, then alphabetical
             const aModelPriority = getModelPriority(a.id)
             const bModelPriority = getModelPriority(b.id)
             
-            // Priority models come first (-1 means not a priority model)
             const aIsPriority = aModelPriority !== -1
             const bIsPriority = bModelPriority !== -1
             
@@ -163,14 +234,13 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
             } else if (!aIsPriority && bIsPriority) {
               comparison = 1
             } else if (aIsPriority && bIsPriority) {
-              // Both are priority models - sort by their priority order
               comparison = aModelPriority - bModelPriority
             } else {
-              // Neither are priority models - sort alphabetically
               comparison = a.id.localeCompare(b.id)
             }
           }
           break
+        }
         case 'name':
           comparison = a.name.localeCompare(b.name)
           break
@@ -192,12 +262,12 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
     })
 
     return result
-  }, [models, search, selectedProviders, selectedFeatures, sortField, sortDirection, fuse, showTopModelsOnly])
+  }, [models, search, selectedProviders, selectedFeatures, sortField, sortDirection, fuse, featuredModelMap])
 
   // Reset page when filters change
   useEffect(() => {
     setCurrentPage(1)
-  }, [search, selectedProviders, selectedFeatures, sortField, sortDirection, showTopModelsOnly])
+  }, [search, selectedProviders, selectedFeatures, sortField, sortDirection])
 
   // Calculate pagination
   const totalPages = Math.ceil(filteredModels.length / PAGE_SIZE)
@@ -238,10 +308,10 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
         : [...prev, providerId]
     )
   }
-
-  const toggleFeature = (feature: string) => {
-    setSelectedFeatures(prev =>
-      prev.includes(feature)
+  
+  const toggleFeature = (feature: FeatureFilter) => {
+    setSelectedFeatures(prev => 
+      prev.includes(feature) 
         ? prev.filter(f => f !== feature)
         : [...prev, feature]
     )
@@ -257,7 +327,32 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
     setSelectedProviders([])
     setSelectedFeatures([])
     setSearch('')
-    setShowTopModelsOnly(true) // Reset to default (top models only)
+    setProviderSearch('')
+    setSortField('topModels')
+    setSortDirection('asc')
+  }
+  
+  const handleRowClick = (model: Model, e: React.MouseEvent) => {
+    // Don't navigate if clicking on a link, button, or the expand arrow
+    const target = e.target as HTMLElement
+    if (target.closest('a') || target.closest('button')) return
+    router.push(`/${encodeURIComponent(model.provider)}/${encodeURIComponent(model.id)}`)
+  }
+  
+  // Format relative time
+  const formatRelativeTime = (dateStr?: string) => {
+    if (!dateStr) return '—'
+    const date = new Date(dateStr)
+    const now = new Date()
+    const diffMs = now.getTime() - date.getTime()
+    const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24))
+    
+    if (diffDays === 0) return 'Today'
+    if (diffDays === 1) return 'Yesterday'
+    if (diffDays < 7) return `${diffDays}d ago`
+    if (diffDays < 30) return `${Math.floor(diffDays / 7)}w ago`
+    if (diffDays < 365) return `${Math.floor(diffDays / 30)}mo ago`
+    return `${Math.floor(diffDays / 365)}y ago`
   }
 
   const SortIcon = ({ field }: { field: SortField }) => {
@@ -285,10 +380,10 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
   return (
     <div className="model-table-section">
       {/* Search and Filter Bar */}
-      <div className="mb-4 space-y-3">
-        <div className="flex items-center gap-3">
+      <div className="mb-4">
+        <div className="flex flex-wrap items-center gap-2">
           {/* Search */}
-          <div className="relative flex-1">
+          <div className="relative flex-1 min-w-[200px]">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
             <input
               type="text"
@@ -307,134 +402,249 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
             )}
           </div>
 
-          {/* Top Models Toggle */}
-          <button
-            onClick={() => setShowTopModelsOnly(!showTopModelsOnly)}
-            className={`flex items-center gap-2 px-3 py-2.5 rounded-md border text-sm font-medium transition-all ${
-              showTopModelsOnly
-                ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-400'
-                : 'border-border-primary bg-bg-secondary text-text-secondary hover:text-text-primary hover:border-border-hover'
-            }`}
-            title={showTopModelsOnly ? 'Showing top models only. Click to show all models.' : 'Showing all models. Click to show top models only.'}
-          >
-            <Sparkles className="w-4 h-4" />
-            <span className="hidden sm:inline">Top Models</span>
-            {showTopModelsOnly && (
-              <span className="w-2 h-2 rounded-full bg-emerald-400" />
+          {/* Provider Dropdown - Searchable */}
+          <div className="relative" ref={providerDropdownRef}>
+            <button
+              onClick={() => setOpenDropdown(openDropdown === 'provider' ? null : 'provider')}
+              className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                selectedProviders.length > 0
+                  ? 'bg-accent-primary/10 text-accent-primary border border-accent-primary/30'
+                  : 'bg-bg-secondary text-text-secondary hover:text-text-primary border border-border-primary hover:border-border-hover'
+              }`}
+            >
+              <Filter className="w-4 h-4" />
+              {selectedProviders.length > 0 ? `Providers (${selectedProviders.length})` : 'Provider'}
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform ${openDropdown === 'provider' ? 'rotate-180' : ''}`} />
+            </button>
+            {openDropdown === 'provider' && (
+              <div className="absolute top-full left-0 mt-2 w-[280px] rounded-xl bg-bg-secondary border border-border-primary shadow-2xl z-50 animate-fade-in overflow-hidden">
+                {/* Search input */}
+                <div className="p-2 border-b border-border-secondary">
+                  <div className="relative">
+                    <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-text-muted" />
+                    <input
+                      type="text"
+                      placeholder="Search providers..."
+                      value={providerSearch}
+                      onChange={(e) => setProviderSearch(e.target.value)}
+                      className="w-full pl-8 pr-3 py-2 text-sm bg-bg-primary border border-border-secondary rounded-lg text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent-primary"
+                      autoFocus
+                    />
+                  </div>
+                </div>
+                {/* Provider list */}
+                <div className="max-h-[280px] overflow-y-auto p-1">
+                  {filteredProviders.length === 0 ? (
+                    <div className="px-3 py-4 text-sm text-text-muted text-center">No providers found</div>
+                  ) : (
+                    filteredProviders.map(provider => {
+                      const providerStyle = getProviderColor(provider.id)
+                      const isSelected = selectedProviders.includes(provider.id)
+                      return (
+                        <button
+                          key={provider.id}
+                          onClick={() => toggleProvider(provider.id)}
+                          className={`flex items-center gap-2.5 w-full px-3 py-2 rounded-lg text-sm transition-all text-left ${
+                            isSelected
+                              ? 'bg-accent-primary/10 text-accent-primary'
+                              : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                          }`}
+                        >
+                          <span 
+                            className="w-2.5 h-2.5 rounded-full flex-shrink-0"
+                            style={{ backgroundColor: providerStyle.color }}
+                          />
+                          <span className="flex-1 truncate">{provider.name}</span>
+                          <span className="text-text-muted text-xs tabular-nums">{provider.modelCount}</span>
+                          {isSelected && <Check className="w-4 h-4 flex-shrink-0" />}
+                        </button>
+                      )
+                    })
+                  )}
+                </div>
+                {selectedProviders.length > 0 && (
+                  <div className="p-2 border-t border-border-secondary">
+                    <button
+                      onClick={() => { setSelectedProviders([]); setProviderSearch('') }}
+                      className="w-full py-2 text-xs text-text-muted hover:text-accent-primary transition-colors"
+                    >
+                      Clear selection
+                    </button>
+                  </div>
+                )}
+              </div>
             )}
-          </button>
+          </div>
 
-          {/* Filter Toggle */}
-          <button
-            onClick={() => setShowFilters(!showFilters)}
-            className={`flex items-center gap-2 px-3 py-2.5 rounded-md border text-sm font-medium transition-all ${
-              showFilters || (hasActiveFilters && showTopModelsOnly)
-                ? 'border-accent-primary/50 bg-accent-primary/10 text-accent-primary'
-                : 'border-border-primary bg-bg-secondary text-text-secondary hover:text-text-primary hover:border-border-hover'
-            }`}
-          >
-            <SlidersHorizontal className="w-4 h-4" />
-            <span className="hidden sm:inline">Filters</span>
-            {activeFilterCount > 0 && (
-              <span className="w-5 h-5 rounded-full bg-accent-primary text-bg-base text-xs flex items-center justify-center font-medium">
-                {activeFilterCount}
-              </span>
+          {/* Features Dropdown - Combined */}
+          <div className="relative" ref={featuresDropdownRef}>
+            <button
+              onClick={() => setOpenDropdown(openDropdown === 'features' ? null : 'features')}
+              className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                selectedFeatures.length > 0
+                  ? 'bg-accent-primary/10 text-accent-primary border border-accent-primary/30'
+                  : 'bg-bg-secondary text-text-secondary hover:text-text-primary border border-border-primary hover:border-border-hover'
+              }`}
+            >
+              <Sparkles className="w-4 h-4" />
+              {selectedFeatures.length > 0 ? `Features (${selectedFeatures.length})` : 'Features'}
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform ${openDropdown === 'features' ? 'rotate-180' : ''}`} />
+            </button>
+            {openDropdown === 'features' && (
+              <div className="absolute top-full left-0 mt-2 w-[200px] rounded-xl bg-bg-secondary border border-border-primary shadow-2xl z-50 animate-fade-in p-1">
+                <button
+                  onClick={() => toggleFeature('vision')}
+                  className={`flex items-center gap-2.5 w-full px-3 py-2.5 rounded-lg text-sm transition-all text-left ${
+                    selectedFeatures.includes('vision')
+                      ? 'bg-accent-primary/10 text-accent-primary'
+                      : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                  }`}
+                >
+                  <Eye className="w-4 h-4" />
+                  <span className="flex-1">Vision</span>
+                  {selectedFeatures.includes('vision') && <Check className="w-4 h-4" />}
+                </button>
+                <button
+                  onClick={() => toggleFeature('tools')}
+                  className={`flex items-center gap-2.5 w-full px-3 py-2.5 rounded-lg text-sm transition-all text-left ${
+                    selectedFeatures.includes('tools')
+                      ? 'bg-accent-primary/10 text-accent-primary'
+                      : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                  }`}
+                >
+                  <Wrench className="w-4 h-4" />
+                  <span className="flex-1">Tools</span>
+                  {selectedFeatures.includes('tools') && <Check className="w-4 h-4" />}
+                </button>
+                <button
+                  onClick={() => toggleFeature('reasoning')}
+                  className={`flex items-center gap-2.5 w-full px-3 py-2.5 rounded-lg text-sm transition-all text-left ${
+                    selectedFeatures.includes('reasoning')
+                      ? 'bg-accent-primary/10 text-accent-primary'
+                      : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                  }`}
+                >
+                  <Brain className="w-4 h-4" />
+                  <span className="flex-1">Reasoning</span>
+                  {selectedFeatures.includes('reasoning') && <Check className="w-4 h-4" />}
+                </button>
+                {selectedFeatures.length > 0 && (
+                  <div className="mt-1 pt-1 border-t border-border-secondary">
+                    <button
+                      onClick={() => setSelectedFeatures([])}
+                      className="w-full py-2 text-xs text-text-muted hover:text-accent-primary transition-colors"
+                    >
+                      Clear selection
+                    </button>
+                  </div>
+                )}
+              </div>
             )}
-          </button>
+          </div>
+
+          {/* Sort Dropdown */}
+          <div className="relative" ref={sortDropdownRef}>
+            <button
+              onClick={() => setOpenDropdown(openDropdown === 'sort' ? null : 'sort')}
+              className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all bg-bg-secondary text-text-secondary hover:text-text-primary border border-border-primary hover:border-border-hover"
+            >
+              <ArrowUpDown className="w-4 h-4" />
+              {sortField === 'topModels' ? 'Top Models' : 
+               sortField === 'lastUpdated' ? 'Recently Updated' :
+               sortField === 'alphabetical' ? 'A → Z' :
+               sortField === 'provider' ? 'Provider' :
+               sortField === 'inputPrice' ? 'Input Price' :
+               sortField === 'outputPrice' ? 'Output Price' :
+               'Sort'}
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform ${openDropdown === 'sort' ? 'rotate-180' : ''}`} />
+            </button>
+            {openDropdown === 'sort' && (
+              <div className="absolute top-full right-0 mt-2 w-[240px] rounded-xl bg-bg-secondary border border-border-primary shadow-2xl z-50 animate-fade-in overflow-hidden">
+                <div className="p-1">
+                  <div className="px-3 py-1.5 text-xs font-medium text-text-muted uppercase tracking-wide">Default</div>
+                  <button
+                    onClick={() => { setSortField('topModels'); setSortDirection('asc'); setOpenDropdown(null) }}
+                    className={`flex items-center gap-2.5 w-full px-3 py-2 rounded-lg text-sm transition-all text-left ${
+                      sortField === 'topModels' ? 'bg-accent-primary/10 text-accent-primary' : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                    }`}
+                  >
+                    <Sparkles className="w-4 h-4" />
+                    Top Models First
+                  </button>
+                </div>
+                <div className="border-t border-border-secondary mx-1" />
+                <div className="p-1">
+                  <div className="px-3 py-1.5 text-xs font-medium text-text-muted uppercase tracking-wide">Order</div>
+                  <button
+                    onClick={() => { setSortField('lastUpdated'); setSortDirection('asc'); setOpenDropdown(null) }}
+                    className={`flex items-center gap-2.5 w-full px-3 py-2 rounded-lg text-sm transition-all text-left ${
+                      sortField === 'lastUpdated' ? 'bg-accent-primary/10 text-accent-primary' : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                    }`}
+                  >
+                    <Clock className="w-4 h-4" />
+                    Recently Updated
+                  </button>
+                  <button
+                    onClick={() => { setSortField('alphabetical'); setSortDirection('asc'); setOpenDropdown(null) }}
+                    className={`flex items-center gap-2.5 w-full px-3 py-2 rounded-lg text-sm transition-all text-left ${
+                      sortField === 'alphabetical' ? 'bg-accent-primary/10 text-accent-primary' : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                    }`}
+                  >
+                    <ArrowDownAZ className="w-4 h-4" />
+                    Alphabetical (A → Z)
+                  </button>
+                  <button
+                    onClick={() => { setSortField('provider'); setSortDirection('asc'); setOpenDropdown(null) }}
+                    className={`flex items-center gap-2.5 w-full px-3 py-2 rounded-lg text-sm transition-all text-left ${
+                      sortField === 'provider' ? 'bg-accent-primary/10 text-accent-primary' : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                    }`}
+                  >
+                    <Building2 className="w-4 h-4" />
+                    By Provider
+                  </button>
+                </div>
+                <div className="border-t border-border-secondary mx-1" />
+                <div className="p-1">
+                  <div className="px-3 py-1.5 text-xs font-medium text-text-muted uppercase tracking-wide">Price</div>
+                  <button
+                    onClick={() => { setSortField('inputPrice'); setSortDirection('asc'); setOpenDropdown(null) }}
+                    className={`flex items-center gap-2.5 w-full px-3 py-2 rounded-lg text-sm transition-all text-left ${
+                      sortField === 'inputPrice' ? 'bg-accent-primary/10 text-accent-primary' : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                    }`}
+                  >
+                    <DollarSign className="w-4 h-4" />
+                    Input Price (Low → High)
+                  </button>
+                  <button
+                    onClick={() => { setSortField('outputPrice'); setSortDirection('asc'); setOpenDropdown(null) }}
+                    className={`flex items-center gap-2.5 w-full px-3 py-2 rounded-lg text-sm transition-all text-left ${
+                      sortField === 'outputPrice' ? 'bg-accent-primary/10 text-accent-primary' : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
+                    }`}
+                  >
+                    <DollarSign className="w-4 h-4" />
+                    Output Price (Low → High)
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
 
           {/* Clear Filters */}
           {hasActiveFilters && (
             <button
               onClick={clearFilters}
-              className="text-sm text-text-muted hover:text-accent-primary transition-colors"
+              className="flex items-center gap-1.5 px-2.5 py-2 text-sm text-text-muted hover:text-accent-primary transition-colors"
             >
+              <X className="w-3.5 h-3.5" />
               Clear
             </button>
           )}
 
           {/* Results Count */}
           <div className="ml-auto text-sm text-text-muted font-mono">
-            {filteredModels.length.toLocaleString()}
+            {filteredModels.length.toLocaleString()} models
           </div>
         </div>
-
-        {/* Filter Panel */}
-        {showFilters && (
-          <div className="p-4 rounded-xl bg-bg-secondary border border-border-primary space-y-4 animate-fade-in">
-            {/* Provider Filter */}
-            <div>
-              <label className="label mb-2 block">
-                Providers
-              </label>
-              <div className="flex flex-wrap gap-2">
-                {providers.slice(0, 15).map(provider => {
-                  const providerStyle = getProviderColor(provider.id)
-                  const isSelected = selectedProviders.includes(provider.id)
-                  return (
-                    <button
-                      key={provider.id}
-                      onClick={() => toggleProvider(provider.id)}
-                      className={`flex items-center gap-2 px-3 py-1.5 rounded-md text-sm transition-all ${
-                        isSelected
-                          ? 'bg-bg-elevated border border-border-hover text-text-primary'
-                          : 'bg-bg-primary border border-border-secondary text-text-secondary hover:border-border-primary hover:text-text-primary'
-                      }`}
-                    >
-                      <span 
-                        className="w-2 h-2 rounded-full"
-                        style={{ backgroundColor: providerStyle.color }}
-                      />
-                      {provider.name}
-                      <span className="text-text-muted text-xs">({provider.modelCount})</span>
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
-
-            {/* Feature Filter */}
-            <div>
-              <label className="label mb-2 block">
-                Features
-              </label>
-              <div className="flex flex-wrap gap-2">
-                <button
-                  onClick={() => toggleFeature('vision')}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-all ${
-                    selectedFeatures.includes('vision')
-                      ? 'badge-vision'
-                      : 'bg-bg-primary border border-border-secondary text-text-secondary hover:border-border-primary hover:text-text-primary'
-                  }`}
-                >
-                  <Eye className="w-3.5 h-3.5" />
-                  Vision
-                </button>
-                <button
-                  onClick={() => toggleFeature('tools')}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-all ${
-                    selectedFeatures.includes('tools')
-                      ? 'badge-tools'
-                      : 'bg-bg-primary border border-border-secondary text-text-secondary hover:border-border-primary hover:text-text-primary'
-                  }`}
-                >
-                  <Wrench className="w-3.5 h-3.5" />
-                  Tools
-                </button>
-                <button
-                  onClick={() => toggleFeature('reasoning')}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-all ${
-                    selectedFeatures.includes('reasoning')
-                      ? 'badge-reasoning'
-                      : 'bg-bg-primary border border-border-secondary text-text-secondary hover:border-border-primary hover:text-text-primary'
-                  }`}
-                >
-                  <Brain className="w-3.5 h-3.5" />
-                  Reasoning
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
 
       {/* Main Pricing Table */}
@@ -498,6 +708,8 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
                   </div>
                 </th>
                 <th>Features</th>
+                <th className="text-center">Verified</th>
+                <th>Updated</th>
                 <th className="w-10"></th>
               </tr>
             </thead>
@@ -510,12 +722,15 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
                 
                 return (
                   <Fragment key={modelKey}>
-                    <tr className="group">
+                    <tr 
+                      className="group cursor-pointer hover:bg-bg-secondary"
+                      onClick={(e) => handleRowClick(model, e)}
+                    >
                       <td>
                         <div className="flex items-center gap-1">
                           {hasAdditionalPricing ? (
                             <button
-                              onClick={() => toggleRowExpanded(modelKey)}
+                              onClick={(e) => { e.stopPropagation(); toggleRowExpanded(modelKey) }}
                               className="p-1 rounded hover:bg-bg-elevated text-text-muted hover:text-text-primary transition-all"
                               title={isExpanded ? "Hide additional pricing" : "Show additional pricing"}
                             >
@@ -527,6 +742,7 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
                           <Link 
                             href={`/${model.provider}`}
                             className="inline-flex items-center gap-2 hover:text-accent-primary transition-colors group/provider"
+                            onClick={(e) => e.stopPropagation()}
                           >
                             <span 
                               className="w-2 h-2 rounded-full flex-shrink-0"
@@ -535,23 +751,18 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
                             <span className="text-text-secondary group-hover/provider:text-accent-primary transition-colors">
                               {model.providerDisplayName}
                             </span>
-                            <ExternalLink className="w-3 h-3 text-text-faint group-hover/provider:text-accent-primary transition-colors" />
                           </Link>
                         </div>
                       </td>
                       <td>
                         <div className="flex items-center gap-2">
-                          <Link 
-                            href={`/${encodeURIComponent(model.provider)}/${encodeURIComponent(model.id)}`}
-                            className="inline-flex items-center gap-2 font-medium text-text-primary hover:text-accent-primary transition-colors group/model"
-                          >
+                          <span className="font-medium text-text-primary">
                             {model.id}
-                            <ExternalLink className="w-3 h-3 text-text-faint group-hover/model:text-accent-primary transition-colors" />
-                          </Link>
+                          </span>
                           {hasAdditionalPricing && (
                             <span 
                               className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-xs bg-amber-500/10 text-amber-400 border border-amber-500/20 cursor-pointer hover:bg-amber-500/20 transition-colors"
-                              onClick={() => toggleRowExpanded(modelKey)}
+                              onClick={(e) => { e.stopPropagation(); toggleRowExpanded(modelKey) }}
                               title="Click to see additional pricing"
                             >
                               <Zap className="w-3 h-3" />
@@ -594,6 +805,20 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
                           )}
                         </div>
                       </td>
+                      <td className="text-center">
+                        {model.verified === true ? (
+                          <span title="Verified">
+                            <CheckCircle2 className="w-4 h-4 text-emerald-400 mx-auto" />
+                          </span>
+                        ) : (
+                          <span className="text-text-faint">—</span>
+                        )}
+                      </td>
+                      <td>
+                        <span className="text-text-muted text-xs">
+                          {formatRelativeTime(model.lastUpdated)}
+                        </span>
+                      </td>
                       <td>
                         <button
                           onClick={() => copyToClipboard(model.id, model.id)}
@@ -611,7 +836,7 @@ export default function ModelTable({ models, providers }: ModelTableProps) {
                     {/* Expanded row for additional pricing */}
                     {hasAdditionalPricing && isExpanded && (
                       <tr key={`${modelKey}-expanded`} className="bg-bg-secondary/50">
-                        <td colSpan={8} className="!py-3 !px-4">
+                        <td colSpan={10} className="!py-3 !px-4">
                           <div className="pl-6">
                             <div className="text-xs text-text-muted mb-2 font-medium uppercase tracking-wide">Additional Pricing</div>
                             <div className="flex flex-wrap gap-3">

@@ -3,6 +3,7 @@
   "id": "github",
   "models": {
     "AI21-Jamba-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "AI21-Jamba-Instruct",
       "modality": {
@@ -15,7 +16,186 @@
       },
       "type": "chat"
     },
+    "Codestral-2501": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Codestral-2501",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "DeepSeek-R1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "DeepSeek-R1",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "DeepSeek-R1-0528": {
+      "_parameters": [],
+      "id": "DeepSeek-R1-0528",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "DeepSeek-V3-0324": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "DeepSeek-V3-0324",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Grok-3-Mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Grok-3-Mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Llama-3.2-11B-Vision-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Llama-3.2-11B-Vision-Instruct",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Llama-3.2-90B-Vision-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Llama-3.2-90B-Vision-Instruct",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Llama-3.3-70B-Instruct": {
+      "_parameters": [],
+      "id": "Llama-3.3-70B-Instruct",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Llama-4-Maverick-17B-128E-Instruct-FP8": {
+      "_parameters": [],
+      "id": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "MAI-DS-R1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "MAI-DS-R1",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Meta-Llama-3.1-8B-Instruct": {
+      "_parameters": [],
+      "id": "Meta-Llama-3.1-8B-Instruct",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Ministral-3B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Ministral-3B",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Mistral-Medium-3": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Mistral-Medium-3",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "Mistral-large": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "Mistral-large",
       "modality": {
@@ -29,6 +209,7 @@
       "type": "chat"
     },
     "Mistral-nemo": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "Mistral-nemo",
       "modality": {
@@ -42,6 +223,7 @@
       "type": "chat"
     },
     "Phi-3-medium-128k-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "Phi-3-medium-128k-instruct",
       "modality": {
@@ -54,7 +236,78 @@
       },
       "type": "chat"
     },
+    "Phi-4-Reasoning": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Phi-4-Reasoning",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Phi-4-mini-instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Phi-4-mini-instruct",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Phi-4-mini-reasoning": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Phi-4-mini-reasoning",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Phi-4-multimodal-instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Phi-4-multimodal-instruct",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Text-embedding-3": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "Text-embedding-3",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "cohere-command-r": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "cohere-command-r",
       "modality": {
@@ -68,6 +321,7 @@
       "type": "chat"
     },
     "cohere-command-r-plus": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "cohere-command-r-plus",
       "modality": {
@@ -80,7 +334,78 @@
       },
       "type": "chat"
     },
+    "cohere.command-r-plus-08-2024": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "cohere.command-r-plus-08-2024",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "command-a-03-2025": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "command-a-03-2025",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "gpt-4.1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "gpt-4.1",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "gpt-4.1-mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "gpt-4.1-mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "gpt-4.1-nano": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "gpt-4.1-nano",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "gpt-4o": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [],
       "id": "gpt-4o",
       "modality": {
@@ -93,7 +418,119 @@
       },
       "type": "chat"
     },
+    "gpt-4o-mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "gpt-4o-mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "gpt-5": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "gpt-5",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "gpt-5-chat": {
+      "_parameters": [],
+      "id": "gpt-5-chat",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "gpt-5-micro": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "gpt-5-micro",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "gpt-5-mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "gpt-5-mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "gpt-5-nano": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "gpt-5-nano",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "grok-3": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "grok-3",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "llama-4 Scout-17B-16E-instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "llama-4 Scout-17B-16E-instruct",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "meta-llama-3-70b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "meta-llama-3-70b-instruct",
       "modality": {
@@ -107,6 +544,7 @@
       "type": "chat"
     },
     "meta-llama-3-8b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "meta-llama-3-8b-instruct",
       "modality": {
@@ -120,8 +558,107 @@
       "type": "chat"
     },
     "meta-llama-3.1-70b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "meta-llama-3.1-70b-instruct",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "mistral-small-3.1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "mistral-small-3.1",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "o1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "o1",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "o1-mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "o1-mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "o3": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "o3",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "o3-mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "o3-mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "o4": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "o4",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "o4-mini": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [],
+      "id": "o4-mini",
       "modality": {
         "input": [
           "text"

@@ -10,8 +10,8 @@ export default async function Home() {
   return (
     <main className="min-h-screen bg-bg-base relative">
       <Hero 
-        modelCount={2334} 
-        providerCount={40}
+        modelCount={models.length} 
+        providerCount={providers.length}
       />
       <LogoRibbon />
       <section className="model-table-section px-4 md:px-6 py-12 max-w-[1400px] mx-auto">

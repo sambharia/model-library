@@ -289,12 +289,12 @@ export default function Hero({ modelCount = 2334, providerCount = 40 }: HeroProp
   const [showHowToUse, setShowHowToUse] = useState(false)
 
   return (
-    <section className="relative min-h-[57.67vh] overflow-hidden bg-[#100E0C]">
+    <section className="relative min-h-[280px] overflow-hidden bg-[#100E0C]">
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Left blob - Purple/Blue */}
         <div 
-          className="absolute -left-[20%] top-[5%] w-[60%] h-[80%] rounded-full blur-[120px] opacity-60 animate-blob-1"
+          className="absolute -left-[20%] top-[5%] w-[60%] h-[80%] rounded-full blur-[100px] opacity-55 animate-blob-1"
           style={{
             background: 'linear-gradient(135deg, #66668F 0%, #3384B3 100%)',
           }}
@@ -302,7 +302,7 @@ export default function Hero({ modelCount = 2334, providerCount = 40 }: HeroProp
         
         {/* Top right blob - Red/Purple */}
         <div 
-          className="absolute right-[5%] -top-[20%] w-[50%] h-[60%] rounded-full blur-[120px] opacity-50 animate-blob-2"
+          className="absolute right-[5%] -top-[20%] w-[50%] h-[60%] rounded-full blur-[100px] opacity-45 animate-blob-2"
           style={{
             background: 'linear-gradient(135deg, #C62E42 0%, #904D6C 100%)',
           }}
@@ -310,7 +310,7 @@ export default function Hero({ modelCount = 2334, providerCount = 40 }: HeroProp
         
         {/* Right blob - Purple/Blue */}
         <div 
-          className="absolute -right-[15%] top-[30%] w-[50%] h-[70%] rounded-full blur-[120px] opacity-40 animate-blob-3"
+          className="absolute -right-[15%] top-[30%] w-[50%] h-[70%] rounded-full blur-[100px] opacity-35 animate-blob-3"
           style={{
             background: 'linear-gradient(135deg, #66668F 0%, #3384B3 100%)',
           }}
@@ -318,7 +318,7 @@ export default function Hero({ modelCount = 2334, providerCount = 40 }: HeroProp
 
         {/* Additional subtle blob for depth */}
         <div 
-          className="absolute left-[30%] top-[60%] w-[40%] h-[50%] rounded-full blur-[150px] opacity-30 animate-blob-4"
+          className="absolute left-[30%] top-[60%] w-[40%] h-[50%] rounded-full blur-[120px] opacity-25 animate-blob-4"
           style={{
             background: 'linear-gradient(135deg, #904D6C 0%, #66668F 100%)',
           }}
@@ -351,37 +351,24 @@ export default function Hero({ modelCount = 2334, providerCount = 40 }: HeroProp
       <HeroHeader onHowToUseClick={() => setShowHowToUse(true)} />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-[51vh] px-4 md:px-6 pt-14">
+      <div className="relative z-10 flex flex-col items-center justify-center px-4 md:px-6 pt-24 pb-12">
         <div className="max-w-[900px] mx-auto text-center">
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#EDECEC] tracking-tight mb-4 leading-[1.1]">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#EDECEC] tracking-tight mb-4 leading-[1.1]">
             Portkey Models
           </h1>
           
           {/* Subtitle */}
-          <p className="text-lg md:text-xl lg:text-2xl text-[#EDECEC]/80 max-w-3xl mx-auto font-medium">
+          <p className="text-sm md:text-base lg:text-lg text-[#EDECEC]/75 max-w-2xl mx-auto font-normal">
             Accurate pricing for{' '}
-            <span className="text-[#EDECEC]">{modelCount.toLocaleString()}</span> models across{' '}
-            <span className="text-[#EDECEC]">{providerCount}+</span> providers
+            <span className="text-[#EDECEC] font-medium">{modelCount.toLocaleString()}</span> models across{' '}
+            <span className="text-[#EDECEC] font-medium">{providerCount}+</span> providers
           </p>
-          
-          {/* CTA Button */}
-          <div className="flex justify-center mt-6">
-            <a
-              href="https://github.com/portkey-ai/models"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white/10 text-[#EDECEC] font-medium text-sm hover:bg-white/15 hover:scale-[1.02] transition-all duration-200 border border-white/10 hover:border-white/20"
-            >
-              <Star className="w-4 h-4" />
-              Star on GitHub
-            </a>
-          </div>
         </div>
       </div>
 
       {/* Bottom gradient fade to content */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-bg-base to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-bg-base to-transparent pointer-events-none" />
 
       {/* How to Use Modal */}
       <HowToUseModal isOpen={showHowToUse} onClose={() => setShowHowToUse(false)} />

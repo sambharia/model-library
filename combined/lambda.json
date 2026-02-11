@@ -3,6 +3,7 @@
   "id": "lambda",
   "models": {
     "hermes3-405b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "hermes3-405b",
       "modality": {
@@ -16,6 +17,7 @@
       "type": "chat"
     },
     "hermes3-70b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "hermes3-70b",
       "modality": {
@@ -29,6 +31,7 @@
       "type": "chat"
     },
     "hermes3-8b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "hermes3-8b",
       "modality": {
@@ -42,6 +45,7 @@
       "type": "chat"
     },
     "lfm-40b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "lfm-40b",
       "modality": {
@@ -55,6 +59,7 @@
       "type": "chat"
     },
     "llama3.1-405b-instruct-fp8": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "llama3.1-405b-instruct-fp8",
       "modality": {
@@ -68,6 +73,7 @@
       "type": "chat"
     },
     "llama3.1-70b-instruct-fp8": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "llama3.1-70b-instruct-fp8",
       "modality": {
@@ -81,6 +87,7 @@
       "type": "chat"
     },
     "llama3.1-8b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "llama3.1-8b-instruct",
       "modality": {
@@ -94,6 +101,7 @@
       "type": "chat"
     },
     "llama3.1-nemotron-70b-instruct-fp8": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "llama3.1-nemotron-70b-instruct-fp8",
       "modality": {
@@ -107,6 +115,7 @@
       "type": "chat"
     },
     "llama3.2-3b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "llama3.2-3b-instruct",
       "modality": {
@@ -120,6 +129,7 @@
       "type": "chat"
     },
     "llama3.3-70b-instruct-fp8": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "llama3.3-70b-instruct-fp8",
       "modality": {
@@ -133,6 +143,7 @@
       "type": "chat"
     },
     "qwen25-coder-32b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [],
       "id": "qwen25-coder-32b-instruct",
       "modality": {

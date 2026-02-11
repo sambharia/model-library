@@ -37,6 +37,8 @@ export interface Model {
   }
   features: ModelFeatures
   pricing?: ModelPricing
+  verified?: boolean
+  lastUpdated?: string // ISO date string
 }
 
 export interface Provider {

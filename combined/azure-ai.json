@@ -44,89 +44,52 @@
         "key": "stream",
         "type": "boolean"
       }
-    ],
-    "pricing_formula": {
-      "request": {
-        "operands": [
-          {
-            "operands": [
-              {
-                "value": "input_tokens"
-              },
-              {
-                "value": "rates.request_token"
-              }
-            ],
-            "operation": "multiply"
-          },
-          {
-            "operands": [
-              {
-                "value": "cache_read_tokens"
-              },
-              {
-                "value": "rates.cache_read_token"
-              }
-            ],
-            "operation": "multiply"
-          },
-          {
-            "operands": [
-              {
-                "value": "cache_write_tokens"
-              },
-              {
-                "value": "rates.cache_write_token"
-              }
-            ],
-            "operation": "multiply"
-          },
-          {
-            "operands": [
-              {
-                "value": "audio_input_tokens"
-              },
-              {
-                "value": "rates.request_audio_token"
-              }
-            ],
-            "operation": "multiply"
-          }
-        ],
-        "operation": "sum"
-      },
-      "response": {
-        "operands": [
-          {
-            "operands": [
-              {
-                "value": "output_tokens"
-              },
-              {
-                "value": "rates.response_token"
-              }
-            ],
-            "operation": "multiply"
-          },
-          {
-            "operands": [
-              {
-                "value": "audio_output_tokens"
-              },
-              {
-                "value": "rates.response_audio_token"
-              }
-            ],
-            "operation": "multiply"
-          }
-        ],
-        "operation": "sum"
-      }
-    }
+    ]
   },
   "id": "azure-ai",
   "models": {
     "AI21-Jamba-1.5-Large": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "AI21-Jamba-1.5-Large",
       "max_output_tokens": 4096,
       "modality": {
@@ -149,6 +112,47 @@
       "type": "chat"
     },
     "AI21-Jamba-1.5-Mini": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "AI21-Jamba-1.5-Mini",
       "max_output_tokens": 4096,
       "modality": {
@@ -171,6 +175,47 @@
       "type": "chat"
     },
     "AI21-Jamba-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "AI21-Jamba-Instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -184,6 +229,47 @@
       "type": "chat"
     },
     "Codestral-2501": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Codestral-2501",
       "max_output_tokens": 4096,
       "modality": {
@@ -206,6 +292,47 @@
       "type": "chat"
     },
     "Cohere-command-r-08-2024": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Cohere-command-r-08-2024",
       "max_output_tokens": 4096,
       "modality": {
@@ -228,6 +355,47 @@
       "type": "chat"
     },
     "Cohere-command-r-plus-08-2024": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Cohere-command-r-plus-08-2024",
       "max_output_tokens": 4096,
       "modality": {
@@ -250,6 +418,47 @@
       "type": "chat"
     },
     "Cohere-embed-v3-english": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "Cohere-embed-v3-english",
       "max_output_tokens": 4096,
@@ -264,6 +473,47 @@
       "type": "text"
     },
     "Cohere-embed-v3-multilingual": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "Cohere-embed-v3-multilingual",
       "max_output_tokens": 4096,
@@ -278,6 +528,47 @@
       "type": "text"
     },
     "DeepSeek-R1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "DeepSeek-R1",
       "max_output_tokens": 4096,
       "modality": {
@@ -300,6 +591,47 @@
       "type": "chat"
     },
     "DeepSeek-R1-0528": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "DeepSeek-R1-0528",
       "max_output_tokens": 4096,
       "modality": {
@@ -313,6 +645,47 @@
       "type": "chat"
     },
     "DeepSeek-V3": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "DeepSeek-V3",
       "max_output_tokens": 4096,
       "modality": {
@@ -335,6 +708,47 @@
       "type": "chat"
     },
     "DeepSeek-V3-0324": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "DeepSeek-V3-0324",
       "max_output_tokens": 4096,
       "modality": {
@@ -357,6 +771,47 @@
       "type": "chat"
     },
     "Llama-2-70b-chat": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Llama-2-70b-chat",
       "max_output_tokens": 4096,
       "modality": {
@@ -379,6 +834,47 @@
       "type": "chat"
     },
     "Llama-2-7b-chat": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Llama-2-7b-chat",
       "max_output_tokens": 4096,
       "modality": {
@@ -401,6 +897,47 @@
       "type": "chat"
     },
     "Llama-3.2-11B-Vision-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Llama-3.2-11B-Vision-Instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -423,6 +960,47 @@
       "type": "chat"
     },
     "Llama-3.2-90B-Vision-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Llama-3.2-90B-Vision-Instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -445,6 +1023,47 @@
       "type": "chat"
     },
     "Llama-3.3-70B-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Llama-3.3-70B-Instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -467,6 +1086,47 @@
       "type": "chat"
     },
     "Llama-4-Maverick-17B-128E-Instruct-FP8": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Llama-4-Maverick-17B-128E-Instruct-FP8",
       "max_output_tokens": 4096,
       "modality": {
@@ -489,6 +1149,47 @@
       "type": "chat"
     },
     "Llama-4-Scout-17B-16E-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Llama-4-Scout-17B-16E-Instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -511,6 +1212,47 @@
       "type": "chat"
     },
     "MAI-DS-R1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "MAI-DS-R1",
       "max_output_tokens": 4096,
       "modality": {
@@ -524,6 +1266,47 @@
       "type": "chat"
     },
     "Meta-Llama-3-70B-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Meta-Llama-3-70B-Instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -546,6 +1329,47 @@
       "type": "chat"
     },
     "Meta-Llama-3-8B-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Meta-Llama-3-8B-Instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -568,6 +1392,47 @@
       "type": "chat"
     },
     "Meta-Llama-3.1-405B-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Meta-Llama-3.1-405B-Instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -590,6 +1455,47 @@
       "type": "chat"
     },
     "Meta-Llama-3.1-70B-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Meta-Llama-3.1-70B-Instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -612,6 +1518,47 @@
       "type": "chat"
     },
     "Meta-Llama-3.1-8B-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Meta-Llama-3.1-8B-Instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -634,6 +1581,47 @@
       "type": "chat"
     },
     "Ministral-3B": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Ministral-3B",
       "max_output_tokens": 4096,
       "modality": {
@@ -647,6 +1635,47 @@
       "type": "chat"
     },
     "Mistral-Large-2411": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Mistral-Large-2411",
       "max_output_tokens": 4096,
       "modality": {
@@ -668,7 +1697,111 @@
       },
       "type": "chat"
     },
+    "Mistral-Large-3": {
+      "_lastUpdated": "2026-02-06T13:50:13.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "Mistral-Large-3",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.5,
+          "output": 1.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "Mistral-Nemo": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Mistral-Nemo",
       "max_output_tokens": 4096,
       "modality": {
@@ -691,6 +1824,47 @@
       "type": "chat"
     },
     "Mistral-large": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Mistral-large",
       "max_output_tokens": 4096,
       "modality": {
@@ -704,6 +1878,47 @@
       "type": "chat"
     },
     "Mistral-nemo": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Mistral-nemo",
       "max_output_tokens": 4096,
       "modality": {
@@ -717,6 +1932,47 @@
       "type": "chat"
     },
     "Phi-3-medium-128k-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-3-medium-128k-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -730,6 +1986,47 @@
       "type": "chat"
     },
     "Phi-3-small-8k-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-3-small-8k-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -743,6 +2040,47 @@
       "type": "chat"
     },
     "Phi-3.5-MoE-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-3.5-MoE-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -765,6 +2103,47 @@
       "type": "chat"
     },
     "Phi-3.5-mini-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-3.5-mini-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -787,6 +2166,47 @@
       "type": "chat"
     },
     "Phi-3.5-vision-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-3.5-vision-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -809,6 +2229,47 @@
       "type": "chat"
     },
     "Phi-4": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-4",
       "max_output_tokens": 4096,
       "modality": {
@@ -831,6 +2292,47 @@
       "type": "chat"
     },
     "Phi-4-mini-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-4-mini-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -853,6 +2355,47 @@
       "type": "chat"
     },
     "Phi-4-mini-reasoning": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-4-mini-reasoning",
       "max_output_tokens": 4096,
       "modality": {
@@ -866,6 +2409,47 @@
       "type": "chat"
     },
     "Phi-4-multilmodal-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-4-multilmodal-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -877,13 +2461,10 @@
         ]
       },
       "pricing": {
-        "audio_tokens": {
-          "input": 4,
-          "output": 0.32,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_input": 4,
+          "audio_output": 0.32,
           "input": 0.08,
           "output": 0.32,
           "unit": "USD_per_million_tokens"
@@ -893,6 +2474,47 @@
       "type": "chat"
     },
     "Phi-4-multimodal-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-4-multimodal-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -904,13 +2526,10 @@
         ]
       },
       "pricing": {
-        "audio_tokens": {
-          "input": 4,
-          "output": 0.32,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_input": 4,
+          "audio_output": 0.32,
           "input": 0.08,
           "output": 0.32,
           "unit": "USD_per_million_tokens"
@@ -920,6 +2539,47 @@
       "type": "chat"
     },
     "Phi-4-reasoning": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "Phi-4-reasoning",
       "max_output_tokens": 4096,
       "modality": {
@@ -933,6 +2593,47 @@
       "type": "chat"
     },
     "Stable-Diffusion-3.5-Large": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "Stable-Diffusion-3.5-Large",
       "max_output_tokens": 4096,
@@ -953,14 +2654,54 @@
                 "price": 800
               }
             }
-          },
-          "unit": "USD_per_image"
+          }
         },
         "type": "pay_as_you_go"
       },
       "type": "image"
     },
     "Stable-Image-Core": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "Stable-Image-Core",
       "max_output_tokens": 4096,
@@ -981,14 +2722,54 @@
                 "price": 400
               }
             }
-          },
-          "unit": "USD_per_image"
+          }
         },
         "type": "pay_as_you_go"
       },
       "type": "image"
     },
     "Stable-Image-Ultra": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "Stable-Image-Ultra",
       "max_output_tokens": 4096,
@@ -1009,8 +2790,7 @@
                 "price": 1400
               }
             }
-          },
-          "unit": "USD_per_image"
+          }
         },
         "type": "pay_as_you_go"
       },
@@ -1018,6 +2798,7 @@
     },
     "ada": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "ada",
       "pricing": {
         "currency": "USD",
@@ -1031,6 +2812,7 @@
     },
     "chatgpt-4o-latest": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "chatgpt-4o-latest",
       "pricing": {
         "currency": "USD",
@@ -1045,6 +2827,7 @@
       "type": "chat"
     },
     "claude-haiku-4-5-20251001": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1115,15 +2898,13 @@
         "top_p"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "claude-haiku-4-5-20251001",
       "max_output_tokens": 64000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -1143,6 +2924,7 @@
       "type": "chat"
     },
     "claude-opus-4-1-20250805": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1214,15 +2996,13 @@
         "top_p"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "claude-opus-4-1-20250805",
       "max_output_tokens": 32000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -1242,6 +3022,7 @@
       "type": "chat"
     },
     "claude-opus-4-5-20251101": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1313,15 +3094,13 @@
         "top_p"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "claude-opus-4-5-20251101",
       "max_output_tokens": 64000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -1340,7 +3119,8 @@
       },
       "type": "chat"
     },
-    "claude-sonnet-4-5-20250929": {
+    "claude-opus-4-6": {
+      "_lastUpdated": "2026-02-06T13:50:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1411,15 +3191,110 @@
         "top_p"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
+      },
+      "id": "claude-opus-4-6",
+      "max_output_tokens": 64000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 6.25,
+          "cached_input": 0.5,
+          "input": 5,
+          "output": 25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-sonnet-4-5-20250929": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 64000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        }
+      ],
+      "_remove_parameters": [
+        "top_p"
+      ],
+      "features": {
+        "function_calling": true
       },
       "id": "claude-sonnet-4-5-20250929",
       "max_output_tokens": 64000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -1439,6 +3314,47 @@
       "type": "chat"
     },
     "codestral-2501": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "codestral-2501",
       "max_output_tokens": 4096,
       "modality": {
@@ -1462,6 +3378,7 @@
     },
     "codex-mini-latest": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "codex-mini-latest",
       "pricing": {
         "currency": "USD",
@@ -1477,6 +3394,47 @@
       "type": "chat"
     },
     "cohere-command-a": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "cohere-command-a",
       "max_output_tokens": 4096,
       "modality": {
@@ -1490,6 +3448,47 @@
       "type": "chat"
     },
     "cohere-command-r": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "cohere-command-r",
       "max_output_tokens": 4096,
       "modality": {
@@ -1503,6 +3502,47 @@
       "type": "chat"
     },
     "cohere-command-r-plus": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "cohere-command-r-plus",
       "max_output_tokens": 4096,
       "modality": {
@@ -1517,6 +3557,7 @@
     },
     "dall-e-2": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "dall-e-2",
       "pricing": {
         "currency": "USD",
@@ -1550,8 +3591,7 @@
                 "price": 200
               }
             }
-          },
-          "unit": "USD_per_image"
+          }
         },
         "type": "pay_as_you_go"
       },
@@ -1559,6 +3599,7 @@
     },
     "dall-e-3": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "dall-e-3",
       "pricing": {
         "currency": "USD",
@@ -1606,8 +3647,7 @@
                 "price": 400
               }
             }
-          },
-          "unit": "USD_per_image"
+          }
         },
         "type": "pay_as_you_go"
       },
@@ -1615,6 +3655,7 @@
     },
     "davinci": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "davinci",
       "pricing": {
         "currency": "USD",
@@ -1628,6 +3669,47 @@
       "type": "chat"
     },
     "deepseek-r1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "deepseek-r1",
       "max_output_tokens": 4096,
       "modality": {
@@ -1650,6 +3732,47 @@
       "type": "chat"
     },
     "embed-v-4-0": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "embed-v-4-0",
       "max_output_tokens": 4096,
@@ -1664,6 +3787,7 @@
       "type": "text"
     },
     "gpt-3.5-turbo": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1768,6 +3892,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-0125": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1863,6 +3988,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-0301": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1937,6 +4063,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-0613": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2014,6 +4141,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-1106": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2118,6 +4246,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-16k": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2195,6 +4324,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2264,6 +4394,7 @@
       "type": "text"
     },
     "gpt-35-turbo": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2369,6 +4500,7 @@
     },
     "gpt-35-turbo-0125.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-35-turbo-0125.ft",
       "pricing": {
         "currency": "USD",
@@ -2383,6 +4515,7 @@
     },
     "gpt-35-turbo-0613.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-35-turbo-0613.ft",
       "pricing": {
         "currency": "USD",
@@ -2396,6 +4529,7 @@
       "type": "chat"
     },
     "gpt-35-turbo-1106": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2501,6 +4635,7 @@
     },
     "gpt-35-turbo-1106.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-35-turbo-1106.ft",
       "pricing": {
         "currency": "USD",
@@ -2514,6 +4649,7 @@
       "type": "chat"
     },
     "gpt-35-turbo-16k": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2591,6 +4727,7 @@
       "type": "chat"
     },
     "gpt-35-turbo-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2660,6 +4797,7 @@
       "type": "text"
     },
     "gpt-4": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2737,6 +4875,7 @@
       "type": "chat"
     },
     "gpt-4-0125-preview": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2841,6 +4980,7 @@
       "type": "chat"
     },
     "gpt-4-0314": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2915,6 +5055,7 @@
       "type": "chat"
     },
     "gpt-4-0613": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2992,6 +5133,7 @@
       "type": "chat"
     },
     "gpt-4-1106-preview": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3096,6 +5238,7 @@
       "type": "chat"
     },
     "gpt-4-32k": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3171,6 +5314,7 @@
     },
     "gpt-4-32k-0314": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4-32k-0314",
       "pricing": {
         "currency": "USD",
@@ -3184,6 +5328,7 @@
       "type": "chat"
     },
     "gpt-4-32k-0613": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3259,6 +5404,7 @@
     },
     "gpt-4-turbo": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4-turbo",
       "pricing": {
         "currency": "USD",
@@ -3272,6 +5418,7 @@
       "type": "chat"
     },
     "gpt-4-turbo-2024-04-09": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3352,15 +5499,13 @@
         }
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4-turbo-2024-04-09",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -3378,6 +5523,7 @@
       "type": "chat"
     },
     "gpt-4-vision-preview": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3434,15 +5580,13 @@
         "logit_bias"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4-vision-preview",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -3460,6 +5604,7 @@
       "type": "chat"
     },
     "gpt-4.1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3561,15 +5706,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4.1",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -3599,6 +5742,7 @@
       "type": "chat"
     },
     "gpt-4.1-2025-04-14": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3700,15 +5844,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4.1-2025-04-14",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -3739,6 +5881,7 @@
     },
     "gpt-4.1-2025-04-14.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4.1-2025-04-14.ft",
       "pricing": {
         "additional": {
@@ -3764,6 +5907,7 @@
       "type": "chat"
     },
     "gpt-4.1-mini": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3865,15 +6009,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4.1-mini",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -3903,6 +6045,7 @@
       "type": "chat"
     },
     "gpt-4.1-mini-2025-04-14": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4004,15 +6147,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4.1-mini-2025-04-14",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4043,6 +6184,7 @@
     },
     "gpt-4.1-mini-2025-04-14.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4.1-mini-2025-04-14.ft",
       "pricing": {
         "additional": {
@@ -4069,6 +6211,7 @@
     },
     "gpt-4.1-mini.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4.1-mini.ft",
       "pricing": {
         "additional": {
@@ -4094,6 +6237,7 @@
       "type": "chat"
     },
     "gpt-4.1-nano": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4195,15 +6339,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4.1-nano",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4222,6 +6364,7 @@
       "type": "chat"
     },
     "gpt-4.1-nano-2025-04-14": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4323,15 +6466,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4.1-nano-2025-04-14",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4351,6 +6492,7 @@
     },
     "gpt-4.1.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4.1.ft",
       "pricing": {
         "additional": {
@@ -4376,6 +6518,7 @@
       "type": "chat"
     },
     "gpt-4.5-preview-2025-02-27": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4468,15 +6611,13 @@
         }
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4.5-preview-2025-02-27",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4495,6 +6636,7 @@
       "type": "chat"
     },
     "gpt-4o": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4599,15 +6741,13 @@
         }
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4o",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4626,6 +6766,7 @@
       "type": "chat"
     },
     "gpt-4o-2024-05-13": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4706,15 +6847,13 @@
         }
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4o-2024-05-13",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4732,6 +6871,7 @@
       "type": "chat"
     },
     "gpt-4o-2024-08-06": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4836,15 +6976,13 @@
         }
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4o-2024-08-06",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4864,6 +7002,7 @@
     },
     "gpt-4o-2024-08-06.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-2024-08-06.ft",
       "pricing": {
         "additional": {
@@ -4886,6 +7025,7 @@
       "type": "chat"
     },
     "gpt-4o-2024-11-20": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4966,15 +7106,13 @@
         }
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4o-2024-11-20",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4993,6 +7131,7 @@
       "type": "chat"
     },
     "gpt-4o-mini": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5097,15 +7236,13 @@
         }
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4o-mini",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -5124,6 +7261,7 @@
       "type": "chat"
     },
     "gpt-4o-mini-2024-07-18": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5228,15 +7366,13 @@
         }
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-4o-mini-2024-07-18",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -5256,6 +7392,7 @@
     },
     "gpt-4o-mini-2024-07-18.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-mini-2024-07-18.ft",
       "pricing": {
         "additional": {
@@ -5279,15 +7416,13 @@
     },
     "gpt-4o-mini-audio-preview": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-mini-audio-preview",
       "pricing": {
-        "audio_tokens": {
-          "input": 20,
-          "output": 10,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_input": 20,
+          "audio_output": 10,
           "input": 15,
           "output": 0.6,
           "unit": "USD_per_million_tokens"
@@ -5298,15 +7433,13 @@
     },
     "gpt-4o-mini-audio-preview-2024-12-17": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-mini-audio-preview-2024-12-17",
       "pricing": {
-        "audio_tokens": {
-          "input": 20,
-          "output": 10,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_input": 20,
+          "audio_output": 10,
           "input": 15,
           "output": 0.6,
           "unit": "USD_per_million_tokens"
@@ -5317,16 +7450,14 @@
     },
     "gpt-4o-mini-realtime-preview": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-mini-realtime-preview",
       "pricing": {
-        "audio_tokens": {
-          "cached_input": 3,
-          "input": 100,
-          "output": 200,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_cached_input": 3,
+          "audio_input": 100,
+          "audio_output": 200,
           "cached_input": 3,
           "input": 0.6,
           "output": 2.4,
@@ -5338,16 +7469,14 @@
     },
     "gpt-4o-mini-realtime-preview-2024-12-17": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-mini-realtime-preview-2024-12-17",
       "pricing": {
-        "audio_tokens": {
-          "cached_input": 3,
-          "input": 100,
-          "output": 200,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_cached_input": 3,
+          "audio_input": 100,
+          "audio_output": 200,
           "cached_input": 3,
           "input": 0.6,
           "output": 2.4,
@@ -5359,6 +7488,7 @@
     },
     "gpt-4o-mini-search-preview": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-mini-search-preview",
       "pricing": {
         "currency": "USD",
@@ -5373,6 +7503,7 @@
     },
     "gpt-4o-mini-search-preview-2025-03-11": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-mini-search-preview-2025-03-11",
       "pricing": {
         "currency": "USD",
@@ -5386,6 +7517,47 @@
       "type": "chat"
     },
     "gpt-4o-mini-transcribe": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-4o-mini-transcribe",
       "max_output_tokens": 4096,
@@ -5401,6 +7573,7 @@
     },
     "gpt-4o-mini.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-mini.ft",
       "pricing": {
         "additional": {
@@ -5424,16 +7597,14 @@
     },
     "gpt-4o-realtime-preview": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-realtime-preview",
       "pricing": {
-        "audio_tokens": {
-          "cached_input": 2.5,
-          "input": 40,
-          "output": 80,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_cached_input": 2.5,
+          "audio_input": 40,
+          "audio_output": 80,
           "cached_input": 2.5,
           "input": 5,
           "output": 20,
@@ -5445,16 +7616,14 @@
     },
     "gpt-4o-realtime-preview-2024-10-01": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-realtime-preview-2024-10-01",
       "pricing": {
-        "audio_tokens": {
-          "cached_input": 20,
-          "input": 100,
-          "output": 200,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_cached_input": 20,
+          "audio_input": 100,
+          "audio_output": 200,
           "cached_input": 2.5,
           "input": 5,
           "output": 20,
@@ -5466,16 +7635,14 @@
     },
     "gpt-4o-realtime-preview-2025-06-03": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-realtime-preview-2025-06-03",
       "pricing": {
-        "audio_tokens": {
-          "cached_input": 2.5,
-          "input": 40,
-          "output": 80,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_cached_input": 2.5,
+          "audio_input": 40,
+          "audio_output": 80,
           "cached_input": 2.5,
           "input": 5,
           "output": 20,
@@ -5487,6 +7654,7 @@
     },
     "gpt-4o-search-preview": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-search-preview",
       "pricing": {
         "currency": "USD",
@@ -5501,6 +7669,7 @@
     },
     "gpt-4o-search-preview-2025-03-11": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o-search-preview-2025-03-11",
       "pricing": {
         "currency": "USD",
@@ -5514,6 +7683,47 @@
       "type": "chat"
     },
     "gpt-4o-transcribe": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-4o-transcribe",
       "max_output_tokens": 4096,
@@ -5527,8 +7737,64 @@
       },
       "type": "text"
     },
+    "gpt-4o-transcribe-diarize": {
+      "_lastUpdated": "2026-02-06T13:50:13.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gpt-4o-transcribe-diarize",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "type": "audio"
+    },
     "gpt-4o.ft": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-4o.ft",
       "pricing": {
         "additional": {
@@ -5551,6 +7817,7 @@
       "type": "chat"
     },
     "gpt-5": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5595,57 +7862,6 @@
           "key": "max_completion_tokens",
           "maxValue": 32768,
           "minValue": 1
-        },
-        {
-          "defaultValue": null,
-          "key": "response_format",
-          "options": [
-            {
-              "name": "Text",
-              "value": null
-            },
-            {
-              "name": "JSON Object",
-              "schema": {
-                "properties": {
-                  "type": {
-                    "type": "string",
-                    "value": "json_object"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_object"
-            },
-            {
-              "name": "JSON Schema",
-              "params": {
-                "defaultValue": null,
-                "key": "json_schema",
-                "skipValues": [
-                  null
-                ],
-                "type": "json"
-              },
-              "schema": {
-                "properties": {
-                  "json_schema": {
-                    "type": "object"
-                  },
-                  "type": {
-                    "type": "string",
-                    "value": "json_schema"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_schema"
-            }
-          ],
-          "skipValues": [
-            null
-          ],
-          "type": "string"
         },
         {
           "defaultValue": null,
@@ -5755,15 +7971,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -5793,6 +8007,7 @@
       "type": "chat"
     },
     "gpt-5-2025-08-07": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5946,15 +8161,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5-2025-08-07",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -5984,6 +8197,7 @@
       "type": "chat"
     },
     "gpt-5-chat-latest": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6137,15 +8351,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5-chat-latest",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -6164,6 +8376,47 @@
       "type": "chat"
     },
     "gpt-5-codex": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-5-codex",
       "max_output_tokens": 4096,
@@ -6188,6 +8441,7 @@
       "type": "text"
     },
     "gpt-5-mini": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6341,15 +8595,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5-mini",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -6379,6 +8631,7 @@
       "type": "chat"
     },
     "gpt-5-mini-2025-08-07": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6532,15 +8785,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5-mini-2025-08-07",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -6570,6 +8821,7 @@
       "type": "chat"
     },
     "gpt-5-nano": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6723,15 +8975,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5-nano",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -6761,6 +9011,7 @@
       "type": "chat"
     },
     "gpt-5-nano-2025-08-07": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6914,15 +9165,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5-nano-2025-08-07",
       "max_output_tokens": 16384,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -6952,6 +9201,7 @@
       "type": "chat"
     },
     "gpt-5-pro": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6996,57 +9246,6 @@
           "key": "max_completion_tokens",
           "maxValue": 272000,
           "minValue": 1
-        },
-        {
-          "defaultValue": null,
-          "key": "response_format",
-          "options": [
-            {
-              "name": "Text",
-              "value": null
-            },
-            {
-              "name": "JSON Object",
-              "schema": {
-                "properties": {
-                  "type": {
-                    "type": "string",
-                    "value": "json_object"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_object"
-            },
-            {
-              "name": "JSON Schema",
-              "params": {
-                "defaultValue": null,
-                "key": "json_schema",
-                "skipValues": [
-                  null
-                ],
-                "type": "json"
-              },
-              "schema": {
-                "properties": {
-                  "json_schema": {
-                    "type": "object"
-                  },
-                  "type": {
-                    "type": "string",
-                    "value": "json_schema"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_schema"
-            }
-          ],
-          "skipValues": [
-            null
-          ],
-          "type": "string"
         },
         {
           "defaultValue": null,
@@ -7111,15 +9310,13 @@
         "stream"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5-pro",
       "max_output_tokens": 272000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -7138,6 +9335,7 @@
       "type": "chat"
     },
     "gpt-5-pro-2025-10-06": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7182,57 +9380,6 @@
           "key": "max_completion_tokens",
           "maxValue": 272000,
           "minValue": 1
-        },
-        {
-          "defaultValue": null,
-          "key": "response_format",
-          "options": [
-            {
-              "name": "Text",
-              "value": null
-            },
-            {
-              "name": "JSON Object",
-              "schema": {
-                "properties": {
-                  "type": {
-                    "type": "string",
-                    "value": "json_object"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_object"
-            },
-            {
-              "name": "JSON Schema",
-              "params": {
-                "defaultValue": null,
-                "key": "json_schema",
-                "skipValues": [
-                  null
-                ],
-                "type": "json"
-              },
-              "schema": {
-                "properties": {
-                  "json_schema": {
-                    "type": "object"
-                  },
-                  "type": {
-                    "type": "string",
-                    "value": "json_schema"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_schema"
-            }
-          ],
-          "skipValues": [
-            null
-          ],
-          "type": "string"
         },
         {
           "defaultValue": null,
@@ -7298,15 +9445,13 @@
         "stream"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5-pro-2025-10-06",
       "max_output_tokens": 272000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -7326,6 +9471,7 @@
     },
     "gpt-5-search-api": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2026-01-08T08:51:42.000Z",
       "id": "gpt-5-search-api",
       "pricing": {
         "currency": "USD",
@@ -7341,6 +9487,7 @@
     },
     "gpt-5-search-api-2025-10-14": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-5-search-api-2025-10-14",
       "pricing": {
         "currency": "USD",
@@ -7355,6 +9502,7 @@
       "type": "chat"
     },
     "gpt-5.1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7462,15 +9610,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5.1",
       "max_output_tokens": 272000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -7500,6 +9646,7 @@
       "type": "chat"
     },
     "gpt-5.1-2025-11-13": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7607,15 +9754,13 @@
         "max_tokens"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "gpt-5.1-2025-11-13",
       "max_output_tokens": 272000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -7645,6 +9790,47 @@
       "type": "chat"
     },
     "gpt-5.1-chat-latest": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-5.1-chat-latest",
       "max_output_tokens": 4096,
@@ -7669,6 +9855,47 @@
       "type": "text"
     },
     "gpt-5.1-codex": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-5.1-codex",
       "max_output_tokens": 4096,
@@ -7693,6 +9920,47 @@
       "type": "text"
     },
     "gpt-5.1-codex-mini": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-5.1-codex-mini",
       "max_output_tokens": 4096,
@@ -7718,15 +9986,13 @@
     },
     "gpt-audio": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-audio",
       "pricing": {
-        "audio_tokens": {
-          "input": 32,
-          "output": 64,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_input": 32,
+          "audio_output": 64,
           "input": 2.5,
           "output": 10,
           "unit": "USD_per_million_tokens"
@@ -7737,15 +10003,13 @@
     },
     "gpt-audio-mini": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "gpt-audio-mini",
       "pricing": {
-        "audio_tokens": {
-          "input": 1,
-          "output": 2,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_input": 1,
+          "audio_output": 2,
           "input": 0.6,
           "output": 2.4,
           "unit": "USD_per_million_tokens"
@@ -7755,6 +10019,47 @@
       "type": "chat"
     },
     "gpt-image-1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-image-1",
       "max_output_tokens": 4096,
@@ -7778,6 +10083,47 @@
       "type": "text"
     },
     "gpt-image-1-mini": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-image-1-mini",
       "max_output_tokens": 4096,
@@ -7791,7 +10137,80 @@
       },
       "type": "text"
     },
+    "gpt-image-1.5": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-01-08T08:51:42.000Z",
+      "id": "gpt-image-1.5",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 1.25,
+          "input": 5,
+          "output": 40,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-image-1.5-2025-12-16": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-01-08T08:51:42.000Z",
+      "id": "gpt-image-1.5-2025-12-16",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 1.25,
+          "input": 5,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gpt-realtime": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-realtime",
       "max_output_tokens": 4096,
@@ -7804,14 +10223,11 @@
         ]
       },
       "pricing": {
-        "audio_tokens": {
-          "cached_input": 64,
-          "input": 32,
-          "output": 64,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_cached_input": 64,
+          "audio_input": 32,
+          "audio_output": 64,
           "cache_write": 0.5,
           "cached_input": 16,
           "input": 4,
@@ -7823,6 +10239,47 @@
       "type": "text"
     },
     "gpt-realtime-2025-08-28": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-realtime-2025-08-28",
       "max_output_tokens": 4096,
@@ -7835,14 +10292,11 @@
         ]
       },
       "pricing": {
-        "audio_tokens": {
-          "cached_input": 64,
-          "input": 32,
-          "output": 64,
-          "unit": "USD_per_million_tokens"
-        },
         "currency": "USD",
         "tokens": {
+          "audio_cached_input": 64,
+          "audio_input": 32,
+          "audio_output": 64,
           "cache_write": 0.5,
           "cached_input": 16,
           "input": 4,
@@ -7854,6 +10308,47 @@
       "type": "text"
     },
     "gpt-realtime-mini": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-realtime-mini",
       "max_output_tokens": 4096,
@@ -7868,6 +10363,47 @@
       "type": "text"
     },
     "gpt-realtime-mini-2025-10-06": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "gpt-realtime-mini-2025-10-06",
       "max_output_tokens": 4096,
@@ -7882,6 +10418,47 @@
       "type": "text"
     },
     "grok-3": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "grok-3",
       "max_output_tokens": 4096,
       "modality": {
@@ -7895,6 +10472,47 @@
       "type": "chat"
     },
     "grok-3-mini": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "grok-3-mini",
       "max_output_tokens": 4096,
       "modality": {
@@ -7908,6 +10526,47 @@
       "type": "chat"
     },
     "grok-4": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "grok-4",
       "max_output_tokens": 4096,
       "modality": {
@@ -7921,6 +10580,47 @@
       "type": "chat"
     },
     "grok-4-fast-non-reasoning": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "grok-4-fast-non-reasoning",
       "max_output_tokens": 4096,
       "modality": {
@@ -7934,6 +10634,47 @@
       "type": "chat"
     },
     "grok-4-fast-reasoning": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "grok-4-fast-reasoning",
       "max_output_tokens": 4096,
       "modality": {
@@ -7947,6 +10688,47 @@
       "type": "chat"
     },
     "grok-code-fast-1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "grok-code-fast-1",
       "max_output_tokens": 4096,
       "modality": {
@@ -7960,6 +10742,47 @@
       "type": "chat"
     },
     "jamba-1.5-large": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "jamba-1.5-large",
       "max_output_tokens": 4096,
       "modality": {
@@ -7982,6 +10805,47 @@
       "type": "chat"
     },
     "jamba-1.5-mini": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "jamba-1.5-mini",
       "max_output_tokens": 4096,
       "modality": {
@@ -8004,6 +10868,47 @@
       "type": "chat"
     },
     "meta-llama-3-70b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "meta-llama-3-70b-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -8017,6 +10922,47 @@
       "type": "chat"
     },
     "meta-llama-3-8b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "meta-llama-3-8b-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -8030,6 +10976,47 @@
       "type": "chat"
     },
     "meta-llama-3.1-70b-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "meta-llama-3.1-70b-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -8043,6 +11030,47 @@
       "type": "chat"
     },
     "ministral-3b-2410": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "ministral-3b-2410",
       "max_output_tokens": 4096,
       "modality": {
@@ -8065,6 +11093,47 @@
       "type": "chat"
     },
     "mistral-large-2411": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "mistral-large-2411",
       "max_output_tokens": 4096,
       "modality": {
@@ -8087,6 +11156,47 @@
       "type": "chat"
     },
     "mistral-medium-2505": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "mistral-medium-2505",
       "max_output_tokens": 4096,
       "modality": {
@@ -8100,6 +11210,47 @@
       "type": "chat"
     },
     "mistral-small-2503": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "mistral-small-2503",
       "max_output_tokens": 4096,
       "modality": {
@@ -8122,13 +11273,7 @@
       "type": "chat"
     },
     "o1": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8185,15 +11330,11 @@
         "stream",
         "max_tokens"
       ],
-      "features": {
-        "vision": true
-      },
       "id": "o1",
       "max_output_tokens": 100000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -8212,13 +11353,7 @@
       "type": "chat"
     },
     "o1-2024-12-17": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8301,13 +11436,7 @@
       "type": "chat"
     },
     "o1-mini": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8364,15 +11493,11 @@
         "stream",
         "max_tokens"
       ],
-      "features": {
-        "vision": true
-      },
       "id": "o1-mini",
       "max_output_tokens": 65536,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -8391,13 +11516,7 @@
       "type": "chat"
     },
     "o1-mini-2024-09-12": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8480,13 +11599,7 @@
       "type": "chat"
     },
     "o1-preview": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8569,13 +11682,7 @@
       "type": "chat"
     },
     "o1-preview-2024-09-12": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8659,6 +11766,7 @@
     },
     "o1-pro": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "o1-pro",
       "pricing": {
         "additional": {
@@ -8681,6 +11789,7 @@
     },
     "o1-pro-2025-03-19": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "o1-pro-2025-03-19",
       "pricing": {
         "additional": {
@@ -8702,13 +11811,7 @@
       "type": "chat"
     },
     "o3": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8872,6 +11975,7 @@
     },
     "o3-2025-04-16": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "o3-2025-04-16",
       "pricing": {
         "additional": {
@@ -8898,6 +12002,7 @@
     },
     "o3-deep-research": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "o3-deep-research",
       "pricing": {
         "additional": {
@@ -8924,6 +12029,7 @@
     },
     "o3-deep-research-2025-06-26": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "o3-deep-research-2025-06-26",
       "pricing": {
         "additional": {
@@ -8949,13 +12055,7 @@
       "type": "chat"
     },
     "o3-mini": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9107,13 +12207,7 @@
       "type": "chat"
     },
     "o3-mini-2025-01-31": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9266,6 +12360,7 @@
     },
     "o3-pro": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "o3-pro",
       "pricing": {
         "additional": {
@@ -9288,6 +12383,7 @@
     },
     "o3-pro-2025-06-10": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "o3-pro-2025-06-10",
       "pricing": {
         "additional": {
@@ -9309,13 +12405,7 @@
       "type": "chat"
     },
     "o4-mini": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9441,15 +12531,13 @@
         "temperature"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "o4-mini",
       "max_output_tokens": 100000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -9479,13 +12567,7 @@
       "type": "chat"
     },
     "o4-mini-2025-04-16": {
-      "_message_config": {
-        "options": [
-          "user",
-          "assistant",
-          "developer"
-        ]
-      },
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9611,15 +12693,13 @@
         "temperature"
       ],
       "features": {
-        "function_calling": true,
-        "vision": true
+        "function_calling": true
       },
       "id": "o4-mini-2025-04-16",
       "max_output_tokens": 100000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -9650,6 +12730,7 @@
     },
     "o4-mini-deep-research": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "o4-mini-deep-research",
       "pricing": {
         "additional": {
@@ -9676,6 +12757,7 @@
     },
     "o4-mini-deep-research-2025-06-26": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "o4-mini-deep-research-2025-06-26",
       "pricing": {
         "additional": {
@@ -9701,6 +12783,47 @@
       "type": "chat"
     },
     "omni-moderation-2024-09-26": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "omni-moderation-2024-09-26",
       "max_output_tokens": 4096,
@@ -9715,6 +12838,47 @@
       "type": "moderation"
     },
     "omni-moderation-latest": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "omni-moderation-latest",
       "max_output_tokens": 4096,
@@ -9729,6 +12893,47 @@
       "type": "moderation"
     },
     "phi3-medium-4k": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "phi3-medium-4k",
       "max_output_tokens": 4096,
       "modality": {
@@ -9751,6 +12956,47 @@
       "type": "chat"
     },
     "phi35-mini-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "phi35-mini-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -9773,6 +13019,47 @@
       "type": "chat"
     },
     "phi35-moe-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "phi35-moe-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -9795,6 +13082,47 @@
       "type": "chat"
     },
     "phi35-vision-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "phi35-vision-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -9817,6 +13145,47 @@
       "type": "chat"
     },
     "phi4": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "phi4",
       "max_output_tokens": 4096,
       "modality": {
@@ -9839,6 +13208,47 @@
       "type": "chat"
     },
     "phi4-mini-instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "phi4-mini-instruct",
       "max_output_tokens": 4096,
       "modality": {
@@ -9861,6 +13271,47 @@
       "type": "chat"
     },
     "poseidon": {
+      "_lastUpdated": "2026-01-08T08:51:42.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "id": "poseidon",
       "max_output_tokens": 4096,
       "modality": {
@@ -9883,6 +13334,47 @@
       "type": "chat"
     },
     "sora-2": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "sora-2",
       "max_output_tokens": 4096,
@@ -9897,6 +13389,47 @@
       "type": "text"
     },
     "sora-2-pro": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "sora-2-pro",
       "max_output_tokens": 4096,
@@ -9911,6 +13444,7 @@
       "type": "text"
     },
     "text-ada-001": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9978,6 +13512,7 @@
       "type": "text"
     },
     "text-babbage-001": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10045,6 +13580,7 @@
       "type": "text"
     },
     "text-curie-001": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10113,6 +13649,7 @@
     },
     "text-davinci-001": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "text-davinci-001",
       "pricing": {
         "currency": "USD",
@@ -10126,6 +13663,7 @@
       "type": "chat"
     },
     "text-davinci-002": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10192,6 +13730,7 @@
       "type": "text"
     },
     "text-davinci-003": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10258,6 +13797,47 @@
       "type": "text"
     },
     "text-embedding-3-large": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "text-embedding-3-large",
       "max_output_tokens": 4096,
@@ -10280,6 +13860,47 @@
       "type": "embedding"
     },
     "text-embedding-3-small": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "text-embedding-3-small",
       "max_output_tokens": 4096,
@@ -10302,6 +13923,47 @@
       "type": "embedding"
     },
     "text-embedding-ada-002": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
       "_playground_disabled": true,
       "id": "text-embedding-ada-002",
       "max_output_tokens": 4096,
@@ -10325,6 +13987,7 @@
     },
     "tts": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "tts",
       "pricing": {
         "currency": "USD",
@@ -10338,6 +14001,7 @@
     },
     "tts-1": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "tts-1",
       "pricing": {
         "currency": "USD",
@@ -10351,6 +14015,7 @@
     },
     "tts-1-hd": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "tts-1-hd",
       "pricing": {
         "currency": "USD",
@@ -10364,6 +14029,7 @@
     },
     "tts-hd": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "tts-hd",
       "pricing": {
         "currency": "USD",
@@ -10376,6 +14042,6 @@
       "type": "chat"
     }
   },
-  "name": "azure",
+  "name": "azure-ai",
   "schema_version": "2.0"
 }

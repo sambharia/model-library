@@ -81,35 +81,89 @@
         ],
         "type": "non-view-manage-data"
       }
-    ],
-    "pricing_formula": {
-      "request": {
-        "operands": [
-          {
-            "value": "input_tokens"
-          },
-          {
-            "value": "rates.request_token"
-          }
-        ],
-        "operation": "multiply"
-      },
-      "response": {
-        "operands": [
-          {
-            "value": "output_tokens"
-          },
-          {
-            "value": "rates.response_token"
-          }
-        ],
-        "operation": "multiply"
-      }
-    }
+    ]
   },
   "id": "anyscale",
   "models": {
     "BAAI/bge-large-en-v1.5": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
       "_playground_disabled": true,
       "id": "BAAI/bge-large-en-v1.5",
       "max_output_tokens": 4096,
@@ -132,6 +186,7 @@
       "type": "embedding"
     },
     "HuggingFaceH4/zephyr-7b-beta": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -231,6 +286,7 @@
       "type": "chat"
     },
     "Meta-Llama/Llama-Guard-7b": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -330,6 +386,7 @@
       "type": "chat"
     },
     "Open-Orca/Mistral-7B-OpenOrca": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -429,6 +486,7 @@
       "type": "chat"
     },
     "codellama/CodeLlama-34b-Instruct-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -528,6 +586,7 @@
       "type": "chat"
     },
     "codellama/CodeLlama-70b-Instruct-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -627,6 +686,84 @@
       "type": "chat"
     },
     "google/gemma-7b-it": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
       "_playground_disabled": true,
       "id": "google/gemma-7b-it",
       "max_output_tokens": 4096,
@@ -650,6 +787,7 @@
       "type": "chat"
     },
     "meta-llama/Llama-2-13b-chat-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -749,6 +887,7 @@
       "type": "chat"
     },
     "meta-llama/Llama-2-70b-chat-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -848,6 +987,7 @@
       "type": "chat"
     },
     "meta-llama/Llama-2-7b-chat-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -947,6 +1087,84 @@
       "type": "chat"
     },
     "meta-llama/Llama-3-8b-chat-hf": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
       "_playground_disabled": true,
       "id": "meta-llama/Llama-3-8b-chat-hf",
       "max_output_tokens": 4096,
@@ -970,6 +1188,84 @@
       "type": "chat"
     },
     "meta-llama/Meta-Llama-3-70B-Instruct": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
       "_playground_disabled": true,
       "id": "meta-llama/Meta-Llama-3-70B-Instruct",
       "max_output_tokens": 4096,
@@ -993,6 +1289,7 @@
       "type": "chat"
     },
     "mistralai/Mistral-7B-Instruct-v0.1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1122,6 +1419,84 @@
       "type": "chat"
     },
     "mistralai/Mixtral-8x22B-Instruct-v0.1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
       "_playground_disabled": true,
       "id": "mistralai/Mixtral-8x22B-Instruct-v0.1",
       "max_output_tokens": 4096,
@@ -1145,6 +1520,7 @@
       "type": "chat"
     },
     "mistralai/Mixtral-8x7B-Instruct-v0.1": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1247,6 +1623,7 @@
       "type": "chat"
     },
     "mlabonne/NeuralHermes-2.5-Mistral-7B": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1346,6 +1723,84 @@
       "type": "chat"
     },
     "thenlper/gte-large": {
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
       "_playground_disabled": true,
       "id": "thenlper/gte-large",
       "max_output_tokens": 4096,

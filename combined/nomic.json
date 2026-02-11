@@ -4,6 +4,7 @@
   "models": {
     "nomic-embed-text-v1": {
       "_config_source": "pricing_only",
+      "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "id": "nomic-embed-text-v1",
       "pricing": {
         "currency": "USD",

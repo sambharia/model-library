@@ -17,7 +17,6 @@ const customerLogos = [
   { src: '/assets/Cyera.png', alt: 'Cyera' },
   { src: '/assets/Qoala.png', alt: 'Qoala' },
   { src: '/assets/Syngenta.png', alt: 'Syngenta' },
-  { src: '/assets/Vistaprint.png', alt: 'Vistaprint' },
 ]
 
 export default function LogoRibbon() {

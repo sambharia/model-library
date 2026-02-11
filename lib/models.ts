@@ -204,7 +204,6 @@ export async function getAllModels(): Promise<Model[]> {
     try {
       const data = rawData as Record<string, unknown>
       const providerName = formatProviderName(data.id as string || providerId)
-      
       if (data.models) {
         for (const [modelId, modelData] of Object.entries(data.models as Record<string, unknown>)) {
           const model = modelData as Record<string, unknown>
@@ -267,6 +266,7 @@ export async function getAllModels(): Promise<Model[]> {
             },
             features,
             pricing,
+            lastUpdated: model._lastUpdated as string | undefined,
           })
         }
       }

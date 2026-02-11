@@ -10,7 +10,9 @@
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "generate": "node scripts/generate-combined.js",
+    "update-models": "git clone https://github.com/Portkey-AI/models.git /tmp/portkey-models && node scripts/generate-combined.js /tmp/portkey-models && rm -rf /tmp/portkey-models"
   },
   "dependencies": {
     "@tanstack/react-table": "^8.20.6",

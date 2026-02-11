@@ -81,35 +81,194 @@
         ],
         "type": "non-view-manage-data"
       }
-    ],
-    "pricing_formula": {
-      "request": {
-        "operands": [
-          {
-            "value": "input_tokens"
-          },
-          {
-            "value": "rates.request_token"
-          }
-        ],
-        "operation": "multiply"
-      },
-      "response": {
-        "operands": [
-          {
-            "value": "output_tokens"
-          },
-          {
-            "value": "rates.response_token"
-          }
-        ],
-        "operation": "multiply"
-      }
-    }
+    ]
   },
   "id": "nebius",
   "models": {
+    "BAAI/bge-multilingual-gemma2": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "BAAI/bge-multilingual-gemma2",
+      "max_output_tokens": 8096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "type": "embedding"
+    },
+    "MiniMaxAI/MiniMax-M2.1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "MiniMaxAI/MiniMax-M2.1",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "NousResearch/Hermes-3-Llama-405B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -200,6 +359,7 @@
       "type": "chat"
     },
     "NousResearch/Hermes-4-405B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -290,6 +450,7 @@
       "type": "chat"
     },
     "NousResearch/Hermes-4-70B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -379,7 +540,99 @@
       },
       "type": "chat"
     },
+    "PrimeIntellect/INTELLECT-3.1-13B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "PrimeIntellect/INTELLECT-3.1-13B",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "Qwen/QwQ-32B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -470,6 +723,7 @@
       "type": "chat"
     },
     "Qwen/QwQ-32B-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -560,6 +814,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2-VL-72B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -637,15 +892,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "Qwen/Qwen2-VL-72B-Instruct",
       "max_output_tokens": 8192,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -654,6 +905,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2-VL-7B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -731,15 +983,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "Qwen/Qwen2-VL-7B-Instruct",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -748,6 +996,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-1.5B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -838,6 +1087,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-32B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -928,6 +1178,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-32B-Instruct-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1018,6 +1269,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-72B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1108,6 +1360,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-72B-Instruct-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1198,6 +1451,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-32B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1288,6 +1542,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-32B-Instruct-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1378,6 +1633,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-7B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1468,6 +1724,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-7B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1558,6 +1815,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-7B-Instruct-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1648,6 +1906,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-7B-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1738,6 +1997,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-VL-72B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1815,15 +2075,375 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "Qwen/Qwen2.5-VL-72B-Instruct",
       "max_output_tokens": 32000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3-0.6B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-0.6B",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3-0.6B-Base": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-0.6B-Base",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3-1.7B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-1.7B",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3-1.7B-Base": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-1.7B-Base",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
         ],
         "output": [
           "text"
@@ -1832,6 +2452,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3-14B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1921,7 +2542,99 @@
       },
       "type": "chat"
     },
+    "Qwen/Qwen3-14B-Base": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-14B-Base",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "Qwen/Qwen3-235B-A22B-Instruct-2507": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2012,6 +2725,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3-235B-A22B-Thinking-2507": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2102,6 +2816,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3-30B-A3B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2192,6 +2907,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3-30B-A3B-Instruct-2507": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2282,6 +2998,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3-30B-A3B-Thinking-2507": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2372,6 +3089,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3-32B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2462,6 +3180,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3-32B-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2551,7 +3270,372 @@
       },
       "type": "chat"
     },
+    "Qwen/Qwen3-4B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-4B",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3-4B-Base": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-4B-Base",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3-8B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-8B",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3-8B-Base": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-8B-Base",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "Qwen/Qwen3-Coder-30B-A3B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2642,6 +3726,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3-Coder-480B-A35B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2731,7 +3816,190 @@
       },
       "type": "chat"
     },
+    "Qwen/Qwen3-Embedding-8B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-Embedding-8B",
+      "max_output_tokens": 8096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "type": "embedding"
+    },
+    "Qwen/Qwen3-Next-80B-A3B-Thinking": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "aaditya/Llama3-OpenBioLLM-70B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2822,6 +4090,7 @@
       "type": "chat"
     },
     "aaditya/Llama3-OpenBioLLM-8B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2912,6 +4181,7 @@
       "type": "chat"
     },
     "allenai/OLMo-7B-Instruct-hf": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3001,7 +4271,190 @@
       },
       "type": "chat"
     },
+    "black-forest-labs/flux-dev": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "black-forest-labs/flux-dev",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "black-forest-labs/flux-schnell": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "black-forest-labs/flux-schnell",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "cognitivecomputations/dolphin-2.9.2-mixtral-8x22b": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3092,6 +4545,7 @@
       "type": "chat"
     },
     "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3182,6 +4636,7 @@
       "type": "chat"
     },
     "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3272,6 +4727,7 @@
       "type": "chat"
     },
     "deepseek-ai/DeepSeek-R1-0528": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3371,6 +4827,7 @@
       "type": "chat"
     },
     "deepseek-ai/DeepSeek-R1-0528-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3461,6 +4918,7 @@
       "type": "chat"
     },
     "deepseek-ai/DeepSeek-V3": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3551,11 +5009,12 @@
       "type": "chat"
     },
     "deepseek-ai/DeepSeek-V3-0324": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 163840,
+          "maxValue": 128000,
           "minValue": 1
         },
         {
@@ -3629,7 +5088,7 @@
         }
       ],
       "id": "deepseek-ai/DeepSeek-V3-0324",
-      "max_output_tokens": 163840,
+      "max_output_tokens": 128000,
       "modality": {
         "input": [
           "text"
@@ -3641,6 +5100,7 @@
       "type": "chat"
     },
     "deepseek-ai/DeepSeek-V3-0324-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3730,7 +5190,190 @@
       },
       "type": "chat"
     },
+    "deepseek-ai/DeepSeek-V3.1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 161280003840,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "deepseek-ai/DeepSeek-V3.1",
+      "max_output_tokens": 161280003840,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "deepseek-ai/DeepSeek-V3.2": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "deepseek-ai/DeepSeek-V3.2",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "google/gemma-2-27b-it": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3821,6 +5464,7 @@
       "type": "chat"
     },
     "google/gemma-2-27b-it-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3911,6 +5555,7 @@
       "type": "chat"
     },
     "google/gemma-2-2b-it": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4001,6 +5646,7 @@
       "type": "chat"
     },
     "google/gemma-2-2b-it-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4091,6 +5737,7 @@
       "type": "chat"
     },
     "google/gemma-2-9b-it": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4181,6 +5828,7 @@
       "type": "chat"
     },
     "google/gemma-2-9b-it-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4271,6 +5919,7 @@
       "type": "chat"
     },
     "google/gemma-3-27b-it": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4348,15 +5997,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "google/gemma-3-27b-it",
       "max_output_tokens": 110000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4365,6 +6010,7 @@
       "type": "chat"
     },
     "google/gemma-3-27b-it-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4442,15 +6088,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "google/gemma-3-27b-it-fast",
       "max_output_tokens": 110000,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4458,7 +6100,99 @@
       },
       "type": "chat"
     },
+    "intfloat/e5-mistral-7b-instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "intfloat/e5-mistral-7b-instruct",
+      "max_output_tokens": 8096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "type": "embedding"
+    },
     "llava-hf/llava-1.5-13b-hf": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4536,15 +6270,11 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "llava-hf/llava-1.5-13b-hf",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
         ],
         "output": [
           "text"
@@ -4553,6 +6283,7 @@
       "type": "chat"
     },
     "llava-hf/llava-1.5-7b-hf": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4630,15 +6361,102 @@
           "type": "non-view-manage-data"
         }
       ],
-      "features": {
-        "vision": true
-      },
       "id": "llava-hf/llava-1.5-7b-hf",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
-          "text",
-          "image"
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "meta-llama/Llama-3.2-1B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "meta-llama/Llama-3.2-1B",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
         ],
         "output": [
           "text"
@@ -4647,6 +6465,7 @@
       "type": "chat"
     },
     "meta-llama/Llama-3.2-1B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4736,7 +6555,99 @@
       },
       "type": "chat"
     },
+    "meta-llama/Llama-3.2-3B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "meta-llama/Llama-3.2-3B",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "meta-llama/Llama-3.2-3B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4827,6 +6738,7 @@
       "type": "chat"
     },
     "meta-llama/Llama-3.3-70B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4917,6 +6829,7 @@
       "type": "chat"
     },
     "meta-llama/Llama-3.3-70B-Instruct-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5007,6 +6920,7 @@
       "type": "chat"
     },
     "meta-llama/Llama-Guard-3-8B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5097,6 +7011,7 @@
       "type": "chat"
     },
     "meta-llama/Meta-Llama-3.1-405B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5187,6 +7102,7 @@
       "type": "chat"
     },
     "meta-llama/Meta-Llama-3.1-70B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5277,6 +7193,7 @@
       "type": "chat"
     },
     "meta-llama/Meta-Llama-3.1-70B-Instruct-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5367,6 +7284,7 @@
       "type": "chat"
     },
     "meta-llama/Meta-Llama-3.1-8B-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5457,6 +7375,7 @@
       "type": "chat"
     },
     "meta-llama/Meta-Llama-3.1-8B-Instruct-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5547,6 +7466,7 @@
       "type": "chat"
     },
     "microsoft/Phi-3-medium-128k-instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5637,6 +7557,7 @@
       "type": "chat"
     },
     "microsoft/Phi-3-medium-128k-instruct-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5727,6 +7648,7 @@
       "type": "chat"
     },
     "microsoft/Phi-3-mini-4k-instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5817,6 +7739,7 @@
       "type": "chat"
     },
     "microsoft/Phi-3-mini-4k-instruct-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5907,6 +7830,7 @@
       "type": "chat"
     },
     "microsoft/Phi-3.5-MoE-instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5997,6 +7921,7 @@
       "type": "chat"
     },
     "microsoft/Phi-3.5-mini-instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6087,6 +8012,7 @@
       "type": "chat"
     },
     "mistralai/Devstral-Small-2505": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6177,6 +8103,7 @@
       "type": "chat"
     },
     "mistralai/Mistral-Nemo-Instruct-2407": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6267,6 +8194,7 @@
       "type": "chat"
     },
     "mistralai/Mistral-Nemo-Instruct-2407-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6357,6 +8285,7 @@
       "type": "chat"
     },
     "mistralai/Mixtral-8x22B-Instruct-v0.1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6447,6 +8376,7 @@
       "type": "chat"
     },
     "mistralai/Mixtral-8x22B-Instruct-v0.1-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6537,6 +8467,7 @@
       "type": "chat"
     },
     "mistralai/Mixtral-8x7B-Instruct-v0.1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6630,6 +8561,7 @@
       "type": "chat"
     },
     "mistralai/Mixtral-8x7B-Instruct-v0.1-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6723,6 +8655,7 @@
       "type": "chat"
     },
     "moonshotai/Kimi-K2-Instruct": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6812,7 +8745,99 @@
       },
       "type": "chat"
     },
+    "moonshotai/Kimi-K2-Thinking": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "moonshotai/Kimi-K2-Thinking",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6903,6 +8928,7 @@
       "type": "chat"
     },
     "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF-fast": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6993,6 +9019,7 @@
       "type": "chat"
     },
     "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7082,7 +9109,190 @@
       },
       "type": "chat"
     },
+    "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 131072,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "max_output_tokens": 131072,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "nvidia/Nemotron-Nano-V2-12b": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "nvidia/Nemotron-Nano-V2-12b",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "openai/gpt-oss-120b": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7173,6 +9383,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-20b": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7263,6 +9474,7 @@
       "type": "chat"
     },
     "zai-org/GLM-4.5": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7353,6 +9565,7 @@
       "type": "chat"
     },
     "zai-org/GLM-4.5-Air": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7431,6 +9644,97 @@
         }
       ],
       "id": "zai-org/GLM-4.5-Air",
+      "max_output_tokens": 131072,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "zai-org/GLM-4.7-FP8": {
+      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 131072,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "zai-org/GLM-4.7-FP8",
       "max_output_tokens": 131072,
       "modality": {
         "input": [

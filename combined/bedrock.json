@@ -4688,8 +4688,136 @@
       },
       "type": "chat"
     },
+    "claude": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 8,
+          "output": 24,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-3-5-haiku-20241022": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-3-5-haiku-20241022",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 1,
+          "cached_input": 0.08,
+          "input": 0.8,
+          "output": 4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-3-5-sonnet-20240620": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-3-5-sonnet-20240620",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 3.75,
+          "cached_input": 0.3,
+          "input": 3,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-3-5-sonnet-20241022": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-3-5-sonnet-20241022",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 3.75,
+          "cached_input": 0.3,
+          "input": 3,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-3-7-sonnet-20250219": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-3-7-sonnet-20250219",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 0.3,
+          "cached_input": 3.75,
+          "input": 3,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-3-haiku-20240307": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-3-haiku-20240307",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.25,
+          "output": 1.25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-3-opus-20240229": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-3-opus-20240229",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 15,
+          "output": 75,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-3-sonnet-20240229": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-3-sonnet-20240229",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 3,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "claude-haiku-4-5-20251001": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -4785,8 +4913,57 @@
       },
       "type": "chat"
     },
+    "claude-instant": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-instant",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.8,
+          "output": 2.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-opus-4-1-20250805": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-opus-4-1-20250805",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 18.75,
+          "cached_input": 1.5,
+          "input": 15,
+          "output": 75,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-opus-4-20250514": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-opus-4-20250514",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 18.75,
+          "cached_input": 1.5,
+          "input": 15,
+          "output": 75,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "claude-opus-4-5-20251101": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -4885,7 +5062,7 @@
     },
     "claude-opus-4-6": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-09T13:19:57.000Z",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
       "id": "claude-opus-4-6",
       "pricing": {
         "currency": "USD",
@@ -4900,8 +5077,25 @@
       },
       "type": "chat"
     },
+    "claude-sonnet-4-20250514": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
+      "id": "claude-sonnet-4-20250514",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 3.75,
+          "cached_input": 0.3,
+          "input": 3,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "claude-sonnet-4-5-20250929": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-11T10:39:01.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -6942,7 +7136,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-4-6-v1:0": {
-      "_lastUpdated": "2026-02-05T19:29:34.000Z",
+      "_lastUpdated": "2026-02-11T09:49:35.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -11702,7 +11896,7 @@
       "type": "chat"
     },
     "qwen.qwen3-vl-235b-a22b": {
-      "_lastUpdated": "2026-02-09T13:19:32.000Z",
+      "_lastUpdated": "2026-02-11T09:49:35.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -15443,7 +15637,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-4-6-v1:0": {
-      "_lastUpdated": "2026-02-05T19:29:34.000Z",
+      "_lastUpdated": "2026-02-11T09:49:35.000Z",
       "_parameters": [
         {
           "defaultValue": 512,

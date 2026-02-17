@@ -814,7 +814,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2-VL-72B-Instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -905,7 +905,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2-VL-7B-Instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1451,7 +1451,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-32B-Instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1542,7 +1542,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-32B-Instruct-fast": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1633,7 +1633,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-7B": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1724,7 +1724,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-7B-Instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1815,7 +1815,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-7B-Instruct-fast": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1906,7 +1906,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-Coder-7B-fast": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1997,7 +1997,7 @@
       "type": "chat"
     },
     "Qwen/Qwen2.5-VL-72B-Instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4272,7 +4272,7 @@
       "type": "chat"
     },
     "black-forest-labs/flux-dev": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4363,7 +4363,7 @@
       "type": "chat"
     },
     "black-forest-labs/flux-schnell": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4545,7 +4545,7 @@
       "type": "chat"
     },
     "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4636,7 +4636,7 @@
       "type": "chat"
     },
     "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct-fast": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5919,7 +5919,7 @@
       "type": "chat"
     },
     "google/gemma-3-27b-it": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6010,7 +6010,7 @@
       "type": "chat"
     },
     "google/gemma-3-27b-it-fast": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6192,7 +6192,7 @@
       "type": "embedding"
     },
     "llava-hf/llava-1.5-13b-hf": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6283,7 +6283,7 @@
       "type": "chat"
     },
     "llava-hf/llava-1.5-7b-hf": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8467,7 +8467,7 @@
       "type": "chat"
     },
     "mistralai/Mixtral-8x7B-Instruct-v0.1": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8561,7 +8561,7 @@
       "type": "chat"
     },
     "mistralai/Mixtral-8x7B-Instruct-v0.1-fast": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

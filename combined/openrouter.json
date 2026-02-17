@@ -83,6 +83,7 @@
   "id": "openrouter",
   "models": {
     "agentica-org/deepcoder-14b-preview": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -175,6 +176,7 @@
       "type": "chat"
     },
     "agentica-org/deepcoder-14b-preview:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -267,6 +269,7 @@
       "type": "chat"
     },
     "ai21/jamba-1.6-large": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -362,6 +365,7 @@
       "type": "chat"
     },
     "ai21/jamba-1.6-mini": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -457,7 +461,7 @@
       "type": "chat"
     },
     "ai21/jamba-large-1.7": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -562,7 +566,7 @@
       "type": "chat"
     },
     "ai21/jamba-mini-1.7": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -667,7 +671,7 @@
       "type": "chat"
     },
     "aion-labs/aion-1.0": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -769,7 +773,7 @@
       "type": "chat"
     },
     "aion-labs/aion-1.0-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -871,7 +875,7 @@
       "type": "chat"
     },
     "aion-labs/aion-rp-llama-3.1-8b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -973,7 +977,7 @@
       "type": "chat"
     },
     "alfredpros/codellama-7b-instruct-solidity": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1180,7 +1184,7 @@
       "type": "chat"
     },
     "allenai/molmo-2-8b": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1282,7 +1286,7 @@
       "type": "chat"
     },
     "allenai/molmo-2-8b:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1375,7 +1379,7 @@
       "type": "chat"
     },
     "allenai/olmo-2-0325-32b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1477,7 +1481,7 @@
       "type": "chat"
     },
     "allenai/olmo-3-32b-think": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1579,7 +1583,7 @@
       "type": "chat"
     },
     "allenai/olmo-3-7b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1681,7 +1685,7 @@
       "type": "chat"
     },
     "allenai/olmo-3-7b-think": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1783,7 +1787,7 @@
       "type": "chat"
     },
     "allenai/olmo-3.1-32b-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1888,7 +1892,7 @@
       "type": "chat"
     },
     "allenai/olmo-3.1-32b-think": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1990,7 +1994,7 @@
       "type": "chat"
     },
     "alpindale/goliath-120b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2092,7 +2096,7 @@
       "type": "chat"
     },
     "amazon/nova-2-lite-v1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2197,7 +2201,7 @@
       "type": "chat"
     },
     "amazon/nova-lite-v1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2302,7 +2306,7 @@
       "type": "chat"
     },
     "amazon/nova-micro-v1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2407,7 +2411,7 @@
       "type": "chat"
     },
     "amazon/nova-premier-v1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2512,7 +2516,7 @@
       "type": "chat"
     },
     "amazon/nova-pro-v1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2617,6 +2621,7 @@
       "type": "chat"
     },
     "anthracite-org/magnum-v2-72b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2709,7 +2714,7 @@
       "type": "chat"
     },
     "anthracite-org/magnum-v4-72b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2811,7 +2816,7 @@
       "type": "chat"
     },
     "anthropic/claude-3-haiku": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2916,6 +2921,7 @@
       "type": "chat"
     },
     "anthropic/claude-3-haiku:beta": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3011,7 +3017,7 @@
       "type": "chat"
     },
     "anthropic/claude-3-opus": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3116,6 +3122,7 @@
       "type": "chat"
     },
     "anthropic/claude-3-opus:beta": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3211,6 +3218,7 @@
       "type": "chat"
     },
     "anthropic/claude-3-sonnet": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3306,7 +3314,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.5-haiku": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3411,7 +3419,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.5-haiku-20241022": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3516,6 +3524,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.5-haiku:beta": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3611,7 +3620,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.5-sonnet": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3716,6 +3725,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.5-sonnet-20240620": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3811,6 +3821,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.5-sonnet-20240620:beta": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3906,6 +3917,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.5-sonnet:beta": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4001,7 +4013,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.7-sonnet": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4106,6 +4118,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.7-sonnet:beta": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4201,7 +4214,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.7-sonnet:thinking": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4306,7 +4319,7 @@
       "type": "chat"
     },
     "anthropic/claude-haiku-4.5": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4411,7 +4424,7 @@
       "type": "chat"
     },
     "anthropic/claude-opus-4": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4516,7 +4529,7 @@
       "type": "chat"
     },
     "anthropic/claude-opus-4.1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4621,7 +4634,7 @@
       "type": "chat"
     },
     "anthropic/claude-opus-4.5": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4726,7 +4739,7 @@
       "type": "chat"
     },
     "anthropic/claude-opus-4.6": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4831,7 +4844,7 @@
       "type": "chat"
     },
     "anthropic/claude-sonnet-4": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4936,7 +4949,7 @@
       "type": "chat"
     },
     "anthropic/claude-sonnet-4.5": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5041,7 +5054,7 @@
       "type": "chat"
     },
     "arcee-ai/coder-large": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5143,7 +5156,7 @@
       "type": "chat"
     },
     "arcee-ai/maestro-reasoning": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5245,7 +5258,7 @@
       "type": "chat"
     },
     "arcee-ai/spotlight": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5347,7 +5360,7 @@
       "type": "chat"
     },
     "arcee-ai/trinity-large-preview:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5443,7 +5456,7 @@
       "type": "chat"
     },
     "arcee-ai/trinity-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5548,7 +5561,7 @@
       "type": "chat"
     },
     "arcee-ai/trinity-mini:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5644,7 +5657,7 @@
       "type": "chat"
     },
     "arcee-ai/virtuoso-large": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5749,7 +5762,7 @@
       "type": "chat"
     },
     "arliai/qwq-32b-arliai-rpr-v1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5851,6 +5864,7 @@
       "type": "chat"
     },
     "arliai/qwq-32b-arliai-rpr-v1:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5943,7 +5957,7 @@
       "type": "chat"
     },
     "baidu/ernie-4.5-21b-a3b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6048,7 +6062,7 @@
       "type": "chat"
     },
     "baidu/ernie-4.5-21b-a3b-thinking": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6150,7 +6164,7 @@
       "type": "chat"
     },
     "baidu/ernie-4.5-300b-a47b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6252,7 +6266,7 @@
       "type": "chat"
     },
     "baidu/ernie-4.5-vl-28b-a3b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6357,7 +6371,7 @@
       "type": "chat"
     },
     "baidu/ernie-4.5-vl-424b-a47b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6459,7 +6473,7 @@
       "type": "chat"
     },
     "bytedance-seed/seed-1.6": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6564,7 +6578,7 @@
       "type": "chat"
     },
     "bytedance-seed/seed-1.6-flash": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6669,7 +6683,7 @@
       "type": "chat"
     },
     "bytedance/ui-tars-1.5-7b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6771,7 +6785,7 @@
       "type": "chat"
     },
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6864,6 +6878,7 @@
       "type": "chat"
     },
     "cognitivecomputations/dolphin-mixtral-8x22b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6956,6 +6971,7 @@
       "type": "chat"
     },
     "cognitivecomputations/dolphin3.0-mistral-24b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7048,6 +7064,7 @@
       "type": "chat"
     },
     "cognitivecomputations/dolphin3.0-r1-mistral-24b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7140,6 +7157,7 @@
       "type": "chat"
     },
     "cognitivecomputations/dolphin3.0-r1-mistral-24b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7232,6 +7250,7 @@
       "type": "chat"
     },
     "cohere/command": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7324,7 +7343,7 @@
       "type": "chat"
     },
     "cohere/command-a": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7426,6 +7445,7 @@
       "type": "chat"
     },
     "cohere/command-r": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7521,6 +7541,7 @@
       "type": "chat"
     },
     "cohere/command-r-03-2024": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7616,7 +7637,7 @@
       "type": "chat"
     },
     "cohere/command-r-08-2024": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7721,6 +7742,7 @@
       "type": "chat"
     },
     "cohere/command-r-plus": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7816,6 +7838,7 @@
       "type": "chat"
     },
     "cohere/command-r-plus-04-2024": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7911,7 +7934,7 @@
       "type": "chat"
     },
     "cohere/command-r-plus-08-2024": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8016,7 +8039,7 @@
       "type": "chat"
     },
     "cohere/command-r7b-12-2024": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8133,7 +8156,7 @@
       "type": "chat"
     },
     "deepcogito/cogito-v2-preview-llama-109b-moe": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8238,7 +8261,7 @@
       "type": "chat"
     },
     "deepcogito/cogito-v2-preview-llama-405b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8343,7 +8366,7 @@
       "type": "chat"
     },
     "deepcogito/cogito-v2-preview-llama-70b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8448,7 +8471,7 @@
       "type": "chat"
     },
     "deepcogito/cogito-v2.1-671b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8550,7 +8573,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-chat": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8655,7 +8678,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-chat-v3-0324": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8760,6 +8783,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-chat-v3-0324:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8855,7 +8879,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-chat-v3.1": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8960,7 +8984,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-prover-v2": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9062,7 +9086,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9167,7 +9191,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-0528": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9272,7 +9296,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-0528-qwen3-8b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9374,6 +9398,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-0528-qwen3-8b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9466,7 +9491,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-0528:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9559,7 +9584,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-distill-llama-70b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9664,6 +9689,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-distill-llama-70b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9756,6 +9782,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-distill-llama-8b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9848,6 +9875,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-distill-qwen-1.5b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9940,7 +9968,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-distill-qwen-14b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10042,6 +10070,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-distill-qwen-14b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10134,7 +10163,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-distill-qwen-32b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10236,6 +10265,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-distill-qwen-7b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10328,6 +10358,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10420,6 +10451,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v3-base": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10512,7 +10544,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v3.1-terminus": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10617,7 +10649,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v3.1-terminus:exacto": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10827,7 +10859,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v3.2-exp": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10932,7 +10964,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v3.2-speciale": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11034,7 +11066,7 @@
       "type": "chat"
     },
     "eleutherai/llemma_7b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11136,7 +11168,7 @@
       "type": "chat"
     },
     "essentialai/rnj-1-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11238,6 +11270,7 @@
       "type": "chat"
     },
     "featherless/qwerky-72b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11330,7 +11363,7 @@
       "type": "chat"
     },
     "google/gemini-2.0-flash-001": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11435,7 +11468,7 @@
       "type": "chat"
     },
     "google/gemini-2.0-flash-exp:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11531,7 +11564,7 @@
       "type": "chat"
     },
     "google/gemini-2.0-flash-lite-001": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11636,7 +11669,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-flash": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11741,7 +11774,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-flash-image": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11859,7 +11892,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-flash-lite": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11964,6 +11997,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-flash-lite-preview-06-17": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12059,7 +12093,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-flash-lite-preview-09-2025": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12164,7 +12198,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-flash-preview-09-2025": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12269,7 +12303,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-pro": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12374,6 +12408,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-pro-exp-03-25": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12469,7 +12504,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-pro-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12574,7 +12609,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-pro-preview-05-06": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12679,7 +12714,7 @@
       "type": "chat"
     },
     "google/gemini-3-flash-preview": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12784,7 +12819,7 @@
       "type": "chat"
     },
     "google/gemini-3-pro-image-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12887,7 +12922,7 @@
       "type": "image"
     },
     "google/gemini-3-pro-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12992,6 +13027,7 @@
       "type": "chat"
     },
     "google/gemini-flash-1.5": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13087,6 +13123,7 @@
       "type": "chat"
     },
     "google/gemini-flash-1.5-8b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13182,6 +13219,7 @@
       "type": "chat"
     },
     "google/gemini-pro-1.5": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13277,7 +13315,7 @@
       "type": "chat"
     },
     "google/gemma-2-27b-it": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13379,7 +13417,7 @@
       "type": "chat"
     },
     "google/gemma-2-9b-it": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13481,6 +13519,7 @@
       "type": "chat"
     },
     "google/gemma-2-9b-it:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13573,7 +13612,7 @@
       "type": "chat"
     },
     "google/gemma-3-12b-it": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13675,7 +13714,7 @@
       "type": "chat"
     },
     "google/gemma-3-12b-it:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13768,7 +13807,7 @@
       "type": "chat"
     },
     "google/gemma-3-27b-it": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13870,7 +13909,7 @@
       "type": "chat"
     },
     "google/gemma-3-27b-it:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13963,7 +14002,7 @@
       "type": "chat"
     },
     "google/gemma-3-4b-it": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14065,7 +14104,7 @@
       "type": "chat"
     },
     "google/gemma-3-4b-it:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14158,7 +14197,7 @@
       "type": "chat"
     },
     "google/gemma-3n-e2b-it:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14251,7 +14290,7 @@
       "type": "chat"
     },
     "google/gemma-3n-e4b-it": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14353,7 +14392,7 @@
       "type": "chat"
     },
     "google/gemma-3n-e4b-it:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14446,7 +14485,7 @@
       "type": "chat"
     },
     "gryphe/mythomax-l2-13b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14548,7 +14587,7 @@
       "type": "chat"
     },
     "ibm-granite/granite-4.0-h-micro": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14650,7 +14689,7 @@
       "type": "chat"
     },
     "inception/mercury": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14752,7 +14791,7 @@
       "type": "chat"
     },
     "inception/mercury-coder": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14854,6 +14893,7 @@
       "type": "chat"
     },
     "infermatic/mn-inferor-12b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14946,7 +14986,7 @@
       "type": "chat"
     },
     "inflection/inflection-3-pi": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15048,7 +15088,7 @@
       "type": "chat"
     },
     "inflection/inflection-3-productivity": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15150,7 +15190,7 @@
       "type": "chat"
     },
     "kwaipilot/kat-coder-pro": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15255,7 +15295,7 @@
       "type": "chat"
     },
     "liquid/lfm-2.2-6b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15357,7 +15397,7 @@
       "type": "chat"
     },
     "liquid/lfm-2.5-1.2b-instruct:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15450,7 +15490,7 @@
       "type": "chat"
     },
     "liquid/lfm-2.5-1.2b-thinking:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15543,6 +15583,7 @@
       "type": "chat"
     },
     "liquid/lfm-3b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15635,6 +15676,7 @@
       "type": "chat"
     },
     "liquid/lfm-40b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15727,6 +15769,7 @@
       "type": "chat"
     },
     "liquid/lfm-7b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15819,7 +15862,7 @@
       "type": "chat"
     },
     "liquid/lfm2-8b-a1b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15921,7 +15964,7 @@
       "type": "chat"
     },
     "mancer/weaver": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16023,7 +16066,7 @@
       "type": "chat"
     },
     "meituan/longcat-flash-chat": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16125,7 +16168,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3-70b-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16335,7 +16378,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.1-405b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16635,7 +16678,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.1-70b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16740,7 +16783,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.1-8b-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16845,7 +16888,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.2-11b-vision-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16950,6 +16993,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.2-11b-vision-instruct:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17042,7 +17086,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.2-1b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17144,7 +17188,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.2-3b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17249,7 +17293,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.2-3b-instruct:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17342,7 +17386,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.2-90b-vision-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17444,7 +17488,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.3-70b-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17549,7 +17593,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.3-70b-instruct:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17645,7 +17689,7 @@
       "type": "chat"
     },
     "meta-llama/llama-4-maverick": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17750,7 +17794,7 @@
       "type": "chat"
     },
     "meta-llama/llama-4-scout": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17855,7 +17899,7 @@
       "type": "chat"
     },
     "meta-llama/llama-guard-2-8b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17957,7 +18001,7 @@
       "type": "chat"
     },
     "meta-llama/llama-guard-3-8b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18059,7 +18103,7 @@
       "type": "chat"
     },
     "meta-llama/llama-guard-4-12b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18161,7 +18205,7 @@
       "type": "chat"
     },
     "microsoft/mai-ds-r1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18263,6 +18307,7 @@
       "type": "chat"
     },
     "microsoft/mai-ds-r1:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18355,7 +18400,7 @@
       "type": "chat"
     },
     "microsoft/phi-3-medium-128k-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18460,7 +18505,7 @@
       "type": "chat"
     },
     "microsoft/phi-3-mini-128k-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18565,7 +18610,7 @@
       "type": "chat"
     },
     "microsoft/phi-3.5-mini-128k-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18670,7 +18715,7 @@
       "type": "chat"
     },
     "microsoft/phi-4": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18772,7 +18817,7 @@
       "type": "chat"
     },
     "microsoft/phi-4-multimodal-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18874,7 +18919,7 @@
       "type": "chat"
     },
     "microsoft/phi-4-reasoning-plus": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19078,7 +19123,7 @@
       "type": "chat"
     },
     "minimax/minimax-01": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19180,7 +19225,7 @@
       "type": "chat"
     },
     "minimax/minimax-m1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19285,7 +19330,7 @@
       "type": "chat"
     },
     "minimax/minimax-m2": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19390,7 +19435,7 @@
       "type": "chat"
     },
     "minimax/minimax-m2-her": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19597,7 +19642,7 @@
       "type": "chat"
     },
     "minimax/minimax-m2.5": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19702,6 +19747,7 @@
       "type": "chat"
     },
     "mistralai/codestral-2501": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19797,7 +19843,7 @@
       "type": "chat"
     },
     "mistralai/codestral-2508": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19902,7 +19948,7 @@
       "type": "chat"
     },
     "mistralai/devstral-2512": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20007,7 +20053,7 @@
       "type": "chat"
     },
     "mistralai/devstral-medium": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20112,7 +20158,7 @@
       "type": "chat"
     },
     "mistralai/devstral-small": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20217,7 +20263,7 @@
       "type": "chat"
     },
     "mistralai/devstral-small-2505": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20322,6 +20368,7 @@
       "type": "chat"
     },
     "mistralai/devstral-small-2505:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20417,6 +20464,7 @@
       "type": "chat"
     },
     "mistralai/magistral-medium-2506": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20512,7 +20560,7 @@
       "type": "chat"
     },
     "mistralai/magistral-medium-2506:thinking": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20617,6 +20665,7 @@
       "type": "chat"
     },
     "mistralai/magistral-small-2506": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20712,7 +20761,7 @@
       "type": "chat"
     },
     "mistralai/ministral-14b-2512": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20817,7 +20866,7 @@
       "type": "chat"
     },
     "mistralai/ministral-3b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20922,7 +20971,7 @@
       "type": "chat"
     },
     "mistralai/ministral-3b-2512": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21027,7 +21076,7 @@
       "type": "chat"
     },
     "mistralai/ministral-8b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21132,7 +21181,7 @@
       "type": "chat"
     },
     "mistralai/ministral-8b-2512": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21237,7 +21286,7 @@
       "type": "chat"
     },
     "mistralai/mistral-7b-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21342,7 +21391,7 @@
       "type": "chat"
     },
     "mistralai/mistral-7b-instruct-v0.1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21447,7 +21496,7 @@
       "type": "chat"
     },
     "mistralai/mistral-7b-instruct-v0.2": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21549,7 +21598,7 @@
       "type": "chat"
     },
     "mistralai/mistral-7b-instruct-v0.3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21654,7 +21703,7 @@
       "type": "chat"
     },
     "mistralai/mistral-7b-instruct:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21750,7 +21799,7 @@
       "type": "chat"
     },
     "mistralai/mistral-large": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21855,7 +21904,7 @@
       "type": "chat"
     },
     "mistralai/mistral-large-2407": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21960,7 +22009,7 @@
       "type": "chat"
     },
     "mistralai/mistral-large-2411": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22065,7 +22114,7 @@
       "type": "chat"
     },
     "mistralai/mistral-large-2512": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22170,7 +22219,7 @@
       "type": "chat"
     },
     "mistralai/mistral-medium-3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22275,7 +22324,7 @@
       "type": "chat"
     },
     "mistralai/mistral-medium-3.1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22380,7 +22429,7 @@
       "type": "chat"
     },
     "mistralai/mistral-nemo": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22485,6 +22534,7 @@
       "type": "chat"
     },
     "mistralai/mistral-nemo:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22577,7 +22627,7 @@
       "type": "chat"
     },
     "mistralai/mistral-saba": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22682,6 +22732,7 @@
       "type": "chat"
     },
     "mistralai/mistral-small": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22882,6 +22933,7 @@
       "type": "chat"
     },
     "mistralai/mistral-small-24b-instruct-2501:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22974,7 +23026,7 @@
       "type": "chat"
     },
     "mistralai/mistral-small-3.1-24b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23079,7 +23131,7 @@
       "type": "chat"
     },
     "mistralai/mistral-small-3.1-24b-instruct:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23175,7 +23227,7 @@
       "type": "chat"
     },
     "mistralai/mistral-small-3.2-24b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23280,6 +23332,7 @@
       "type": "chat"
     },
     "mistralai/mistral-small-3.2-24b-instruct:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23375,7 +23428,7 @@
       "type": "chat"
     },
     "mistralai/mistral-small-creative": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23480,7 +23533,7 @@
       "type": "chat"
     },
     "mistralai/mistral-tiny": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23585,7 +23638,7 @@
       "type": "chat"
     },
     "mistralai/mixtral-8x22b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23690,7 +23743,7 @@
       "type": "chat"
     },
     "mistralai/mixtral-8x7b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23795,7 +23848,7 @@
       "type": "chat"
     },
     "mistralai/pixtral-12b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23900,7 +23953,7 @@
       "type": "chat"
     },
     "mistralai/pixtral-large-2411": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24005,7 +24058,7 @@
       "type": "chat"
     },
     "mistralai/voxtral-small-24b-2507": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24110,7 +24163,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-dev-72b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24212,6 +24265,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-dev-72b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24304,7 +24358,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-k2": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24514,7 +24568,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-k2-0905:exacto": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24619,7 +24673,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-k2-thinking": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24829,7 +24883,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-k2:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24940,6 +24994,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-vl-a3b-thinking": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25032,6 +25087,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-vl-a3b-thinking:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25124,6 +25180,7 @@
       "type": "chat"
     },
     "morph/morph-v2": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25216,7 +25273,7 @@
       "type": "chat"
     },
     "morph/morph-v3-fast": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25318,7 +25375,7 @@
       "type": "chat"
     },
     "morph/morph-v3-large": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25420,6 +25477,7 @@
       "type": "chat"
     },
     "neversleep/llama-3-lumimaid-70b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25512,7 +25570,7 @@
       "type": "chat"
     },
     "neversleep/llama-3.1-lumimaid-8b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25614,7 +25672,7 @@
       "type": "chat"
     },
     "neversleep/noromaid-20b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25716,7 +25774,7 @@
       "type": "chat"
     },
     "nex-agi/deepseek-v3.1-nex-n1": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25821,6 +25879,7 @@
       "type": "chat"
     },
     "nothingiisreal/mn-celeste-12b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25913,6 +25972,7 @@
       "type": "chat"
     },
     "nousresearch/deephermes-3-llama-3-8b-preview:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26005,7 +26065,7 @@
       "type": "chat"
     },
     "nousresearch/deephermes-3-mistral-24b-preview": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26107,7 +26167,7 @@
       "type": "chat"
     },
     "nousresearch/hermes-2-pro-llama-3-8b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26209,7 +26269,7 @@
       "type": "chat"
     },
     "nousresearch/hermes-3-llama-3.1-405b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26311,7 +26371,7 @@
       "type": "chat"
     },
     "nousresearch/hermes-3-llama-3.1-405b:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26404,7 +26464,7 @@
       "type": "chat"
     },
     "nousresearch/hermes-3-llama-3.1-70b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26509,7 +26569,7 @@
       "type": "chat"
     },
     "nousresearch/hermes-4-405b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26611,7 +26671,7 @@
       "type": "chat"
     },
     "nousresearch/hermes-4-70b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26716,6 +26776,7 @@
       "type": "chat"
     },
     "nousresearch/nous-hermes-2-mixtral-8x7b-dpo": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26808,7 +26869,7 @@
       "type": "chat"
     },
     "nvidia/llama-3.1-nemotron-70b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26913,7 +26974,7 @@
       "type": "chat"
     },
     "nvidia/llama-3.1-nemotron-ultra-253b-v1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27015,6 +27076,7 @@
       "type": "chat"
     },
     "nvidia/llama-3.1-nemotron-ultra-253b-v1:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27107,6 +27169,7 @@
       "type": "chat"
     },
     "nvidia/llama-3.3-nemotron-super-49b-v1": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27199,7 +27262,7 @@
       "type": "chat"
     },
     "nvidia/llama-3.3-nemotron-super-49b-v1.5": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27304,7 +27367,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-3-nano-30b-a3b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27409,7 +27472,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-3-nano-30b-a3b:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27505,7 +27568,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-nano-12b-v2-vl": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27607,7 +27670,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-nano-12b-v2-vl:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27703,7 +27766,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-nano-9b-v2": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27808,7 +27871,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-nano-9b-v2:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27904,7 +27967,7 @@
       "type": "chat"
     },
     "openai/chatgpt-4o-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28006,7 +28069,7 @@
       "type": "chat"
     },
     "openai/codex-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28111,7 +28174,7 @@
       "type": "chat"
     },
     "openai/gpt-3.5-turbo": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28216,7 +28279,7 @@
       "type": "chat"
     },
     "openai/gpt-3.5-turbo-0613": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28321,7 +28384,7 @@
       "type": "chat"
     },
     "openai/gpt-3.5-turbo-16k": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28426,7 +28489,7 @@
       "type": "chat"
     },
     "openai/gpt-3.5-turbo-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28528,7 +28591,7 @@
       "type": "chat"
     },
     "openai/gpt-4": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28633,7 +28696,7 @@
       "type": "chat"
     },
     "openai/gpt-4-0314": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28738,7 +28801,7 @@
       "type": "chat"
     },
     "openai/gpt-4-1106-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28843,7 +28906,7 @@
       "type": "chat"
     },
     "openai/gpt-4-turbo": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28948,7 +29011,7 @@
       "type": "chat"
     },
     "openai/gpt-4-turbo-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29053,7 +29116,7 @@
       "type": "chat"
     },
     "openai/gpt-4.1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29158,7 +29221,7 @@
       "type": "chat"
     },
     "openai/gpt-4.1-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29263,7 +29326,7 @@
       "type": "chat"
     },
     "openai/gpt-4.1-nano": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29368,7 +29431,7 @@
       "type": "chat"
     },
     "openai/gpt-4o": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29473,7 +29536,7 @@
       "type": "chat"
     },
     "openai/gpt-4o-2024-05-13": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29578,7 +29641,7 @@
       "type": "chat"
     },
     "openai/gpt-4o-2024-08-06": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29683,7 +29746,7 @@
       "type": "chat"
     },
     "openai/gpt-4o-2024-11-20": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29788,7 +29851,7 @@
       "type": "chat"
     },
     "openai/gpt-4o-audio-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29893,7 +29956,7 @@
       "type": "chat"
     },
     "openai/gpt-4o-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29998,7 +30061,7 @@
       "type": "chat"
     },
     "openai/gpt-4o-mini-2024-07-18": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30103,7 +30166,7 @@
       "type": "chat"
     },
     "openai/gpt-4o-mini-search-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30205,7 +30268,7 @@
       "type": "chat"
     },
     "openai/gpt-4o-search-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30307,7 +30370,7 @@
       "type": "chat"
     },
     "openai/gpt-4o:extended": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30412,7 +30475,7 @@
       "type": "chat"
     },
     "openai/gpt-5": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30517,7 +30580,7 @@
       "type": "chat"
     },
     "openai/gpt-5-chat": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30619,7 +30682,7 @@
       "type": "chat"
     },
     "openai/gpt-5-codex": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30724,7 +30787,7 @@
       "type": "chat"
     },
     "openai/gpt-5-image": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30830,7 +30893,7 @@
       "type": "image"
     },
     "openai/gpt-5-image-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30936,7 +30999,7 @@
       "type": "image"
     },
     "openai/gpt-5-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31041,7 +31104,7 @@
       "type": "chat"
     },
     "openai/gpt-5-nano": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31146,7 +31209,7 @@
       "type": "chat"
     },
     "openai/gpt-5-pro": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31251,7 +31314,7 @@
       "type": "chat"
     },
     "openai/gpt-5.1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31356,7 +31419,7 @@
       "type": "chat"
     },
     "openai/gpt-5.1-chat": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31461,7 +31524,7 @@
       "type": "chat"
     },
     "openai/gpt-5.1-codex": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31566,7 +31629,7 @@
       "type": "chat"
     },
     "openai/gpt-5.1-codex-max": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31671,7 +31734,7 @@
       "type": "chat"
     },
     "openai/gpt-5.1-codex-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31776,7 +31839,7 @@
       "type": "chat"
     },
     "openai/gpt-5.2": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31881,7 +31944,7 @@
       "type": "chat"
     },
     "openai/gpt-5.2-chat": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31986,7 +32049,7 @@
       "type": "chat"
     },
     "openai/gpt-5.2-codex": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32091,7 +32154,7 @@
       "type": "chat"
     },
     "openai/gpt-5.2-pro": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32196,7 +32259,7 @@
       "type": "chat"
     },
     "openai/gpt-audio": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32298,7 +32361,7 @@
       "type": "chat"
     },
     "openai/gpt-audio-mini": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32400,7 +32463,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-120b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32505,7 +32568,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-120b:exacto": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32610,7 +32673,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-120b:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32811,7 +32874,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-20b:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32907,7 +32970,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-safeguard-20b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33012,7 +33075,7 @@
       "type": "chat"
     },
     "openai/o1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33117,6 +33180,7 @@
       "type": "chat"
     },
     "openai/o1-mini": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33209,6 +33273,7 @@
       "type": "chat"
     },
     "openai/o1-mini-2024-09-12": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33301,7 +33366,7 @@
       "type": "chat"
     },
     "openai/o1-pro": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33403,7 +33468,7 @@
       "type": "chat"
     },
     "openai/o3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33508,7 +33573,7 @@
       "type": "chat"
     },
     "openai/o3-deep-research": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33613,7 +33678,7 @@
       "type": "chat"
     },
     "openai/o3-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33718,7 +33783,7 @@
       "type": "chat"
     },
     "openai/o3-mini-high": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33823,7 +33888,7 @@
       "type": "chat"
     },
     "openai/o3-pro": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33928,7 +33993,7 @@
       "type": "chat"
     },
     "openai/o4-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34033,7 +34098,7 @@
       "type": "chat"
     },
     "openai/o4-mini-deep-research": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34138,7 +34203,7 @@
       "type": "chat"
     },
     "openai/o4-mini-high": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34243,6 +34308,7 @@
       "type": "chat"
     },
     "opengvlab/internvl3-14b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34437,7 +34503,7 @@
       "type": "chat"
     },
     "openrouter/aurora-alpha": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34533,7 +34599,7 @@
       "type": "chat"
     },
     "openrouter/auto": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34626,7 +34692,7 @@
       "type": "chat"
     },
     "openrouter/bodybuilder": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34719,7 +34785,7 @@
       "type": "chat"
     },
     "openrouter/free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34815,6 +34881,7 @@
       "type": "chat"
     },
     "openrouter/horizon-alpha": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34910,6 +34977,7 @@
       "type": "chat"
     },
     "perplexity/r1-1776": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35002,7 +35070,7 @@
       "type": "chat"
     },
     "perplexity/sonar": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35104,7 +35172,7 @@
       "type": "chat"
     },
     "perplexity/sonar-deep-research": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35206,7 +35274,7 @@
       "type": "chat"
     },
     "perplexity/sonar-pro": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35308,7 +35376,7 @@
       "type": "chat"
     },
     "perplexity/sonar-pro-search": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35410,7 +35478,7 @@
       "type": "chat"
     },
     "perplexity/sonar-reasoning": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35512,7 +35580,7 @@
       "type": "chat"
     },
     "perplexity/sonar-reasoning-pro": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35614,7 +35682,7 @@
       "type": "chat"
     },
     "prime-intellect/intellect-3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35719,6 +35787,7 @@
       "type": "chat"
     },
     "pygmalionai/mythalion-13b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35811,6 +35880,7 @@
       "type": "chat"
     },
     "qwen/qwen-2-72b-instruct": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35903,7 +35973,7 @@
       "type": "chat"
     },
     "qwen/qwen-2.5-72b-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36008,6 +36078,7 @@
       "type": "chat"
     },
     "qwen/qwen-2.5-72b-instruct:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36100,7 +36171,7 @@
       "type": "chat"
     },
     "qwen/qwen-2.5-7b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36202,7 +36273,7 @@
       "type": "chat"
     },
     "qwen/qwen-2.5-coder-32b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36304,6 +36375,7 @@
       "type": "chat"
     },
     "qwen/qwen-2.5-coder-32b-instruct:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36396,7 +36468,7 @@
       "type": "chat"
     },
     "qwen/qwen-2.5-vl-7b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36498,7 +36570,7 @@
       "type": "chat"
     },
     "qwen/qwen-2.5-vl-7b-instruct:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36591,7 +36663,7 @@
       "type": "chat"
     },
     "qwen/qwen-max": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36696,7 +36768,7 @@
       "type": "chat"
     },
     "qwen/qwen-plus": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36801,7 +36873,7 @@
       "type": "chat"
     },
     "qwen/qwen-plus-2025-07-28": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37011,7 +37083,7 @@
       "type": "chat"
     },
     "qwen/qwen-turbo": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37116,7 +37188,7 @@
       "type": "chat"
     },
     "qwen/qwen-vl-max": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37218,7 +37290,7 @@
       "type": "chat"
     },
     "qwen/qwen-vl-plus": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37320,7 +37392,7 @@
       "type": "chat"
     },
     "qwen/qwen2.5-coder-7b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37422,7 +37494,7 @@
       "type": "chat"
     },
     "qwen/qwen2.5-vl-32b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37524,6 +37596,7 @@
       "type": "chat"
     },
     "qwen/qwen2.5-vl-32b-instruct:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37616,7 +37689,7 @@
       "type": "chat"
     },
     "qwen/qwen2.5-vl-72b-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37718,6 +37791,7 @@
       "type": "chat"
     },
     "qwen/qwen2.5-vl-72b-instruct:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37810,7 +37884,7 @@
       "type": "chat"
     },
     "qwen/qwen3-14b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37915,6 +37989,7 @@
       "type": "chat"
     },
     "qwen/qwen3-14b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38313,7 +38388,7 @@
       "type": "chat"
     },
     "qwen/qwen3-235b-a22b:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38409,7 +38484,7 @@
       "type": "chat"
     },
     "qwen/qwen3-30b-a3b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38514,7 +38589,7 @@
       "type": "chat"
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38616,7 +38691,7 @@
       "type": "chat"
     },
     "qwen/qwen3-30b-a3b-thinking-2507": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38721,6 +38796,7 @@
       "type": "chat"
     },
     "qwen/qwen3-30b-a3b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38813,7 +38889,7 @@
       "type": "chat"
     },
     "qwen/qwen3-32b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38918,7 +38994,7 @@
       "type": "chat"
     },
     "qwen/qwen3-4b": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39023,7 +39099,7 @@
       "type": "chat"
     },
     "qwen/qwen3-4b:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39119,7 +39195,7 @@
       "type": "chat"
     },
     "qwen/qwen3-8b": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39221,6 +39297,7 @@
       "type": "chat"
     },
     "qwen/qwen3-8b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39418,7 +39495,7 @@
       "type": "chat"
     },
     "qwen/qwen3-coder-30b-a3b-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39523,7 +39600,7 @@
       "type": "chat"
     },
     "qwen/qwen3-coder-flash": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39628,7 +39705,7 @@
       "type": "chat"
     },
     "qwen/qwen3-coder-next": {
-      "_lastUpdated": "2026-02-17T10:23:52.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39733,7 +39810,7 @@
       "type": "chat"
     },
     "qwen/qwen3-coder-plus": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39838,7 +39915,7 @@
       "type": "chat"
     },
     "qwen/qwen3-coder:exacto": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39943,7 +40020,7 @@
       "type": "chat"
     },
     "qwen/qwen3-coder:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -40039,7 +40116,7 @@
       "type": "chat"
     },
     "qwen/qwen3-max": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -40144,7 +40221,7 @@
       "type": "chat"
     },
     "qwen/qwen3-max-thinking": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -40249,7 +40326,7 @@
       "type": "chat"
     },
     "qwen/qwen3-next-80b-a3b-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -40354,7 +40431,7 @@
       "type": "chat"
     },
     "qwen/qwen3-next-80b-a3b-instruct:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -40450,7 +40527,7 @@
       "type": "chat"
     },
     "qwen/qwen3-next-80b-a3b-thinking": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41059,7 +41136,7 @@
       "type": "chat"
     },
     "qwen/qwen3-vl-8b-instruct": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41269,7 +41346,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-397b-a17b": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41374,7 +41451,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-plus-02-15": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41479,7 +41556,7 @@
       "type": "chat"
     },
     "qwen/qwq-32b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41581,6 +41658,7 @@
       "type": "chat"
     },
     "qwen/qwq-32b-preview": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41673,6 +41751,7 @@
       "type": "chat"
     },
     "qwen/qwq-32b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41765,7 +41844,7 @@
       "type": "chat"
     },
     "raifle/sorcererlm-8x22b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41867,6 +41946,7 @@
       "type": "chat"
     },
     "rekaai/reka-flash-3": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41959,6 +42039,7 @@
       "type": "chat"
     },
     "rekaai/reka-flash-3:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42051,7 +42132,7 @@
       "type": "chat"
     },
     "relace/relace-apply-3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42153,7 +42234,7 @@
       "type": "chat"
     },
     "relace/relace-search": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42258,6 +42339,7 @@
       "type": "chat"
     },
     "sao10k/fimbulvetr-11b-v2": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42350,7 +42432,7 @@
       "type": "chat"
     },
     "sao10k/l3-euryale-70b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42452,7 +42534,7 @@
       "type": "chat"
     },
     "sao10k/l3-lunaris-8b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42554,7 +42636,7 @@
       "type": "chat"
     },
     "sao10k/l3.1-70b-hanami-x1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42656,7 +42738,7 @@
       "type": "chat"
     },
     "sao10k/l3.1-euryale-70b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42758,7 +42840,7 @@
       "type": "chat"
     },
     "sao10k/l3.3-euryale-70b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42860,6 +42942,7 @@
       "type": "chat"
     },
     "sarvamai/sarvam-m": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42952,6 +43035,7 @@
       "type": "chat"
     },
     "sarvamai/sarvam-m:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43044,6 +43128,7 @@
       "type": "chat"
     },
     "scb10x/llama3.1-typhoon2-70b-instruct": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43136,6 +43221,7 @@
       "type": "chat"
     },
     "shisa-ai/shisa-v2-llama3.3-70b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43228,6 +43314,7 @@
       "type": "chat"
     },
     "shisa-ai/shisa-v2-llama3.3-70b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43320,6 +43407,7 @@
       "type": "chat"
     },
     "sophosympatheia/midnight-rose-70b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43412,7 +43500,7 @@
       "type": "chat"
     },
     "stepfun-ai/step3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43517,7 +43605,7 @@
       "type": "chat"
     },
     "stepfun/step-3.5-flash": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43622,7 +43710,7 @@
       "type": "chat"
     },
     "stepfun/step-3.5-flash:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43718,7 +43806,7 @@
       "type": "chat"
     },
     "switchpoint/router": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43820,7 +43908,7 @@
       "type": "chat"
     },
     "tencent/hunyuan-a13b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43922,6 +44010,7 @@
       "type": "chat"
     },
     "tencent/hunyuan-a13b-instruct:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44014,7 +44103,7 @@
       "type": "chat"
     },
     "thedrummer/anubis-70b-v1.1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44116,6 +44205,7 @@
       "type": "chat"
     },
     "thedrummer/anubis-pro-105b-v1": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44208,7 +44298,7 @@
       "type": "chat"
     },
     "thedrummer/cydonia-24b-v4.1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44310,7 +44400,7 @@
       "type": "chat"
     },
     "thedrummer/rocinante-12b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44415,7 +44505,7 @@
       "type": "chat"
     },
     "thedrummer/skyfall-36b-v2": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44517,7 +44607,7 @@
       "type": "chat"
     },
     "thedrummer/unslopnemo-12b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44622,6 +44712,7 @@
       "type": "chat"
     },
     "thedrummer/valkyrie-49b-v1": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44714,6 +44805,7 @@
       "type": "chat"
     },
     "thudm/glm-4-32b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44806,6 +44898,7 @@
       "type": "chat"
     },
     "thudm/glm-4-32b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44898,7 +44991,7 @@
       "type": "chat"
     },
     "thudm/glm-4.1v-9b-thinking": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45000,6 +45093,7 @@
       "type": "chat"
     },
     "thudm/glm-z1-32b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45092,6 +45186,7 @@
       "type": "chat"
     },
     "thudm/glm-z1-32b:free": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45184,7 +45279,7 @@
       "type": "chat"
     },
     "tngtech/deepseek-r1t-chimera": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45286,7 +45381,7 @@
       "type": "chat"
     },
     "tngtech/deepseek-r1t-chimera:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45379,7 +45474,7 @@
       "type": "chat"
     },
     "tngtech/deepseek-r1t2-chimera": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45481,7 +45576,7 @@
       "type": "chat"
     },
     "tngtech/deepseek-r1t2-chimera:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45574,7 +45669,7 @@
       "type": "chat"
     },
     "tngtech/tng-r1t-chimera": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45679,7 +45774,7 @@
       "type": "chat"
     },
     "tngtech/tng-r1t-chimera:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45775,7 +45870,7 @@
       "type": "chat"
     },
     "undi95/remm-slerp-l2-13b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45877,6 +45972,7 @@
       "type": "chat"
     },
     "undi95/toppy-m-7b": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45969,7 +46065,7 @@
       "type": "chat"
     },
     "upstage/solar-pro-3:free": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46065,7 +46161,7 @@
       "type": "chat"
     },
     "writer/palmyra-x5": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46167,6 +46263,7 @@
       "type": "chat"
     },
     "x-ai/grok-2-1212": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46262,6 +46359,7 @@
       "type": "chat"
     },
     "x-ai/grok-2-vision-1212": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46354,7 +46452,7 @@
       "type": "chat"
     },
     "x-ai/grok-3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46459,7 +46557,7 @@
       "type": "chat"
     },
     "x-ai/grok-3-beta": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46564,7 +46662,7 @@
       "type": "chat"
     },
     "x-ai/grok-3-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46669,7 +46767,7 @@
       "type": "chat"
     },
     "x-ai/grok-3-mini-beta": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46774,7 +46872,7 @@
       "type": "chat"
     },
     "x-ai/grok-4": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46879,7 +46977,7 @@
       "type": "chat"
     },
     "x-ai/grok-4-fast": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46984,7 +47082,7 @@
       "type": "chat"
     },
     "x-ai/grok-4.1-fast": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47089,7 +47187,7 @@
       "type": "chat"
     },
     "x-ai/grok-code-fast-1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47194,6 +47292,7 @@
       "type": "chat"
     },
     "x-ai/grok-vision-beta": {
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47286,7 +47385,7 @@
       "type": "chat"
     },
     "xiaomi/mimo-v2-flash": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47391,7 +47490,7 @@
       "type": "chat"
     },
     "z-ai/glm-4-32b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47496,7 +47595,7 @@
       "type": "chat"
     },
     "z-ai/glm-4.5": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47706,7 +47805,7 @@
       "type": "chat"
     },
     "z-ai/glm-4.5-air:free": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47799,7 +47898,7 @@
       "type": "chat"
     },
     "z-ai/glm-4.5v": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -48009,7 +48108,7 @@
       "type": "chat"
     },
     "z-ai/glm-4.6:exacto": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -48114,7 +48213,7 @@
       "type": "chat"
     },
     "z-ai/glm-4.6v": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -48429,7 +48528,7 @@
       "type": "chat"
     },
     "z-ai/glm-5": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

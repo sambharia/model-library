@@ -1820,7 +1820,7 @@
       "type": "chat"
     },
     "claude-3-opus-latest": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2060,7 +2060,7 @@
       "type": "chat"
     },
     "claude-4-opus-20250514": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3006,7 +3006,7 @@
       "type": "chat"
     },
     "claude-opus-4-1": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3141,7 +3141,7 @@
       "type": "chat"
     },
     "claude-opus-4-1-20250805": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3407,7 +3407,7 @@
       "type": "chat"
     },
     "claude-opus-4-5": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3542,7 +3542,7 @@
       "type": "chat"
     },
     "claude-opus-4-5-20251101": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3677,7 +3677,7 @@
       "type": "chat"
     },
     "claude-opus-4-6": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4074,7 +4074,7 @@
       "type": "chat"
     },
     "claude-sonnet-4-5": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

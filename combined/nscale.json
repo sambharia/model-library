@@ -123,6 +123,7 @@
   "id": "nscale",
   "models": {
     "black-forest-labs/flux-1-schnell": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -250,6 +251,7 @@
       "type": "image"
     },
     "bytedance/sdxl-lightning-4step": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -376,6 +378,7 @@
       "type": "image"
     },
     "bytedance/sdxl-lightning-8step": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -503,6 +506,7 @@
       "type": "image"
     },
     "deepseek/deepseek-r1-llama-distill-70b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -629,6 +633,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-llama-distill-8b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -755,6 +760,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-qwen-distill-1.5b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -881,6 +887,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-qwen-distill-14b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1007,6 +1014,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-qwen-distill-32b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1133,6 +1141,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-qwen-distill-7b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1259,6 +1268,7 @@
       "type": "chat"
     },
     "llama-4-scout-17b-16e-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1385,6 +1395,7 @@
       "type": "chat"
     },
     "meta/llama-3.1-8b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1511,6 +1522,7 @@
       "type": "chat"
     },
     "meta/llama-3.3-70b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1637,6 +1649,7 @@
       "type": "chat"
     },
     "mistral/devstral-small-2505": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1763,6 +1776,7 @@
       "type": "chat"
     },
     "mistral/mixtral-8x22b-instruct-v0.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1889,6 +1903,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-120b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2015,6 +2030,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-20b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2141,6 +2157,7 @@
       "type": "chat"
     },
     "qwen/qwen2.5-coder-32b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2267,6 +2284,7 @@
       "type": "chat"
     },
     "qwen/qwen2.5-coder-3b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2393,6 +2411,7 @@
       "type": "chat"
     },
     "qwen/qwen2.5-coder-7b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2519,6 +2538,7 @@
       "type": "chat"
     },
     "qwen/qwen3-14b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2645,6 +2665,7 @@
       "type": "chat"
     },
     "qwen/qwen3-235b-a22b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2771,6 +2792,7 @@
       "type": "chat"
     },
     "qwen/qwen3-235b-a22b-instruct-2507": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2897,6 +2919,7 @@
       "type": "chat"
     },
     "qwen/qwen3-32b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3023,6 +3046,7 @@
       "type": "chat"
     },
     "qwen/qwen3-4b-instruct-2507": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3149,6 +3173,7 @@
       "type": "chat"
     },
     "qwen/qwen3-4b-thinking-2507": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3275,6 +3300,7 @@
       "type": "chat"
     },
     "qwen/qwen3-8b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3401,6 +3427,7 @@
       "type": "chat"
     },
     "qwen/qwen3-embedding-8b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3528,6 +3555,7 @@
       "type": "embedding"
     },
     "qwen/qwq-32b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3654,6 +3682,7 @@
       "type": "chat"
     },
     "stability-ai/stable-diffusion-xl-base-1.0": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

@@ -123,6 +123,7 @@
   "id": "modal",
   "models": {
     "black-forest-labs/flux-1-dev": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -250,6 +251,7 @@
       "type": "image"
     },
     "meta/llama-3.1-70b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -376,6 +378,7 @@
       "type": "chat"
     },
     "meta/llama-3.1-8b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -502,6 +505,7 @@
       "type": "chat"
     },
     "openai/whisper-large-v3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -629,6 +633,7 @@
       "type": "audio"
     },
     "stability-ai/stable-diffusion-3.5-large": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -756,6 +761,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-3.5-medium": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -883,6 +889,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-xl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1010,6 +1017,7 @@
       "type": "image"
     },
     "whisperx": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

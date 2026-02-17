@@ -113,7 +113,7 @@
       "type": "chat"
     },
     "kimi-k2-0905-preview": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -477,7 +477,7 @@
       "type": "chat"
     },
     "kimi-k2.5": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -541,7 +541,7 @@
       "type": "chat"
     },
     "kimi-k2.5-vision-preview": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -658,7 +658,7 @@
       "type": "chat"
     },
     "moonshot-v1-128k-vision-preview": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -784,7 +784,7 @@
       "type": "chat"
     },
     "moonshot-v1-32k-vision-preview": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -910,7 +910,7 @@
       "type": "chat"
     },
     "moonshot-v1-8k-vision-preview": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

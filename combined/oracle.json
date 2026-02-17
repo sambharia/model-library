@@ -3343,6 +3343,7 @@
       "type": "chat"
     },
     "llama-4-maverick-17b-128e-instruct-fp8": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

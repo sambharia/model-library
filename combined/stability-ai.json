@@ -219,7 +219,7 @@
     },
     "sd3.5-large-turbo": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "id": "sd3.5-large-turbo",
       "pricing": {
         "currency": "USD",
@@ -256,6 +256,7 @@
       "type": "chat"
     },
     "stabilityai/sdxl-turbo": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -383,6 +384,7 @@
       "type": "image"
     },
     "stabilityai/stable-audio-open-1.0": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -510,6 +512,7 @@
       "type": "audio"
     },
     "stabilityai/stable-code-3b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -636,6 +639,7 @@
       "type": "chat"
     },
     "stabilityai/stable-code-instruct-3b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -762,6 +766,7 @@
       "type": "chat"
     },
     "stabilityai/stable-diffusion-3-medium": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -889,6 +894,7 @@
       "type": "image"
     },
     "stabilityai/stable-diffusion-xl-1024-v1-0": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1016,6 +1022,7 @@
       "type": "image"
     },
     "stabilityai/stable-diffusion-xl-base-1.0": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1143,6 +1150,7 @@
       "type": "image"
     },
     "stabilityai/stablelm-2-1_12b-chat": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1269,6 +1277,7 @@
       "type": "chat"
     },
     "stabilityai/stablelm-2-1_6b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1395,6 +1404,7 @@
       "type": "chat"
     },
     "stabilityai/stablelm-2-1_6b-chat": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1521,6 +1531,7 @@
       "type": "chat"
     },
     "stabilityai/stablelm-zephyr-3b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

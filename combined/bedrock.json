@@ -289,7 +289,7 @@
       "type": "chat"
     },
     "amazon.nova-2-lite-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -2549,7 +2549,7 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4-1-20250805-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -2683,7 +2683,7 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4-5-20251101-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -2817,7 +2817,7 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4-6-v1": {
-      "_lastUpdated": "2026-02-05T19:25:58.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -3079,7 +3079,7 @@
       "type": "chat"
     },
     "anthropic.claude-sonnet-4-20250514-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -3698,7 +3698,7 @@
       "type": "chat"
     },
     "apac.anthropic.claude-3-5-sonnet-20240620-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -3792,7 +3792,7 @@
       "type": "chat"
     },
     "apac.anthropic.claude-3-5-sonnet-20241022-v2:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -3886,7 +3886,7 @@
       "type": "chat"
     },
     "apac.anthropic.claude-3-7-sonnet-20250219-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -4006,7 +4006,7 @@
       "type": "chat"
     },
     "apac.anthropic.claude-3-haiku-20240307-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -4100,7 +4100,7 @@
       "type": "chat"
     },
     "apac.anthropic.claude-3-sonnet-20240229-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -4194,7 +4194,7 @@
       "type": "chat"
     },
     "apac.anthropic.claude-sonnet-4-20250514-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -4426,7 +4426,7 @@
       "type": "text"
     },
     "au.anthropic.claude-haiku-4-5-20251001-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -4512,7 +4512,7 @@
       "type": "chat"
     },
     "au.anthropic.claude-sonnet-4-5-20250929-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -5608,7 +5608,7 @@
       "type": "text"
     },
     "cohere.embed-v4:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -5857,7 +5857,7 @@
       "type": "chat"
     },
     "eu.amazon.nova-2-lite-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -6907,7 +6907,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-4-5-20251101-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -7532,7 +7532,7 @@
       "type": "chat"
     },
     "eu.cohere.embed-v4:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -8315,7 +8315,7 @@
       "type": "text"
     },
     "global.amazon.nova-2-lite-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -8466,7 +8466,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-opus-4-5-20251101-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -8564,7 +8564,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-sonnet-4-20250514-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -8832,7 +8832,7 @@
       "type": "chat"
     },
     "global.cohere.embed-v4:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -8944,7 +8944,7 @@
       "type": "text"
     },
     "google.gemma-3-12b-it": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -8998,7 +8998,7 @@
       "type": "chat"
     },
     "google.gemma-3-27b-it": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -9052,7 +9052,7 @@
       "type": "chat"
     },
     "google.gemma-3-4b-it": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -9106,7 +9106,7 @@
       "type": "chat"
     },
     "jp.amazon.nova-2-lite-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -9160,7 +9160,7 @@
       "type": "chat"
     },
     "jp.anthropic.claude-haiku-4-5-20251001-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -9246,7 +9246,7 @@
       "type": "chat"
     },
     "jp.anthropic.claude-sonnet-4-5-20250929-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -10180,7 +10180,7 @@
       "type": "chat"
     },
     "meta.llama4-maverick-17b-instruct-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -10243,7 +10243,7 @@
       "type": "chat"
     },
     "meta.llama4-scout-17b-instruct-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -11233,7 +11233,7 @@
       "type": "chat"
     },
     "nvidia.nemotron-nano-12b-v2": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -11473,7 +11473,7 @@
       "type": "chat"
     },
     "openai.gpt-oss-safeguard-120b": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -11527,7 +11527,7 @@
       "type": "chat"
     },
     "openai.gpt-oss-safeguard-20b": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -13608,7 +13608,7 @@
       "type": "chat"
     },
     "us-gov.anthropic.claude-3-7-sonnet-20250219-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -13842,7 +13842,7 @@
       "type": "chat"
     },
     "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -13976,7 +13976,7 @@
       "type": "chat"
     },
     "us.amazon.nova-2-lite-v1:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -15408,7 +15408,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-4-5-20251101-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -15506,7 +15506,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-4-6-v1": {
-      "_lastUpdated": "2026-02-05T19:25:58.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -16033,7 +16033,7 @@
       "type": "chat"
     },
     "us.cohere.embed-v4:0": {
-      "_lastUpdated": "2026-02-02T11:43:23.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 512,

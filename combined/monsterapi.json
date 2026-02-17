@@ -49,7 +49,7 @@
     },
     "mistralai/Mistral-7B-Instruct-v0.2": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "id": "mistralai/Mistral-7B-Instruct-v0.2",
       "pricing": {
         "currency": "USD",

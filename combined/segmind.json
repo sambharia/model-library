@@ -123,6 +123,7 @@
   "id": "segmind",
   "models": {
     "alibaba/qwen-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -250,6 +251,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-2512": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -377,6 +379,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -504,6 +507,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-fast": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -631,6 +635,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -758,6 +763,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-add-people-lora": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -885,6 +891,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-blend-it": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1012,6 +1019,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-eigen-banana": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1139,6 +1147,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-eraser": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1266,6 +1275,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-face-to-portrait": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1393,6 +1403,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-group-photo": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1520,6 +1531,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-multi-lora": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1647,6 +1659,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-multiple-angles": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1774,6 +1787,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-next-scene": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1901,6 +1915,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-product-photography": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2028,6 +2043,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-relight": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2155,6 +2171,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-remove-lighting": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2282,6 +2299,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-texture-apply": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2409,6 +2427,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-edit-plus-texture-extract": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2536,6 +2555,7 @@
       "type": "image"
     },
     "alibaba/qwen-image-fast": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2663,6 +2683,7 @@
       "type": "image"
     },
     "alibaba/qwen2-vl-72b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2789,6 +2810,7 @@
       "type": "chat"
     },
     "alibaba/qwen2-vl-7b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2915,6 +2937,7 @@
       "type": "chat"
     },
     "alibaba/qwen2.5-vl-32b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3041,6 +3064,7 @@
       "type": "chat"
     },
     "anthropic/claude-3-haiku": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3167,6 +3191,7 @@
       "type": "chat"
     },
     "anthropic/claude-3-opus": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3293,6 +3318,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.5-sonnet": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3419,6 +3445,7 @@
       "type": "chat"
     },
     "anthropic/claude-3.7-sonnet": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3545,6 +3572,7 @@
       "type": "chat"
     },
     "anthropic/claude-4-sonnet": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3671,6 +3699,7 @@
       "type": "chat"
     },
     "anthropic/claude-4.5-sonnet": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3797,6 +3826,7 @@
       "type": "chat"
     },
     "black-forest-labs/chroma": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3924,6 +3954,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-1-dev": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4051,6 +4082,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-1-image-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4178,6 +4210,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-1-kontext-dev": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4305,6 +4338,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-1-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4432,6 +4466,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-1-schnell": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4559,6 +4594,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-1.1-pro-ultra": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4686,6 +4722,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-2-flex": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4813,6 +4850,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-2-klein-4b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4940,6 +4978,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-2-klein-9b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5067,6 +5106,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-2-max": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5194,6 +5234,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-2-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5321,6 +5362,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-canny-dev": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5448,6 +5490,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-canny-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5575,6 +5618,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-controlnets": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5702,6 +5746,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-depth-dev": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5829,6 +5874,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-depth-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5956,6 +6002,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-dev-finetuned": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6083,6 +6130,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-fill-dev": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6210,6 +6258,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-fill-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6337,6 +6386,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-inpaint": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6464,6 +6514,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-ipadapter": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6591,6 +6642,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-kontext-max": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6718,6 +6770,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-kontext-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6845,6 +6898,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-krea-dev": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6972,6 +7026,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-pro-1.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7099,6 +7154,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-pulid": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7226,6 +7282,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-realism-lora-with-upscale": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7353,6 +7410,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-redux-dev": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7480,6 +7538,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-redux-schnell": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7607,6 +7666,7 @@
       "type": "image"
     },
     "black-forest-labs/multi-image-kontext-max": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7734,6 +7794,7 @@
       "type": "image"
     },
     "black-forest-labs/multi-image-kontext-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7861,6 +7922,7 @@
       "type": "image"
     },
     "black-forest-labs/simple-vector-flux-lora": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7988,6 +8050,7 @@
       "type": "image"
     },
     "bria/3.2-text-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8115,6 +8178,7 @@
       "type": "image"
     },
     "bria/blur-background": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8242,6 +8306,7 @@
       "type": "image"
     },
     "bria/enhance-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8369,6 +8434,7 @@
       "type": "image"
     },
     "bria/erase-foreground": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8496,6 +8562,7 @@
       "type": "image"
     },
     "bria/eraser": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8623,6 +8690,7 @@
       "type": "image"
     },
     "bria/expand-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8750,6 +8818,7 @@
       "type": "image"
     },
     "bria/generate-background": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8877,6 +8946,7 @@
       "type": "image"
     },
     "bria/generative-fill": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9004,6 +9074,7 @@
       "type": "image"
     },
     "bria/increase-resolution": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9131,6 +9202,7 @@
       "type": "image"
     },
     "bria/lifestyle-product-shot-by-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9258,6 +9330,7 @@
       "type": "image"
     },
     "bria/lifestyle-product-shot-by-text": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9385,6 +9458,7 @@
       "type": "image"
     },
     "bria/product-cutout": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9512,6 +9586,7 @@
       "type": "image"
     },
     "bria/product-packshot": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9639,6 +9714,7 @@
       "type": "image"
     },
     "bria/product-shadow": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9766,6 +9842,7 @@
       "type": "image"
     },
     "bria/reimagine": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9893,6 +9970,7 @@
       "type": "image"
     },
     "bria/rmbg-2.0": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10020,6 +10098,7 @@
       "type": "image"
     },
     "bria/vector-graphics": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10147,6 +10226,7 @@
       "type": "image"
     },
     "bytedance/hidream-i1-fast": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10274,6 +10354,7 @@
       "type": "image"
     },
     "bytedance/seededit-3.0-i2i": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10401,6 +10482,7 @@
       "type": "image"
     },
     "bytedance/seedream-3.0-t2i": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10528,6 +10610,7 @@
       "type": "image"
     },
     "bytedance/seedream-4.0-4k": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10655,6 +10738,7 @@
       "type": "image"
     },
     "bytedance/seedream-4.5": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10782,6 +10866,7 @@
       "type": "image"
     },
     "clarityai/creative-upscaler": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10909,6 +10994,7 @@
       "type": "image"
     },
     "clarityai/crystal-upscaler": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11036,6 +11122,7 @@
       "type": "image"
     },
     "clarityai/flux-upscaler": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11163,6 +11250,7 @@
       "type": "image"
     },
     "deepseek/deepseek-chat": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11289,6 +11377,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11415,6 +11504,7 @@
       "type": "chat"
     },
     "elevenlabs/audio-isolation": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11542,6 +11632,7 @@
       "type": "audio"
     },
     "elevenlabs/dialogue": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11669,6 +11760,7 @@
       "type": "audio"
     },
     "elevenlabs/dubbing": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11796,6 +11888,7 @@
       "type": "audio"
     },
     "elevenlabs/sound-generation": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11923,6 +12016,7 @@
       "type": "audio"
     },
     "elevenlabs/text-to-speech": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12050,6 +12144,7 @@
       "type": "audio"
     },
     "facefusion-labs/hyperswap": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12177,6 +12272,7 @@
       "type": "image"
     },
     "fal-ai/aura-flow": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12304,6 +12400,7 @@
       "type": "image"
     },
     "google/gemini-2-flash": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12430,6 +12527,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-flash": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12556,6 +12654,7 @@
       "type": "chat"
     },
     "google/gemini-2.5-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12682,6 +12781,7 @@
       "type": "chat"
     },
     "google/gemini-3-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12808,6 +12908,7 @@
       "type": "chat"
     },
     "google/gemini-flash": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12934,6 +13035,7 @@
       "type": "chat"
     },
     "google/gemini-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13060,6 +13162,7 @@
       "type": "chat"
     },
     "google/gemini-tts-2.5-flash": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13187,6 +13290,7 @@
       "type": "audio"
     },
     "google/gemini-tts-2.5-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13314,6 +13418,7 @@
       "type": "audio"
     },
     "google/imagen-3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13441,6 +13546,7 @@
       "type": "image"
     },
     "google/imagen-4": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13568,6 +13674,7 @@
       "type": "image"
     },
     "google/lyria-2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13695,6 +13802,7 @@
       "type": "audio"
     },
     "google/nano-banana": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13822,6 +13930,7 @@
       "type": "image"
     },
     "google/nano-banana-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13949,6 +14058,7 @@
       "type": "image"
     },
     "higgsfield/text-2-image-soul": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14076,6 +14186,7 @@
       "type": "image"
     },
     "ideogram/2a-text-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14203,6 +14314,7 @@
       "type": "image"
     },
     "ideogram/3-reframe": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14330,6 +14442,7 @@
       "type": "image"
     },
     "ideogram/3-remix": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14457,6 +14570,7 @@
       "type": "image"
     },
     "ideogram/3-replace-background": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14584,6 +14698,7 @@
       "type": "image"
     },
     "ideogram/3.0": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14711,6 +14826,7 @@
       "type": "image"
     },
     "ideogram/character": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14838,6 +14954,7 @@
       "type": "image"
     },
     "ideogram/image-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14965,6 +15082,7 @@
       "type": "image"
     },
     "ideogram/reframe": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15092,6 +15210,7 @@
       "type": "image"
     },
     "ideogram/text-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15219,6 +15338,7 @@
       "type": "image"
     },
     "ideogram/turbo-image-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15346,6 +15466,7 @@
       "type": "image"
     },
     "ideogram/turbo-text-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15473,6 +15594,7 @@
       "type": "image"
     },
     "kwai/kling-o1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15600,6 +15722,7 @@
       "type": "image"
     },
     "llava/llava-13b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15726,6 +15849,7 @@
       "type": "chat"
     },
     "luma/photon-flash-text-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15853,6 +15977,7 @@
       "type": "image"
     },
     "luma/photon-text-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15980,6 +16105,7 @@
       "type": "image"
     },
     "meta/automatic-mask-generator": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16107,6 +16233,7 @@
       "type": "image"
     },
     "meta/llama-3-70b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16233,6 +16360,7 @@
       "type": "chat"
     },
     "meta/llama-3-8b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16359,6 +16487,7 @@
       "type": "chat"
     },
     "meta/llama-3.1-405b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16485,6 +16614,7 @@
       "type": "chat"
     },
     "meta/llama-3.1-70b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16611,6 +16741,7 @@
       "type": "chat"
     },
     "meta/llama-3.1-8b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16737,6 +16868,7 @@
       "type": "chat"
     },
     "meta/llama-4-maverick-instruct-basic": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16863,6 +16995,7 @@
       "type": "chat"
     },
     "meta/llama-4-scout-instruct-basic": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16989,6 +17122,7 @@
       "type": "chat"
     },
     "meta/musicgen-medium": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17116,6 +17250,7 @@
       "type": "audio"
     },
     "meta/sam-v2-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17243,6 +17378,7 @@
       "type": "image"
     },
     "meta/sam3-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17370,6 +17506,7 @@
       "type": "image"
     },
     "meta/segment-anything-model": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17497,6 +17634,7 @@
       "type": "image"
     },
     "minimax/image-01": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17624,6 +17762,7 @@
       "type": "image"
     },
     "minimax/music-01": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17751,6 +17890,7 @@
       "type": "audio"
     },
     "mistral/mixtral-8x22b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17877,6 +18017,7 @@
       "type": "chat"
     },
     "mistral/mixtral-8x7b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18003,6 +18144,7 @@
       "type": "chat"
     },
     "moonshot/kimi-k2-instruct-0905": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18129,6 +18271,7 @@
       "type": "chat"
     },
     "myshell/openvoice": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18256,6 +18399,7 @@
       "type": "audio"
     },
     "myshell/text-to-speech": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18383,6 +18527,7 @@
       "type": "audio"
     },
     "nari-labs/dia-text-to-speech": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18510,6 +18655,7 @@
       "type": "audio"
     },
     "openai/gpt-4": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18636,6 +18782,7 @@
       "type": "chat"
     },
     "openai/gpt-4-turbo": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18762,6 +18909,7 @@
       "type": "chat"
     },
     "openai/gpt-4.5": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18888,6 +19036,7 @@
       "type": "chat"
     },
     "openai/gpt-4o": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19014,6 +19163,7 @@
       "type": "chat"
     },
     "openai/gpt-5": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19140,6 +19290,7 @@
       "type": "chat"
     },
     "openai/gpt-5-mini": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19266,6 +19417,7 @@
       "type": "chat"
     },
     "openai/gpt-5-nano": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19392,6 +19544,7 @@
       "type": "chat"
     },
     "openai/gpt-5.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19518,6 +19671,7 @@
       "type": "chat"
     },
     "openai/gpt-5.2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19644,6 +19798,7 @@
       "type": "chat"
     },
     "openai/gpt-image-1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19771,6 +19926,7 @@
       "type": "image"
     },
     "openai/gpt-image-1-edit": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19898,6 +20054,7 @@
       "type": "image"
     },
     "openai/gpt-image-1-edit-mini": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20025,6 +20182,7 @@
       "type": "image"
     },
     "openai/gpt-image-1-mini": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20152,6 +20310,7 @@
       "type": "image"
     },
     "openai/gpt-image-1.5": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20279,6 +20438,7 @@
       "type": "image"
     },
     "openai/gpt-image-1.5-edit": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20406,6 +20566,7 @@
       "type": "image"
     },
     "openai/o1-mini": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20532,6 +20693,7 @@
       "type": "chat"
     },
     "openai/o1-preview": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20658,6 +20820,7 @@
       "type": "chat"
     },
     "openai/o4-mini": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20784,6 +20947,7 @@
       "type": "chat"
     },
     "orpheus/3b-orpheus-tts-0.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20911,6 +21075,7 @@
       "type": "audio"
     },
     "prunaai/p-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21038,6 +21203,7 @@
       "type": "image"
     },
     "prunaai/p-image-edit": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21165,6 +21331,7 @@
       "type": "image"
     },
     "recraft/v3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21292,6 +21459,7 @@
       "type": "image"
     },
     "recraft/v3-svg": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21419,6 +21587,7 @@
       "type": "image"
     },
     "resemble-ai/chatterbox-tts": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21546,6 +21715,7 @@
       "type": "audio"
     },
     "resemble-ai/chatterbox-turbo-tts": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21673,6 +21843,7 @@
       "type": "audio"
     },
     "runway/gen-4-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21800,6 +21971,7 @@
       "type": "image"
     },
     "sarvam/veena-tts": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21927,6 +22099,7 @@
       "type": "audio"
     },
     "sarvam/veenamax-tts": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22054,6 +22227,7 @@
       "type": "audio"
     },
     "segmind/526mix": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22181,6 +22355,7 @@
       "type": "image"
     },
     "segmind/ai-product-photo-editor": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22308,6 +22483,7 @@
       "type": "image"
     },
     "segmind/ai-product-photography": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22435,6 +22611,7 @@
       "type": "image"
     },
     "segmind/all-in-one-pixe": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22562,6 +22739,7 @@
       "type": "image"
     },
     "segmind/background-removal": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22689,6 +22867,7 @@
       "type": "image"
     },
     "segmind/background-replace": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22816,6 +22995,7 @@
       "type": "image"
     },
     "segmind/beyond-outpaint": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22943,6 +23123,7 @@
       "type": "image"
     },
     "segmind/caricature-style": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23070,6 +23251,7 @@
       "type": "image"
     },
     "segmind/clarity-upscaler": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23197,6 +23379,7 @@
       "type": "image"
     },
     "segmind/codeformer": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23324,6 +23507,7 @@
       "type": "image"
     },
     "segmind/colorful": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23451,6 +23635,7 @@
       "type": "image"
     },
     "segmind/colossus-lightning-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23578,6 +23763,7 @@
       "type": "image"
     },
     "segmind/consistent-character": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23705,6 +23891,7 @@
       "type": "image"
     },
     "segmind/consistent-character-ai-neolemon-v2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23832,6 +24019,7 @@
       "type": "image"
     },
     "segmind/consistent-character-ai-neolemon-v3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23959,6 +24147,7 @@
       "type": "image"
     },
     "segmind/consistent-character-v1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24086,6 +24275,7 @@
       "type": "image"
     },
     "segmind/consistent-character-with-pose": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24213,6 +24403,7 @@
       "type": "image"
     },
     "segmind/controlnet-canny": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24340,6 +24531,7 @@
       "type": "image"
     },
     "segmind/controlnet-depth": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24467,6 +24659,7 @@
       "type": "image"
     },
     "segmind/controlnet-openpose": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24594,6 +24787,7 @@
       "type": "image"
     },
     "segmind/controlnet-scribble": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24721,6 +24915,7 @@
       "type": "image"
     },
     "segmind/controlnet-soft-edge": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24848,6 +25043,7 @@
       "type": "image"
     },
     "segmind/copax-timeless-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24975,6 +25171,7 @@
       "type": "image"
     },
     "segmind/cute-rich-style": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25102,6 +25299,7 @@
       "type": "image"
     },
     "segmind/cyber-realistic": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25229,6 +25427,7 @@
       "type": "image"
     },
     "segmind/deep-spaced-diffusion": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25356,6 +25555,7 @@
       "type": "image"
     },
     "segmind/dream-shaper": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25483,6 +25683,7 @@
       "type": "image"
     },
     "segmind/dreamshaper-lightning-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25610,6 +25811,7 @@
       "type": "image"
     },
     "segmind/dreamshaper-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25737,6 +25939,7 @@
       "type": "image"
     },
     "segmind/dvarch": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25864,6 +26067,7 @@
       "type": "image"
     },
     "segmind/dynavis-lightning-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25991,6 +26195,7 @@
       "type": "image"
     },
     "segmind/edge-of-realism": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26118,6 +26323,7 @@
       "type": "image"
     },
     "segmind/epic-realism": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26245,6 +26451,7 @@
       "type": "image"
     },
     "segmind/esrgan": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26372,6 +26579,7 @@
       "type": "image"
     },
     "segmind/expression-editor": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26499,6 +26707,7 @@
       "type": "image"
     },
     "segmind/face-detailer": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26626,6 +26835,7 @@
       "type": "image"
     },
     "segmind/face-to-many": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26753,6 +26963,7 @@
       "type": "image"
     },
     "segmind/face-to-sticker": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26880,6 +27091,7 @@
       "type": "image"
     },
     "segmind/faceswap": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27007,6 +27219,7 @@
       "type": "image"
     },
     "segmind/faceswap-comic-v1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27134,6 +27347,7 @@
       "type": "image"
     },
     "segmind/faceswap-v2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27261,6 +27475,7 @@
       "type": "image"
     },
     "segmind/faceswap-v3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27388,6 +27603,7 @@
       "type": "image"
     },
     "segmind/faceswap-v3-multifaceswap": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27515,6 +27731,7 @@
       "type": "image"
     },
     "segmind/faceswap-v4": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27642,6 +27859,7 @@
       "type": "image"
     },
     "segmind/faceswap-v5": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27769,6 +27987,7 @@
       "type": "image"
     },
     "segmind/fantassified-icons": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27896,6 +28115,7 @@
       "type": "image"
     },
     "segmind/fast-flux-1-schnell": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28023,6 +28243,7 @@
       "type": "image"
     },
     "segmind/flat-2d": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28150,6 +28371,7 @@
       "type": "image"
     },
     "segmind/font-sheet-generator": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28277,6 +28499,7 @@
       "type": "image"
     },
     "segmind/fooocus": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28404,6 +28627,7 @@
       "type": "image"
     },
     "segmind/fooocus-inpainting": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28531,6 +28755,7 @@
       "type": "image"
     },
     "segmind/fooocus-outpainting": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28658,6 +28883,7 @@
       "type": "image"
     },
     "segmind/fruit-fusion": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28785,6 +29011,7 @@
       "type": "image"
     },
     "segmind/idm-vton": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28912,6 +29139,7 @@
       "type": "image"
     },
     "segmind/illusion-diffusion-hq": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29039,6 +29267,7 @@
       "type": "image"
     },
     "segmind/image-superimpose-v2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29166,6 +29395,7 @@
       "type": "image"
     },
     "segmind/infinite-you": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29293,6 +29523,7 @@
       "type": "image"
     },
     "segmind/insta-depth": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29420,6 +29651,7 @@
       "type": "image"
     },
     "segmind/instantid": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29547,6 +29779,7 @@
       "type": "image"
     },
     "segmind/ip-adapter-canny-xl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29674,6 +29907,7 @@
       "type": "image"
     },
     "segmind/ip-adapter-depth-xl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29801,6 +30035,7 @@
       "type": "image"
     },
     "segmind/ip-adapter-openpose-xl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29928,6 +30163,7 @@
       "type": "image"
     },
     "segmind/ipadapter-style-transfer": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30055,6 +30291,7 @@
       "type": "image"
     },
     "segmind/juggernaut-final": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30182,6 +30419,7 @@
       "type": "image"
     },
     "segmind/juggernaut-lightning-flux": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30309,6 +30547,7 @@
       "type": "image"
     },
     "segmind/juggernaut-lightning-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30436,6 +30675,7 @@
       "type": "image"
     },
     "segmind/juggernaut-pro-flux": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30563,6 +30803,7 @@
       "type": "image"
     },
     "segmind/kandinsky-2.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30690,6 +30931,7 @@
       "type": "image"
     },
     "segmind/magic-eraser": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30817,6 +31059,7 @@
       "type": "image"
     },
     "segmind/majicmix": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30944,6 +31187,7 @@
       "type": "image"
     },
     "segmind/manmarumix": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31071,6 +31315,7 @@
       "type": "image"
     },
     "segmind/material-transfer": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31198,6 +31443,7 @@
       "type": "image"
     },
     "segmind/nightvis-lightning-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31325,6 +31571,7 @@
       "type": "image"
     },
     "segmind/nomos-image-upscaler-4k": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31452,6 +31699,7 @@
       "type": "image"
     },
     "segmind/omini-control": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31579,6 +31827,7 @@
       "type": "image"
     },
     "segmind/paragon": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31706,6 +31955,7 @@
       "type": "image"
     },
     "segmind/profile-photo-style-transfer": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31833,6 +32083,7 @@
       "type": "image"
     },
     "segmind/protovision-lightning-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31960,6 +32211,7 @@
       "type": "image"
     },
     "segmind/qr-generator": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32087,6 +32339,7 @@
       "type": "image"
     },
     "segmind/rcnz-cartoon": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32214,6 +32467,7 @@
       "type": "image"
     },
     "segmind/realdream-lightning": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32341,6 +32595,7 @@
       "type": "image"
     },
     "segmind/realdream-pony-v9": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32468,6 +32723,7 @@
       "type": "image"
     },
     "segmind/realism-lightning-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32595,6 +32851,7 @@
       "type": "image"
     },
     "segmind/realistic-vision": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32722,6 +32979,7 @@
       "type": "image"
     },
     "segmind/realvis-lightning-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32849,6 +33107,7 @@
       "type": "image"
     },
     "segmind/realvis-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32976,6 +33235,7 @@
       "type": "image"
     },
     "segmind/reliberate": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33103,6 +33363,7 @@
       "type": "image"
     },
     "segmind/relighting": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33230,6 +33491,7 @@
       "type": "image"
     },
     "segmind/relighting-v2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33357,6 +33619,7 @@
       "type": "image"
     },
     "segmind/revanimated": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33484,6 +33747,7 @@
       "type": "image"
     },
     "segmind/rpg": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33611,6 +33875,7 @@
       "type": "image"
     },
     "segmind/samaritan": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33738,6 +34003,7 @@
       "type": "image"
     },
     "segmind/samaritan-3d-xl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33865,6 +34131,7 @@
       "type": "image"
     },
     "segmind/samaritan-lightning-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33992,6 +34259,7 @@
       "type": "image"
     },
     "segmind/scenecraft-v0.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34119,6 +34387,7 @@
       "type": "image"
     },
     "segmind/scifi": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34246,6 +34515,7 @@
       "type": "image"
     },
     "segmind/sd-outpainting": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34373,6 +34643,7 @@
       "type": "image"
     },
     "segmind/sdxl-openpose": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34500,6 +34771,7 @@
       "type": "image"
     },
     "segmind/segfit-v1.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34627,6 +34899,7 @@
       "type": "image"
     },
     "segmind/segfit-v1.2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34754,6 +35027,7 @@
       "type": "image"
     },
     "segmind/segfit-v1.3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -34881,6 +35155,7 @@
       "type": "image"
     },
     "segmind/segmind-vega": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35008,6 +35283,7 @@
       "type": "image"
     },
     "segmind/segmind-vegart": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35135,6 +35411,7 @@
       "type": "image"
     },
     "segmind/segswap-v0.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35262,6 +35539,7 @@
       "type": "image"
     },
     "segmind/skin-contrast-upscaler": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35389,6 +35667,7 @@
       "type": "image"
     },
     "segmind/small-sd": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35516,6 +35795,7 @@
       "type": "image"
     },
     "segmind/ssd-1b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35643,6 +35923,7 @@
       "type": "image"
     },
     "segmind/ssd-canny": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35770,6 +36051,7 @@
       "type": "image"
     },
     "segmind/ssd-depth": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35897,6 +36179,7 @@
       "type": "image"
     },
     "segmind/ssd-img2img": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36024,6 +36307,7 @@
       "type": "image"
     },
     "segmind/supir-photo-realistic-restoration": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36151,6 +36435,7 @@
       "type": "image"
     },
     "segmind/text-overlay": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36278,6 +36563,7 @@
       "type": "image"
     },
     "segmind/tiny-sd": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36405,6 +36691,7 @@
       "type": "image"
     },
     "segmind/tiny-sd-portrait": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36532,6 +36819,7 @@
       "type": "image"
     },
     "segmind/transparent-background-maker": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36659,6 +36947,7 @@
       "type": "image"
     },
     "segmind/try-on-diffusion": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36786,6 +37075,7 @@
       "type": "image"
     },
     "segmind/wildcard-lightning-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -36913,6 +37203,7 @@
       "type": "image"
     },
     "segmind/word2img": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37040,6 +37331,7 @@
       "type": "image"
     },
     "segmind/zavychroma-sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37167,6 +37459,7 @@
       "type": "image"
     },
     "stability-ai/sd3-medium-canny-controlnet": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37294,6 +37587,7 @@
       "type": "image"
     },
     "stability-ai/sd3-medium-pose-controlnet": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37421,6 +37715,7 @@
       "type": "image"
     },
     "stability-ai/sd3-medium-tile-controlnet": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37548,6 +37843,7 @@
       "type": "image"
     },
     "stability-ai/sdxl-inpaint": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37675,6 +37971,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-2.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37802,6 +38099,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-3-medium-text-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37929,6 +38227,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-3.5-large-text-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38056,6 +38355,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-3.5-turbo-text-to-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38183,6 +38483,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-img2img": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38310,6 +38611,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-inpainting": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38437,6 +38739,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-xl-0.9": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38564,6 +38867,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-xl-1.0": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38691,6 +38995,7 @@
       "type": "image"
     },
     "tencent/ace-step-music": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38818,6 +39123,7 @@
       "type": "audio"
     },
     "tongyi/z-image-turbo": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38945,6 +39251,7 @@
       "type": "image"
     },
     "topaz/image-upscale": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39072,6 +39379,7 @@
       "type": "image"
     },
     "xai/grok-2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39198,6 +39506,7 @@
       "type": "chat"
     },
     "xai/grok-2-vision": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

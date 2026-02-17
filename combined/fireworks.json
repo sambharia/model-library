@@ -908,7 +908,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/gpt-oss-120b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1002,7 +1002,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/gpt-oss-20b": {
-      "_lastUpdated": "2026-02-02T07:19:18.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

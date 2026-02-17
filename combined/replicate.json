@@ -123,6 +123,7 @@
   "id": "replicate",
   "models": {
     "adirik/realvisxl-v3.0-turbo": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -378,6 +379,7 @@
       "type": "audio"
     },
     "afiaka87/tortoise-tts": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -505,6 +507,7 @@
       "type": "audio"
     },
     "ai-forever/kandinsky-2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -632,6 +635,7 @@
       "type": "image"
     },
     "ai-forever/kandinsky-2.2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1013,6 +1017,7 @@
       "type": "chat"
     },
     "awerks/neon-tts": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1268,6 +1273,7 @@
       "type": "image"
     },
     "black-forest-labs/flux-dev": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2291,6 +2297,7 @@
       "type": "image"
     },
     "bytedance/sdxl-lightning-4step": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2930,6 +2937,7 @@
       "type": "audio"
     },
     "cjwbw/seamless_communication": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3057,6 +3065,7 @@
       "type": "audio"
     },
     "cjwbw/voicecraft": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3184,6 +3193,7 @@
       "type": "audio"
     },
     "comfyui/any-comfyui-workflow": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3311,6 +3321,7 @@
       "type": "image"
     },
     "datacte/proteus-v0.2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3438,6 +3449,7 @@
       "type": "image"
     },
     "datacte/proteus-v0.3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3692,6 +3704,7 @@
       "type": "chat"
     },
     "fermatresearch/sdxl-controlnet-lora": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3819,6 +3832,7 @@
       "type": "image"
     },
     "fofr/latent-consistency-model": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3946,6 +3960,7 @@
       "type": "image"
     },
     "fofr/sdxl-emoji": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4073,6 +4088,7 @@
       "type": "image"
     },
     "fofr/sdxl-multi-controlnet-lora": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4200,6 +4216,7 @@
       "type": "image"
     },
     "fofr/sticker-maker": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5092,6 +5109,7 @@
       "type": "image"
     },
     "google/nano-banana-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5347,6 +5365,7 @@
       "type": "image"
     },
     "ideogram-ai/ideogram-v2a": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5474,6 +5493,7 @@
       "type": "image"
     },
     "ideogram-ai/ideogram-v3-balanced": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5601,6 +5621,7 @@
       "type": "image"
     },
     "ideogram-ai/ideogram-v3-quality": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5856,6 +5877,7 @@
       "type": "image"
     },
     "jaaari/kokoro-82m": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5983,6 +6005,7 @@
       "type": "audio"
     },
     "jagilley/controlnet-scribble": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6110,6 +6133,7 @@
       "type": "image"
     },
     "leonardoai/lucid-origin": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6493,6 +6517,7 @@
       "type": "image"
     },
     "lucataco/open-dalle-v1.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6620,6 +6645,7 @@
       "type": "image"
     },
     "lucataco/orpheus-3b-0.1-ft": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6747,6 +6773,7 @@
       "type": "audio"
     },
     "lucataco/realistic-vision-v5.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6874,6 +6901,7 @@
       "type": "image"
     },
     "lucataco/ssd-1b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7129,6 +7157,7 @@
       "type": "audio"
     },
     "luma/photon": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7765,6 +7794,7 @@
       "type": "chat"
     },
     "minimax/speech-02-hd": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8148,6 +8178,7 @@
       "type": "audio"
     },
     "nvidia/sana": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10308,6 +10339,7 @@
       "type": "chat"
     },
     "playgroundai/playground-v2.5-1024px-aesthetic": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10435,6 +10467,7 @@
       "type": "image"
     },
     "prunaai/flux-fast": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10562,6 +10595,7 @@
       "type": "image"
     },
     "prunaai/hidream-l1-full": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10817,6 +10851,7 @@
       "type": "image"
     },
     "prunaai/sdxl-lightning": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10944,6 +10979,7 @@
       "type": "image"
     },
     "prunaai/wan-2.2-image": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11199,6 +11235,7 @@
       "type": "image"
     },
     "recraft-ai/recraft-v3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11326,6 +11363,7 @@
       "type": "image"
     },
     "recraft-ai/recraft-v3-svg": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11707,6 +11745,7 @@
       "type": "chat"
     },
     "resemble-ai/chatterbox": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11834,6 +11873,7 @@
       "type": "audio"
     },
     "resemble-ai/chatterbox-multilingual": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11961,6 +12001,7 @@
       "type": "audio"
     },
     "resemble-ai/chatterbox-pro": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12088,6 +12129,7 @@
       "type": "audio"
     },
     "sdxl-based/realvisxl-v3-multi-controlnet-lora": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12215,6 +12257,7 @@
       "type": "image"
     },
     "stability-ai/sdxl": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12342,6 +12385,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12469,6 +12513,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-3.5-large": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12596,6 +12641,7 @@
       "type": "image"
     },
     "stability-ai/stable-diffusion-3.5-large-turbo": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12978,6 +13024,7 @@
       "type": "chat"
     },
     "suno-ai/bark": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13105,6 +13152,7 @@
       "type": "audio"
     },
     "tstramer/material-diffusion": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13741,6 +13789,7 @@
       "type": "chat"
     },
     "zsxkib/dia": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13868,6 +13917,7 @@
       "type": "audio"
     },
     "zsxkib/realistic-voice-cloning": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

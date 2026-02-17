@@ -123,6 +123,7 @@
   "id": "upstage",
   "models": {
     "solar-mini-nightly": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -249,6 +250,7 @@
       "type": "chat"
     },
     "solar-mini3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -375,6 +377,7 @@
       "type": "chat"
     },
     "solar-pro2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -501,6 +504,7 @@
       "type": "chat"
     },
     "solar-pro2-nightly": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -627,6 +631,7 @@
       "type": "chat"
     },
     "solar-pro3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -753,6 +758,7 @@
       "type": "chat"
     },
     "syn-pro3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

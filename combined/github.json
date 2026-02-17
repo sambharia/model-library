@@ -3,7 +3,7 @@
   "id": "github",
   "models": {
     "AI21-Jamba-Instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [],
       "id": "AI21-Jamba-Instruct",
       "modality": {
@@ -17,7 +17,7 @@
       "type": "chat"
     },
     "Codestral-2501": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Codestral-2501",
       "modality": {
@@ -31,7 +31,7 @@
       "type": "chat"
     },
     "DeepSeek-R1": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "DeepSeek-R1",
       "modality": {
@@ -45,6 +45,7 @@
       "type": "chat"
     },
     "DeepSeek-R1-0528": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "DeepSeek-R1-0528",
       "modality": {
@@ -58,7 +59,7 @@
       "type": "chat"
     },
     "DeepSeek-V3-0324": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "DeepSeek-V3-0324",
       "modality": {
@@ -72,7 +73,7 @@
       "type": "chat"
     },
     "Grok-3-Mini": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Grok-3-Mini",
       "modality": {
@@ -86,7 +87,7 @@
       "type": "chat"
     },
     "Llama-3.2-11B-Vision-Instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Llama-3.2-11B-Vision-Instruct",
       "modality": {
@@ -100,7 +101,7 @@
       "type": "chat"
     },
     "Llama-3.2-90B-Vision-Instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Llama-3.2-90B-Vision-Instruct",
       "modality": {
@@ -114,6 +115,7 @@
       "type": "chat"
     },
     "Llama-3.3-70B-Instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Llama-3.3-70B-Instruct",
       "modality": {
@@ -127,6 +129,7 @@
       "type": "chat"
     },
     "Llama-4-Maverick-17B-128E-Instruct-FP8": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Llama-4-Maverick-17B-128E-Instruct-FP8",
       "modality": {
@@ -140,7 +143,7 @@
       "type": "chat"
     },
     "MAI-DS-R1": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "MAI-DS-R1",
       "modality": {
@@ -154,6 +157,7 @@
       "type": "chat"
     },
     "Meta-Llama-3.1-8B-Instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Meta-Llama-3.1-8B-Instruct",
       "modality": {
@@ -167,7 +171,7 @@
       "type": "chat"
     },
     "Ministral-3B": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Ministral-3B",
       "modality": {
@@ -181,7 +185,7 @@
       "type": "chat"
     },
     "Mistral-Medium-3": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Mistral-Medium-3",
       "modality": {
@@ -195,7 +199,7 @@
       "type": "chat"
     },
     "Mistral-large": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [],
       "id": "Mistral-large",
       "modality": {
@@ -209,7 +213,7 @@
       "type": "chat"
     },
     "Mistral-nemo": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [],
       "id": "Mistral-nemo",
       "modality": {
@@ -223,7 +227,7 @@
       "type": "chat"
     },
     "Phi-3-medium-128k-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [],
       "id": "Phi-3-medium-128k-instruct",
       "modality": {
@@ -237,7 +241,7 @@
       "type": "chat"
     },
     "Phi-4-Reasoning": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Phi-4-Reasoning",
       "modality": {
@@ -251,7 +255,7 @@
       "type": "chat"
     },
     "Phi-4-mini-instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Phi-4-mini-instruct",
       "modality": {
@@ -265,7 +269,7 @@
       "type": "chat"
     },
     "Phi-4-mini-reasoning": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Phi-4-mini-reasoning",
       "modality": {
@@ -279,7 +283,7 @@
       "type": "chat"
     },
     "Phi-4-multimodal-instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Phi-4-multimodal-instruct",
       "modality": {
@@ -293,7 +297,7 @@
       "type": "chat"
     },
     "Text-embedding-3": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "Text-embedding-3",
       "modality": {
@@ -307,7 +311,7 @@
       "type": "chat"
     },
     "cohere-command-r": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [],
       "id": "cohere-command-r",
       "modality": {
@@ -321,7 +325,7 @@
       "type": "chat"
     },
     "cohere-command-r-plus": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [],
       "id": "cohere-command-r-plus",
       "modality": {
@@ -335,7 +339,7 @@
       "type": "chat"
     },
     "cohere.command-r-plus-08-2024": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "cohere.command-r-plus-08-2024",
       "modality": {
@@ -349,7 +353,7 @@
       "type": "chat"
     },
     "command-a-03-2025": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "command-a-03-2025",
       "modality": {
@@ -363,7 +367,7 @@
       "type": "chat"
     },
     "gpt-4.1": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "gpt-4.1",
       "modality": {
@@ -377,7 +381,7 @@
       "type": "chat"
     },
     "gpt-4.1-mini": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "gpt-4.1-mini",
       "modality": {
@@ -391,7 +395,7 @@
       "type": "chat"
     },
     "gpt-4.1-nano": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "gpt-4.1-nano",
       "modality": {
@@ -419,7 +423,7 @@
       "type": "chat"
     },
     "gpt-4o-mini": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "gpt-4o-mini",
       "modality": {
@@ -433,7 +437,7 @@
       "type": "chat"
     },
     "gpt-5": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "gpt-5",
       "modality": {
@@ -447,6 +451,7 @@
       "type": "chat"
     },
     "gpt-5-chat": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "gpt-5-chat",
       "modality": {
@@ -460,7 +465,7 @@
       "type": "chat"
     },
     "gpt-5-micro": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "gpt-5-micro",
       "modality": {
@@ -474,7 +479,7 @@
       "type": "chat"
     },
     "gpt-5-mini": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "gpt-5-mini",
       "modality": {
@@ -488,7 +493,7 @@
       "type": "chat"
     },
     "gpt-5-nano": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "gpt-5-nano",
       "modality": {
@@ -502,7 +507,7 @@
       "type": "chat"
     },
     "grok-3": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "grok-3",
       "modality": {
@@ -516,7 +521,7 @@
       "type": "chat"
     },
     "llama-4 Scout-17B-16E-instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "llama-4 Scout-17B-16E-instruct",
       "modality": {
@@ -530,7 +535,7 @@
       "type": "chat"
     },
     "meta-llama-3-70b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [],
       "id": "meta-llama-3-70b-instruct",
       "modality": {
@@ -544,7 +549,7 @@
       "type": "chat"
     },
     "meta-llama-3-8b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [],
       "id": "meta-llama-3-8b-instruct",
       "modality": {
@@ -558,7 +563,7 @@
       "type": "chat"
     },
     "meta-llama-3.1-70b-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [],
       "id": "meta-llama-3.1-70b-instruct",
       "modality": {
@@ -572,7 +577,7 @@
       "type": "chat"
     },
     "mistral-small-3.1": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "mistral-small-3.1",
       "modality": {
@@ -586,7 +591,7 @@
       "type": "chat"
     },
     "o1": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "o1",
       "modality": {
@@ -600,7 +605,7 @@
       "type": "chat"
     },
     "o1-mini": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "o1-mini",
       "modality": {
@@ -614,7 +619,7 @@
       "type": "chat"
     },
     "o3": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "o3",
       "modality": {
@@ -628,7 +633,7 @@
       "type": "chat"
     },
     "o3-mini": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "o3-mini",
       "modality": {
@@ -642,7 +647,7 @@
       "type": "chat"
     },
     "o4": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "o4",
       "modality": {
@@ -656,7 +661,7 @@
       "type": "chat"
     },
     "o4-mini": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [],
       "id": "o4-mini",
       "modality": {

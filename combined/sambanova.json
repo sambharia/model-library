@@ -123,6 +123,7 @@
   "id": "sambanova",
   "models": {
     "deepseek/deepseek-r1-0528": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -249,6 +250,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-distill-llama-70b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -375,6 +377,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v3-0324": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -501,6 +504,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v3.1": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -627,6 +631,7 @@
       "type": "chat"
     },
     "intfloat/e5-mistral-7b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -754,6 +759,7 @@
       "type": "embedding"
     },
     "meta/llama-4-maverick-17b-128e-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -881,6 +887,7 @@
       "type": "chat"
     },
     "meta/meta-llama-3.1-8b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1007,6 +1014,7 @@
       "type": "chat"
     },
     "meta/meta-llama-3.3-70b-instruct": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1133,6 +1141,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-120b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1259,6 +1268,7 @@
       "type": "chat"
     },
     "openai/whisper-large-v3": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1386,6 +1396,7 @@
       "type": "audio"
     },
     "qwen/qwen3-235b-a22b-instruct-2507": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1512,6 +1523,7 @@
       "type": "chat"
     },
     "qwen/qwen3-32b": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1638,6 +1650,7 @@
       "type": "chat"
     },
     "tokyotech-llm/llama-3.3-swallow-70b-instruct-v0.4": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

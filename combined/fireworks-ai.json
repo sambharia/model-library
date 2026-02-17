@@ -897,7 +897,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/deepseek-v3p1": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -988,6 +988,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/deepseek-v3p2": {
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1078,7 +1079,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/devstral-small-2-24b-instruct-2512": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2090,7 +2091,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/glm-4p5v": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2181,7 +2182,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/glm-4p7-flash": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2272,7 +2273,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/gpt-oss-120b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2366,7 +2367,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/gpt-oss-20b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2551,7 +2552,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/internvl3-38b": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2642,7 +2643,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/internvl3-78b": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2733,7 +2734,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/internvl3-8b": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2824,7 +2825,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/kimi-k2-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2927,7 +2928,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/kimi-k2-instruct-0905": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3030,7 +3031,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/kimi-k2-thinking": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5450,7 +5451,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/minimax-m2p1": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5541,7 +5542,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/ministral-3-14b-instruct-2512": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5632,7 +5633,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/ministral-3-8b-instruct-2512": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6087,7 +6088,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/mistral-large-3-fp8": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6760,7 +6761,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/molmo2-4b": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6851,7 +6852,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/molmo2-8b": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7033,7 +7034,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/nemotron-nano-v2-12b-vl": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7958,7 +7959,7 @@
       "type": "embedding"
     },
     "accounts/fireworks/models/qwen3-omni-30b-a3b-instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8325,7 +8326,7 @@
       "type": "embedding"
     },
     "accounts/fireworks/models/qwen3-vl-235b-a22b-instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8416,7 +8417,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/qwen3-vl-235b-a22b-thinking": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8507,7 +8508,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/qwen3-vl-30b-a3b-instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8598,7 +8599,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/qwen3-vl-30b-a3b-thinking": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8689,7 +8690,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/qwen3-vl-32b-instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8780,7 +8781,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/qwen3-vl-8b-instruct": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8871,7 +8872,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/rolm-ocr": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-02-17T11:53:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

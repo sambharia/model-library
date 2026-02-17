@@ -10722,7 +10722,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v3.2": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-17T10:23:52.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10818,7 +10818,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.25,
+          "input": 0.26,
           "output": 0.38,
           "unit": "USD_per_million_tokens"
         },
@@ -39628,7 +39628,7 @@
       "type": "chat"
     },
     "qwen/qwen3-coder-next": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-02-17T10:23:52.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39724,8 +39724,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.07,
-          "output": 0.3,
+          "input": 0.12,
+          "output": 0.75,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -47904,7 +47904,7 @@
       "type": "chat"
     },
     "z-ai/glm-4.6": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-17T10:23:52.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -48000,8 +48000,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.35,
-          "output": 1.5,
+          "input": 0.34,
+          "output": 1.7,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -48219,7 +48219,7 @@
       "type": "chat"
     },
     "z-ai/glm-4.7": {
-      "_lastUpdated": "2026-02-03T07:38:00.000Z",
+      "_lastUpdated": "2026-02-17T10:23:52.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -48315,8 +48315,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.4,
-          "output": 1.5,
+          "input": 0.38,
+          "output": 1.7,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

@@ -137,7 +137,7 @@
       "type": "chat"
     },
     "babbage-002": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -264,6 +264,15 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.4,
+          "output": 0.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },
@@ -409,6 +418,23 @@
           "cached_input": 1.25,
           "input": 5,
           "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "chatgpt-image-latest": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "chatgpt-image-latest",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 1.25,
+          "image_input": 8,
+          "input": 5,
+          "output": 10,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -1297,7 +1323,7 @@
       "type": "text"
     },
     "davinci-002": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1424,6 +1450,15 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2,
+          "output": 2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },
@@ -2800,6 +2835,21 @@
         "type": "pay_as_you_go"
       },
       "type": "text"
+    },
+    "gpt-3.5-turbo-instruct-0914": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "gpt-3.5-turbo-instruct-0914",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1.5,
+          "output": 2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     },
     "gpt-4": {
       "_lastUpdated": "2026-01-30T10:16:25.000Z",
@@ -7261,6 +7311,40 @@
       },
       "type": "audio"
     },
+    "gpt-4o-audio-preview-2024-12-17": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "gpt-4o-audio-preview-2024-12-17",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_input": 40,
+          "audio_output": 80,
+          "input": 2.5,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4o-audio-preview-2025-06-03": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "gpt-4o-audio-preview-2025-06-03",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_input": 40,
+          "audio_output": 80,
+          "input": 2.5,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gpt-4o-latest": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
@@ -7952,7 +8036,7 @@
       "type": "audio"
     },
     "gpt-4o-mini-audio-preview-2024-12-17": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8082,7 +8166,7 @@
         "tokens": {
           "audio_input": 20,
           "audio_output": 10,
-          "input": 15,
+          "input": 0.15,
           "output": 0.6,
           "unit": "USD_per_million_tokens"
         },
@@ -8790,6 +8874,38 @@
       },
       "type": "text"
     },
+    "gpt-4o-mini-transcribe-2025-03-20": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "gpt-4o-mini-transcribe-2025-03-20",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_input": 3,
+          "input": 1.25,
+          "output": 5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4o-mini-transcribe-2025-12-15": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "gpt-4o-mini-transcribe-2025-12-15",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_input": 3,
+          "input": 1.25,
+          "output": 5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gpt-4o-mini-tts": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
@@ -8936,6 +9052,36 @@
         "type": "pay_as_you_go"
       },
       "type": "audio"
+    },
+    "gpt-4o-mini-tts-2025-03-20": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "gpt-4o-mini-tts-2025-03-20",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_output": 12,
+          "input": 0.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4o-mini-tts-2025-12-15": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "gpt-4o-mini-tts-2025-12-15",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_output": 12,
+          "input": 0.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     },
     "gpt-4o-realtime-preview": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
@@ -9210,6 +9356,25 @@
           "audio_cached_input": 20,
           "audio_input": 100,
           "audio_output": 200,
+          "cached_input": 2.5,
+          "input": 5,
+          "output": 20,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4o-realtime-preview-2024-12-17": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "gpt-4o-realtime-preview-2024-12-17",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_cached_input": 2.5,
+          "audio_input": 40,
+          "audio_output": 80,
           "cached_input": 2.5,
           "input": 5,
           "output": 20,
@@ -14080,7 +14245,7 @@
       "type": "chat"
     },
     "gpt-5.2-codex": {
-      "_lastUpdated": "2026-02-05T19:00:13.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14781,7 +14946,7 @@
       "type": "text"
     },
     "gpt-audio-2025-08-28": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14905,6 +15070,17 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_input": 32,
+          "audio_output": 64,
+          "input": 2.5,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },
@@ -15048,7 +15224,7 @@
       "type": "audio"
     },
     "gpt-audio-mini-2025-10-06": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15173,7 +15349,35 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_input": 10,
+          "audio_output": 20,
+          "input": 0.6,
+          "output": 2.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "text"
+    },
+    "gpt-audio-mini-2025-12-15": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "gpt-audio-mini-2025-12-15",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_input": 10,
+          "audio_output": 20,
+          "input": 0.6,
+          "output": 2.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     },
     "gpt-image-1": {
       "_lastUpdated": "2026-02-06T14:50:44.000Z",
@@ -15376,7 +15580,7 @@
       "type": "text"
     },
     "gpt-image-1-mini": {
-      "_lastUpdated": "2026-01-13T10:14:44.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15500,6 +15704,16 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "image_input": 2.5,
+          "input": 2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },
@@ -16329,7 +16543,7 @@
       "type": "text"
     },
     "gpt-realtime-mini-2025-10-06": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16454,7 +16668,41 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_cached_input": 0.3,
+          "audio_input": 10,
+          "audio_output": 20,
+          "cached_input": 0.06,
+          "image_input": 0.8,
+          "input": 0.6,
+          "output": 2.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "text"
+    },
+    "gpt-realtime-mini-2025-12-15": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "gpt-realtime-mini-2025-12-15",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_cached_input": 0.3,
+          "audio_input": 10,
+          "audio_output": 20,
+          "cached_input": 0.06,
+          "image_input": 0.8,
+          "input": 0.6,
+          "output": 2.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     },
     "o1": {
       "_lastUpdated": "2026-02-03T13:04:25.000Z",
@@ -19876,7 +20124,7 @@
       "type": "chat"
     },
     "o4-mini-deep-research-2025-06-26": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20015,7 +20263,7 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 2.5,
-          "input": 10,
+          "input": 2,
           "output": 40,
           "unit": "USD_per_million_tokens"
         },
@@ -20024,7 +20272,7 @@
       "type": "chat"
     },
     "omni-moderation-2024-09-26": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20152,7 +20400,7 @@
       "type": "moderation"
     },
     "omni-moderation-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22533,6 +22781,20 @@
       },
       "type": "audio"
     },
+    "tts-1-1106": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "tts-1-1106",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "tts-1-hd": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
@@ -22669,8 +22931,22 @@
       },
       "type": "audio"
     },
+    "tts-1-hd-1106": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "id": "tts-1-hd-1106",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "whisper-1": {
-      "_lastUpdated": "2026-01-08T08:51:42.000Z",
+      "_lastUpdated": "2026-02-17T03:06:41.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22809,7 +23085,7 @@
         },
         "currency": "USD",
         "tokens": {
-          "input": 60,
+          "input": 6000,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

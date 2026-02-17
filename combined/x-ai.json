@@ -2208,7 +2208,7 @@
       "type": "chat"
     },
     "grok-code-fast-1-0825": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T10:23:54.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

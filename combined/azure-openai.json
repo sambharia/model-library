@@ -15909,7 +15909,7 @@
       "type": "text"
     },
     "gpt-image-1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-17T08:47:03.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16043,7 +16043,70 @@
       },
       "pricing": {
         "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "1024x1024": {
+                "price": 1670
+              },
+              "1024x1536": {
+                "price": 2500
+              },
+              "1536x1024": {
+                "price": 2500
+              },
+              "default": {
+                "price": 1670
+              }
+            },
+            "high": {
+              "1024x1024": {
+                "price": 1670
+              },
+              "1024x1536": {
+                "price": 2500
+              },
+              "1536x1024": {
+                "price": 2500
+              },
+              "default": {
+                "price": 1670
+              }
+            },
+            "low": {
+              "1024x1024": {
+                "price": 110
+              },
+              "1024x1536": {
+                "price": 160
+              },
+              "1536x1024": {
+                "price": 160
+              },
+              "default": {
+                "price": 110
+              }
+            },
+            "medium": {
+              "1024x1024": {
+                "price": 420
+              },
+              "1024x1536": {
+                "price": 630
+              },
+              "1536x1024": {
+                "price": 630
+              },
+              "default": {
+                "price": 420
+              }
+            }
+          }
+        },
         "tokens": {
+          "cached_image_input": 2.5,
+          "cached_input": 1.25,
+          "image_input": 10,
           "input": 5,
           "output": 40,
           "unit": "USD_per_million_tokens"
@@ -16188,7 +16251,7 @@
       "type": "text"
     },
     "gpt-image-1.5": {
-      "_lastUpdated": "2026-01-09T09:18:25.000Z",
+      "_lastUpdated": "2026-02-17T08:47:03.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16319,6 +16382,78 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "1024x1024": {
+                "price": 1330
+              },
+              "1024x1536": {
+                "price": 2000
+              },
+              "1536x1024": {
+                "price": 2000
+              },
+              "default": {
+                "price": 1330
+              }
+            },
+            "high": {
+              "1024x1024": {
+                "price": 1330
+              },
+              "1024x1536": {
+                "price": 2000
+              },
+              "1536x1024": {
+                "price": 2000
+              },
+              "default": {
+                "price": 1330
+              }
+            },
+            "low": {
+              "1024x1024": {
+                "price": 90
+              },
+              "1024x1536": {
+                "price": 130
+              },
+              "1536x1024": {
+                "price": 130
+              },
+              "default": {
+                "price": 90
+              }
+            },
+            "medium": {
+              "1024x1024": {
+                "price": 340
+              },
+              "1024x1536": {
+                "price": 500
+              },
+              "1536x1024": {
+                "price": 500
+              },
+              "default": {
+                "price": 340
+              }
+            }
+          }
+        },
+        "tokens": {
+          "cached_image_input": 2,
+          "cached_input": 1.25,
+          "image_input": 8,
+          "input": 5,
+          "output": 32,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },

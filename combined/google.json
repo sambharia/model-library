@@ -4342,9 +4342,6 @@
             "search": {
               "price": 350
             },
-            "thinking_token": {
-              "price": 0.025
-            },
             "web_search": {
               "price": 350
             }
@@ -4365,9 +4362,6 @@
             "prices": {
               "search": {
                 "price": 350
-              },
-              "thinking_token": {
-                "price": 0.025
               },
               "web_search": {
                 "price": 350
@@ -4695,9 +4689,6 @@
             "search": {
               "price": 350
             },
-            "thinking_token": {
-              "price": 0.004
-            },
             "web_search": {
               "price": 350
             }
@@ -4908,9 +4899,6 @@
             "search": {
               "price": 350
             },
-            "thinking_token": {
-              "price": 0.004
-            },
             "web_search": {
               "price": 350
             }
@@ -4931,9 +4919,6 @@
             "prices": {
               "search": {
                 "price": 350
-              },
-              "thinking_token": {
-                "price": 0.004
               },
               "web_search": {
                 "price": 350
@@ -5214,9 +5199,6 @@
             "search": {
               "price": 350
             },
-            "thinking_token": {
-              "price": 0.035
-            },
             "web_search": {
               "price": 350
             }
@@ -5237,9 +5219,6 @@
             "prices": {
               "search": {
                 "price": 350
-              },
-              "thinking_token": {
-                "price": 0.035
               },
               "web_search": {
                 "price": 350
@@ -5428,9 +5407,6 @@
             "search": {
               "price": 350
             },
-            "thinking_token": {
-              "price": 0.035
-            },
             "web_search": {
               "price": 350
             }
@@ -5451,9 +5427,6 @@
             "prices": {
               "search": {
                 "price": 350
-              },
-              "thinking_token": {
-                "price": 0.035
               },
               "web_search": {
                 "price": 350
@@ -5733,9 +5706,6 @@
             "search": {
               "price": 350
             },
-            "thinking_token": {
-              "price": 0.1
-            },
             "web_search": {
               "price": 350
             }
@@ -5756,9 +5726,6 @@
             "prices": {
               "search": {
                 "price": 350
-              },
-              "thinking_token": {
-                "price": 0.1
               },
               "web_search": {
                 "price": 350
@@ -6719,9 +6686,6 @@
             "input_image": {
               "price": 0.11
             },
-            "thinking_token": {
-              "price": 0.12
-            },
             "web_search": {
               "price": 140
             }
@@ -6745,9 +6709,6 @@
               },
               "input_image": {
                 "price": 0.11
-              },
-              "thinking_token": {
-                "price": 0.12
               },
               "web_search": {
                 "price": 140

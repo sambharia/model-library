@@ -14245,7 +14245,7 @@
       "type": "chat"
     },
     "gpt-5.2-codex": {
-      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "_lastUpdated": "2026-02-25T17:51:43.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14679,7 +14679,7 @@
       "type": "text"
     },
     "gpt-5.3-codex": {
-      "_lastUpdated": "2026-02-05T19:00:13.000Z",
+      "_lastUpdated": "2026-02-25T17:51:43.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14803,6 +14803,16 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.175,
+          "input": 1.75,
+          "output": 14,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },

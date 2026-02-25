@@ -3120,7 +3120,7 @@
       "type": "chat"
     },
     "claude-opus-4-6": {
-      "_lastUpdated": "2026-02-06T13:50:13.000Z",
+      "_lastUpdated": "2026-02-25T08:08:25.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3291,6 +3291,104 @@
         "function_calling": true
       },
       "id": "claude-sonnet-4-5-20250929",
+      "max_output_tokens": 64000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 3.75,
+          "cached_input": 0.3,
+          "input": 3,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-sonnet-4-6": {
+      "_lastUpdated": "2026-02-25T08:08:25.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 64000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        }
+      ],
+      "_remove_parameters": [
+        "temperature",
+        "top_p"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "claude-sonnet-4-6",
       "max_output_tokens": 64000,
       "modality": {
         "input": [

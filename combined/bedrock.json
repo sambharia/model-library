@@ -15332,10 +15332,10 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "cache_write": 3.75,
-          "cached_input": 0.3,
-          "input": 3,
-          "output": 15,
+          "cache_write": 4.5,
+          "cached_input": 0.36,
+          "input": 3.6,
+          "output": 18,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

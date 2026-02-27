@@ -875,7 +875,7 @@
       "type": "chat"
     },
     "aion-labs/aion-2.0": {
-      "_lastUpdated": "2026-02-26T00:41:13.000Z",
+      "_lastUpdated": "2026-02-27T00:43:38.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6883,6 +6883,111 @@
         "tokens": {
           "input": 0.075,
           "output": 0.3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "bytedance-seed/seed-2.0-mini": {
+      "_lastUpdated": "2026-02-27T00:43:38.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 131072,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "bytedance-seed/seed-2.0-mini",
+      "max_output_tokens": 131072,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.1,
+          "output": 0.4,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -13232,6 +13337,109 @@
         "type": "pay_as_you_go"
       },
       "type": "chat"
+    },
+    "google/gemini-3.1-flash-image-preview": {
+      "_lastUpdated": "2026-02-27T00:43:38.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 65536,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "google/gemini-3.1-flash-image-preview",
+      "max_output_tokens": 65536,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.25,
+          "output": 1.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "image"
     },
     "google/gemini-3.1-pro-preview": {
       "_lastUpdated": "2026-02-20T00:10:30.000Z",
@@ -24877,7 +25085,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-k2": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-02-27T00:43:38.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24973,8 +25181,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.5,
-          "output": 2.4,
+          "input": 0.55,
+          "output": 2.2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -28087,7 +28295,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-nano-12b-v2-vl": {
-      "_lastUpdated": "2026-02-20T00:10:30.000Z",
+      "_lastUpdated": "2026-02-27T00:43:38.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28180,8 +28388,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.07,
-          "output": 0.2,
+          "input": 0.2,
+          "output": 0.6,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

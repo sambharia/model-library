@@ -1,0 +1,673 @@
+{
+  "_defaults": {
+    "message_roles": [
+      "system",
+      "user",
+      "assistant"
+    ],
+    "parameters": [
+      {
+        "defaultValue": 1024,
+        "key": "max_tokens",
+        "maxValue": 131000,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 1,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": null,
+        "key": "stop",
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "array-of-strings"
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      },
+      {
+        "defaultValue": null,
+        "key": "tool_choice",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Auto",
+            "value": "auto"
+          },
+          {
+            "name": "Required",
+            "value": "required"
+          },
+          {
+            "name": "Custom",
+            "schema": {
+              "type": "json"
+            },
+            "value": "custom"
+          }
+        ],
+        "rule": {
+          "default": {
+            "condition": "tools",
+            "else": null,
+            "then": "auto"
+          }
+        },
+        "skipValues": [
+          null,
+          []
+        ],
+        "type": "non-view-manage-data"
+      }
+    ]
+  },
+  "id": "ember-cloud",
+  "models": {
+    "glm-4.5": {
+      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 1024,
+          "key": "max_tokens",
+          "maxValue": 96000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "glm-4.5",
+      "max_output_tokens": 96000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.11,
+          "input": 0.6,
+          "output": 2.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "glm-4.5-air": {
+      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 1024,
+          "key": "max_tokens",
+          "maxValue": 96000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "glm-4.5-air",
+      "max_output_tokens": 96000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.025,
+          "input": 0.13,
+          "output": 0.85,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "glm-4.6": {
+      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 1024,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "glm-4.6",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.08,
+          "input": 0.43,
+          "output": 1.74,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "glm-4.7": {
+      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 1024,
+          "key": "max_tokens",
+          "maxValue": 131000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "glm-4.7",
+      "max_output_tokens": 131000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.08,
+          "input": 0.4,
+          "output": 1.75,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "glm-4.7-flash": {
+      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 1024,
+          "key": "max_tokens",
+          "maxValue": 131000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "glm-4.7-flash",
+      "max_output_tokens": 131000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.01,
+          "input": 0.06,
+          "output": 0.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "glm-5": {
+      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 1024,
+          "key": "max_tokens",
+          "maxValue": 131000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "glm-5",
+      "max_output_tokens": 131000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 1,
+          "output": 3.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    }
+  },
+  "name": "ember-cloud",
+  "schema_version": "2.0"
+}

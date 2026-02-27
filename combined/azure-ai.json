@@ -2827,7 +2827,7 @@
       "type": "chat"
     },
     "claude-haiku-4-5-20251001": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-27T08:21:20.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2895,7 +2895,8 @@
         }
       ],
       "_remove_parameters": [
-        "top_p"
+        "top_p",
+        "temperature"
       ],
       "features": {
         "function_calling": true
@@ -3120,7 +3121,7 @@
       "type": "chat"
     },
     "claude-opus-4-6": {
-      "_lastUpdated": "2026-02-25T08:08:25.000Z",
+      "_lastUpdated": "2026-02-27T08:21:20.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3188,7 +3189,8 @@
         }
       ],
       "_remove_parameters": [
-        "top_p"
+        "top_p",
+        "temperature"
       ],
       "features": {
         "function_calling": true
@@ -3217,7 +3219,7 @@
       "type": "chat"
     },
     "claude-sonnet-4-5-20250929": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-02-27T08:21:20.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3285,7 +3287,8 @@
         }
       ],
       "_remove_parameters": [
-        "top_p"
+        "top_p",
+        "temperature"
       ],
       "features": {
         "function_calling": true

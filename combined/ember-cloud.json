@@ -80,7 +80,7 @@
   "id": "ember-cloud",
   "models": {
     "glm-4.5": {
-      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_lastUpdated": "2026-02-28T00:18:43.000Z",
       "_parameters": [
         {
           "defaultValue": 1024,
@@ -169,8 +169,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.11,
-          "input": 0.6,
-          "output": 2.2,
+          "input": 0.55,
+          "output": 2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -178,7 +178,7 @@
       "type": "chat"
     },
     "glm-4.5-air": {
-      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_lastUpdated": "2026-02-28T00:18:43.000Z",
       "_parameters": [
         {
           "defaultValue": 1024,
@@ -276,7 +276,7 @@
       "type": "chat"
     },
     "glm-4.6": {
-      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_lastUpdated": "2026-02-28T00:18:43.000Z",
       "_parameters": [
         {
           "defaultValue": 1024,
@@ -365,8 +365,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.08,
-          "input": 0.43,
-          "output": 1.74,
+          "input": 0.35,
+          "output": 1.71,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -374,7 +374,7 @@
       "type": "chat"
     },
     "glm-4.7": {
-      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_lastUpdated": "2026-02-28T00:18:43.000Z",
       "_parameters": [
         {
           "defaultValue": 1024,
@@ -463,8 +463,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.08,
-          "input": 0.4,
-          "output": 1.75,
+          "input": 0.3,
+          "output": 1.4,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -570,7 +570,7 @@
       "type": "chat"
     },
     "glm-5": {
-      "_lastUpdated": "2026-02-18T22:36:07.000Z",
+      "_lastUpdated": "2026-02-28T00:18:43.000Z",
       "_parameters": [
         {
           "defaultValue": 1024,
@@ -659,8 +659,106 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 1,
-          "output": 3.2,
+          "input": 0.95,
+          "output": 2.55,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "minimax-m2.5": {
+      "_lastUpdated": "2026-02-28T00:18:43.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 1024,
+          "key": "max_tokens",
+          "maxValue": 196600,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "minimax-m2.5",
+      "max_output_tokens": 196600,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.03,
+          "input": 0.3,
+          "output": 1.1,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

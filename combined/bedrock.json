@@ -5641,6 +5641,40 @@
       },
       "type": "chat"
     },
+    "claude-sonnet-4-6": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-03T17:26:45.000Z",
+      "id": "claude-sonnet-4-6",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 3.75,
+          "cached_input": 0.3,
+          "input": 3,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-sonnet-4-6-v1": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-03T17:26:45.000Z",
+      "id": "claude-sonnet-4-6-v1",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 3.75,
+          "cached_input": 0.3,
+          "input": 3,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "cohere.command-light-text-v14": {
       "_lastUpdated": "2026-02-05T18:22:33.000Z",
       "_parameters": [

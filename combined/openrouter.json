@@ -6163,6 +6163,312 @@
       },
       "type": "chat"
     },
+    "baai/bge-base-en-v1.5": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "baai/bge-base-en-v1.5",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.005,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "baai/bge-large-en-v1.5": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "baai/bge-large-en-v1.5",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.01,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "baai/bge-m3": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "baai/bge-m3",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.01,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
     "baidu/ernie-4.5-21b-a3b": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -8990,7 +9296,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-chat-v3-0324": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-03-02T00:43:12.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9086,8 +9392,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.19,
-          "output": 0.87,
+          "input": 0.2,
+          "output": 0.77,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -9503,7 +9809,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-0528": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-03-02T00:43:12.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9599,8 +9905,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.4,
-          "output": 1.75,
+          "input": 0.45,
+          "output": 2.15,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -13339,7 +13645,7 @@
       "type": "chat"
     },
     "google/gemini-3.1-flash-image-preview": {
-      "_lastUpdated": "2026-02-27T00:43:38.000Z",
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13650,6 +13956,108 @@
         "type": "pay_as_you_go"
       },
       "type": "chat"
+    },
+    "google/gemini-embedding-001": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "google/gemini-embedding-001",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
     },
     "google/gemini-flash-1.5": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
@@ -15813,6 +16221,312 @@
         "type": "pay_as_you_go"
       },
       "type": "chat"
+    },
+    "intfloat/e5-base-v2": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "intfloat/e5-base-v2",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.005,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "intfloat/e5-large-v2": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "intfloat/e5-large-v2",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.01,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "intfloat/multilingual-e5-large": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "intfloat/multilingual-e5-large",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.01,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
     },
     "kwaipilot/kat-coder-pro": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
@@ -20369,7 +21083,7 @@
       "type": "chat"
     },
     "minimax/minimax-m2.5": {
-      "_lastUpdated": "2026-02-20T00:10:30.000Z",
+      "_lastUpdated": "2026-03-02T00:43:12.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20465,8 +21179,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.3,
-          "output": 1.1,
+          "input": 0.295,
+          "output": 1.2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -20673,6 +21387,108 @@
         "type": "pay_as_you_go"
       },
       "type": "chat"
+    },
+    "mistralai/codestral-embed-2505": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "mistralai/codestral-embed-2505",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
     },
     "mistralai/devstral-2512": {
       "_lastUpdated": "2026-02-20T00:10:30.000Z",
@@ -22524,6 +23340,108 @@
         ]
       },
       "type": "chat"
+    },
+    "mistralai/mistral-embed-2312": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "mistralai/mistral-embed-2312",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.1,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
     },
     "mistralai/mistral-large": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
@@ -28092,6 +29010,100 @@
         "type": "pay_as_you_go"
       },
       "type": "chat"
+    },
+    "nvidia/llama-nemotron-embed-vl-1b-v2:free": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "nvidia/llama-nemotron-embed-vl-1b-v2:free",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "type": "embedding"
     },
     "nvidia/nemotron-3-nano-30b-a3b": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
@@ -35139,6 +36151,312 @@
       },
       "type": "chat"
     },
+    "openai/text-embedding-3-large": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "openai/text-embedding-3-large",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.13,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "openai/text-embedding-3-small": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "openai/text-embedding-3-small",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "openai/text-embedding-ada-002": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "openai/text-embedding-ada-002",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.1,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
     "opengvlab/internvl3-14b": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -40947,6 +42265,210 @@
       },
       "type": "chat"
     },
+    "qwen/qwen3-embedding-4b": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "qwen/qwen3-embedding-4b",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "qwen/qwen3-embedding-8b": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 32000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "qwen/qwen3-embedding-8b",
+      "max_output_tokens": 32000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.01,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
     "qwen/qwen3-max": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -42388,7 +43910,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-35b-a3b": {
-      "_lastUpdated": "2026-02-26T00:41:13.000Z",
+      "_lastUpdated": "2026-03-02T16:20:08.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42485,7 +44007,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.25,
-          "output": 2,
+          "output": 1,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -44472,6 +45994,516 @@
       },
       "type": "chat"
     },
+    "sentence-transformers/all-minilm-l12-v2": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "sentence-transformers/all-minilm-l12-v2",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.005,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "sentence-transformers/all-minilm-l6-v2": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "sentence-transformers/all-minilm-l6-v2",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.005,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "sentence-transformers/all-mpnet-base-v2": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "sentence-transformers/all-mpnet-base-v2",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.005,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "sentence-transformers/multi-qa-mpnet-base-dot-v1": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "sentence-transformers/multi-qa-mpnet-base-dot-v1",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.005,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "sentence-transformers/paraphrase-minilm-l6-v2": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "sentence-transformers/paraphrase-minilm-l6-v2",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.005,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
     "shisa-ai/shisa-v2-llama3.3-70b": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -46055,6 +48087,210 @@
         ]
       },
       "type": "chat"
+    },
+    "thenlper/gte-base": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "thenlper/gte-base",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.005,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "thenlper/gte-large": {
+      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "thenlper/gte-large",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.01,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
     },
     "thudm/glm-4-32b": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
@@ -49780,7 +52016,7 @@
       "type": "chat"
     },
     "z-ai/glm-5": {
-      "_lastUpdated": "2026-02-26T00:41:13.000Z",
+      "_lastUpdated": "2026-03-02T18:21:51.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -49876,8 +52112,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.95,
-          "output": 2.55,
+          "input": 0.8,
+          "output": 2.56,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

@@ -9424,7 +9424,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-opus-4-6-v1": {
-      "_lastUpdated": "2026-02-27T08:29:58.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -15242,7 +15242,7 @@
       "type": "chat"
     },
     "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0": {
-      "_lastUpdated": "2026-02-27T08:29:58.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 512,

@@ -5156,7 +5156,7 @@
       "type": "chat"
     },
     "anthropic/claude-sonnet-4.6": {
-      "_lastUpdated": "2026-02-26T00:41:13.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7196,7 +7196,7 @@
       "type": "chat"
     },
     "bytedance-seed/seed-2.0-mini": {
-      "_lastUpdated": "2026-02-27T00:43:38.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13645,7 +13645,7 @@
       "type": "chat"
     },
     "google/gemini-3.1-flash-image-preview": {
-      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13748,7 +13748,7 @@
       "type": "image"
     },
     "google/gemini-3.1-pro-preview": {
-      "_lastUpdated": "2026-02-20T00:10:30.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13853,7 +13853,7 @@
       "type": "chat"
     },
     "google/gemini-3.1-pro-preview-customtools": {
-      "_lastUpdated": "2026-02-26T00:41:13.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29012,7 +29012,7 @@
       "type": "chat"
     },
     "nvidia/llama-nemotron-embed-vl-1b-v2:free": {
-      "_lastUpdated": "2026-03-02T09:33:22.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43700,7 +43700,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-122b-a10b": {
-      "_lastUpdated": "2026-02-26T00:41:13.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43805,7 +43805,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-27b": {
-      "_lastUpdated": "2026-02-26T00:41:13.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -43910,7 +43910,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-35b-a3b": {
-      "_lastUpdated": "2026-03-02T16:20:08.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -44120,7 +44120,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-flash-02-23": {
-      "_lastUpdated": "2026-02-26T00:41:13.000Z",
+      "_lastUpdated": "2026-03-03T19:50:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

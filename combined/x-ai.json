@@ -2208,7 +2208,7 @@
       "type": "chat"
     },
     "grok-code-fast-1-0825": {
-      "_lastUpdated": "2026-02-17T10:23:54.000Z",
+      "_lastUpdated": "2026-03-04T00:42:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2270,6 +2270,61 @@
         "type": "pay_as_you_go"
       },
       "type": "chat"
+    },
+    "grok-imagine-image-2026-03-02": {
+      "_lastUpdated": "2026-03-04T00:42:07.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "grok-imagine-image-2026-03-02",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "type": "image"
     },
     "grok-vision-beta": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",

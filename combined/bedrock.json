@@ -1279,7 +1279,7 @@
       "type": "text"
     },
     "amazon.titan-embed-text-v2:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-03-05T09:29:02.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -1334,10 +1334,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "input": 0.02,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -1400,7 +1397,7 @@
       "type": "image"
     },
     "amazon.titan-text-express-v1": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-03-05T09:29:02.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -1454,8 +1451,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.8,
-          "output": 1.6,
+          "input": 0.2,
+          "output": 0.6,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -1463,7 +1460,7 @@
       "type": "chat"
     },
     "amazon.titan-text-lite-v1": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-03-05T09:29:02.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -1517,8 +1514,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.3,
-          "output": 0.4,
+          "input": 0.15,
+          "output": 0.2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

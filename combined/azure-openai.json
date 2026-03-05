@@ -1389,7 +1389,7 @@
       "type": "chat"
     },
     "dall-e-2": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-01-21T13:48:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1560,7 +1560,7 @@
       "type": "image"
     },
     "dall-e-3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-01-21T13:48:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1689,7 +1689,7 @@
           "text"
         ],
         "output": [
-          "text"
+          "image"
         ]
       },
       "pricing": {
@@ -1742,7 +1742,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "text"
+      "type": "image"
     },
     "davinci": {
       "_config_source": "pricing_only",
@@ -16126,7 +16126,7 @@
       "type": "text"
     },
     "gpt-image-1-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-01-21T13:48:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24517,7 +24517,7 @@
       "type": "moderation"
     },
     "tts": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-01-21T13:48:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24646,7 +24646,7 @@
           "text"
         ],
         "output": [
-          "text"
+          "audio"
         ]
       },
       "pricing": {
@@ -24657,10 +24657,10 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "text"
+      "type": "audio"
     },
     "tts-1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-01-21T13:48:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24789,7 +24789,7 @@
           "text"
         ],
         "output": [
-          "text"
+          "audio"
         ]
       },
       "pricing": {
@@ -24800,10 +24800,10 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "text"
+      "type": "audio"
     },
     "tts-1-hd": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-01-21T13:48:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24932,7 +24932,7 @@
           "text"
         ],
         "output": [
-          "text"
+          "audio"
         ]
       },
       "pricing": {
@@ -24943,10 +24943,10 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "text"
+      "type": "audio"
     },
     "tts-hd": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-01-21T13:48:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25075,7 +25075,7 @@
           "text"
         ],
         "output": [
-          "text"
+          "audio"
         ]
       },
       "pricing": {
@@ -25086,10 +25086,10 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "text"
+      "type": "audio"
     },
     "whisper": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-01-21T13:48:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25218,10 +25218,10 @@
           "text"
         ],
         "output": [
-          "text"
+          "audio"
         ]
       },
-      "type": "text"
+      "type": "audio"
     }
   },
   "name": "azure-openai",

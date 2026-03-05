@@ -5647,7 +5647,7 @@
       "type": "embedding"
     },
     "Qwen/Qwen3-Embedding-4B": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-05T09:48:42.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5737,6 +5737,7 @@
           "type": "non-view-manage-data"
         }
       ],
+      "_playground_disabled": true,
       "id": "Qwen/Qwen3-Embedding-4B",
       "max_output_tokens": 8192,
       "modality": {

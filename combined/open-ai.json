@@ -13088,7 +13088,7 @@
       "type": "text"
     },
     "gpt-5.3-chat-latest": {
-      "_lastUpdated": "2026-03-05T20:43:54.000Z",
+      "_lastUpdated": "2026-03-06T06:35:18.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13202,6 +13202,9 @@
           "type": "string"
         }
       ],
+      "features": {
+        "function_calling": true
+      },
       "id": "gpt-5.3-chat-latest",
       "max_output_tokens": 4096,
       "modality": {
@@ -13215,7 +13218,7 @@
       "type": "chat"
     },
     "gpt-5.3-codex": {
-      "_lastUpdated": "2026-03-05T20:43:54.000Z",
+      "_lastUpdated": "2026-03-06T06:35:18.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13343,7 +13346,7 @@
       "type": "text"
     },
     "gpt-5.4": {
-      "_lastUpdated": "2026-03-05T20:43:54.000Z",
+      "_lastUpdated": "2026-03-06T06:47:26.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13473,7 +13476,7 @@
       "type": "chat"
     },
     "gpt-5.4-2026-03-05": {
-      "_lastUpdated": "2026-03-05T20:43:54.000Z",
+      "_lastUpdated": "2026-03-06T06:47:26.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13603,7 +13606,7 @@
       "type": "chat"
     },
     "gpt-5.4-pro": {
-      "_lastUpdated": "2026-03-05T20:43:54.000Z",
+      "_lastUpdated": "2026-03-06T06:47:26.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13733,7 +13736,7 @@
       "type": "chat"
     },
     "gpt-5.4-pro-2026-03-05": {
-      "_lastUpdated": "2026-03-05T20:43:54.000Z",
+      "_lastUpdated": "2026-03-06T06:47:26.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

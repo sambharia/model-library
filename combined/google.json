@@ -85,7 +85,7 @@
   "id": "google",
   "models": {
     "deep-research-pro-preview-12-2025": {
-      "_lastUpdated": "2026-03-04T14:47:00.000Z",
+      "_lastUpdated": "2026-03-06T06:35:18.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7486,7 +7486,7 @@
       "type": "image"
     },
     "gemini-3.1-flash-lite-preview": {
-      "_lastUpdated": "2026-03-04T14:47:00.000Z",
+      "_lastUpdated": "2026-03-06T06:35:18.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8600,7 +8600,7 @@
       "type": "chat"
     },
     "gemini-pro-latest": {
-      "_lastUpdated": "2026-03-04T14:47:00.000Z",
+      "_lastUpdated": "2026-03-06T06:35:18.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

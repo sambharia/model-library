@@ -743,7 +743,7 @@
       "type": "image"
     },
     "ByteDance/Seedance-1.0-lite": {
-      "_lastUpdated": "2026-02-18T10:27:34.000Z",
+      "_lastUpdated": "2026-03-09T14:12:02.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -838,10 +838,28 @@
           "text"
         ]
       },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "default_duration_seconds": {
+              "price": 500
+            },
+            "default_sample_count": {
+              "price": 100
+            },
+            "video_seconds": {
+              "price": 2.8
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "type": "pay_as_you_go"
+      },
       "type": "video"
     },
     "ByteDance/Seedance-1.0-pro": {
-      "_lastUpdated": "2026-02-18T10:27:34.000Z",
+      "_lastUpdated": "2026-03-09T14:12:02.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -935,6 +953,24 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "default_duration_seconds": {
+              "price": 500
+            },
+            "default_sample_count": {
+              "price": 100
+            },
+            "video_seconds": {
+              "price": 11.4
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "type": "pay_as_you_go"
       },
       "type": "video"
     },
@@ -12227,7 +12263,7 @@
       "type": "chat"
     },
     "minimax/hailuo-02": {
-      "_lastUpdated": "2026-02-18T10:27:34.000Z",
+      "_lastUpdated": "2026-03-09T14:12:02.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -12321,6 +12357,24 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "default_duration_seconds": {
+              "price": 1000
+            },
+            "default_sample_count": {
+              "price": 100
+            },
+            "video_seconds": {
+              "price": 4.9
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "type": "pay_as_you_go"
       },
       "type": "video"
     },
@@ -13995,7 +14049,7 @@
       "type": "chat"
     },
     "moonshotai/Kimi-K2.5": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-03-09T14:12:02.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -14718,7 +14772,7 @@
       "type": "chat"
     },
     "pixverse/pixverse-v5": {
-      "_lastUpdated": "2026-02-18T10:27:34.000Z",
+      "_lastUpdated": "2026-03-09T14:12:02.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -14812,6 +14866,24 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "default_duration_seconds": {
+              "price": 500
+            },
+            "default_sample_count": {
+              "price": 100
+            },
+            "video_seconds": {
+              "price": 6
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "type": "pay_as_you_go"
       },
       "type": "video"
     },

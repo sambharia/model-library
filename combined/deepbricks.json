@@ -370,13 +370,13 @@
       },
       "type": "chat"
     },
-    "claude-3-5-sonnet": {
-      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+    "claude-3-5-sonnet-20240620": {
+      "_lastUpdated": "2026-03-09T09:18:32.000Z",
       "_parameters": [],
       "features": {
         "function_calling": true
       },
-      "id": "claude-3-5-sonnet",
+      "id": "claude-3-5-sonnet-20240620",
       "modality": {
         "input": [
           "text"
@@ -396,13 +396,39 @@
       },
       "type": "chat"
     },
-    "claude-haiku-4-5": {
-      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+    "claude-3.5-sonnet": {
+      "_lastUpdated": "2026-03-09T09:18:32.000Z",
       "_parameters": [],
       "features": {
         "function_calling": true
       },
-      "id": "claude-haiku-4-5",
+      "id": "claude-3.5-sonnet",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1.5,
+          "output": 7.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-haiku-4.5": {
+      "_lastUpdated": "2026-03-09T09:18:32.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "claude-haiku-4.5",
       "modality": {
         "input": [
           "text"
@@ -422,13 +448,13 @@
       },
       "type": "chat"
     },
-    "claude-sonnet-4-5": {
-      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+    "claude-sonnet-4.5": {
+      "_lastUpdated": "2026-03-09T09:18:32.000Z",
       "_parameters": [],
       "features": {
         "function_calling": true
       },
-      "id": "claude-sonnet-4-5",
+      "id": "claude-sonnet-4.5",
       "modality": {
         "input": [
           "text"
@@ -584,8 +610,60 @@
       },
       "type": "chat"
     },
+    "gpt-3.5-turbo-0125": {
+      "_lastUpdated": "2026-03-09T09:18:32.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-3.5-turbo-0125",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.2,
+          "output": 0.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-3.5-turbo-1106": {
+      "_lastUpdated": "2026-03-09T09:18:32.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-3.5-turbo-1106",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.2,
+          "output": 0.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gpt-3.5-turbo-instruct": {
-      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_lastUpdated": "2026-03-09T09:18:32.000Z",
       "_parameters": [],
       "id": "gpt-3.5-turbo-instruct",
       "modality": {
@@ -614,6 +692,84 @@
         "function_calling": true
       },
       "id": "gpt-4-turbo",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 4,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4-turbo-0125-preview": {
+      "_lastUpdated": "2026-03-09T09:18:32.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-4-turbo-0125-preview",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 4,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4-turbo-1106-preview": {
+      "_lastUpdated": "2026-03-09T09:18:32.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-4-turbo-1106-preview",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 4,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4-turbo-preview": {
+      "_lastUpdated": "2026-03-09T09:18:32.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-4-turbo-preview",
       "modality": {
         "input": [
           "text"

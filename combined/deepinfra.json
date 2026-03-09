@@ -2283,7 +2283,7 @@
       "type": "chat"
     },
     "ByteDance/Seed-2.0-mini": {
-      "_lastUpdated": "2026-02-26T00:41:26.000Z",
+      "_lastUpdated": "2026-03-09T00:43:55.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -17974,6 +17974,119 @@
           "cached_input": 0.070000002,
           "input": 0.45,
           "output": 2.25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "moonshotai/Kimi-K2.5-Turbo": {
+      "_lastUpdated": "2026-03-09T00:43:55.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "moonshotai/Kimi-K2.5-Turbo",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.100000002,
+          "input": 0.6,
+          "output": 3,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

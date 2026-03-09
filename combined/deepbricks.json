@@ -370,8 +370,86 @@
       },
       "type": "chat"
     },
+    "claude-3-5-sonnet": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "claude-3-5-sonnet",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1.5,
+          "output": 7.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-haiku-4-5": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "claude-haiku-4-5",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.5,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-sonnet-4-5": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "claude-sonnet-4-5",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1.5,
+          "output": 7.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "dall-e-3": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-03-09T08:51:26.000Z",
       "_parameters": [],
       "id": "dall-e-3",
       "modality": {
@@ -384,17 +462,58 @@
       },
       "pricing": {
         "currency": "USD",
-        "tokens": {
-          "input": 150,
-          "output": 150,
-          "unit": "USD_per_million_tokens"
+        "images": {
+          "prices": {
+            "default": {
+              "1024x1024": {
+                "price": 150
+              },
+              "1024x1792": {
+                "price": 200
+              },
+              "1792x1024": {
+                "price": 200
+              },
+              "default": {
+                "price": 150
+              }
+            },
+            "hd": {
+              "1024x1024": {
+                "price": 300
+              },
+              "1024x1792": {
+                "price": 400
+              },
+              "1792x1024": {
+                "price": 400
+              },
+              "default": {
+                "price": 300
+              }
+            },
+            "standard": {
+              "1024x1024": {
+                "price": 150
+              },
+              "1024x1792": {
+                "price": 200
+              },
+              "1792x1024": {
+                "price": 200
+              },
+              "default": {
+                "price": 150
+              }
+            }
+          }
         },
         "type": "pay_as_you_go"
       },
       "type": "chat"
     },
     "gemini-2.5-flash": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-03-09T08:45:10.000Z",
       "_parameters": [],
       "id": "gemini-2.5-flash",
       "modality": {
@@ -409,7 +528,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.1,
-          "output": 10,
+          "output": 1,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -417,7 +536,7 @@
       "type": "chat"
     },
     "gemini-2.5-pro": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-03-09T08:45:10.000Z",
       "_parameters": [],
       "id": "gemini-2.5-pro",
       "modality": {
@@ -432,7 +551,238 @@
         "currency": "USD",
         "tokens": {
           "input": 0.5,
-          "output": 40,
+          "output": 4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-3.5-turbo": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-3.5-turbo",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.2,
+          "output": 0.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-3.5-turbo-instruct": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "id": "gpt-3.5-turbo-instruct",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.6,
+          "output": 0.8,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4-turbo": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-4-turbo",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 4,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4.1": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-4.1",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1,
+          "output": 4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4.1-mini": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-4.1-mini",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.125,
+          "output": 0.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4o": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-4o",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1,
+          "output": 4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-4o-2024-08-06": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-4o-2024-08-06",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1,
+          "output": 4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-5-chat": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-5-chat",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.65,
+          "output": 5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-5.1": {
+      "_lastUpdated": "2026-03-09T08:46:12.000Z",
+      "_parameters": [],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-5.1",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.65,
+          "output": 5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -441,13 +791,13 @@
     },
     "o1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-03-09T08:45:10.000Z",
       "id": "o1",
       "pricing": {
         "currency": "USD",
         "tokens": {
           "input": 7.5,
-          "output": 300,
+          "output": 30,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -455,7 +805,7 @@
       "type": "chat"
     },
     "o1-mini": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-03-09T08:45:10.000Z",
       "_parameters": [],
       "id": "o1-mini",
       "modality": {
@@ -470,7 +820,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.55,
-          "output": 22,
+          "output": 2.2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -478,7 +828,7 @@
       "type": "chat"
     },
     "o3-mini": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-03-09T08:45:10.000Z",
       "_parameters": [],
       "id": "o3-mini",
       "modality": {
@@ -492,8 +842,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 5.5,
-          "output": 22,
+          "input": 0.55,
+          "output": 2.2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -501,7 +851,7 @@
       "type": "chat"
     },
     "o4-mini": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-03-09T08:45:10.000Z",
       "_parameters": [],
       "id": "o4-mini",
       "modality": {
@@ -515,7 +865,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 5.5,
+          "input": 0.55,
           "output": 2.2,
           "unit": "USD_per_million_tokens"
         },

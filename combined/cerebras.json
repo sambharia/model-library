@@ -697,7 +697,7 @@
       "type": "chat"
     },
     "zai-glm-4.7": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-03-09T08:44:37.000Z",
       "_parameters": [
         {
           "defaultValue": 1024,
@@ -746,7 +746,7 @@
         "currency": "USD",
         "tokens": {
           "input": 2.25,
-          "output": 2.25,
+          "output": 2.75,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

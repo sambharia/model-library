@@ -920,7 +920,7 @@
       "type": "text"
     },
     "amazon.rerank-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-03-03T11:34:07.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -973,6 +973,14 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },
@@ -6052,7 +6060,7 @@
       "type": "text"
     },
     "cohere.embed-v4:0": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-03-03T11:34:07.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -6106,6 +6114,14 @@
         "output": [
           "embedding"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "embedding"
     },
@@ -8444,6 +8460,14 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
     "eu.meta.llama3-2-1b-instruct-v1:0": {
@@ -8813,6 +8837,19 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "default": {
+                "price": 800
+              }
+            }
+          }
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },
@@ -10283,6 +10320,14 @@
         "output": [
           "embedding"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "embedding"
     },
@@ -13452,7 +13497,7 @@
       "type": "image"
     },
     "stability.sd3-5-large-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-03-03T11:34:07.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -13503,6 +13548,19 @@
         "output": [
           "image"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "default": {
+                "price": 800
+              }
+            }
+          }
+        },
+        "type": "pay_as_you_go"
       },
       "type": "image"
     },
@@ -17899,6 +17957,14 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
     "us.deepseek.r1-v1:0": {
@@ -18709,6 +18775,19 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "default": {
+                "price": 800
+              }
+            }
+          }
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },

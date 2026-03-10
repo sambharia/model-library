@@ -5,7 +5,6 @@ const basePath = '/models'
 const customerLogos = [
   { src: '/assets/Phreesia.png', alt: 'Phreesia' },
   { src: '/assets/Snorkel.png', alt: 'Snorkel AI' },
-  { src: '/assets/Bain.png', alt: 'Bain & Company' },
   { src: '/assets/Paloalto.png', alt: 'Palo Alto Networks' },
   { src: '/assets/Postman.png', alt: 'Postman' },
   { src: '/assets/Perficient.png', alt: 'Perficient' },

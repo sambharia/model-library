@@ -86,7 +86,7 @@
   "id": "vertex-ai",
   "models": {
     "anthropic.claude-3-5-haiku@20241022": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -180,7 +180,7 @@
       "type": "chat"
     },
     "anthropic.claude-3-5-sonnet-v2@20241022": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -274,7 +274,7 @@
       "type": "chat"
     },
     "anthropic.claude-3-5-sonnet@20240620": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -368,7 +368,7 @@
       "type": "chat"
     },
     "anthropic.claude-3-7-sonnet@20250219": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -488,7 +488,7 @@
       "type": "chat"
     },
     "anthropic.claude-3-haiku@20240307": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -582,7 +582,7 @@
       "type": "chat"
     },
     "anthropic.claude-3-opus@20240229": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -676,7 +676,7 @@
       "type": "chat"
     },
     "anthropic.claude-3-sonnet@20240229": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -770,7 +770,7 @@
       "type": "chat"
     },
     "anthropic.claude-haiku-4-5@20251001": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -893,7 +893,7 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4-1@20250805": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1013,7 +1013,7 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4-5@20251101": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1137,7 +1137,7 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4-6": {
-      "_lastUpdated": "2026-02-18T08:21:00.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1272,7 +1272,7 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4@20250514": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1392,7 +1392,7 @@
       "type": "chat"
     },
     "anthropic.claude-sonnet-4-5@20250929": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1515,7 +1515,7 @@
       "type": "chat"
     },
     "anthropic.claude-sonnet-4-6": {
-      "_lastUpdated": "2026-02-19T17:26:30.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1639,7 +1639,7 @@
       "type": "chat"
     },
     "anthropic.claude-sonnet-4@20250514": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2256,6 +2256,417 @@
       },
       "type": "chat"
     },
+    "codestral-2": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "codestral-2",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.3,
+          "output": 0.9,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "deepseek-r1-0528-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "deepseek-r1-0528-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1.35,
+          "output": 5.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "deepseek-v3.1-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "deepseek-v3.1-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.06,
+          "input": 0.6,
+          "output": 1.7,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "deepseek-v3.2-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "deepseek-v3.2-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.056,
+          "input": 0.56,
+          "output": 1.68,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gemini-1.0-pro": {
       "_config_source": "pricing_only",
       "_lastUpdated": "2026-02-03T13:04:25.000Z",
@@ -2387,7 +2798,7 @@
       "type": "chat"
     },
     "gemini-1.5-flash-001": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2552,7 +2963,7 @@
       "type": "chat"
     },
     "gemini-1.5-flash-002": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2717,7 +3128,7 @@
       "type": "chat"
     },
     "gemini-1.5-flash-preview-0514": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2882,7 +3293,7 @@
       "type": "chat"
     },
     "gemini-1.5-pro-001": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3047,7 +3458,7 @@
       "type": "chat"
     },
     "gemini-1.5-pro-002": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3227,7 +3638,7 @@
       "type": "chat"
     },
     "gemini-1.5-pro-preview-0409": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3392,7 +3803,7 @@
       "type": "chat"
     },
     "gemini-1.5-pro-preview-0514": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3583,7 +3994,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-03-12T07:42:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3674,6 +4085,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
             "search": {
               "price": 350
             },
@@ -3694,7 +4108,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash-001": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3839,6 +4253,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
             "search": {
               "price": 350
             },
@@ -3859,7 +4276,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash-exp": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4104,7 +4521,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash-lite": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4218,7 +4635,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash-lite-001": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4312,6 +4729,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
             "search": {
               "price": 350
             },
@@ -4332,7 +4752,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash-lite-preview-02-05": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4446,7 +4866,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash-thinking-exp-01-21": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4550,8 +4970,126 @@
       },
       "type": "chat"
     },
+    "gemini-2.5-computer-use-preview-10-2025": {
+      "_lastUpdated": "2026-03-12T10:37:02.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "features": {
+        "function_calling": true
+      },
+      "id": "gemini-2.5-computer-use-preview-10-2025",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
+            "search": {
+              "price": 350
+            },
+            "web_search": {
+              "price": 350
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "input": 1.25,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gemini-2.5-flash": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4717,6 +5255,12 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
+            "image_token": {
+              "price": 0.3
+            },
             "search": {
               "price": 350
             },
@@ -4728,6 +5272,7 @@
         },
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.03,
           "input": 0.3,
           "output": 2.5,
           "unit": "USD_per_million_tokens"
@@ -4737,7 +5282,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-image": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-03-12T06:24:08.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4828,8 +5373,14 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
             "image_token": {
               "price": 0.3
+            },
+            "search": {
+              "price": 350
             },
             "web_search": {
               "price": 350
@@ -4839,6 +5390,7 @@
         },
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.03,
           "input": 0.3,
           "output": 2.5,
           "unit": "USD_per_million_tokens"
@@ -4848,7 +5400,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-image-preview": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4940,8 +5492,14 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
             "image_token": {
               "price": 0.3
+            },
+            "search": {
+              "price": 350
             },
             "web_search": {
               "price": 350
@@ -4951,6 +5509,7 @@
         },
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.03,
           "input": 0.3,
           "output": 2.5,
           "unit": "USD_per_million_tokens"
@@ -4960,7 +5519,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-lite": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5126,6 +5685,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
             "search": {
               "price": 350
             },
@@ -5137,6 +5699,7 @@
         },
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.01,
           "input": 0.1,
           "output": 0.4,
           "unit": "USD_per_million_tokens"
@@ -5146,7 +5709,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-lite-preview-06-17": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5331,8 +5894,126 @@
       },
       "type": "chat"
     },
+    "gemini-2.5-flash-lite-preview-09-2025": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gemini-2.5-flash-lite-preview-09-2025",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
+            "search": {
+              "price": 350
+            },
+            "web_search": {
+              "price": 350
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.01,
+          "input": 0.1,
+          "output": 0.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gemini-2.5-flash-lite-preview-tts": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5424,7 +6105,7 @@
       "type": "audio"
     },
     "gemini-2.5-flash-preview-04-17": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5610,7 +6291,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-preview-05-20": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5795,8 +6476,129 @@
       },
       "type": "chat"
     },
+    "gemini-2.5-flash-preview-09-2025": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gemini-2.5-flash-preview-09-2025",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
+            "image_token": {
+              "price": 0.3
+            },
+            "search": {
+              "price": 350
+            },
+            "web_search": {
+              "price": 350
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.03,
+          "input": 0.3,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gemini-2.5-flash-tts": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5888,7 +6690,7 @@
       "type": "audio"
     },
     "gemini-2.5-pro": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6053,6 +6855,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
             "search": {
               "price": 350
             },
@@ -6064,6 +6869,7 @@
         },
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.125,
           "input": 1.25,
           "output": 10,
           "unit": "USD_per_million_tokens"
@@ -6073,7 +6879,7 @@
       "type": "chat"
     },
     "gemini-2.5-pro-exp-03-25": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6218,7 +7024,7 @@
       "type": "chat"
     },
     "gemini-2.5-pro-preview-03-25": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6363,6 +7169,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
             "search": {
               "price": 350
             },
@@ -6383,7 +7192,7 @@
       "type": "chat"
     },
     "gemini-2.5-pro-preview-05-06": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6548,6 +7357,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 450
+            },
             "search": {
               "price": 350
             },
@@ -6568,7 +7380,7 @@
       "type": "chat"
     },
     "gemini-2.5-pro-tts": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6660,7 +7472,7 @@
       "type": "audio"
     },
     "gemini-3-flash-preview": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6848,7 +7660,7 @@
       "type": "chat"
     },
     "gemini-3-pro-image-preview": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6941,7 +7753,10 @@
         "additional": {
           "prices": {
             "image_token": {
-              "price": 0.3
+              "price": 1.2
+            },
+            "search": {
+              "price": 140
             },
             "web_search": {
               "price": 140
@@ -6951,6 +7766,7 @@
         },
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.2,
           "input": 2,
           "output": 12,
           "unit": "USD_per_million_tokens"
@@ -6960,7 +7776,7 @@
       "type": "chat"
     },
     "gemini-3-pro-preview": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7125,11 +7941,17 @@
       "pricing": {
         "additional": {
           "prices": {
+            "enterprise_web_search": {
+              "price": 140
+            },
+            "image_token": {
+              "price": 1.2
+            },
             "search": {
-              "price": 350
+              "price": 140
             },
             "web_search": {
-              "price": 350
+              "price": 140
             }
           },
           "unit": "USD_per_unit"
@@ -7137,7 +7959,7 @@
         "currency": "USD",
         "tokens": {
           "cache_write": 0.2,
-          "cached_input": 4.5,
+          "cached_input": 0.2,
           "input": 2,
           "output": 12,
           "unit": "USD_per_million_tokens"
@@ -7147,7 +7969,7 @@
       "type": "chat"
     },
     "gemini-3-pro-preview-02-05": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7334,7 +8156,7 @@
       "type": "chat"
     },
     "gemini-3.1-flash-image-preview": {
-      "_lastUpdated": "2026-03-02T10:56:56.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7449,7 +8271,7 @@
       "type": "chat"
     },
     "gemini-3.1-flash-lite-preview": {
-      "_lastUpdated": "2026-03-05T09:04:24.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7592,6 +8414,17 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "search": {
+              "price": 140
+            },
+            "web_search": {
+              "price": 140
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 0.25,
@@ -7605,7 +8438,7 @@
       "type": "chat"
     },
     "gemini-3.1-pro-preview": {
-      "_lastUpdated": "2026-02-19T17:26:30.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7770,11 +8603,14 @@
       "pricing": {
         "additional": {
           "prices": {
+            "image_token": {
+              "price": 1.2
+            },
             "search": {
-              "price": 350
+              "price": 140
             },
             "web_search": {
-              "price": 350
+              "price": 140
             }
           },
           "unit": "USD_per_unit"
@@ -7782,7 +8618,7 @@
         "currency": "USD",
         "tokens": {
           "cache_write": 0.2,
-          "cached_input": 4.5,
+          "cached_input": 0.2,
           "input": 2,
           "output": 12,
           "unit": "USD_per_million_tokens"
@@ -7792,7 +8628,7 @@
       "type": "chat"
     },
     "gemini-3.1-pro-preview-customtools": {
-      "_lastUpdated": "2026-03-05T05:41:55.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7979,7 +8815,7 @@
       "type": "chat"
     },
     "gemini-embedding-001": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8078,6 +8914,106 @@
       },
       "type": "embedding"
     },
+    "gemini-embedding-2-preview": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gemini-embedding-2-preview",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
     "gemma-3-27b-it": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
@@ -8170,7 +9106,7 @@
       "type": "chat"
     },
     "gemma-7b-it": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8257,6 +9193,310 @@
         "output": [
           "text"
         ]
+      },
+      "type": "chat"
+    },
+    "glm-4.7-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "glm-4.7-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.6,
+          "output": 2.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "glm-5-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "glm-5-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.1,
+          "input": 1,
+          "output": 3.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-oss-120b-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-oss-120b-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.09,
+          "output": 0.36,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "chat"
     },
@@ -8576,7 +9816,7 @@
       "type": "image"
     },
     "imagen-3.0-capability-001": {
-      "_lastUpdated": "2026-03-05T05:41:55.000Z",
+      "_lastUpdated": "2026-03-12T06:24:08.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8656,6 +9896,111 @@
       ],
       "_playground_disabled": true,
       "id": "imagen-3.0-capability-001",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "default": {
+                "price": 400
+              }
+            }
+          }
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "image"
+    },
+    "imagen-3.0-capability-002": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "imagen-3.0-capability-002",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
@@ -8891,7 +10236,7 @@
       "type": "image"
     },
     "imagen-3.0-generate-002": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8980,10 +10325,23 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "default": {
+                "price": 400
+              }
+            }
+          }
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "text"
     },
     "imagen-4.0-fast-generate-001": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9193,7 +10551,7 @@
       "type": "image"
     },
     "imagen-4.0-generate-001": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9508,7 +10866,7 @@
       "type": "image"
     },
     "imagen-4.0-ultra-generate-001": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9822,6 +11180,306 @@
       },
       "type": "image"
     },
+    "imagen-product-recontext-preview-06-30": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "imagen-product-recontext-preview-06-30",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "default": {
+                "price": 1200
+              }
+            }
+          }
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "image"
+    },
+    "jamba-large-1.6": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "jamba-large-1.6",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "kimi-k2-thinking-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "kimi-k2-thinking-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.06,
+          "input": 0.6,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "llama-3.1-405b-instruct-maas": {
       "_config_source": "pricing_only",
       "_lastUpdated": "2026-02-03T13:04:25.000Z",
@@ -9831,6 +11489,212 @@
         "tokens": {
           "input": 5,
           "output": 16,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "llama-3.3-70b-instruct-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "llama-3.3-70b-instruct-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.72,
+          "output": 0.72,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "llama-4-maverick-17b-128e-instruct-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "llama-4-maverick-17b-128e-instruct-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.35,
+          "output": 1.15,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10111,7 +11975,7 @@
       "type": "chat"
     },
     "llama3-70b-8192": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10202,7 +12066,7 @@
       "type": "chat"
     },
     "llama3-8b-8192": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10475,7 +12339,7 @@
       "type": "chat"
     },
     "meta.llama-3.1-405b-instruct-maas": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10566,7 +12430,7 @@
       "type": "chat"
     },
     "meta.llama-3.1-70b-instruct-maas": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10657,7 +12521,7 @@
       "type": "chat"
     },
     "meta.llama-3.1-8b-instruct-maas": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10748,7 +12612,7 @@
       "type": "chat"
     },
     "meta.llama-3.2-90b-vision-instruct-maas": {
-      "_lastUpdated": "2026-02-05T18:31:32.000Z",
+      "_lastUpdated": "2026-03-12T10:18:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10837,6 +12701,433 @@
         ]
       },
       "type": "chat"
+    },
+    "minimax-m2-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "minimax-m2-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.03,
+          "input": 0.3,
+          "output": 1.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "mistral-medium-3": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "mistral-medium-3",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.4,
+          "output": 2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "mistral-small-2503": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "mistral-small-2503",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.1,
+          "output": 0.3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "multimodalembedding": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "multimodalembedding",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "input_image": {
+              "price": 1
+            },
+            "input_video_essential": {
+              "price": 5
+            },
+            "input_video_plus": {
+              "price": 20
+            },
+            "input_video_standard": {
+              "price": 10
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "input": 0.025,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
     },
     "multimodalembedding@001": {
       "_lastUpdated": "2026-02-03T13:04:25.000Z",
@@ -10955,6 +13246,416 @@
       },
       "type": "embedding"
     },
+    "qwen3-235b-a22b-instruct-2507-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "qwen3-235b-a22b-instruct-2507-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.22,
+          "output": 0.88,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "qwen3-coder-480b-a35b-instruct-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "qwen3-coder-480b-a35b-instruct-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.022,
+          "input": 0.22,
+          "output": 1.8,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "qwen3-next-80b-a3b-instruct-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "qwen3-next-80b-a3b-instruct-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.15,
+          "output": 1.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "qwen3-next-80b-a3b-thinking-maas": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "qwen3-next-80b-a3b-thinking-maas",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.15,
+          "output": 1.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "qwen3@qwen3-32b": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
@@ -11048,12 +13749,12 @@
     },
     "text-embedding": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-04T06:09:31.000Z",
+      "_lastUpdated": "2026-03-12T07:42:01.000Z",
       "id": "text-embedding",
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.1,
+          "input": 0.025,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -11161,7 +13862,7 @@
       "type": "embedding"
     },
     "text-embedding-005": {
-      "_lastUpdated": "2026-02-04T06:09:31.000Z",
+      "_lastUpdated": "2026-03-12T07:42:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -11253,7 +13954,107 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.1,
+          "input": 0.025,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "text-embedding-large-exp-03-07": {
+      "_lastUpdated": "2026-03-12T06:25:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "text-embedding-large-exp-03-07",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.025,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -11361,7 +14162,7 @@
       "type": "embedding"
     },
     "text-multilingual-embedding-002": {
-      "_lastUpdated": "2026-02-04T06:09:31.000Z",
+      "_lastUpdated": "2026-03-12T07:42:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -11453,7 +14254,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.1,
+          "input": 0.025,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -11462,12 +14263,12 @@
     },
     "textembedding-gecko": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-04T06:09:31.000Z",
+      "_lastUpdated": "2026-03-12T07:42:01.000Z",
       "id": "textembedding-gecko",
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.1,
+          "input": 0.025,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -11675,7 +14476,7 @@
       "type": "embedding"
     },
     "textembedding-gecko@003": {
-      "_lastUpdated": "2026-02-04T06:09:31.000Z",
+      "_lastUpdated": "2026-03-12T07:42:01.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -11767,7 +14568,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.1,
+          "input": 0.025,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -12215,7 +15016,7 @@
       "type": "video"
     },
     "veo-3.0-fast-generate-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-12T10:14:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -12545,7 +15346,7 @@
       "type": "video"
     },
     "veo-3.1-fast-generate-001": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-12T10:14:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

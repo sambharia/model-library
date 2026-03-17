@@ -2593,6 +2593,118 @@
       },
       "type": "chat"
     },
+    "grok-4.20-beta-reasoning": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-15T10:43:08.000Z",
+      "id": "grok-4.20-beta-reasoning",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "grok-4.20-experimental-beta-0304": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-15T10:43:08.000Z",
+      "id": "grok-4.20-experimental-beta-0304",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "grok-4.20-experimental-beta-0304-non-reasoning": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-15T10:43:08.000Z",
+      "id": "grok-4.20-experimental-beta-0304-non-reasoning",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "grok-4.20-experimental-beta-0304-reasoning": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-15T10:43:08.000Z",
+      "id": "grok-4.20-experimental-beta-0304-reasoning",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "grok-4.20-experimental-beta-latest": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-16T05:20:47.000Z",
+      "id": "grok-4.20-experimental-beta-latest",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "grok-4.20-experimental-beta-non-reasoning-latest": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-15T10:43:08.000Z",
+      "id": "grok-4.20-experimental-beta-non-reasoning-latest",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "grok-4.20-experimental-beta-reasoning-latest": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-15T10:43:08.000Z",
+      "id": "grok-4.20-experimental-beta-reasoning-latest",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "grok-4.20-multi-agent-beta-0309": {
       "_lastUpdated": "2026-03-11T07:24:43.000Z",
       "_parameters": [
@@ -2722,7 +2834,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-beta-latest": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-03-15T10:43:08.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2773,6 +2885,38 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "grok-4.20-multi-agent-experimental-beta-0304": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-16T05:20:47.000Z",
+      "id": "grok-4.20-multi-agent-experimental-beta-0304",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "grok-4.20-multi-agent-experimental-beta-latest": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-16T05:20:47.000Z",
+      "id": "grok-4.20-multi-agent-experimental-beta-latest",
       "pricing": {
         "currency": "USD",
         "tokens": {

@@ -17981,7 +17981,7 @@
       "type": "chat"
     },
     "moonshotai/Kimi-K2.5-Turbo": {
-      "_lastUpdated": "2026-03-09T00:43:55.000Z",
+      "_lastUpdated": "2026-03-15T11:11:00.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -18312,6 +18312,22 @@
         "tokens": {
           "input": 0.1,
           "output": 0.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-03-17T05:06:50.000Z",
+      "id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.04,
+          "input": 0.1,
+          "output": 0.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

@@ -537,7 +537,7 @@
       "type": "chat"
     },
     "jamba-large-1.5-2024-08": {
-      "_lastUpdated": "2026-03-09T08:44:38.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

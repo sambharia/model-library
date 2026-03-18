@@ -697,7 +697,7 @@
       "type": "chat"
     },
     "zai-glm-4.7": {
-      "_lastUpdated": "2026-03-09T08:44:37.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 1024,

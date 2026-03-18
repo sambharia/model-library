@@ -54,7 +54,7 @@
   "id": "mistral-ai",
   "models": {
     "codestral-2508": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -193,7 +193,7 @@
       "type": "embedding"
     },
     "codestral-embed-2505": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -261,7 +261,7 @@
       "type": "embedding"
     },
     "codestral-latest": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -332,7 +332,7 @@
       "type": "chat"
     },
     "devstral-2512": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -403,7 +403,7 @@
       "type": "chat"
     },
     "devstral-latest": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -474,7 +474,7 @@
       "type": "chat"
     },
     "devstral-medium-2507": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -545,7 +545,7 @@
       "type": "chat"
     },
     "devstral-medium-latest": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -616,7 +616,7 @@
       "type": "chat"
     },
     "devstral-small-2507": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -687,7 +687,7 @@
       "type": "chat"
     },
     "devstral-small-latest": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -758,7 +758,7 @@
       "type": "chat"
     },
     "labs-devstral-small-2512": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -897,7 +897,7 @@
       "type": "chat"
     },
     "magistral-medium-2509": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1036,7 +1036,7 @@
       "type": "chat"
     },
     "magistral-small-2509": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1175,7 +1175,7 @@
       "type": "chat"
     },
     "ministral-14b-2512": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1246,7 +1246,7 @@
       "type": "chat"
     },
     "ministral-14b-latest": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1317,7 +1317,7 @@
       "type": "chat"
     },
     "ministral-3b-2512": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1388,7 +1388,7 @@
       "type": "chat"
     },
     "ministral-3b-latest": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1459,7 +1459,7 @@
       "type": "chat"
     },
     "ministral-8b-2512": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1530,7 +1530,7 @@
       "type": "chat"
     },
     "ministral-8b-latest": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1737,7 +1737,7 @@
       "type": "embedding"
     },
     "mistral-large-2411": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1808,7 +1808,7 @@
       "type": "chat"
     },
     "mistral-large-2512": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1947,7 +1947,7 @@
       "type": "chat"
     },
     "mistral-large-pixtral-2411": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2086,7 +2086,7 @@
       "type": "chat"
     },
     "mistral-medium-2505": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2157,7 +2157,7 @@
       "type": "chat"
     },
     "mistral-medium-2508": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2364,7 +2364,7 @@
       "type": "chat"
     },
     "mistral-small-2506": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2707,7 +2707,7 @@
       "type": "chat"
     },
     "mistral-vibe-cli-latest": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2778,7 +2778,7 @@
       "type": "chat"
     },
     "mistral-vibe-cli-with-tools": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2918,7 +2918,7 @@
       "type": "chat"
     },
     "open-mistral-nemo": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2989,7 +2989,7 @@
       "type": "chat"
     },
     "open-mistral-nemo-2407": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3198,7 +3198,7 @@
       "type": "chat"
     },
     "pixtral-large-2411": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3269,7 +3269,7 @@
       "type": "chat"
     },
     "pixtral-large-latest": {
-      "_lastUpdated": "2026-03-09T10:46:39.000Z",
+      "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

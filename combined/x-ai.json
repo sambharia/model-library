@@ -2018,7 +2018,7 @@
       "type": "chat"
     },
     "grok-4.20": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2085,7 +2085,7 @@
       "type": "chat"
     },
     "grok-4.20-0309": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2152,7 +2152,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-non-reasoning": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2219,7 +2219,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-reasoning": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2286,7 +2286,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-reasoning-latest": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2929,7 +2929,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-reasoning": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2996,7 +2996,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-0304": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3063,7 +3063,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-0304-non-reasoning": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3130,7 +3130,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-0304-reasoning": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3197,7 +3197,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-latest": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3264,7 +3264,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-non-reasoning-latest": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3331,7 +3331,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-reasoning-latest": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3398,7 +3398,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3465,7 +3465,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-0309": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3724,7 +3724,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-experimental-beta-0304": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3791,7 +3791,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-experimental-beta-latest": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3858,7 +3858,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-latest": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3925,7 +3925,7 @@
       "type": "chat"
     },
     "grok-4.20-non-reasoning": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3992,7 +3992,7 @@
       "type": "chat"
     },
     "grok-4.20-non-reasoning-latest": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4059,7 +4059,7 @@
       "type": "chat"
     },
     "grok-4.20-reasoning": {
-      "_lastUpdated": "2026-03-20T06:10:51.000Z",
+      "_lastUpdated": "2026-03-20T06:52:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4104,6 +4104,73 @@
         "function_calling": true
       },
       "id": "grok-4.20-reasoning",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "grok-4.20-reasoning-latest": {
+      "_lastUpdated": "2026-03-19T22:10:36.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "grok-4.20-reasoning-latest",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
@@ -4490,7 +4557,7 @@
       "type": "image"
     },
     "grok-imagine-image-pro": {
-      "_lastUpdated": "2026-03-19T18:20:49.000Z",
+      "_lastUpdated": "2026-03-19T22:10:36.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

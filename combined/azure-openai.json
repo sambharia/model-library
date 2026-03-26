@@ -15212,7 +15212,7 @@
       "type": "text"
     },
     "gpt-5.3-chat": {
-      "_lastUpdated": "2026-03-06T06:47:26.000Z",
+      "_lastUpdated": "2026-03-25T13:42:55.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15267,6 +15267,30 @@
                 "type": "object"
               },
               "value": "json_object"
+            },
+            {
+              "name": "JSON Schema",
+              "params": {
+                "defaultValue": null,
+                "key": "json_schema",
+                "skipValues": [
+                  null
+                ],
+                "type": "json"
+              },
+              "schema": {
+                "properties": {
+                  "json_schema": {
+                    "type": "object"
+                  },
+                  "type": {
+                    "type": "string",
+                    "value": "json_schema"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -15331,13 +15355,22 @@
             true
           ],
           "type": "boolean"
+        },
+        {
+          "defaultValue": 20000,
+          "key": "max_completion_tokens",
+          "maxValue": 272000,
+          "minValue": 1
         }
+      ],
+      "_remove_parameters": [
+        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.3-chat",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 272000,
       "modality": {
         "input": [
           "text"
@@ -15504,7 +15537,7 @@
       "type": "text"
     },
     "gpt-5.4": {
-      "_lastUpdated": "2026-03-06T06:47:26.000Z",
+      "_lastUpdated": "2026-03-25T13:42:55.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15559,6 +15592,30 @@
                 "type": "object"
               },
               "value": "json_object"
+            },
+            {
+              "name": "JSON Schema",
+              "params": {
+                "defaultValue": null,
+                "key": "json_schema",
+                "skipValues": [
+                  null
+                ],
+                "type": "json"
+              },
+              "schema": {
+                "properties": {
+                  "json_schema": {
+                    "type": "object"
+                  },
+                  "type": {
+                    "type": "string",
+                    "value": "json_schema"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -15623,13 +15680,22 @@
             true
           ],
           "type": "boolean"
+        },
+        {
+          "defaultValue": 20000,
+          "key": "max_completion_tokens",
+          "maxValue": 272000,
+          "minValue": 1
         }
+      ],
+      "_remove_parameters": [
+        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 272000,
       "modality": {
         "input": [
           "text"
@@ -15651,7 +15717,7 @@
       "type": "chat"
     },
     "gpt-5.4-mini": {
-      "_lastUpdated": "2026-03-19T16:49:45.000Z",
+      "_lastUpdated": "2026-03-20T06:10:51.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15706,6 +15772,30 @@
                 "type": "object"
               },
               "value": "json_object"
+            },
+            {
+              "name": "JSON Schema",
+              "params": {
+                "defaultValue": null,
+                "key": "json_schema",
+                "skipValues": [
+                  null
+                ],
+                "type": "json"
+              },
+              "schema": {
+                "properties": {
+                  "json_schema": {
+                    "type": "object"
+                  },
+                  "type": {
+                    "type": "string",
+                    "value": "json_schema"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -15770,13 +15860,28 @@
             true
           ],
           "type": "boolean"
+        },
+        {
+          "defaultValue": 20000,
+          "key": "max_completion_tokens",
+          "maxValue": 272000,
+          "minValue": 1
         }
+      ],
+      "_remove_parameters": [
+        "temperature",
+        "top_p",
+        "n",
+        "presence_penalty",
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4-mini",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 272000,
       "modality": {
         "input": [
           "text"
@@ -15798,7 +15903,7 @@
       "type": "chat"
     },
     "gpt-5.4-mini-2026-03-17": {
-      "_lastUpdated": "2026-03-19T16:39:09.000Z",
+      "_lastUpdated": "2026-03-20T06:10:51.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15853,6 +15958,30 @@
                 "type": "object"
               },
               "value": "json_object"
+            },
+            {
+              "name": "JSON Schema",
+              "params": {
+                "defaultValue": null,
+                "key": "json_schema",
+                "skipValues": [
+                  null
+                ],
+                "type": "json"
+              },
+              "schema": {
+                "properties": {
+                  "json_schema": {
+                    "type": "object"
+                  },
+                  "type": {
+                    "type": "string",
+                    "value": "json_schema"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -15917,13 +16046,28 @@
             true
           ],
           "type": "boolean"
+        },
+        {
+          "defaultValue": 20000,
+          "key": "max_completion_tokens",
+          "maxValue": 272000,
+          "minValue": 1
         }
+      ],
+      "_remove_parameters": [
+        "temperature",
+        "top_p",
+        "n",
+        "presence_penalty",
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4-mini-2026-03-17",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 272000,
       "modality": {
         "input": [
           "text"
@@ -15945,7 +16089,7 @@
       "type": "chat"
     },
     "gpt-5.4-nano": {
-      "_lastUpdated": "2026-03-19T16:56:18.000Z",
+      "_lastUpdated": "2026-03-20T06:10:51.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16000,6 +16144,30 @@
                 "type": "object"
               },
               "value": "json_object"
+            },
+            {
+              "name": "JSON Schema",
+              "params": {
+                "defaultValue": null,
+                "key": "json_schema",
+                "skipValues": [
+                  null
+                ],
+                "type": "json"
+              },
+              "schema": {
+                "properties": {
+                  "json_schema": {
+                    "type": "object"
+                  },
+                  "type": {
+                    "type": "string",
+                    "value": "json_schema"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -16064,13 +16232,28 @@
             true
           ],
           "type": "boolean"
+        },
+        {
+          "defaultValue": 20000,
+          "key": "max_completion_tokens",
+          "maxValue": 272000,
+          "minValue": 1
         }
+      ],
+      "_remove_parameters": [
+        "temperature",
+        "top_p",
+        "n",
+        "presence_penalty",
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4-nano",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 272000,
       "modality": {
         "input": [
           "text"
@@ -16092,7 +16275,7 @@
       "type": "chat"
     },
     "gpt-5.4-nano-2026-03-17": {
-      "_lastUpdated": "2026-03-19T16:56:18.000Z",
+      "_lastUpdated": "2026-03-20T06:10:51.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16147,6 +16330,30 @@
                 "type": "object"
               },
               "value": "json_object"
+            },
+            {
+              "name": "JSON Schema",
+              "params": {
+                "defaultValue": null,
+                "key": "json_schema",
+                "skipValues": [
+                  null
+                ],
+                "type": "json"
+              },
+              "schema": {
+                "properties": {
+                  "json_schema": {
+                    "type": "object"
+                  },
+                  "type": {
+                    "type": "string",
+                    "value": "json_schema"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -16211,13 +16418,28 @@
             true
           ],
           "type": "boolean"
+        },
+        {
+          "defaultValue": 20000,
+          "key": "max_completion_tokens",
+          "maxValue": 272000,
+          "minValue": 1
         }
+      ],
+      "_remove_parameters": [
+        "temperature",
+        "top_p",
+        "n",
+        "presence_penalty",
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4-nano-2026-03-17",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 272000,
       "modality": {
         "input": [
           "text"
@@ -16239,7 +16461,7 @@
       "type": "chat"
     },
     "gpt-5.4-pro": {
-      "_lastUpdated": "2026-03-19T16:39:09.000Z",
+      "_lastUpdated": "2026-03-25T13:42:55.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16294,6 +16516,30 @@
                 "type": "object"
               },
               "value": "json_object"
+            },
+            {
+              "name": "JSON Schema",
+              "params": {
+                "defaultValue": null,
+                "key": "json_schema",
+                "skipValues": [
+                  null
+                ],
+                "type": "json"
+              },
+              "schema": {
+                "properties": {
+                  "json_schema": {
+                    "type": "object"
+                  },
+                  "type": {
+                    "type": "string",
+                    "value": "json_schema"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -16358,13 +16604,22 @@
             true
           ],
           "type": "boolean"
+        },
+        {
+          "defaultValue": 20000,
+          "key": "max_completion_tokens",
+          "maxValue": 272000,
+          "minValue": 1
         }
+      ],
+      "_remove_parameters": [
+        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4-pro",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 272000,
       "modality": {
         "input": [
           "text"

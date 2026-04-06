@@ -385,8 +385,108 @@
       },
       "type": "chat"
     },
+    "deepseek-r1": {
+      "_lastUpdated": "2026-04-06T11:11:36.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 65536,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "deepseek-r1",
+      "max_output_tokens": 65536,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.574,
+          "output": 2.294,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "deepseek-v3.2": {
-      "_lastUpdated": "2026-04-02T10:31:48.000Z",
+      "_lastUpdated": "2026-04-06T10:15:44.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -477,6 +577,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.114,
           "input": 0.57,
           "output": 1.71,
           "unit": "USD_per_million_tokens"
@@ -686,7 +787,7 @@
       "type": "chat"
     },
     "glm-5": {
-      "_lastUpdated": "2026-04-01T12:51:41.000Z",
+      "_lastUpdated": "2026-04-06T10:05:59.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -886,7 +987,7 @@
       "type": "chat"
     },
     "kimi-k2.5": {
-      "_lastUpdated": "2026-04-02T10:31:48.000Z",
+      "_lastUpdated": "2026-04-06T10:05:59.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -986,7 +1087,7 @@
       "type": "chat"
     },
     "qvq-max": {
-      "_lastUpdated": "2026-01-27T14:39:02.000Z",
+      "_lastUpdated": "2026-04-06T10:32:26.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2386,7 +2487,7 @@
       "type": "chat"
     },
     "qwen-flash": {
-      "_lastUpdated": "2026-01-27T14:39:02.000Z",
+      "_lastUpdated": "2026-04-06T10:05:59.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2477,6 +2578,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.01,
           "input": 0.05,
           "output": 0.4,
           "unit": "USD_per_million_tokens"
@@ -3586,7 +3688,7 @@
       "type": "chat"
     },
     "qwen-max": {
-      "_lastUpdated": "2026-01-27T14:39:02.000Z",
+      "_lastUpdated": "2026-04-06T10:32:26.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3677,6 +3779,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.32,
           "input": 1.6,
           "output": 6.4,
           "unit": "USD_per_million_tokens"
@@ -3986,7 +4089,7 @@
       "type": "chat"
     },
     "qwen-mt-lite": {
-      "_lastUpdated": "2026-04-02T10:31:48.000Z",
+      "_lastUpdated": "2026-04-06T10:15:44.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4086,7 +4189,7 @@
       "type": "chat"
     },
     "qwen-mt-plus": {
-      "_lastUpdated": "2026-04-02T10:31:48.000Z",
+      "_lastUpdated": "2026-01-27T14:39:02.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4186,7 +4289,7 @@
       "type": "chat"
     },
     "qwen-mt-turbo": {
-      "_lastUpdated": "2026-04-02T10:31:48.000Z",
+      "_lastUpdated": "2026-01-27T14:39:02.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6900,7 +7003,7 @@
       "type": "chat"
     },
     "qwen-vl-ocr": {
-      "_lastUpdated": "2026-04-02T10:31:48.000Z",
+      "_lastUpdated": "2026-04-06T10:58:21.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10303,7 +10406,7 @@
       "type": "chat"
     },
     "qwen3-max": {
-      "_lastUpdated": "2026-01-27T14:39:02.000Z",
+      "_lastUpdated": "2026-04-06T10:05:59.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10394,6 +10497,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.24,
           "input": 1.2,
           "output": 6,
           "unit": "USD_per_million_tokens"
@@ -10603,7 +10707,7 @@
       "type": "chat"
     },
     "qwen3-max-preview": {
-      "_lastUpdated": "2026-04-01T12:51:41.000Z",
+      "_lastUpdated": "2026-04-06T10:05:59.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10694,6 +10798,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.24,
           "input": 1.2,
           "output": 6,
           "unit": "USD_per_million_tokens"
@@ -11615,7 +11720,7 @@
       "type": "chat"
     },
     "qwen3-vl-235b-a22b": {
-      "_lastUpdated": "2026-04-02T10:31:48.000Z",
+      "_lastUpdated": "2026-04-06T11:45:19.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -11715,7 +11820,7 @@
       "type": "chat"
     },
     "qwen3-vl-235b-a22b-instruct": {
-      "_lastUpdated": "2026-04-02T10:31:48.000Z",
+      "_lastUpdated": "2026-04-06T11:04:16.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -11815,7 +11920,7 @@
       "type": "chat"
     },
     "qwen3-vl-235b-a22b-thinking": {
-      "_lastUpdated": "2026-04-02T10:31:48.000Z",
+      "_lastUpdated": "2026-04-06T11:04:16.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -13779,7 +13884,7 @@
       "type": "chat"
     },
     "qwen3.5-plus": {
-      "_lastUpdated": "2026-04-02T10:31:48.000Z",
+      "_lastUpdated": "2026-04-06T10:05:59.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -14179,7 +14284,7 @@
       "type": "chat"
     },
     "qwq-plus": {
-      "_lastUpdated": "2026-04-01T12:51:41.000Z",
+      "_lastUpdated": "2026-04-06T10:05:59.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

@@ -53,6 +53,77 @@
   },
   "id": "mistral-ai",
   "models": {
+    "codestral-2501": {
+      "_lastUpdated": "2026-04-06T19:52:10.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "seed",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "safe_prompt",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "codestral-2501",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.3,
+          "output": 0.9,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "codestral-2508": {
       "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
@@ -193,7 +264,7 @@
       "type": "embedding"
     },
     "codestral-embed-2505": {
-      "_lastUpdated": "2026-03-18T11:13:07.000Z",
+      "_lastUpdated": "2026-04-06T19:52:10.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1736,6 +1807,77 @@
       },
       "type": "embedding"
     },
+    "mistral-large-2407": {
+      "_lastUpdated": "2026-04-06T19:52:10.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "seed",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "safe_prompt",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "mistral-large-2407",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.5,
+          "output": 1.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "mistral-large-2411": {
       "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
@@ -2357,6 +2499,219 @@
         "tokens": {
           "input": 0.7,
           "output": 0.7,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "mistral-small-2409": {
+      "_lastUpdated": "2026-04-06T19:52:10.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "seed",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "safe_prompt",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "mistral-small-2409",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.1,
+          "output": 0.3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "mistral-small-2501": {
+      "_lastUpdated": "2026-04-06T19:52:10.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "seed",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "safe_prompt",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "mistral-small-2501",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.1,
+          "output": 0.3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "mistral-small-2503": {
+      "_lastUpdated": "2026-04-06T19:52:10.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "seed",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "safe_prompt",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "mistral-small-2503",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.1,
+          "output": 0.3,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -3191,6 +3546,77 @@
         "tokens": {
           "input": 0.7,
           "output": 0.7,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "pixtral-12b-2409": {
+      "_lastUpdated": "2026-04-06T19:52:10.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "seed",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "safe_prompt",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "pixtral-12b-2409",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.15,
+          "output": 0.15,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

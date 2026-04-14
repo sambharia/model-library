@@ -832,7 +832,7 @@
       "type": "chat"
     },
     "codex-mini-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-27T18:43:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -953,6 +953,7 @@
           "type": "boolean"
         }
       ],
+      "_playground_disabled": true,
       "id": "codex-mini-latest",
       "max_output_tokens": 4096,
       "modality": {
@@ -974,7 +975,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "responses"
     },
     "cohere-command-r": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
@@ -5169,7 +5170,7 @@
       "type": "chat"
     },
     "gpt-4-32k-0314": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-25T15:21:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5290,9 +5291,6 @@
           "type": "boolean"
         }
       ],
-      "features": {
-        "function_calling": true
-      },
       "id": "gpt-4-32k-0314",
       "max_output_tokens": 4096,
       "modality": {
@@ -8801,7 +8799,7 @@
       "type": "text"
     },
     "gpt-4o-mini-audio-preview-2024-12-17": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-25T15:21:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8922,9 +8920,6 @@
           "type": "boolean"
         }
       ],
-      "features": {
-        "function_calling": true
-      },
       "id": "gpt-4o-mini-audio-preview-2024-12-17",
       "max_output_tokens": 4096,
       "modality": {
@@ -9230,7 +9225,7 @@
       "type": "chat"
     },
     "gpt-4o-mini-search-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-25T15:21:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9373,7 +9368,7 @@
       "type": "chat"
     },
     "gpt-4o-mini-search-preview-2025-03-11": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-25T15:21:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10428,7 +10423,7 @@
       "type": "text"
     },
     "gpt-4o-search-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-25T15:21:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10571,7 +10566,7 @@
       "type": "chat"
     },
     "gpt-4o-search-preview-2025-03-11": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-27T18:43:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12202,7 +12197,7 @@
       "type": "chat"
     },
     "gpt-5-codex": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-25T15:21:50.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12344,7 +12339,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "text"
+      "type": "responses"
     },
     "gpt-5-mini": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
@@ -13482,6 +13477,7 @@
           "minValue": 1
         }
       ],
+      "_playground_disabled": true,
       "_remove_parameters": [
         "temperature",
         "top_p",
@@ -13529,7 +13525,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "responses"
     },
     "gpt-5-pro-2025-10-06": {
       "_lastUpdated": "2026-04-09T07:15:11.000Z",
@@ -13731,7 +13727,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "responses"
     },
     "gpt-5-search-api": {
       "_lastUpdated": "2026-04-09T07:15:11.000Z",
@@ -16317,7 +16313,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "text"
+      "type": "responses"
     },
     "gpt-5.2-pro-2025-12-11": {
       "_lastUpdated": "2026-04-09T07:15:11.000Z",
@@ -16475,7 +16471,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "text"
+      "type": "responses"
     },
     "gpt-5.3-chat": {
       "_lastUpdated": "2026-04-09T07:15:11.000Z",
@@ -17250,30 +17246,6 @@
                 "type": "object"
               },
               "value": "json_object"
-            },
-            {
-              "name": "JSON Schema",
-              "params": {
-                "defaultValue": null,
-                "key": "json_schema",
-                "skipValues": [
-                  null
-                ],
-                "type": "json"
-              },
-              "schema": {
-                "properties": {
-                  "json_schema": {
-                    "type": "object"
-                  },
-                  "type": {
-                    "type": "string",
-                    "value": "json_schema"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -17338,28 +17310,13 @@
             true
           ],
           "type": "boolean"
-        },
-        {
-          "defaultValue": 20000,
-          "key": "max_completion_tokens",
-          "maxValue": 272000,
-          "minValue": 1
         }
-      ],
-      "_remove_parameters": [
-        "temperature",
-        "top_p",
-        "n",
-        "presence_penalty",
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4-mini",
-      "max_output_tokens": 272000,
+      "max_output_tokens": 4096,
       "modality": {
         "input": [
           "text"
@@ -17450,30 +17407,6 @@
                 "type": "object"
               },
               "value": "json_object"
-            },
-            {
-              "name": "JSON Schema",
-              "params": {
-                "defaultValue": null,
-                "key": "json_schema",
-                "skipValues": [
-                  null
-                ],
-                "type": "json"
-              },
-              "schema": {
-                "properties": {
-                  "json_schema": {
-                    "type": "object"
-                  },
-                  "type": {
-                    "type": "string",
-                    "value": "json_schema"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -17538,28 +17471,13 @@
             true
           ],
           "type": "boolean"
-        },
-        {
-          "defaultValue": 20000,
-          "key": "max_completion_tokens",
-          "maxValue": 272000,
-          "minValue": 1
         }
-      ],
-      "_remove_parameters": [
-        "temperature",
-        "top_p",
-        "n",
-        "presence_penalty",
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4-mini-2026-03-17",
-      "max_output_tokens": 272000,
+      "max_output_tokens": 4096,
       "modality": {
         "input": [
           "text"
@@ -17650,30 +17568,6 @@
                 "type": "object"
               },
               "value": "json_object"
-            },
-            {
-              "name": "JSON Schema",
-              "params": {
-                "defaultValue": null,
-                "key": "json_schema",
-                "skipValues": [
-                  null
-                ],
-                "type": "json"
-              },
-              "schema": {
-                "properties": {
-                  "json_schema": {
-                    "type": "object"
-                  },
-                  "type": {
-                    "type": "string",
-                    "value": "json_schema"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -17738,28 +17632,13 @@
             true
           ],
           "type": "boolean"
-        },
-        {
-          "defaultValue": 20000,
-          "key": "max_completion_tokens",
-          "maxValue": 272000,
-          "minValue": 1
         }
-      ],
-      "_remove_parameters": [
-        "temperature",
-        "top_p",
-        "n",
-        "presence_penalty",
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4-nano",
-      "max_output_tokens": 272000,
+      "max_output_tokens": 4096,
       "modality": {
         "input": [
           "text"
@@ -17850,30 +17729,6 @@
                 "type": "object"
               },
               "value": "json_object"
-            },
-            {
-              "name": "JSON Schema",
-              "params": {
-                "defaultValue": null,
-                "key": "json_schema",
-                "skipValues": [
-                  null
-                ],
-                "type": "json"
-              },
-              "schema": {
-                "properties": {
-                  "json_schema": {
-                    "type": "object"
-                  },
-                  "type": {
-                    "type": "string",
-                    "value": "json_schema"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -17938,28 +17793,13 @@
             true
           ],
           "type": "boolean"
-        },
-        {
-          "defaultValue": 20000,
-          "key": "max_completion_tokens",
-          "maxValue": 272000,
-          "minValue": 1
         }
-      ],
-      "_remove_parameters": [
-        "temperature",
-        "top_p",
-        "n",
-        "presence_penalty",
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens"
       ],
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4-nano-2026-03-17",
-      "max_output_tokens": 272000,
+      "max_output_tokens": 4096,
       "modality": {
         "input": [
           "text"
@@ -18050,30 +17890,6 @@
                 "type": "object"
               },
               "value": "json_object"
-            },
-            {
-              "name": "JSON Schema",
-              "params": {
-                "defaultValue": null,
-                "key": "json_schema",
-                "skipValues": [
-                  null
-                ],
-                "type": "json"
-              },
-              "schema": {
-                "properties": {
-                  "json_schema": {
-                    "type": "object"
-                  },
-                  "type": {
-                    "type": "string",
-                    "value": "json_schema"
-                  }
-                },
-                "type": "object"
-              },
-              "value": "json_schema"
             }
           ],
           "skipValues": [
@@ -18138,22 +17954,14 @@
             true
           ],
           "type": "boolean"
-        },
-        {
-          "defaultValue": 20000,
-          "key": "max_completion_tokens",
-          "maxValue": 272000,
-          "minValue": 1
         }
       ],
-      "_remove_parameters": [
-        "max_tokens"
-      ],
+      "_playground_disabled": true,
       "features": {
         "function_calling": true
       },
       "id": "gpt-5.4-pro",
-      "max_output_tokens": 272000,
+      "max_output_tokens": 4096,
       "modality": {
         "input": [
           "text"
@@ -18185,7 +17993,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "responses"
     },
     "gpt-audio": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
@@ -23387,7 +23195,7 @@
       "type": "chat"
     },
     "o3-deep-research": {
-      "_lastUpdated": "2026-02-02T13:33:48.000Z",
+      "_lastUpdated": "2026-03-27T18:43:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23514,6 +23322,7 @@
           "minValue": 1
         }
       ],
+      "_playground_disabled": true,
       "id": "o3-deep-research",
       "max_output_tokens": 100000,
       "modality": {
@@ -23545,10 +23354,10 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "responses"
     },
     "o3-deep-research-2025-06-26": {
-      "_lastUpdated": "2026-02-02T13:33:48.000Z",
+      "_lastUpdated": "2026-03-27T18:43:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23675,6 +23484,7 @@
           "minValue": 1
         }
       ],
+      "_playground_disabled": true,
       "id": "o3-deep-research-2025-06-26",
       "max_output_tokens": 100000,
       "modality": {
@@ -23706,7 +23516,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "responses"
     },
     "o3-mini": {
       "_lastUpdated": "2026-01-09T09:18:25.000Z",
@@ -24877,7 +24687,7 @@
       "type": "chat"
     },
     "o4-mini-deep-research": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-27T18:43:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24998,6 +24808,7 @@
           "type": "boolean"
         }
       ],
+      "_playground_disabled": true,
       "id": "o4-mini-deep-research",
       "max_output_tokens": 4096,
       "modality": {
@@ -25029,10 +24840,10 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "responses"
     },
     "o4-mini-deep-research-2025-06-26": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-03-27T18:43:21.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25153,6 +24964,7 @@
           "type": "boolean"
         }
       ],
+      "_playground_disabled": true,
       "id": "o4-mini-deep-research-2025-06-26",
       "max_output_tokens": 4096,
       "modality": {
@@ -25184,7 +24996,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "responses"
     },
     "omni-moderation-2024-09-26": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",

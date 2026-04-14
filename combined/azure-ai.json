@@ -9139,7 +9139,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "text"
+      "type": "responses"
     },
     "gpt-5-mini": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
@@ -10000,6 +10000,7 @@
           "type": "string"
         }
       ],
+      "_playground_disabled": true,
       "_remove_parameters": [
         "temperature",
         "top_p",
@@ -10044,7 +10045,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "responses"
     },
     "gpt-5-pro-2025-10-06": {
       "_lastUpdated": "2026-04-09T07:15:11.000Z",
@@ -10190,7 +10191,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "responses"
     },
     "gpt-5-search-api": {
       "_config_source": "pricing_only",

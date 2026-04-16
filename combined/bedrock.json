@@ -3091,6 +3091,74 @@
       },
       "type": "chat"
     },
+    "anthropic.claude-opus-4-7": {
+      "_lastUpdated": "2026-04-16T15:16:00.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 2048,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "anthropic.claude-opus-4-7",
+      "max_output_tokens": 2048,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 6.25,
+          "cached_input": 0.5,
+          "input": 5,
+          "output": 25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "anthropic.claude-sonnet-4-20250514-v1:0": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -7465,7 +7533,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-4-6-v1": {
-      "_lastUpdated": "2026-02-27T08:29:58.000Z",
+      "_lastUpdated": "2026-04-16T14:54:36.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -7713,6 +7781,74 @@
       },
       "id": "eu.anthropic.claude-opus-4-6-v1:0",
       "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 6.25,
+          "cached_input": 0.5,
+          "input": 5,
+          "output": 25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "eu.anthropic.claude-opus-4-7": {
+      "_lastUpdated": "2026-04-16T14:54:36.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 2048,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "eu.anthropic.claude-opus-4-7",
+      "max_output_tokens": 2048,
       "modality": {
         "input": [
           "text"
@@ -9571,6 +9707,74 @@
       },
       "id": "global.anthropic.claude-opus-4-6-v1",
       "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 6.25,
+          "cached_input": 0.5,
+          "input": 5,
+          "output": 25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "global.anthropic.claude-opus-4-7": {
+      "_lastUpdated": "2026-04-16T14:54:36.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 2048,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "global.anthropic.claude-opus-4-7",
+      "max_output_tokens": 2048,
       "modality": {
         "input": [
           "text"
@@ -11604,7 +11808,7 @@
       "type": "chat"
     },
     "minimax.minimax-m2.5": {
-      "_lastUpdated": "2026-03-24T20:09:31.000Z",
+      "_lastUpdated": "2026-04-16T14:54:36.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -17147,6 +17351,74 @@
       },
       "id": "us.anthropic.claude-opus-4-6-v1:0",
       "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 6.25,
+          "cached_input": 0.5,
+          "input": 5,
+          "output": 25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "us.anthropic.claude-opus-4-7": {
+      "_lastUpdated": "2026-04-16T14:54:36.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 2048,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "us.anthropic.claude-opus-4-7",
+      "max_output_tokens": 2048,
       "modality": {
         "input": [
           "text"

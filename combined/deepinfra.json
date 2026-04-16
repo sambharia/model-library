@@ -2509,7 +2509,7 @@
       "type": "image"
     },
     "ByteDance/Seedream-4.5": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2615,7 +2615,7 @@
       "type": "chat"
     },
     "ClarityAI/creative": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2721,7 +2721,7 @@
       "type": "chat"
     },
     "ClarityAI/crystal": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2827,7 +2827,7 @@
       "type": "chat"
     },
     "ClarityAI/flux": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3364,7 +3364,7 @@
       "type": "chat"
     },
     "MiniMaxAI/MiniMax-M2.1": {
-      "_lastUpdated": "2026-03-24T03:08:20.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4672,6 +4672,21 @@
         ]
       },
       "type": "image"
+    },
+    "Qwen/Qwen/Qwen3.5-397B-A17B": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
+      "id": "Qwen/Qwen/Qwen3.5-397B-A17B",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.54,
+          "output": 3.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     },
     "Qwen/Qwen2.5-72B-Instruct": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
@@ -6640,7 +6655,7 @@
       "type": "embedding"
     },
     "Qwen/Qwen3-Max": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6756,7 +6771,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3-Max-Thinking": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6985,7 +7000,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3-Reranker-0.6B": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7075,6 +7090,7 @@
           "type": "non-view-manage-data"
         }
       ],
+      "_playground_disabled": true,
       "id": "Qwen/Qwen3-Reranker-0.6B",
       "max_output_tokens": 8192,
       "modality": {
@@ -7085,10 +7101,18 @@
           "text"
         ]
       },
-      "type": "chat"
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.01,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "rerank"
     },
     "Qwen/Qwen3-Reranker-4B": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7178,6 +7202,7 @@
           "type": "non-view-manage-data"
         }
       ],
+      "_playground_disabled": true,
       "id": "Qwen/Qwen3-Reranker-4B",
       "max_output_tokens": 8192,
       "modality": {
@@ -7188,10 +7213,18 @@
           "text"
         ]
       },
-      "type": "chat"
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.025,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "rerank"
     },
     "Qwen/Qwen3-Reranker-8B": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7281,6 +7314,7 @@
           "type": "non-view-manage-data"
         }
       ],
+      "_playground_disabled": true,
       "id": "Qwen/Qwen3-Reranker-8B",
       "max_output_tokens": 8192,
       "modality": {
@@ -7291,7 +7325,239 @@
           "text"
         ]
       },
-      "type": "chat"
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.05,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "rerank"
+    },
+    "Qwen/Qwen3-TTS": {
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "Qwen/Qwen3-TTS",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "Qwen/Qwen3-TTS-VoiceDesign": {
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "Qwen/Qwen3-TTS-VoiceDesign",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
     },
     "Qwen/Qwen3-VL-235B-A22B-Instruct": {
       "_lastUpdated": "2026-02-17T10:23:53.000Z",
@@ -7519,8 +7785,120 @@
       },
       "type": "chat"
     },
+    "Qwen/Qwen3.5-0.8B": {
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3.5-0.8B",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.01,
+          "output": 0.05,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "Qwen/Qwen3.5-122B-A10B": {
-      "_lastUpdated": "2026-04-06T19:45:44.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7628,6 +8006,669 @@
         "tokens": {
           "input": 0.29,
           "output": 2.9,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3.5-27B": {
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3.5-27B",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.26,
+          "output": 2.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3.5-2B": {
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3.5-2B",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "output": 0.1,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3.5-35B-A3B": {
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3.5-35B-A3B",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.22,
+          "output": 2.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3.5-397B-A17B": {
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3.5-397B-A17B",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3.5-4B": {
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3.5-4B",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.03,
+          "output": 0.15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "Qwen/Qwen3.5-9B": {
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "id": "Qwen/Qwen3.5-9B",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.04,
+          "output": 0.2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -8797,7 +9838,7 @@
       "type": "chat"
     },
     "allenai/Olmo-3.1-32B-Instruct": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10196,7 +11237,7 @@
       "type": "image"
     },
     "black-forest-labs/FLUX-2-max": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -19575,7 +20616,7 @@
       "type": "chat"
     },
     "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B": {
-      "_lastUpdated": "2026-03-24T03:08:20.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -20029,7 +21070,7 @@
       "type": "chat"
     },
     "nvidia/llama-nemotron-embed-vl-1b-v2": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22779,7 +23820,7 @@
       "type": "chat"
     },
     "zai-org/GLM-4.6V": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22894,7 +23935,7 @@
       "type": "chat"
     },
     "zai-org/GLM-4.7": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -23123,7 +24164,7 @@
       "type": "chat"
     },
     "zai-org/GLM-5": {
-      "_lastUpdated": "2026-03-19T18:51:08.000Z",
+      "_lastUpdated": "2026-04-15T22:33:48.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

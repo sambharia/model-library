@@ -13358,7 +13358,7 @@
       "type": "chat"
     },
     "gpt-5.1-chat-latest": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-04-20T18:34:34.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13504,7 +13504,7 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "text"
+      "type": "chat"
     },
     "gpt-5.1-codex": {
       "_lastUpdated": "2026-04-09T07:15:11.000Z",

@@ -442,7 +442,7 @@
       "type": "chat"
     },
     "codex-mini-latest": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9044,7 +9044,7 @@
       "type": "chat"
     },
     "gpt-4o-mini-tts": {
-      "_lastUpdated": "2026-04-09T07:47:06.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9799,7 +9799,7 @@
       "type": "chat"
     },
     "gpt-4o-search-preview-2025-03-11": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11011,7 +11011,7 @@
       "type": "chat"
     },
     "gpt-5-codex": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12190,7 +12190,7 @@
       "type": "chat"
     },
     "gpt-5-pro": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12409,7 +12409,7 @@
       "type": "responses"
     },
     "gpt-5-pro-2025-10-06": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14049,7 +14049,7 @@
       "type": "chat"
     },
     "gpt-5.2-2025-12-11": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14233,6 +14233,223 @@
         "function_calling": true
       },
       "id": "gpt-5.2-2025-12-11",
+      "max_output_tokens": 272000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 100
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.175,
+          "input": 1.75,
+          "output": 14,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-5.2-chat-2025-12-11": {
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        },
+        {
+          "defaultValue": 20000,
+          "key": "max_completion_tokens",
+          "maxValue": 272000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            },
+            {
+              "name": "JSON Schema",
+              "params": {
+                "defaultValue": null,
+                "key": "json_schema",
+                "skipValues": [
+                  null
+                ],
+                "type": "json"
+              },
+              "schema": {
+                "properties": {
+                  "json_schema": {
+                    "type": "object"
+                  },
+                  "type": {
+                    "type": "string",
+                    "value": "json_schema"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_schema"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_remove_parameters": [
+        "temperature",
+        "top_p",
+        "n",
+        "presence_penalty",
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-5.2-chat-2025-12-11",
       "max_output_tokens": 272000,
       "modality": {
         "input": [
@@ -14632,7 +14849,7 @@
       "type": "text"
     },
     "gpt-5.2-pro": {
-      "_lastUpdated": "2026-03-25T15:21:50.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14780,7 +14997,7 @@
       "type": "responses"
     },
     "gpt-5.2-pro-2025-12-11": {
-      "_lastUpdated": "2026-03-25T15:21:50.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16578,7 +16795,7 @@
       "type": "chat"
     },
     "gpt-5.4-pro": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16729,7 +16946,7 @@
       "type": "responses"
     },
     "gpt-5.4-pro-2026-03-05": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20796,7 +21013,7 @@
       "type": "chat"
     },
     "o3-deep-research": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20951,7 +21168,7 @@
       "type": "responses"
     },
     "o3-deep-research-2025-06-26": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22332,7 +22549,7 @@
       "type": "chat"
     },
     "o4-mini-deep-research": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22481,7 +22698,7 @@
       "type": "responses"
     },
     "o4-mini-deep-research-2025-06-26": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-04-20T08:31:30.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

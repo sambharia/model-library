@@ -19418,6 +19418,420 @@
       },
       "type": "text"
     },
+    "gpt-image-2": {
+      "_lastUpdated": "2026-04-22T13:27:19.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gpt-image-2",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "1024x1024": {
+                "price": 2110
+              },
+              "1024x1536": {
+                "price": 1650
+              },
+              "1536x1024": {
+                "price": 1650
+              },
+              "default": {
+                "price": 2110
+              }
+            },
+            "high": {
+              "1024x1024": {
+                "price": 2110
+              },
+              "1024x1536": {
+                "price": 1650
+              },
+              "1536x1024": {
+                "price": 1650
+              },
+              "default": {
+                "price": 2110
+              }
+            },
+            "low": {
+              "1024x1024": {
+                "price": 60
+              },
+              "1024x1536": {
+                "price": 50
+              },
+              "1536x1024": {
+                "price": 50
+              },
+              "default": {
+                "price": 60
+              }
+            },
+            "medium": {
+              "1024x1024": {
+                "price": 530
+              },
+              "1024x1536": {
+                "price": 410
+              },
+              "1536x1024": {
+                "price": 410
+              },
+              "default": {
+                "price": 530
+              }
+            }
+          }
+        },
+        "tokens": {
+          "cached_image_input": 2,
+          "cached_input": 1.25,
+          "image_input": 8,
+          "input": 5,
+          "output": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "text"
+    },
+    "gpt-image-2-2026-04-21": {
+      "_lastUpdated": "2026-04-22T13:27:19.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gpt-image-2-2026-04-21",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "1024x1024": {
+                "price": 2110
+              },
+              "1024x1536": {
+                "price": 1650
+              },
+              "1536x1024": {
+                "price": 1650
+              },
+              "default": {
+                "price": 2110
+              }
+            },
+            "high": {
+              "1024x1024": {
+                "price": 2110
+              },
+              "1024x1536": {
+                "price": 1650
+              },
+              "1536x1024": {
+                "price": 1650
+              },
+              "default": {
+                "price": 2110
+              }
+            },
+            "low": {
+              "1024x1024": {
+                "price": 60
+              },
+              "1024x1536": {
+                "price": 50
+              },
+              "1536x1024": {
+                "price": 50
+              },
+              "default": {
+                "price": 60
+              }
+            },
+            "medium": {
+              "1024x1024": {
+                "price": 530
+              },
+              "1024x1536": {
+                "price": 410
+              },
+              "1536x1024": {
+                "price": 410
+              },
+              "default": {
+                "price": 530
+              }
+            }
+          }
+        },
+        "tokens": {
+          "cached_image_input": 2,
+          "cached_input": 1.25,
+          "image_input": 8,
+          "input": 5,
+          "output": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "text"
+    },
     "gpt-oss-120b": {
       "_lastUpdated": "2026-04-07T10:52:18.000Z",
       "_parameters": [

@@ -17097,7 +17097,7 @@
       "type": "responses"
     },
     "gpt-5.5": {
-      "_lastUpdated": "2026-04-23T18:32:37.000Z",
+      "_lastUpdated": "2026-04-23T19:04:19.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17298,7 +17298,7 @@
         },
         "currency": "USD",
         "tokens": {
-          "cached_input": 2.5,
+          "cached_input": 0.5,
           "input": 5,
           "output": 30,
           "unit": "USD_per_million_tokens"
@@ -17308,7 +17308,7 @@
       "type": "chat"
     },
     "gpt-5.5-pro": {
-      "_lastUpdated": "2026-04-23T18:32:37.000Z",
+      "_lastUpdated": "2026-04-23T19:04:19.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17510,7 +17510,7 @@
         },
         "currency": "USD",
         "tokens": {
-          "cached_input": 15,
+          "cached_input": 3,
           "input": 30,
           "output": 180,
           "unit": "USD_per_million_tokens"

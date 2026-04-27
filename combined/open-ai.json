@@ -15029,7 +15029,7 @@
       "type": "responses"
     },
     "gpt-5.5": {
-      "_lastUpdated": "2026-04-23T18:32:37.000Z",
+      "_lastUpdated": "2026-04-27T11:27:43.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15201,6 +15201,12 @@
         }
       ],
       "_remove_parameters": [
+        "temperature",
+        "top_p",
+        "n",
+        "presence_penalty",
+        "frequency_penalty",
+        "logit_bias",
         "max_tokens"
       ],
       "features": {
@@ -15219,7 +15225,7 @@
       "type": "chat"
     },
     "gpt-5.5-pro": {
-      "_lastUpdated": "2026-04-23T18:32:37.000Z",
+      "_lastUpdated": "2026-04-27T11:27:43.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15392,6 +15398,12 @@
       ],
       "_playground_disabled": true,
       "_remove_parameters": [
+        "temperature",
+        "top_p",
+        "n",
+        "presence_penalty",
+        "frequency_penalty",
+        "logit_bias",
         "max_tokens"
       ],
       "features": {

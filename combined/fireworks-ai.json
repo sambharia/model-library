@@ -3337,6 +3337,100 @@
       },
       "type": "chat"
     },
+    "accounts/fireworks/models/kimi-k2p6": {
+      "_lastUpdated": "2026-05-03T17:08:49.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "stream"
+      ],
+      "id": "accounts/fireworks/models/kimi-k2p6",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "accounts/fireworks/models/llama-2-13b-fp16-french": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
@@ -10378,6 +10472,22 @@
         "output": [
           "text"
         ]
+      },
+      "type": "chat"
+    },
+    "fireworks-ai/kimi-k2p6": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-05-03T17:08:49.000Z",
+      "id": "fireworks-ai/kimi-k2p6",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.16,
+          "input": 0.95,
+          "output": 4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "chat"
     },

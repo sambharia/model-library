@@ -3092,12 +3092,12 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4-7": {
-      "_lastUpdated": "2026-04-21T15:55:27.000Z",
+      "_lastUpdated": "2026-04-27T12:06:03.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
           "key": "max_tokens",
-          "maxValue": 2048,
+          "maxValue": 128000,
           "minValue": 1
         },
         {
@@ -3131,6 +3131,69 @@
           "defaultValue": true,
           "key": "stream",
           "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
         }
       ],
       "_remove_parameters": [
@@ -3141,7 +3204,7 @@
         "function_calling": true
       },
       "id": "anthropic.claude-opus-4-7",
-      "max_output_tokens": 2048,
+      "max_output_tokens": 128000,
       "modality": {
         "input": [
           "text"
@@ -7890,12 +7953,12 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-4-7": {
-      "_lastUpdated": "2026-04-21T15:55:27.000Z",
+      "_lastUpdated": "2026-04-27T12:06:03.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
           "key": "max_tokens",
-          "maxValue": 2048,
+          "maxValue": 128000,
           "minValue": 1
         },
         {
@@ -7929,6 +7992,69 @@
           "defaultValue": true,
           "key": "stream",
           "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
         }
       ],
       "_remove_parameters": [
@@ -7939,7 +8065,7 @@
         "function_calling": true
       },
       "id": "eu.anthropic.claude-opus-4-7",
-      "max_output_tokens": 2048,
+      "max_output_tokens": 128000,
       "modality": {
         "input": [
           "text"
@@ -9837,12 +9963,12 @@
       "type": "chat"
     },
     "global.anthropic.claude-opus-4-7": {
-      "_lastUpdated": "2026-04-21T15:55:27.000Z",
+      "_lastUpdated": "2026-04-27T12:06:03.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
           "key": "max_tokens",
-          "maxValue": 2048,
+          "maxValue": 128000,
           "minValue": 1
         },
         {
@@ -9876,6 +10002,69 @@
           "defaultValue": true,
           "key": "stream",
           "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
         }
       ],
       "_remove_parameters": [
@@ -9886,7 +10075,7 @@
         "function_calling": true
       },
       "id": "global.anthropic.claude-opus-4-7",
-      "max_output_tokens": 2048,
+      "max_output_tokens": 128000,
       "modality": {
         "input": [
           "text"
@@ -17502,12 +17691,12 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-4-7": {
-      "_lastUpdated": "2026-04-21T15:55:27.000Z",
+      "_lastUpdated": "2026-04-27T12:06:03.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
           "key": "max_tokens",
-          "maxValue": 2048,
+          "maxValue": 128000,
           "minValue": 1
         },
         {
@@ -17541,6 +17730,69 @@
           "defaultValue": true,
           "key": "stream",
           "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
         }
       ],
       "_remove_parameters": [
@@ -17551,7 +17803,7 @@
         "function_calling": true
       },
       "id": "us.anthropic.claude-opus-4-7",
-      "max_output_tokens": 2048,
+      "max_output_tokens": 128000,
       "modality": {
         "input": [
           "text"

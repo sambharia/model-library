@@ -823,7 +823,7 @@
       "type": "chat"
     },
     "claude-3-5-haiku-20241022": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -915,6 +915,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.016
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 1,
@@ -928,7 +936,7 @@
       "type": "chat"
     },
     "claude-3-5-haiku-latest": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1020,6 +1028,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.016
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 1,
@@ -1033,7 +1049,7 @@
       "type": "chat"
     },
     "claude-3-5-sonnet-20240620": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1125,6 +1141,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -1138,7 +1162,7 @@
       "type": "chat"
     },
     "claude-3-5-sonnet-20241022": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1230,6 +1254,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -1243,7 +1275,7 @@
       "type": "chat"
     },
     "claude-3-5-sonnet-latest": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1335,6 +1367,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -1348,7 +1388,7 @@
       "type": "chat"
     },
     "claude-3-7-sonnet-20250219": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1466,6 +1506,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -1479,7 +1527,7 @@
       "type": "chat"
     },
     "claude-3-7-sonnet-latest": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1597,6 +1645,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -1610,7 +1666,7 @@
       "type": "chat"
     },
     "claude-3-haiku-20240307": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1702,6 +1758,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.005
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 0.3,
@@ -1715,7 +1779,7 @@
       "type": "chat"
     },
     "claude-3-opus-20240229": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1807,6 +1871,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.3
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 18.75,
@@ -1820,7 +1892,7 @@
       "type": "chat"
     },
     "claude-3-opus-latest": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1942,6 +2014,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.3
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 18.75,
@@ -1955,7 +2035,7 @@
       "type": "chat"
     },
     "claude-3-sonnet-20240229": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2047,6 +2127,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -2060,7 +2148,7 @@
       "type": "chat"
     },
     "claude-4-opus-20250514": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2182,6 +2270,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.3
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 18.75,
@@ -2317,6 +2413,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -2330,7 +2434,7 @@
       "type": "chat"
     },
     "claude-haiku-4-5": {
-      "_lastUpdated": "2026-04-06T20:01:58.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2452,6 +2556,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.02
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 1.25,
@@ -2465,7 +2577,7 @@
       "type": "chat"
     },
     "claude-haiku-4-5-20251001": {
-      "_lastUpdated": "2026-02-27T08:21:20.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2587,6 +2699,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.02
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 1.25,
@@ -3146,7 +3266,7 @@
       "type": "chat"
     },
     "claude-opus-4-0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3264,6 +3384,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.3
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 18.75,
@@ -3277,7 +3405,7 @@
       "type": "chat"
     },
     "claude-opus-4-1": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3399,6 +3527,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.3
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 18.75,
@@ -3412,7 +3548,7 @@
       "type": "chat"
     },
     "claude-opus-4-1-20250805": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3534,6 +3670,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.3
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 18.75,
@@ -3547,7 +3691,7 @@
       "type": "chat"
     },
     "claude-opus-4-20250514": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3665,6 +3809,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.3
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 18.75,
@@ -3678,7 +3830,7 @@
       "type": "chat"
     },
     "claude-opus-4-5": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3800,6 +3952,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.1
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 6.25,
@@ -3813,7 +3973,7 @@
       "type": "chat"
     },
     "claude-opus-4-5-20251101": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3935,6 +4095,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.1
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 6.25,
@@ -3948,7 +4116,7 @@
       "type": "chat"
     },
     "claude-opus-4-6": {
-      "_lastUpdated": "2026-02-18T08:21:00.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4070,6 +4238,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.1
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 6.25,
@@ -4083,7 +4259,7 @@
       "type": "chat"
     },
     "claude-opus-4-7": {
-      "_lastUpdated": "2026-04-27T11:41:06.000Z",
+      "_lastUpdated": "2026-05-05T22:07:30.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4205,6 +4381,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.1
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 6.25,
@@ -4218,7 +4402,7 @@
       "type": "chat"
     },
     "claude-sonnet-4-0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4336,6 +4520,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -4349,7 +4541,7 @@
       "type": "chat"
     },
     "claude-sonnet-4-20250514": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4467,6 +4659,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -4480,7 +4680,7 @@
       "type": "chat"
     },
     "claude-sonnet-4-5": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4602,6 +4802,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -4615,7 +4823,7 @@
       "type": "chat"
     },
     "claude-sonnet-4-5-20250929": {
-      "_lastUpdated": "2026-02-27T08:21:20.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4737,6 +4945,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,
@@ -4750,7 +4966,7 @@
       "type": "chat"
     },
     "claude-sonnet-4-6": {
-      "_lastUpdated": "2026-04-06T19:52:10.000Z",
+      "_lastUpdated": "2026-04-13T15:27:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4872,6 +5088,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.06
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cache_write": 3.75,

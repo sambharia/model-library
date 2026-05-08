@@ -9095,6 +9095,33 @@
       },
       "type": "chat"
     },
+    "gpt-5-chat-2025-10-03": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-05-07T12:18:06.000Z",
+      "id": "gpt-5-chat-2025-10-03",
+      "pricing": {
+        "additional": {
+          "prices": {
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 100
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.13,
+          "input": 1.25,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gpt-5-chat-latest": {
       "_lastUpdated": "2026-04-09T07:15:11.000Z",
       "_parameters": [
@@ -11101,7 +11128,7 @@
       "type": "chat"
     },
     "gpt-5.2-2025-12-11": {
-      "_lastUpdated": "2026-04-06T16:37:32.000Z",
+      "_lastUpdated": "2026-05-07T12:18:06.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -11215,6 +11242,27 @@
           "text"
         ]
       },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 100
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.18,
+          "input": 1.75,
+          "output": 14,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "chat"
     },
     "gpt-5.3-codex": {
@@ -11292,6 +11340,87 @@
         "type": "pay_as_you_go"
       },
       "type": "text"
+    },
+    "gpt-5.4-2026-03-05": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-04-30T05:38:30.000Z",
+      "id": "gpt-5.4-2026-03-05",
+      "pricing": {
+        "additional": {
+          "prices": {
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 100
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.25,
+          "input": 2.5,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-5.4-mini-2026-03-17": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-05-07T12:18:06.000Z",
+      "id": "gpt-5.4-mini-2026-03-17",
+      "pricing": {
+        "additional": {
+          "prices": {
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 100
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.08,
+          "input": 0.75,
+          "output": 4.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-5.4-nano-2026-03-17": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-05-07T11:55:57.000Z",
+      "id": "gpt-5.4-nano-2026-03-17",
+      "pricing": {
+        "additional": {
+          "prices": {
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 100
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.02,
+          "input": 0.2,
+          "output": 1.25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     },
     "gpt-5.5": {
       "_lastUpdated": "2026-05-06T18:57:59.000Z",
@@ -12394,7 +12523,7 @@
       "type": "chat"
     },
     "grok-3-mini-fast-beta": {
-      "_lastUpdated": "2026-05-06T18:57:59.000Z",
+      "_lastUpdated": "2026-04-30T05:38:30.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

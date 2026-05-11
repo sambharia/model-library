@@ -4946,7 +4946,7 @@
       "type": "chat"
     },
     "anthropic/claude-opus-4.6-fast": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5051,7 +5051,7 @@
       "type": "chat"
     },
     "anthropic/claude-opus-4.7": {
-      "_lastUpdated": "2026-04-16T14:43:47.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5777,7 +5777,7 @@
       "type": "chat"
     },
     "arcee-ai/trinity-large-preview": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5978,7 +5978,7 @@
       "type": "chat"
     },
     "arcee-ai/trinity-large-thinking": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6890,7 +6890,7 @@
       "type": "embedding"
     },
     "baidu/cobuddy:free": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7502,7 +7502,7 @@
       "type": "chat"
     },
     "baidu/qianfan-ocr-fast:free": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12398,7 +12398,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v4-flash": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12503,7 +12503,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v4-pro": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14671,6 +14671,111 @@
       },
       "type": "image"
     },
+    "google/gemini-3.1-flash-lite": {
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 65536,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "google/gemini-3.1-flash-lite",
+      "max_output_tokens": 65536,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.25,
+          "output": 1.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "google/gemini-3.1-flash-lite-preview": {
       "_lastUpdated": "2026-03-06T06:35:18.000Z",
       "_parameters": [
@@ -15089,7 +15194,7 @@
       "type": "embedding"
     },
     "google/gemini-embedding-2-preview": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16649,7 +16754,7 @@
       "type": "chat"
     },
     "google/gemma-4-26b-a4b-it": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16754,7 +16859,7 @@
       "type": "chat"
     },
     "google/gemma-4-26b-a4b-it:free": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16850,7 +16955,7 @@
       "type": "chat"
     },
     "google/gemma-4-31b-it": {
-      "_lastUpdated": "2026-04-13T19:34:29.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16955,7 +17060,7 @@
       "type": "chat"
     },
     "google/gemma-4-31b-it:free": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17051,7 +17156,7 @@
       "type": "chat"
     },
     "google/lyria-3-clip-preview": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17144,7 +17249,7 @@
       "type": "chat"
     },
     "google/lyria-3-pro-preview": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17441,7 +17546,7 @@
       "type": "chat"
     },
     "ibm-granite/granite-4.1-8b": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17855,7 +17960,7 @@
       "type": "chat"
     },
     "inclusionai/ling-2.6-1t:free": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17951,7 +18056,7 @@
       "type": "chat"
     },
     "inclusionai/ling-2.6-flash": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18764,7 +18869,7 @@
       "type": "chat"
     },
     "kwaipilot/kat-coder-pro-v2": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21881,7 +21986,7 @@
       "type": "chat"
     },
     "meta-llama/llama-guard-4-12b:free": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23714,7 +23819,7 @@
       "type": "chat"
     },
     "minimax/minimax-m2.7": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26600,7 +26705,7 @@
       "type": "chat"
     },
     "mistralai/mistral-medium-3-5": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27407,7 +27512,7 @@
       "type": "chat"
     },
     "mistralai/mistral-small-2603": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -29369,7 +29474,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-k2.6": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32253,7 +32358,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32349,7 +32454,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-3-super-120b-a12b": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37661,7 +37766,7 @@
       "type": "chat"
     },
     "openai/gpt-5.4-image-2": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37764,7 +37869,7 @@
       "type": "image"
     },
     "openai/gpt-5.4-mini": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -37869,7 +37974,7 @@
       "type": "chat"
     },
     "openai/gpt-5.4-nano": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38079,7 +38184,7 @@
       "type": "chat"
     },
     "openai/gpt-5.5": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38184,7 +38289,7 @@
       "type": "chat"
     },
     "openai/gpt-5.5-pro": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -38493,7 +38598,7 @@
       "type": "chat"
     },
     "openai/gpt-chat-latest": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41226,7 +41331,7 @@
       "type": "chat"
     },
     "openrouter/elephant-alpha": {
-      "_lastUpdated": "2026-04-16T07:00:34.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41706,7 +41811,7 @@
       "type": "chat"
     },
     "openrouter/owl-alpha": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42804,7 +42909,7 @@
       "type": "chat"
     },
     "poolside/laguna-m.1:free": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -42900,7 +43005,7 @@
       "type": "chat"
     },
     "poolside/laguna-xs.2:free": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -49626,7 +49731,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-plus-20260420": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -49731,7 +49836,7 @@
       "type": "chat"
     },
     "qwen/qwen3.6-27b": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -49836,7 +49941,7 @@
       "type": "chat"
     },
     "qwen/qwen3.6-35b-a3b": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -49941,7 +50046,7 @@
       "type": "chat"
     },
     "qwen/qwen3.6-flash": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -50046,7 +50151,7 @@
       "type": "chat"
     },
     "qwen/qwen3.6-max-preview": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -50151,7 +50256,7 @@
       "type": "chat"
     },
     "qwen/qwen3.6-plus": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -50646,7 +50751,7 @@
       "type": "chat"
     },
     "rekaai/reka-edge": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -53427,7 +53532,7 @@
       "type": "chat"
     },
     "tencent/hy3-preview:free": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -56916,7 +57021,7 @@
       "type": "chat"
     },
     "x-ai/grok-4.20": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -57126,7 +57231,7 @@
       "type": "chat"
     },
     "x-ai/grok-4.20-multi-agent": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -57330,7 +57435,7 @@
       "type": "chat"
     },
     "x-ai/grok-4.3": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -57738,7 +57843,7 @@
       "type": "chat"
     },
     "xiaomi/mimo-v2-omni": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -57843,7 +57948,7 @@
       "type": "chat"
     },
     "xiaomi/mimo-v2-pro": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -57948,7 +58053,7 @@
       "type": "chat"
     },
     "xiaomi/mimo-v2.5": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -58053,7 +58158,7 @@
       "type": "chat"
     },
     "xiaomi/mimo-v2.5-pro": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -59406,7 +59511,7 @@
       "type": "chat"
     },
     "z-ai/glm-5.1": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -59511,7 +59616,7 @@
       "type": "chat"
     },
     "z-ai/glm-5v-turbo": {
-      "_lastUpdated": "2026-04-08T13:45:00.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -59616,7 +59721,7 @@
       "type": "chat"
     },
     "~anthropic/claude-haiku-latest": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -59721,7 +59826,7 @@
       "type": "chat"
     },
     "~anthropic/claude-opus-latest": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -59826,7 +59931,7 @@
       "type": "chat"
     },
     "~anthropic/claude-sonnet-latest": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -59931,7 +60036,7 @@
       "type": "chat"
     },
     "~google/gemini-flash-latest": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -60036,7 +60141,7 @@
       "type": "chat"
     },
     "~google/gemini-pro-latest": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -60141,7 +60246,7 @@
       "type": "chat"
     },
     "~moonshotai/kimi-latest": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -60246,7 +60351,7 @@
       "type": "chat"
     },
     "~openai/gpt-latest": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -60351,7 +60456,7 @@
       "type": "chat"
     },
     "~openai/gpt-mini-latest": {
-      "_lastUpdated": "2026-05-07T07:13:23.000Z",
+      "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

@@ -12887,6 +12887,138 @@
       },
       "type": "chat"
     },
+    "grok-4-20-non-reasoning": {
+      "_lastUpdated": "2026-05-13T13:45:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "grok-4-20-non-reasoning",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "grok-4-20-reasoning": {
+      "_lastUpdated": "2026-05-13T13:45:03.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "grok-4-20-reasoning",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "grok-4-fast-non-reasoning": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [

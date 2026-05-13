@@ -832,7 +832,7 @@
       "type": "chat"
     },
     "codex-mini-latest": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5170,7 +5170,7 @@
       "type": "chat"
     },
     "gpt-4-32k-0314": {
-      "_lastUpdated": "2026-03-25T15:21:50.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8799,7 +8799,7 @@
       "type": "text"
     },
     "gpt-4o-mini-audio-preview-2024-12-17": {
-      "_lastUpdated": "2026-03-25T15:21:50.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9225,7 +9225,7 @@
       "type": "chat"
     },
     "gpt-4o-mini-search-preview": {
-      "_lastUpdated": "2026-03-25T15:21:50.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -9368,7 +9368,7 @@
       "type": "chat"
     },
     "gpt-4o-mini-search-preview-2025-03-11": {
-      "_lastUpdated": "2026-03-25T15:21:50.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10423,7 +10423,7 @@
       "type": "text"
     },
     "gpt-4o-search-preview": {
-      "_lastUpdated": "2026-03-25T15:21:50.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10566,7 +10566,7 @@
       "type": "chat"
     },
     "gpt-4o-search-preview-2025-03-11": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12197,7 +12197,7 @@
       "type": "chat"
     },
     "gpt-5-codex": {
-      "_lastUpdated": "2026-03-25T15:21:50.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13326,7 +13326,7 @@
       "type": "chat"
     },
     "gpt-5-pro": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13528,7 +13528,7 @@
       "type": "responses"
     },
     "gpt-5-pro-2025-10-06": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16179,7 +16179,7 @@
       "type": "text"
     },
     "gpt-5.2-pro": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16337,7 +16337,7 @@
       "type": "responses"
     },
     "gpt-5.2-pro-2025-12-11": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18036,7 +18036,7 @@
       "type": "chat"
     },
     "gpt-5.4-pro": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24211,7 +24211,7 @@
       "type": "chat"
     },
     "o3-deep-research": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24373,7 +24373,7 @@
       "type": "responses"
     },
     "o3-deep-research-2025-06-26": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25703,7 +25703,7 @@
       "type": "chat"
     },
     "o4-mini-deep-research": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25859,7 +25859,7 @@
       "type": "responses"
     },
     "o4-mini-deep-research-2025-06-26": {
-      "_lastUpdated": "2026-03-27T18:43:21.000Z",
+      "_lastUpdated": "2026-05-13T13:43:06.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

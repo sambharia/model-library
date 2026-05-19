@@ -5260,6 +5260,21 @@
       },
       "type": "chat"
     },
+    "anthropic/claude-sonnet-4-6": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-05-19T15:17:15.000Z",
+      "id": "anthropic/claude-sonnet-4-6",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 3,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "anthropic/claude-sonnet-4.5": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [

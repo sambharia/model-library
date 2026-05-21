@@ -645,7 +645,7 @@
       "type": "chat"
     },
     "DeepSeek-V3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-21T19:02:58.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -699,8 +699,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 6,
-          "output": 2,
+          "input": 1.14,
+          "output": 4.56,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -708,7 +708,7 @@
       "type": "chat"
     },
     "DeepSeek-V3-0324": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-21T19:02:58.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -762,8 +762,74 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 6,
-          "output": 2,
+          "input": 1.14,
+          "output": 4.56,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "DeepSeek-V3.1": {
+      "_lastUpdated": "2026-05-21T19:02:58.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "DeepSeek-V3.1",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1.23,
+          "output": 4.94,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -771,7 +837,7 @@
       "type": "chat"
     },
     "DeepSeek-V3.2": {
-      "_lastUpdated": "2026-04-06T16:37:32.000Z",
+      "_lastUpdated": "2026-05-21T19:02:58.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -825,10 +891,19 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.58,
+          "output": 1.68,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "chat"
     },
     "DeepSeek-V3.2-Speciale": {
-      "_lastUpdated": "2026-04-06T16:37:32.000Z",
+      "_lastUpdated": "2026-05-21T19:02:58.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -879,10 +954,19 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.58,
+          "output": 1.68,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "chat"
     },
     "DeepSeek-V4-Flash": {
-      "_lastUpdated": "2026-05-11T09:40:34.000Z",
+      "_lastUpdated": "2026-05-21T19:02:58.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -941,6 +1025,72 @@
         "tokens": {
           "input": 0.19,
           "output": 0.51,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "DeepSeek-V4-Pro": {
+      "_lastUpdated": "2026-05-21T19:02:58.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "DeepSeek-V4-Pro",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1.74,
+          "output": 3.48,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

@@ -4259,7 +4259,7 @@
       "type": "chat"
     },
     "claude-opus-4-7": {
-      "_lastUpdated": "2026-05-05T22:07:30.000Z",
+      "_lastUpdated": "2026-05-28T17:26:22.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4371,6 +4371,149 @@
         "function_calling": true
       },
       "id": "claude-opus-4-7",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.1
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 6.25,
+          "cached_input": 0.5,
+          "input": 5,
+          "output": 25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "claude-opus-4-8": {
+      "_lastUpdated": "2026-05-28T17:26:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0,
+          "key": "top_k",
+          "maxValue": 100,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        }
+      ],
+      "_remove_parameters": [
+        "temperature",
+        "top_p"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "claude-opus-4-8",
       "max_output_tokens": 128000,
       "modality": {
         "input": [

@@ -1137,7 +1137,7 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4-6": {
-      "_lastUpdated": "2026-04-16T14:54:36.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2378,7 +2378,7 @@
       "type": "chat"
     },
     "claude-haiku-4-5": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2492,7 +2492,7 @@
     },
     "claude-haiku-4-5-20251001": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "id": "claude-haiku-4-5-20251001",
       "pricing": {
         "additional": {
@@ -2517,7 +2517,7 @@
     },
     "claude-haiku-4-5@20251001": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "id": "claude-haiku-4-5@20251001",
       "pricing": {
         "additional": {
@@ -2792,7 +2792,7 @@
       "type": "chat"
     },
     "claude-opus-4-5": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2906,7 +2906,7 @@
     },
     "claude-opus-4-5-20251101": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "id": "claude-opus-4-5-20251101",
       "pricing": {
         "additional": {
@@ -2931,7 +2931,7 @@
     },
     "claude-opus-4-5@20251101": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "id": "claude-opus-4-5@20251101",
       "pricing": {
         "additional": {
@@ -2956,7 +2956,7 @@
     },
     "claude-opus-4-6": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-16T15:16:00.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "id": "claude-opus-4-6",
       "pricing": {
         "additional": {
@@ -3278,7 +3278,7 @@
       "type": "chat"
     },
     "claude-sonnet-4-5": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3392,7 +3392,7 @@
     },
     "claude-sonnet-4-5-20250929": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "id": "claude-sonnet-4-5-20250929",
       "pricing": {
         "additional": {
@@ -3417,7 +3417,7 @@
     },
     "claude-sonnet-4-5@20250929": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "id": "claude-sonnet-4-5@20250929",
       "pricing": {
         "additional": {
@@ -3442,7 +3442,7 @@
     },
     "claude-sonnet-4-6": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "id": "claude-sonnet-4-6",
       "pricing": {
         "additional": {
@@ -6318,7 +6318,7 @@
       "type": "chat"
     },
     "gemini-2.5-computer-use-preview-10-2025": {
-      "_lastUpdated": "2026-03-18T11:13:07.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6436,7 +6436,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6629,7 +6629,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-image": {
-      "_lastUpdated": "2026-03-12T06:24:08.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6747,7 +6747,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-image-preview": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6866,7 +6866,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-lite": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7056,7 +7056,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-lite-preview-06-17": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7242,7 +7242,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-lite-preview-09-2025": {
-      "_lastUpdated": "2026-03-18T11:13:07.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7461,7 +7461,7 @@
       "type": "audio"
     },
     "gemini-2.5-flash-preview-04-17": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7647,7 +7647,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-preview-05-20": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7833,7 +7833,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-preview-09-2025": {
-      "_lastUpdated": "2026-03-18T11:13:07.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8055,7 +8055,7 @@
       "type": "audio"
     },
     "gemini-2.5-pro": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8389,7 +8389,7 @@
       "type": "chat"
     },
     "gemini-2.5-pro-preview-03-25": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8557,7 +8557,7 @@
       "type": "chat"
     },
     "gemini-2.5-pro-preview-05-06": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8846,7 +8846,7 @@
       "type": "audio"
     },
     "gemini-3-flash-preview": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9034,7 +9034,7 @@
       "type": "chat"
     },
     "gemini-3-pro-image-preview": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9150,7 +9150,7 @@
       "type": "chat"
     },
     "gemini-3-pro-preview": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9343,7 +9343,7 @@
       "type": "chat"
     },
     "gemini-3-pro-preview-02-05": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9530,7 +9530,7 @@
       "type": "chat"
     },
     "gemini-3.1-flash-image-preview": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9645,7 +9645,7 @@
       "type": "chat"
     },
     "gemini-3.1-flash-lite": {
-      "_lastUpdated": "2026-05-11T07:31:44.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9812,7 +9812,7 @@
       "type": "chat"
     },
     "gemini-3.1-flash-lite-preview": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10080,7 +10080,7 @@
       "type": "audio"
     },
     "gemini-3.1-pro-preview": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10270,7 +10270,7 @@
       "type": "chat"
     },
     "gemini-3.1-pro-preview-customtools": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10457,7 +10457,7 @@
       "type": "chat"
     },
     "gemini-3.5-flash": {
-      "_lastUpdated": "2026-05-19T20:27:27.000Z",
+      "_lastUpdated": "2026-05-26T19:17:29.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

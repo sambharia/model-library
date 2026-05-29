@@ -137,7 +137,7 @@
       "type": "chat"
     },
     "babbage-002": {
-      "_lastUpdated": "2026-02-26T03:54:46.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -494,7 +494,7 @@
       "type": "chat"
     },
     "chatgpt-4o-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -659,7 +659,7 @@
       "type": "chat"
     },
     "codex-mini-latest": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -797,7 +797,7 @@
       "type": "responses"
     },
     "computer-use-preview": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -934,7 +934,7 @@
       "type": "chat"
     },
     "computer-use-preview-2025-03-11": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1540,7 +1540,7 @@
       "type": "text"
     },
     "davinci-002": {
-      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1741,7 +1741,7 @@
     },
     "ft:gpt-4.1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "id": "ft:gpt-4.1",
       "pricing": {
         "additional": {
@@ -1768,7 +1768,7 @@
     },
     "ft:gpt-4.1-2025-04-14": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "id": "ft:gpt-4.1-2025-04-14",
       "pricing": {
         "additional": {
@@ -1795,7 +1795,7 @@
     },
     "ft:gpt-4.1-mini": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "id": "ft:gpt-4.1-mini",
       "pricing": {
         "additional": {
@@ -1822,7 +1822,7 @@
     },
     "ft:gpt-4.1-mini-2025-04-14": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "id": "ft:gpt-4.1-mini-2025-04-14",
       "pricing": {
         "additional": {
@@ -1849,7 +1849,7 @@
     },
     "ft:gpt-4.1-nano-2025-04-14": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "id": "ft:gpt-4.1-nano-2025-04-14",
       "pricing": {
         "currency": "USD",
@@ -1970,7 +1970,7 @@
     },
     "ft:o4-mini-2025-04-16": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "id": "ft:o4-mini-2025-04-16",
       "pricing": {
         "additional": {
@@ -1996,7 +1996,7 @@
       "type": "chat"
     },
     "gpt-3.5-0301": {
-      "_lastUpdated": "2026-03-04T04:35:15.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2132,7 +2132,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2298,7 +2298,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-0125": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2591,7 +2591,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-0613": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2730,7 +2730,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-1106": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -2896,7 +2896,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-16k": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3036,7 +3036,7 @@
     },
     "gpt-3.5-turbo-16k-0613": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "id": "gpt-3.5-turbo-16k-0613",
       "pricing": {
         "currency": "USD",
@@ -3050,7 +3050,7 @@
       "type": "chat"
     },
     "gpt-3.5-turbo-instruct": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3191,7 +3191,7 @@
     },
     "gpt-3.5-turbo-instruct-0914": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "id": "gpt-3.5-turbo-instruct-0914",
       "pricing": {
         "currency": "USD",
@@ -3355,7 +3355,7 @@
       "type": "chat"
     },
     "gpt-4-0125-preview": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3521,7 +3521,7 @@
       "type": "chat"
     },
     "gpt-4-0314": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3657,7 +3657,7 @@
       "type": "chat"
     },
     "gpt-4-0613": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3796,7 +3796,7 @@
       "type": "chat"
     },
     "gpt-4-1106-preview": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -3962,7 +3962,7 @@
       "type": "chat"
     },
     "gpt-4-1106-vision-preview": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4104,7 +4104,7 @@
       "type": "chat"
     },
     "gpt-4-32k": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4240,7 +4240,7 @@
       "type": "chat"
     },
     "gpt-4-32k-0314": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4376,7 +4376,7 @@
       "type": "chat"
     },
     "gpt-4-32k-0613": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -4678,7 +4678,7 @@
       "type": "chat"
     },
     "gpt-4-turbo-2024-04-09": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5152,7 +5152,7 @@
       "type": "chat"
     },
     "gpt-4.1": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5363,7 +5363,7 @@
       "type": "chat"
     },
     "gpt-4.1-2025-04-14": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5574,7 +5574,7 @@
       "type": "chat"
     },
     "gpt-4.1-mini": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5785,7 +5785,7 @@
       "type": "chat"
     },
     "gpt-4.1-mini-2025-04-14": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5996,7 +5996,7 @@
       "type": "chat"
     },
     "gpt-4.1-nano": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6207,7 +6207,7 @@
       "type": "chat"
     },
     "gpt-4.1-nano-2025-04-14": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6606,7 +6606,7 @@
       "type": "chat"
     },
     "gpt-4o": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6808,7 +6808,7 @@
       "type": "chat"
     },
     "gpt-4o-2024-05-13": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6985,7 +6985,7 @@
       "type": "chat"
     },
     "gpt-4o-2024-08-06": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7187,7 +7187,7 @@
       "type": "chat"
     },
     "gpt-4o-2024-11-20": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7699,7 +7699,7 @@
       "type": "chat"
     },
     "gpt-4o-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -7846,7 +7846,7 @@
       "type": "chat"
     },
     "gpt-4o-mini": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8048,7 +8048,7 @@
       "type": "chat"
     },
     "gpt-4o-mini-2024-07-18": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8808,7 +8808,7 @@
       "type": "chat"
     },
     "gpt-4o-mini-search-preview": {
-      "_lastUpdated": "2026-03-25T15:21:50.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -8944,7 +8944,7 @@
       "type": "chat"
     },
     "gpt-4o-mini-search-preview-2025-03-11": {
-      "_lastUpdated": "2026-03-25T15:21:50.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10455,7 +10455,7 @@
       "type": "audio"
     },
     "gpt-5": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10718,7 +10718,7 @@
       "type": "chat"
     },
     "gpt-5-2025-08-07": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10981,7 +10981,7 @@
       "type": "chat"
     },
     "gpt-5-chat-latest": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11244,7 +11244,7 @@
       "type": "chat"
     },
     "gpt-5-codex": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11393,7 +11393,7 @@
       "type": "responses"
     },
     "gpt-5-mini": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11656,7 +11656,7 @@
       "type": "chat"
     },
     "gpt-5-mini-2025-08-07": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11919,7 +11919,7 @@
       "type": "chat"
     },
     "gpt-5-nano": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12171,7 +12171,7 @@
       "type": "chat"
     },
     "gpt-5-nano-2025-08-07": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12423,7 +12423,7 @@
       "type": "chat"
     },
     "gpt-5-pro": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12642,7 +12642,7 @@
       "type": "responses"
     },
     "gpt-5-pro-2025-10-06": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12861,7 +12861,7 @@
       "type": "responses"
     },
     "gpt-5-search-api": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13009,7 +13009,7 @@
       "type": "chat"
     },
     "gpt-5-search-api-2025-10-14": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13157,7 +13157,7 @@
       "type": "chat"
     },
     "gpt-5.1": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13374,7 +13374,7 @@
       "type": "chat"
     },
     "gpt-5.1-2025-11-13": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13591,7 +13591,7 @@
       "type": "chat"
     },
     "gpt-5.1-chat-latest": {
-      "_lastUpdated": "2026-04-20T18:34:34.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13740,7 +13740,7 @@
       "type": "chat"
     },
     "gpt-5.1-codex": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -13890,7 +13890,7 @@
     },
     "gpt-5.1-codex-max": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "id": "gpt-5.1-codex-max",
       "pricing": {
         "additional": {
@@ -13916,7 +13916,7 @@
       "type": "chat"
     },
     "gpt-5.1-codex-mini": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14065,7 +14065,7 @@
       "type": "text"
     },
     "gpt-5.2": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14282,7 +14282,7 @@
       "type": "chat"
     },
     "gpt-5.2-2025-12-11": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14499,7 +14499,7 @@
       "type": "chat"
     },
     "gpt-5.2-chat-2025-12-11": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14716,7 +14716,7 @@
       "type": "chat"
     },
     "gpt-5.2-chat-latest": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -14933,7 +14933,7 @@
       "type": "chat"
     },
     "gpt-5.2-codex": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15082,7 +15082,7 @@
       "type": "text"
     },
     "gpt-5.2-pro": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15230,7 +15230,7 @@
       "type": "responses"
     },
     "gpt-5.2-pro-2025-12-11": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15378,7 +15378,7 @@
       "type": "responses"
     },
     "gpt-5.3-chat-latest": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15589,7 +15589,7 @@
       "type": "chat"
     },
     "gpt-5.3-codex": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15738,7 +15738,7 @@
       "type": "text"
     },
     "gpt-5.4": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -15949,7 +15949,7 @@
       "type": "chat"
     },
     "gpt-5.4-2026-03-05": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16160,7 +16160,7 @@
       "type": "chat"
     },
     "gpt-5.4-mini": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16377,7 +16377,7 @@
       "type": "chat"
     },
     "gpt-5.4-mini-2026-03-17": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16594,7 +16594,7 @@
       "type": "chat"
     },
     "gpt-5.4-nano": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16811,7 +16811,7 @@
       "type": "chat"
     },
     "gpt-5.4-nano-2026-03-17": {
-      "_lastUpdated": "2026-04-23T18:32:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17028,7 +17028,7 @@
       "type": "chat"
     },
     "gpt-5.4-pro": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17179,7 +17179,7 @@
       "type": "responses"
     },
     "gpt-5.4-pro-2026-03-05": {
-      "_lastUpdated": "2026-04-23T18:32:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20182,7 +20182,7 @@
       "type": "text"
     },
     "gpt-realtime-mini-2025-10-06": {
-      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20325,7 +20325,7 @@
     },
     "gpt-realtime-mini-2025-12-15": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "id": "gpt-realtime-mini-2025-12-15",
       "pricing": {
         "currency": "USD",
@@ -20344,7 +20344,7 @@
       "type": "chat"
     },
     "o1": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20505,7 +20505,7 @@
       "type": "chat"
     },
     "o1-2024-12-17": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20669,7 +20669,7 @@
       "type": "chat"
     },
     "o1-mini": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20830,7 +20830,7 @@
       "type": "chat"
     },
     "o1-mini-2024-09-12": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20994,7 +20994,7 @@
       "type": "chat"
     },
     "o1-preview": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21158,7 +21158,7 @@
       "type": "chat"
     },
     "o1-preview-2024-09-12": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21322,7 +21322,7 @@
       "type": "chat"
     },
     "o1-pro": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21467,7 +21467,7 @@
       "type": "text"
     },
     "o1-pro-2025-03-19": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21612,7 +21612,7 @@
       "type": "text"
     },
     "o3": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21848,7 +21848,7 @@
       "type": "chat"
     },
     "o3-2025-04-16": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22081,7 +22081,7 @@
       "type": "chat"
     },
     "o3-deep-research": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22236,7 +22236,7 @@
       "type": "responses"
     },
     "o3-deep-research-2025-06-26": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22391,7 +22391,7 @@
       "type": "responses"
     },
     "o3-mini": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22624,7 +22624,7 @@
       "type": "chat"
     },
     "o3-mini-2025-01-31": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22857,7 +22857,7 @@
       "type": "chat"
     },
     "o3-pro": {
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23002,7 +23002,7 @@
       "type": "text"
     },
     "o3-pro-2025-06-10": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23147,7 +23147,7 @@
       "type": "text"
     },
     "o4-mini": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23382,7 +23382,7 @@
       "type": "chat"
     },
     "o4-mini-2025-04-16": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23617,7 +23617,7 @@
       "type": "chat"
     },
     "o4-mini-deep-research": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23766,7 +23766,7 @@
       "type": "responses"
     },
     "o4-mini-deep-research-2025-06-26": {
-      "_lastUpdated": "2026-04-20T08:31:30.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23915,7 +23915,7 @@
       "type": "responses"
     },
     "omni-moderation-2024-09-26": {
-      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24043,7 +24043,7 @@
       "type": "moderation"
     },
     "omni-moderation-latest": {
-      "_lastUpdated": "2026-02-17T03:06:41.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24171,7 +24171,7 @@
       "type": "moderation"
     },
     "sora-2": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24314,7 +24314,7 @@
       "type": "text"
     },
     "sora-2-pro": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25233,7 +25233,7 @@
       "type": "text"
     },
     "text-embedding-3-large": {
-      "_lastUpdated": "2026-02-04T06:09:31.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25369,7 +25369,7 @@
       "type": "embedding"
     },
     "text-embedding-3-small": {
-      "_lastUpdated": "2026-02-04T06:09:31.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25505,7 +25505,7 @@
       "type": "embedding"
     },
     "text-embedding-ada-002": {
-      "_lastUpdated": "2026-02-04T06:09:31.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25641,7 +25641,7 @@
       "type": "embedding"
     },
     "text-embedding-ada-002-v2": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -25905,7 +25905,7 @@
       "type": "moderation"
     },
     "text-moderation-004": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26033,7 +26033,7 @@
       "type": "moderation"
     },
     "text-moderation-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26161,7 +26161,7 @@
       "type": "moderation"
     },
     "text-moderation-stable": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-05-20T09:57:16.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

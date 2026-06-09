@@ -21863,8 +21863,71 @@
       },
       "type": "text"
     },
+    "us.writer.palmyra-vision-7b-v1:0": {
+      "_lastUpdated": "2026-06-09T11:57:09.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 2048,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "us.writer.palmyra-vision-7b-v1:0",
+      "max_output_tokens": 2048,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.15,
+          "output": 0.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "text"
+    },
     "us.writer.palmyra-x4-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-06-09T11:57:09.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -21915,10 +21978,19 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2.5,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "text"
     },
     "us.writer.palmyra-x5-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-06-09T11:57:09.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -21969,10 +22041,82 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.6,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "text"
+    },
+    "writer.palmyra-vision-7b-v1:0": {
+      "_lastUpdated": "2026-06-09T11:57:09.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 2048,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "writer.palmyra-vision-7b-v1:0",
+      "max_output_tokens": 2048,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.15,
+          "output": 0.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "text"
     },
     "writer.palmyra-x4-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-06-09T11:57:09.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -22023,10 +22167,19 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2.5,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "text"
     },
     "writer.palmyra-x5-v1:0": {
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-06-09T11:57:09.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -22076,6 +22229,15 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.6,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },

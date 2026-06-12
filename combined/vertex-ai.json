@@ -4071,11 +4071,14 @@
     },
     "gemini-1.0-pro": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "id": "gemini-1.0-pro",
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -4097,11 +4100,14 @@
     },
     "gemini-1.0-pro-001": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "id": "gemini-1.0-pro-001",
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -4123,11 +4129,14 @@
     },
     "gemini-1.0-pro-002": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "id": "gemini-1.0-pro-002",
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -4149,11 +4158,14 @@
     },
     "gemini-1.0-pro-vision": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "id": "gemini-1.0-pro-vision",
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -4175,11 +4187,14 @@
     },
     "gemini-1.0-pro-vision-001": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "id": "gemini-1.0-pro-vision-001",
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -4200,7 +4215,7 @@
       "type": "chat"
     },
     "gemini-1.5-flash-001": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4345,6 +4360,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -4365,7 +4383,7 @@
       "type": "chat"
     },
     "gemini-1.5-flash-002": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4510,6 +4528,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -4530,7 +4551,7 @@
       "type": "chat"
     },
     "gemini-1.5-flash-preview-0514": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4675,6 +4696,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -4695,7 +4719,7 @@
       "type": "chat"
     },
     "gemini-1.5-pro-001": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4840,6 +4864,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -4860,7 +4887,7 @@
       "type": "chat"
     },
     "gemini-1.5-pro-002": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5005,6 +5032,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -5040,7 +5070,7 @@
       "type": "chat"
     },
     "gemini-1.5-pro-preview-0409": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5185,6 +5215,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -5205,7 +5238,7 @@
       "type": "chat"
     },
     "gemini-1.5-pro-preview-0514": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5350,6 +5383,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -5371,11 +5407,14 @@
     },
     "gemini-1.5-vision": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-03T13:04:25.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "id": "gemini-1.5-vision",
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -5396,7 +5435,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash": {
-      "_lastUpdated": "2026-03-12T07:42:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5490,6 +5529,9 @@
             "enterprise_web_search": {
               "price": 450
             },
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -5510,7 +5552,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash-001": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5657,6 +5699,9 @@
           "prices": {
             "enterprise_web_search": {
               "price": 450
+            },
+            "maps": {
+              "price": 250
             },
             "search": {
               "price": 350
@@ -5932,7 +5977,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash-lite": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6026,6 +6071,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -6046,7 +6094,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash-lite-001": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6143,6 +6191,9 @@
             "enterprise_web_search": {
               "price": 450
             },
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -6163,7 +6214,7 @@
       "type": "chat"
     },
     "gemini-2.0-flash-lite-preview-02-05": {
-      "_lastUpdated": "2026-03-12T10:18:01.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6257,6 +6308,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -6486,7 +6540,7 @@
       "type": "chat"
     },
     "gemini-2.5-computer-use-preview-10-2025": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6584,6 +6638,9 @@
             "enterprise_web_search": {
               "price": 450
             },
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -6604,7 +6661,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6776,6 +6833,9 @@
             "image_token": {
               "price": 0.3
             },
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -6797,7 +6857,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-image": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6894,6 +6954,9 @@
             "image_token": {
               "price": 0.3
             },
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -6915,7 +6978,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-image-preview": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7013,6 +7076,9 @@
             "image_token": {
               "price": 0.3
             },
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -7034,7 +7100,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-lite": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7203,6 +7269,9 @@
             "enterprise_web_search": {
               "price": 450
             },
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -7224,7 +7293,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-lite-preview-06-17": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7390,6 +7459,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -7410,7 +7482,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-lite-preview-09-2025": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7506,6 +7578,9 @@
           "prices": {
             "enterprise_web_search": {
               "price": 450
+            },
+            "maps": {
+              "price": 250
             },
             "search": {
               "price": 350
@@ -7629,7 +7704,7 @@
       "type": "audio"
     },
     "gemini-2.5-flash-preview-04-17": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7795,6 +7870,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -7815,7 +7893,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-preview-05-20": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -7981,6 +8059,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -8001,7 +8082,7 @@
       "type": "chat"
     },
     "gemini-2.5-flash-preview-09-2025": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8100,6 +8181,9 @@
             },
             "image_token": {
               "price": 0.3
+            },
+            "maps": {
+              "price": 250
             },
             "search": {
               "price": 350
@@ -8223,7 +8307,7 @@
       "type": "audio"
     },
     "gemini-2.5-pro": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8391,6 +8475,9 @@
             "enterprise_web_search": {
               "price": 450
             },
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -8557,7 +8644,7 @@
       "type": "chat"
     },
     "gemini-2.5-pro-preview-03-25": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8705,6 +8792,9 @@
             "enterprise_web_search": {
               "price": 450
             },
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -8725,7 +8815,7 @@
       "type": "chat"
     },
     "gemini-2.5-pro-preview-05-06": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8893,6 +8983,9 @@
             "enterprise_web_search": {
               "price": 450
             },
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -9014,7 +9107,7 @@
       "type": "audio"
     },
     "gemini-3-flash-preview": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9180,6 +9273,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 140
+            },
             "search": {
               "price": 140
             },
@@ -9201,8 +9297,127 @@
       },
       "type": "chat"
     },
+    "gemini-3-pro-image": {
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gemini-3-pro-image",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "image_token": {
+              "price": 1.2
+            },
+            "maps": {
+              "price": 140
+            },
+            "search": {
+              "price": 140
+            },
+            "web_search": {
+              "price": 140
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gemini-3-pro-image-preview": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9297,6 +9512,9 @@
             "image_token": {
               "price": 1.2
             },
+            "maps": {
+              "price": 140
+            },
             "search": {
               "price": 140
             },
@@ -9318,7 +9536,7 @@
       "type": "chat"
     },
     "gemini-3-pro-preview": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9489,6 +9707,9 @@
             "image_token": {
               "price": 1.2
             },
+            "maps": {
+              "price": 140
+            },
             "search": {
               "price": 140
             },
@@ -9511,7 +9732,7 @@
       "type": "chat"
     },
     "gemini-3-pro-preview-02-05": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9676,6 +9897,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -9697,8 +9921,126 @@
       },
       "type": "chat"
     },
+    "gemini-3.1-flash-image": {
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gemini-3.1-flash-image",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "image_token": {
+              "price": 0.6
+            },
+            "maps": {
+              "price": 140
+            },
+            "search": {
+              "price": 140
+            },
+            "web_search": {
+              "price": 140
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "input": 0.5,
+          "output": 3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gemini-3.1-flash-image-preview": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9793,6 +10135,9 @@
             "image_token": {
               "price": 0.6
             },
+            "maps": {
+              "price": 140
+            },
             "search": {
               "price": 140
             },
@@ -9813,7 +10158,7 @@
       "type": "chat"
     },
     "gemini-3.1-flash-lite": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9958,6 +10303,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 140
+            },
             "search": {
               "price": 140
             },
@@ -9980,7 +10328,7 @@
       "type": "chat"
     },
     "gemini-3.1-flash-lite-preview": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10125,6 +10473,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 140
+            },
             "search": {
               "price": 140
             },
@@ -10248,7 +10599,7 @@
       "type": "audio"
     },
     "gemini-3.1-pro-preview": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10416,6 +10767,9 @@
             "image_token": {
               "price": 1.2
             },
+            "maps": {
+              "price": 140
+            },
             "search": {
               "price": 140
             },
@@ -10438,7 +10792,7 @@
       "type": "chat"
     },
     "gemini-3.1-pro-preview-customtools": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10603,6 +10957,9 @@
       "pricing": {
         "additional": {
           "prices": {
+            "maps": {
+              "price": 250
+            },
             "search": {
               "price": 350
             },
@@ -10625,7 +10982,7 @@
       "type": "chat"
     },
     "gemini-3.5-flash": {
-      "_lastUpdated": "2026-05-26T19:17:29.000Z",
+      "_lastUpdated": "2026-06-12T08:41:14.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10791,6 +11148,9 @@
         "additional": {
           "prices": {
             "enterprise_web_search": {
+              "price": 140
+            },
+            "maps": {
               "price": 140
             },
             "search": {

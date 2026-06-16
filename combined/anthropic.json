@@ -2434,7 +2434,7 @@
       "type": "chat"
     },
     "claude-fable-5": {
-      "_lastUpdated": "2026-06-09T18:20:44.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2540,7 +2540,8 @@
       ],
       "_remove_parameters": [
         "temperature",
-        "top_p"
+        "top_p",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -4402,7 +4403,7 @@
       "type": "chat"
     },
     "claude-opus-4-7": {
-      "_lastUpdated": "2026-05-28T17:26:22.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4508,7 +4509,8 @@
       ],
       "_remove_parameters": [
         "temperature",
-        "top_p"
+        "top_p",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -4545,7 +4547,7 @@
       "type": "chat"
     },
     "claude-opus-4-8": {
-      "_lastUpdated": "2026-06-09T18:20:44.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4651,7 +4653,8 @@
       ],
       "_remove_parameters": [
         "temperature",
-        "top_p"
+        "top_p",
+        "top_k"
       ],
       "features": {
         "function_calling": true

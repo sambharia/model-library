@@ -2458,7 +2458,7 @@
       "type": "chat"
     },
     "anthropic.claude-fable-5": {
-      "_lastUpdated": "2026-06-09T18:20:44.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -2564,7 +2564,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -3364,7 +3365,7 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4-7": {
-      "_lastUpdated": "2026-05-05T22:07:30.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -3470,7 +3471,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -3532,7 +3534,7 @@
       "type": "chat"
     },
     "anthropic.claude-opus-4-8": {
-      "_lastUpdated": "2026-05-28T17:26:22.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -3638,7 +3640,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -7866,7 +7869,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-fable-5": {
-      "_lastUpdated": "2026-06-09T18:20:44.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -7972,7 +7975,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -8809,7 +8813,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-4-7": {
-      "_lastUpdated": "2026-05-05T22:07:30.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -8915,7 +8919,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -8977,7 +8982,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-4-8": {
-      "_lastUpdated": "2026-05-28T17:26:22.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -9083,7 +9088,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -10713,7 +10719,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-fable-5": {
-      "_lastUpdated": "2026-06-09T18:20:44.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -10819,7 +10825,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -11235,7 +11242,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-opus-4-7": {
-      "_lastUpdated": "2026-05-28T17:26:22.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -11341,7 +11348,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -11403,7 +11411,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-opus-4-8": {
-      "_lastUpdated": "2026-06-09T18:20:44.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -11509,7 +11517,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -18587,7 +18596,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-fable-5": {
-      "_lastUpdated": "2026-06-09T18:20:44.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -18693,7 +18702,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -19530,7 +19540,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-4-7": {
-      "_lastUpdated": "2026-05-05T22:07:30.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -19636,7 +19646,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true
@@ -19698,7 +19709,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-4-8": {
-      "_lastUpdated": "2026-05-28T17:26:22.000Z",
+      "_lastUpdated": "2026-06-16T09:51:31.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -19804,7 +19815,8 @@
       ],
       "_remove_parameters": [
         "top_p",
-        "temperature"
+        "temperature",
+        "top_k"
       ],
       "features": {
         "function_calling": true

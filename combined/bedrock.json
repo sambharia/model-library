@@ -14497,7 +14497,7 @@
       "type": "chat"
     },
     "moonshot.kimi-k2-thinking": {
-      "_lastUpdated": "2026-03-17T20:09:24.000Z",
+      "_lastUpdated": "2026-06-05T15:48:49.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -14551,8 +14551,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 6,
-          "output": 25,
+          "input": 0.6,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -14560,7 +14560,7 @@
       "type": "chat"
     },
     "moonshotai.kimi-k2.5": {
-      "_lastUpdated": "2026-03-17T14:04:55.000Z",
+      "_lastUpdated": "2026-06-05T15:48:49.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -14614,8 +14614,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 6,
-          "output": 30,
+          "input": 0.6,
+          "output": 3,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

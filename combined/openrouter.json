@@ -5591,12 +5591,12 @@
       "type": "chat"
     },
     "anthropic/claude-sonnet-4.6": {
-      "_lastUpdated": "2026-03-03T19:50:32.000Z",
+      "_lastUpdated": "2026-06-19T09:28:54.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
           "key": "max_tokens",
-          "maxValue": 128000,
+          "maxValue": 64000,
           "minValue": 1
         },
         {
@@ -5675,7 +5675,7 @@
         "function_calling": true
       },
       "id": "anthropic/claude-sonnet-4.6",
-      "max_output_tokens": 128000,
+      "max_output_tokens": 64000,
       "modality": {
         "input": [
           "text"

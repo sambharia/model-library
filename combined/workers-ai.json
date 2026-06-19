@@ -1,7 +1,618 @@
 {
   "_defaults": null,
   "id": "workers-ai",
-  "models": {},
+  "models": {
+    "@cf/ai4bharat/indictrans2-en-indic-1B": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/ai4bharat/indictrans2-en-indic-1B",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.342,
+          "output": 0.342,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/aisingapore/gemma-sea-lion-v4-27b-it": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.351,
+          "output": 0.555,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/baai/bge-base-en-v1.5": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/baai/bge-base-en-v1.5",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.067,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/baai/bge-large-en-v1.5": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/baai/bge-large-en-v1.5",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.204,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/baai/bge-m3": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/baai/bge-m3",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.012,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/baai/bge-reranker-base": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/baai/bge-reranker-base",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.003,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/baai/bge-small-en-v1.5": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/baai/bge-small-en-v1.5",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.497,
+          "output": 4.881,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/google/gemma-3-12b-it": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/google/gemma-3-12b-it",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.345,
+          "output": 0.556,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/google/gemma-4-26b-a4b-it": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/google/gemma-4-26b-a4b-it",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.1,
+          "output": 0.3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/huggingface/distilbert-sst-2-int8": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/huggingface/distilbert-sst-2-int8",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.026,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/ibm-granite/granite-4.0-h-micro": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/ibm-granite/granite-4.0-h-micro",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.017,
+          "output": 0.112,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-2-7b-chat-fp16": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-2-7b-chat-fp16",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.556,
+          "output": 6.667,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3-8b-instruct": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3-8b-instruct",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.282,
+          "output": 0.827,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3-8b-instruct-awq": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3-8b-instruct-awq",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.123,
+          "output": 0.266,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3.1-70b-instruct-fp8-fast": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3.1-70b-instruct-fp8-fast",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.293,
+          "output": 2.253,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3.1-8b-instruct": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3.1-8b-instruct",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.282,
+          "output": 0.827,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3.1-8b-instruct-awq": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3.1-8b-instruct-awq",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.123,
+          "output": 0.266,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3.1-8b-instruct-fp8": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3.1-8b-instruct-fp8",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.152,
+          "output": 0.287,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3.1-8b-instruct-fp8-fast": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3.1-8b-instruct-fp8-fast",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.045,
+          "output": 0.384,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3.2-11b-vision-instruct": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3.2-11b-vision-instruct",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.049,
+          "output": 0.676,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3.2-1b-instruct": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3.2-1b-instruct",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.027,
+          "output": 0.201,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3.2-3b-instruct": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3.2-3b-instruct",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.051,
+          "output": 0.335,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-3.3-70b-instruct-fp8-fast": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.293,
+          "output": 2.253,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-4-scout-17b-16e-instruct": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.27,
+          "output": 0.85,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/llama-guard-3-8b": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/llama-guard-3-8b",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.484,
+          "output": 0.03,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/meta/m2m100-1.2b": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/meta/m2m100-1.2b",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.342,
+          "output": 0.342,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/mistral/mistral-7b-instruct-v0.1": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/mistral/mistral-7b-instruct-v0.1",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.11,
+          "output": 0.19,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/mistralai/mistral-small-3.1-24b-instruct": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.351,
+          "output": 0.555,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/moonshotai/kimi-k2.5": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/moonshotai/kimi-k2.5",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.1,
+          "input": 0.6,
+          "output": 3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/moonshotai/kimi-k2.6": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/moonshotai/kimi-k2.6",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.16,
+          "input": 0.95,
+          "output": 4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/moonshotai/kimi-k2.7-code": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/moonshotai/kimi-k2.7-code",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.19,
+          "input": 0.95,
+          "output": 4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/nvidia/nemotron-3-120b-a12b": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/nvidia/nemotron-3-120b-a12b",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.5,
+          "output": 1.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/openai/gpt-oss-120b": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/openai/gpt-oss-120b",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.35,
+          "output": 0.75,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/openai/gpt-oss-20b": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/openai/gpt-oss-20b",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.2,
+          "output": 0.3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/pfnet/plamo-embedding-1b": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/pfnet/plamo-embedding-1b",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.019,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/qwen/qwen2.5-coder-32b-instruct": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.66,
+          "output": 1,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/qwen/qwen3-30b-a3b-fp8": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/qwen/qwen3-30b-a3b-fp8",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.051,
+          "output": 0.335,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/qwen/qwen3-embedding-0.6b": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/qwen/qwen3-embedding-0.6b",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.012,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/qwen/qwq-32b": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/qwen/qwq-32b",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.66,
+          "output": 1,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/zai-org/glm-4.7-flash": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-15T11:20:48.000Z",
+      "id": "@cf/zai-org/glm-4.7-flash",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.06,
+          "output": 0.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    }
+  },
   "name": "workers-ai",
   "schema_version": "2.0"
 }

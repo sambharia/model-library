@@ -4415,6 +4415,175 @@
       },
       "type": "chat"
     },
+    "anthropic.claude-sonnet-5": {
+      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "anthropic.claude-sonnet-5",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.04
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 2.5,
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "anthropic.claude-sonnet-5-v1": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "id": "anthropic.claude-sonnet-5-v1",
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.04
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 2.5,
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "anthropic.claude-v1": {
       "_lastUpdated": "2026-02-05T18:22:33.000Z",
       "_parameters": [
@@ -9860,6 +10029,175 @@
       },
       "type": "chat"
     },
+    "eu.anthropic.claude-sonnet-5": {
+      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "eu.anthropic.claude-sonnet-5",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.04
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 2.5,
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "eu.anthropic.claude-sonnet-5-v1": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "id": "eu.anthropic.claude-sonnet-5-v1",
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.04
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 2.5,
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "eu.cohere.embed-v4:0": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -11411,7 +11749,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-opus-4-8": {
-      "_lastUpdated": "2026-06-16T09:51:31.000Z",
+      "_lastUpdated": "2026-06-30T18:43:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -12000,6 +12338,175 @@
           "cached_input": 0.3,
           "input": 3,
           "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "global.anthropic.claude-sonnet-5": {
+      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "global.anthropic.claude-sonnet-5",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.04
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 2.5,
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "global.anthropic.claude-sonnet-5-v1": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "id": "global.anthropic.claude-sonnet-5-v1",
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.04
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 2.5,
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 10,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -17722,7 +18229,7 @@
     },
     "us.amazon.nova-pro-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-02-05T18:22:33.000Z",
+      "_lastUpdated": "2026-01-27T18:55:54.000Z",
       "id": "us.amazon.nova-pro-v1",
       "pricing": {
         "currency": "USD",
@@ -20581,6 +21088,175 @@
           "cached_input": 0.3,
           "input": 3,
           "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "us.anthropic.claude-sonnet-5": {
+      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "thinking",
+          "properties": {
+            "budget_tokens": {
+              "maxValue": 128000,
+              "minValue": 1024,
+              "type": "number"
+            },
+            "type": {
+              "enum": [
+                "enabled",
+                "disabled"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            "disabled",
+            null
+          ],
+          "withdrawParams": [
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "us.anthropic.claude-sonnet-5",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.04
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 2.5,
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "us.anthropic.claude-sonnet-5-v1": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "id": "us.anthropic.claude-sonnet-5-v1",
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.04
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 2.5,
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 10,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

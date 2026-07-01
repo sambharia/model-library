@@ -60472,6 +60472,111 @@
       },
       "type": "chat"
     },
+    "z-ai/glm-5.2": {
+      "_lastUpdated": "2026-06-29T20:11:10.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "z-ai/glm-5.2",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.94,
+          "output": 3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "z-ai/glm-5v-turbo": {
       "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [

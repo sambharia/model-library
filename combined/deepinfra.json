@@ -2332,7 +2332,7 @@
       "type": "chat"
     },
     "ByteDance/Seed-2.0-code": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2561,7 +2561,7 @@
       "type": "chat"
     },
     "ByteDance/Seed-2.0-pro": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9008,7 +9008,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3.6-27B": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9123,7 +9123,7 @@
       "type": "chat"
     },
     "Qwen/Qwen3.6-35B-A3B": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10194,7 +10194,7 @@
       "type": "image"
     },
     "XiaomiMiMo/MiMo-V2.5": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -10310,7 +10310,7 @@
       "type": "chat"
     },
     "XiaomiMiMo/MiMo-V2.5-Pro": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -11309,7 +11309,7 @@
       "type": "chat"
     },
     "anthropic/claude-haiku-4-5": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -11424,7 +11424,7 @@
       "type": "chat"
     },
     "anthropic/claude-opus-4-7": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -11539,7 +11539,7 @@
       "type": "chat"
     },
     "anthropic/claude-sonnet-4-6": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -16005,7 +16005,7 @@
       "type": "chat"
     },
     "google/gemini-3.1-flash-lite": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -16120,7 +16120,7 @@
       "type": "chat"
     },
     "google/gemini-3.1-pro": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -16571,7 +16571,7 @@
       "type": "chat"
     },
     "google/gemma-4-26B-A4B-it": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -16901,7 +16901,7 @@
       "type": "chat"
     },
     "google/gemma-4-31B-it": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -17016,7 +17016,7 @@
       "type": "chat"
     },
     "google/gemma-4-31B-it-turbo": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -24011,7 +24011,7 @@
       "type": "chat"
     },
     "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning": {
-      "_lastUpdated": "2026-05-27T05:35:35.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -26403,7 +26403,7 @@
       "type": "chat"
     },
     "stepfun-ai/Step-3.5-Flash": {
-      "_lastUpdated": "2026-05-27T20:55:25.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -27540,7 +27540,7 @@
       "type": "chat"
     },
     "zai-org/GLM-5.1": {
-      "_lastUpdated": "2026-05-27T20:55:25.000Z",
+      "_lastUpdated": "2026-06-30T20:18:13.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

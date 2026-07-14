@@ -49,7 +49,7 @@
   "id": "x-ai",
   "models": {
     "grok-2": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -101,6 +101,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 2,
@@ -112,7 +132,7 @@
       "type": "chat"
     },
     "grok-2-1212": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -164,6 +184,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 2,
@@ -175,7 +215,7 @@
       "type": "chat"
     },
     "grok-2-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -227,6 +267,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 2,
@@ -238,7 +298,7 @@
       "type": "chat"
     },
     "grok-2-vision": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -290,6 +350,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 2,
@@ -301,7 +381,7 @@
       "type": "chat"
     },
     "grok-2-vision-1212": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -353,6 +433,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 2,
@@ -364,7 +464,7 @@
       "type": "chat"
     },
     "grok-2-vision-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -416,6 +516,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 2,
@@ -427,7 +547,7 @@
       "type": "chat"
     },
     "grok-3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -479,6 +599,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 3,
@@ -490,7 +630,7 @@
       "type": "chat"
     },
     "grok-3-beta": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -542,6 +682,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 3,
@@ -553,7 +713,7 @@
       "type": "chat"
     },
     "grok-3-fast": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -605,6 +765,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.75,
@@ -617,7 +797,7 @@
       "type": "chat"
     },
     "grok-3-fast-beta": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -669,6 +849,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.75,
@@ -681,7 +881,7 @@
       "type": "chat"
     },
     "grok-3-fast-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -733,6 +933,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.75,
@@ -745,7 +965,7 @@
       "type": "chat"
     },
     "grok-3-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -797,6 +1017,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 3,
@@ -808,7 +1048,7 @@
       "type": "chat"
     },
     "grok-3-mini": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -860,6 +1100,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 0.3,
@@ -871,7 +1131,7 @@
       "type": "chat"
     },
     "grok-3-mini-beta": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -923,6 +1183,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 0.3,
@@ -934,7 +1214,7 @@
       "type": "chat"
     },
     "grok-3-mini-fast": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -986,6 +1266,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.075,
@@ -998,7 +1298,7 @@
       "type": "chat"
     },
     "grok-3-mini-fast-beta": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1050,6 +1350,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.075,
@@ -1062,7 +1382,7 @@
       "type": "chat"
     },
     "grok-3-mini-fast-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1114,6 +1434,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.075,
@@ -1126,7 +1466,7 @@
       "type": "chat"
     },
     "grok-3-mini-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1178,6 +1518,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 0.3,
@@ -1189,7 +1549,7 @@
       "type": "chat"
     },
     "grok-4": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1241,6 +1601,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 3,
@@ -1252,7 +1632,7 @@
       "type": "chat"
     },
     "grok-4-0709": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1304,6 +1684,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 3,
@@ -1315,7 +1715,7 @@
       "type": "chat"
     },
     "grok-4-1-fast": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1367,6 +1767,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.05,
@@ -1379,7 +1799,7 @@
       "type": "chat"
     },
     "grok-4-1-fast-non-reasoning": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1431,6 +1851,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.05,
@@ -1443,7 +1883,7 @@
       "type": "chat"
     },
     "grok-4-1-fast-non-reasoning-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1495,6 +1935,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.05,
@@ -1507,7 +1967,7 @@
       "type": "chat"
     },
     "grok-4-1-fast-reasoning": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1559,6 +2019,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.05,
@@ -1571,7 +2051,7 @@
       "type": "chat"
     },
     "grok-4-1-fast-reasoning-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1623,6 +2103,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.05,
@@ -1635,7 +2135,7 @@
       "type": "chat"
     },
     "grok-4-fast": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1687,6 +2187,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.05,
@@ -1699,7 +2219,7 @@
       "type": "chat"
     },
     "grok-4-fast-non-reasoning": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1751,6 +2271,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.05,
@@ -1763,7 +2303,7 @@
       "type": "chat"
     },
     "grok-4-fast-non-reasoning-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1815,6 +2355,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.05,
@@ -1827,7 +2387,7 @@
       "type": "chat"
     },
     "grok-4-fast-reasoning": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1879,6 +2439,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.05,
@@ -1891,7 +2471,7 @@
       "type": "chat"
     },
     "grok-4-fast-reasoning-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1943,6 +2523,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.05,
@@ -1955,7 +2555,7 @@
       "type": "chat"
     },
     "grok-4-latest": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2007,6 +2607,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 3,
@@ -2018,7 +2638,7 @@
       "type": "chat"
     },
     "grok-4.20": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2073,6 +2693,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2085,7 +2725,7 @@
       "type": "chat"
     },
     "grok-4.20-0309": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2140,6 +2780,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2152,7 +2812,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-non-reasoning": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2207,6 +2867,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2219,7 +2899,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-reasoning": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2274,6 +2954,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2286,7 +2986,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-reasoning-latest": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2341,6 +3041,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2353,7 +3073,7 @@
       "type": "chat"
     },
     "grok-4.20-beta": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2405,6 +3125,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2417,7 +3157,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-0309": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2469,6 +3209,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2481,7 +3241,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-0309-non-reasoning": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2533,6 +3293,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2545,7 +3325,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-0309-reasoning": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2597,6 +3377,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2609,7 +3409,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-0309-reasoning-exp-sa": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2661,6 +3461,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2673,7 +3493,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-latest": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2725,6 +3545,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2737,7 +3577,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-latest-non-reasoning": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2789,6 +3629,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2801,7 +3661,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-latest-reasoning": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2853,6 +3713,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2865,7 +3745,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-non-reasoning": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2917,6 +3797,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2929,7 +3829,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-reasoning": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2984,6 +3884,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -2996,7 +3916,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-0304": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3051,6 +3971,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3063,7 +4003,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-0304-non-reasoning": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3118,6 +4058,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3130,7 +4090,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-0304-reasoning": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3185,6 +4145,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3197,7 +4177,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-latest": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3252,6 +4232,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3264,7 +4264,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-non-reasoning-latest": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3319,6 +4319,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3331,7 +4351,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-reasoning-latest": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3386,6 +4406,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3398,7 +4438,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3453,6 +4493,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3465,7 +4525,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-0309": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3520,6 +4580,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3532,7 +4612,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-beta-0309": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3584,6 +4664,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3596,7 +4696,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-beta-0309-exp-ma": {
-      "_lastUpdated": "2026-03-11T07:24:43.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3648,6 +4748,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3660,7 +4780,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-beta-latest": {
-      "_lastUpdated": "2026-03-19T18:20:49.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3712,6 +4832,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3724,7 +4864,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-experimental-beta-0304": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3779,6 +4919,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3791,7 +4951,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-experimental-beta-latest": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3846,6 +5006,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3858,7 +5038,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-latest": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3913,6 +5093,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3925,7 +5125,7 @@
       "type": "chat"
     },
     "grok-4.20-non-reasoning": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3980,6 +5180,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -3992,7 +5212,7 @@
       "type": "chat"
     },
     "grok-4.20-non-reasoning-gv2": {
-      "_lastUpdated": "2026-05-27T16:41:30.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4047,6 +5267,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -4059,7 +5299,7 @@
       "type": "chat"
     },
     "grok-4.20-non-reasoning-latest": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4114,6 +5354,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -4126,7 +5386,7 @@
       "type": "chat"
     },
     "grok-4.20-reasoning": {
-      "_lastUpdated": "2026-03-20T06:52:24.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4181,6 +5441,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -4193,7 +5473,7 @@
       "type": "chat"
     },
     "grok-4.20-reasoning-gv2": {
-      "_lastUpdated": "2026-05-27T16:41:30.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4248,6 +5528,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -4260,7 +5560,7 @@
       "type": "chat"
     },
     "grok-4.20-reasoning-latest": {
-      "_lastUpdated": "2026-05-27T16:41:30.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4315,6 +5615,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -4327,7 +5647,7 @@
       "type": "chat"
     },
     "grok-4.3": {
-      "_lastUpdated": "2026-05-27T16:41:30.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4382,6 +5702,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -4394,7 +5734,7 @@
       "type": "chat"
     },
     "grok-4.3-latest": {
-      "_lastUpdated": "2026-05-27T16:41:30.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4449,6 +5789,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
@@ -4461,7 +5821,7 @@
       "type": "chat"
     },
     "grok-beta": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4513,6 +5873,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 5,
@@ -4524,7 +5904,7 @@
       "type": "chat"
     },
     "grok-code-fast": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4576,6 +5956,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.02,
@@ -4588,7 +5988,7 @@
       "type": "chat"
     },
     "grok-code-fast-1": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4640,6 +6040,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 0.2,
@@ -4651,7 +6071,7 @@
       "type": "chat"
     },
     "grok-code-fast-1-0825": {
-      "_lastUpdated": "2026-03-04T00:42:07.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4703,6 +6123,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.02,
@@ -4880,7 +6320,7 @@
       "type": "image_generation"
     },
     "grok-vision-beta": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-14T01:33:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4932,6 +6372,26 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 100
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 5,

@@ -966,7 +966,7 @@
       "type": "chat"
     },
     "DeepSeek-V4-Flash": {
-      "_lastUpdated": "2026-06-25T14:21:56.000Z",
+      "_lastUpdated": "2026-07-15T02:04:20.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1023,6 +1023,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.028,
           "input": 0.19,
           "output": 0.51,
           "unit": "USD_per_million_tokens"
@@ -1032,7 +1033,7 @@
       "type": "chat"
     },
     "DeepSeek-V4-Pro": {
-      "_lastUpdated": "2026-06-25T14:21:56.000Z",
+      "_lastUpdated": "2026-07-15T02:04:20.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1089,6 +1090,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.145,
           "input": 1.74,
           "output": 3.48,
           "unit": "USD_per_million_tokens"
@@ -1287,7 +1289,7 @@
       "type": "chat"
     },
     "Kimi-K2.7-Code": {
-      "_lastUpdated": "2026-07-06T15:19:46.000Z",
+      "_lastUpdated": "2026-07-15T02:04:20.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1344,6 +1346,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
+          "cached_input": 0.19,
           "input": 0.95,
           "output": 4,
           "unit": "USD_per_million_tokens"

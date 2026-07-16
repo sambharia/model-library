@@ -976,6 +976,216 @@
       },
       "type": "chat"
     },
+    "aion-labs/aion-3.0": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "aion-labs/aion-3.0",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 3,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "aion-labs/aion-3.0-mini": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "aion-labs/aion-3.0-mini",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.7,
+          "output": 1.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "aion-labs/aion-rp-llama-3.1-8b": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -5260,6 +5470,111 @@
       },
       "type": "chat"
     },
+    "anthropic/claude-opus-4.7-fast": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "anthropic/claude-opus-4.7-fast",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 30,
+          "output": 150,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "anthropic/claude-opus-4.8": {
       "_lastUpdated": "2026-05-28T17:26:22.000Z",
       "_parameters": [
@@ -5359,6 +5674,111 @@
         "tokens": {
           "input": 5,
           "output": 25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "anthropic/claude-opus-4.8-fast": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "anthropic/claude-opus-4.8-fast",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10,
+          "output": 50,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -6308,7 +6728,7 @@
       "type": "chat"
     },
     "arcee-ai/trinity-large-thinking": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -6404,8 +6824,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.22,
-          "output": 0.85,
+          "input": 0.25,
+          "output": 0.8,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -8446,6 +8866,108 @@
       },
       "type": "chat"
     },
+    "cognitivecomputations/dolphin-mistral-24b-venice-edition": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.2,
+          "output": 0.9,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -9802,6 +10324,102 @@
       },
       "type": "chat"
     },
+    "cohere/north-mini-code:free": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 64000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "cohere/north-mini-code:free",
+      "max_output_tokens": 64000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "deepcogito/cogito-v2-preview-deepseek-671b": {
       "_config_source": "pricing_only",
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
@@ -10235,7 +10853,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-chat": {
-      "_lastUpdated": "2026-02-20T00:10:30.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10331,8 +10949,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.32,
-          "output": 0.89,
+          "input": 0.2002,
+          "output": 0.8001,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10340,7 +10958,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-chat-v3-0324": {
-      "_lastUpdated": "2026-03-02T00:43:12.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10436,8 +11054,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.2,
-          "output": 0.77,
+          "input": 0.27,
+          "output": 1.12,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10541,7 +11159,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-chat-v3.1": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10637,8 +11255,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.15,
-          "output": 0.75,
+          "input": 0.25,
+          "output": 0.95,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -11246,7 +11864,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-r1-distill-llama-70b": {
-      "_lastUpdated": "2026-02-20T00:10:30.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -11342,7 +11960,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.7,
+          "input": 0.8,
           "output": 0.8,
           "unit": "USD_per_million_tokens"
         },
@@ -12206,7 +12824,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v3.1-terminus": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12303,7 +12921,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.27,
-          "output": 0.95,
+          "output": 1,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -12416,7 +13034,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v3.2": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12512,8 +13130,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.252,
-          "output": 0.378,
+          "input": 0.269,
+          "output": 0.4,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -12728,7 +13346,7 @@
       "type": "chat"
     },
     "deepseek/deepseek-v4-flash": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -12824,8 +13442,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.14,
-          "output": 0.28,
+          "input": 0.098,
+          "output": 0.196,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -15937,6 +16555,108 @@
       },
       "type": "embedding"
     },
+    "google/gemini-embedding-2": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "google/gemini-embedding-2",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
     "google/gemini-embedding-2-preview": {
       "_lastUpdated": "2026-06-17T04:44:01.000Z",
       "_parameters": [
@@ -16625,7 +17345,7 @@
       "type": "chat"
     },
     "google/gemma-3-12b-it": {
-      "_lastUpdated": "2026-02-20T00:10:30.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16718,8 +17438,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.04,
-          "output": 0.13,
+          "input": 0.05,
+          "output": 0.15,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -16820,7 +17540,7 @@
       "type": "chat"
     },
     "google/gemma-3-27b-it": {
-      "_lastUpdated": "2026-04-08T13:44:59.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16914,7 +17634,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.08,
-          "output": 0.16,
+          "output": 0.45,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -17015,7 +17735,7 @@
       "type": "chat"
     },
     "google/gemma-3-4b-it": {
-      "_lastUpdated": "2026-02-20T00:10:30.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17108,8 +17828,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.04,
-          "output": 0.08,
+          "input": 0.05,
+          "output": 0.1,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -17498,7 +18218,7 @@
       "type": "chat"
     },
     "google/gemma-4-26b-a4b-it": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17594,8 +18314,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.06,
-          "output": 0.33,
+          "input": 0.1,
+          "output": 0.3,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -17699,7 +18419,7 @@
       "type": "chat"
     },
     "google/gemma-4-31b-it": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17795,8 +18515,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.13,
-          "output": 0.38,
+          "input": 0.22,
+          "output": 0.55,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -18188,7 +18908,7 @@
       "type": "chat"
     },
     "ibm-granite/granite-4.0-h-micro": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18282,7 +19002,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.017,
-          "output": 0.11,
+          "output": 0.112,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -18703,6 +19423,111 @@
       },
       "type": "chat"
     },
+    "inclusionai/ling-2.6-1t": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "inclusionai/ling-2.6-1t",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.075,
+          "output": 0.625,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "inclusionai/ling-2.6-1t:free": {
       "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
@@ -18800,7 +19625,7 @@
       "type": "chat"
     },
     "inclusionai/ling-2.6-flash": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18896,8 +19721,113 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.08,
-          "output": 0.24,
+          "input": 0.01,
+          "output": 0.03,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "inclusionai/ring-2.6-1t": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 65536,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "inclusionai/ring-2.6-1t",
+      "max_output_tokens": 65536,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.075,
+          "output": 0.625,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -19507,6 +20437,111 @@
       },
       "type": "embedding"
     },
+    "kwaipilot/kat-coder-air-v2.5": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 80000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "kwaipilot/kat-coder-air-v2.5",
+      "max_output_tokens": 80000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.15,
+          "output": 0.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "kwaipilot/kat-coder-pro": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -19711,6 +20746,111 @@
         "tokens": {
           "input": 0.3,
           "output": 1.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "kwaipilot/kat-coder-pro-v2.5": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 80000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "kwaipilot/kat-coder-pro-v2.5",
+      "max_output_tokens": 80000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.74,
+          "output": 2.96,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -21308,7 +22448,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.1-8b-instruct": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21404,8 +22544,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.02,
-          "output": 0.05,
+          "input": 0.05,
+          "output": 0.08,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -21413,7 +22553,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.2-11b-vision-instruct": {
-      "_lastUpdated": "2026-04-11T00:47:21.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21509,8 +22649,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.245,
-          "output": 0.245,
+          "input": 0.345,
+          "output": 0.345,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -21611,7 +22751,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.2-1b-instruct": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21705,7 +22845,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.027,
-          "output": 0.2,
+          "output": 0.201,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -21713,7 +22853,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.2-3b-instruct": {
-      "_lastUpdated": "2026-03-04T00:41:55.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21809,8 +22949,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.051,
-          "output": 0.34,
+          "input": 0.05,
+          "output": 0.33,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -22013,7 +23153,7 @@
       "type": "chat"
     },
     "meta-llama/llama-3.3-70b-instruct": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22109,8 +23249,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.1,
-          "output": 0.32,
+          "input": 0.13,
+          "output": 0.4,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -22214,7 +23354,7 @@
       "type": "chat"
     },
     "meta-llama/llama-4-maverick": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22310,8 +23450,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.15,
-          "output": 0.6,
+          "input": 0.2,
+          "output": 0.8,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -22319,7 +23459,7 @@
       "type": "chat"
     },
     "meta-llama/llama-4-scout": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -22415,7 +23555,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.08,
+          "input": 0.1,
           "output": 0.3,
           "unit": "USD_per_million_tokens"
         },
@@ -23018,7 +24158,7 @@
       "type": "chat"
     },
     "microsoft/mai-image-2.5": {
-      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23444,7 +24584,7 @@
       "type": "chat"
     },
     "microsoft/phi-4": {
-      "_lastUpdated": "2026-04-08T13:44:59.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -23537,7 +24677,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.065,
+          "input": 0.07,
           "output": 0.14,
           "unit": "USD_per_million_tokens"
         },
@@ -24056,7 +25196,7 @@
       "type": "chat"
     },
     "minimax/minimax-m1": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24152,7 +25292,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.4,
+          "input": 0.55,
           "output": 2.2,
           "unit": "USD_per_million_tokens"
         },
@@ -24161,7 +25301,7 @@
       "type": "chat"
     },
     "minimax/minimax-m2": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24258,7 +25398,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.255,
-          "output": 1,
+          "output": 1.02,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -24368,7 +25508,7 @@
       "type": "chat"
     },
     "minimax/minimax-m2.1": {
-      "_lastUpdated": "2026-04-08T20:48:45.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24464,8 +25604,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.29,
-          "output": 0.95,
+          "input": 0.3,
+          "output": 1.2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -24473,7 +25613,7 @@
       "type": "chat"
     },
     "minimax/minimax-m2.5": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -24570,7 +25710,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.15,
-          "output": 1.15,
+          "output": 0.9,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -24759,6 +25899,111 @@
       },
       "id": "minimax/minimax-m2.7",
       "max_output_tokens": 131072,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.3,
+          "output": 1.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "minimax/minimax-m3": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 512000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "minimax/minimax-m3",
+      "max_output_tokens": 512000,
       "modality": {
         "input": [
           "text"
@@ -27770,7 +29015,7 @@
       "type": "chat"
     },
     "mistralai/mistral-nemo": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -27867,7 +29112,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.02,
-          "output": 0.03,
+          "output": 0.04,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -28472,7 +29717,7 @@
       "type": "chat"
     },
     "mistralai/mistral-small-3.1-24b-instruct": {
-      "_lastUpdated": "2026-04-11T12:19:34.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28568,8 +29813,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.35,
-          "output": 0.56,
+          "input": 0.351,
+          "output": 0.555,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -28673,7 +29918,7 @@
       "type": "chat"
     },
     "mistralai/mistral-small-3.2-24b-instruct": {
-      "_lastUpdated": "2026-04-08T13:44:59.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28769,8 +30014,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.075,
-          "output": 0.2,
+          "input": 0.1,
+          "output": 0.3,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -29909,7 +31154,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-k2-0905": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30005,8 +31250,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.4,
-          "output": 2,
+          "input": 0.6,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -30224,7 +31469,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-k2.5": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30320,8 +31565,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.44,
-          "output": 2,
+          "input": 0.57,
+          "output": 2.85,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -30329,7 +31574,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-k2.6": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -30425,8 +31670,113 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.75,
-          "output": 3.5,
+          "input": 0.66,
+          "output": 3.41,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "moonshotai/kimi-k2.7-code": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "moonshotai/kimi-k2.7-code",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.719,
+          "output": 3.49,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -31429,6 +32779,216 @@
       },
       "type": "chat"
     },
+    "nex-agi/nex-n2-mini": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "nex-agi/nex-n2-mini",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.025,
+          "output": 0.1,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "nex-agi/nex-n2-pro": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "nex-agi/nex-n2-pro",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.25,
+          "output": 1,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "nothingiisreal/mn-celeste-12b": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -32015,7 +33575,7 @@
       "type": "chat"
     },
     "nousresearch/hermes-3-llama-3.1-70b": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32111,8 +33671,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.3,
-          "output": 0.3,
+          "input": 0.7,
+          "output": 0.7,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -32813,7 +34373,7 @@
       "type": "chat"
     },
     "nvidia/llama-3.3-nemotron-super-49b-v1.5": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -32909,7 +34469,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.1,
+          "input": 0.4,
           "output": 0.4,
           "unit": "USD_per_million_tokens"
         },
@@ -33309,7 +34869,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-3-super-120b-a12b": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33405,8 +34965,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.09,
-          "output": 0.45,
+          "input": 0.21,
+          "output": 0.455,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -33499,6 +35059,300 @@
       },
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
       "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "nvidia/nemotron-3-ultra-550b-a55b": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.6,
+          "output": 3.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "nvidia/nemotron-3-ultra-550b-a55b:free": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 65536,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "max_output_tokens": 65536,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "nvidia/nemotron-3.5-content-safety:free": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "id": "nvidia/nemotron-3.5-content-safety:free",
+      "max_output_tokens": 8192,
       "modality": {
         "input": [
           "text"
@@ -39248,6 +41102,636 @@
       },
       "type": "chat"
     },
+    "openai/gpt-5.6-luna": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "openai/gpt-5.6-luna",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "openai/gpt-5.6-luna-pro": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "openai/gpt-5.6-luna-pro",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "openai/gpt-5.6-sol": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "openai/gpt-5.6-sol",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 5,
+          "output": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "openai/gpt-5.6-sol-pro": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "openai/gpt-5.6-sol-pro",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 5,
+          "output": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "openai/gpt-5.6-terra": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "openai/gpt-5.6-terra",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2.5,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "openai/gpt-5.6-terra-pro": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "openai/gpt-5.6-terra-pro",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2.5,
+          "output": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "openai/gpt-audio": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -39558,7 +42042,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-120b": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39654,8 +42138,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.039,
-          "output": 0.18,
+          "input": 0.037,
+          "output": 0.17,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -39864,7 +42348,7 @@
       "type": "chat"
     },
     "openai/gpt-oss-20b": {
-      "_lastUpdated": "2026-04-10T22:47:34.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -39961,7 +42445,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.03,
-          "output": 0.14,
+          "output": 0.13,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -42377,6 +44861,99 @@
       },
       "type": "chat"
     },
+    "openrouter/fusion": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "id": "openrouter/fusion",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
     "openrouter/healer-alpha": {
       "_lastUpdated": "2026-03-18T11:13:07.000Z",
       "_parameters": [
@@ -42851,6 +45428,108 @@
         "output": [
           "text"
         ]
+      },
+      "type": "chat"
+    },
+    "perceptron/perceptron-mk1": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 8192,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "id": "perceptron/perceptron-mk1",
+      "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.15,
+          "output": 1.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "chat"
     },
@@ -43763,6 +46442,111 @@
       },
       "type": "chat"
     },
+    "poolside/laguna-m.1": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "poolside/laguna-m.1",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.2,
+          "output": 0.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "poolside/laguna-m.1:free": {
       "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
@@ -43849,6 +46633,207 @@
       },
       "id": "poolside/laguna-m.1:free",
       "max_output_tokens": 8192,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "poolside/laguna-xs-2.1": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "poolside/laguna-xs-2.1",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.06,
+          "output": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "poolside/laguna-xs-2.1:free": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "poolside/laguna-xs-2.1:free",
+      "max_output_tokens": 32768,
       "modality": {
         "input": [
           "text"
@@ -45963,7 +48948,7 @@
       "type": "chat"
     },
     "qwen/qwen2.5-vl-72b-instruct": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46056,8 +49041,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.25,
-          "output": 0.75,
+          "input": 0.8,
+          "output": 1,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -46158,7 +49143,7 @@
       "type": "chat"
     },
     "qwen/qwen3-14b": {
-      "_lastUpdated": "2026-02-20T00:10:30.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46254,7 +49239,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.06,
+          "input": 0.12,
           "output": 0.24,
           "unit": "USD_per_million_tokens"
         },
@@ -46461,7 +49446,7 @@
       "type": "chat"
     },
     "qwen/qwen3-235b-a22b-2507": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46557,8 +49542,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.071,
-          "output": 0.1,
+          "input": 0.09,
+          "output": 0.55,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -46767,7 +49752,7 @@
       "type": "chat"
     },
     "qwen/qwen3-30b-a3b": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46863,8 +49848,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.09,
-          "output": 0.45,
+          "input": 0.12,
+          "output": 0.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -46872,7 +49857,7 @@
       "type": "chat"
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
-      "_lastUpdated": "2026-02-20T00:10:30.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46965,7 +49950,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.09,
+          "input": 0.1,
           "output": 0.3,
           "unit": "USD_per_million_tokens"
         },
@@ -46974,7 +49959,7 @@
       "type": "chat"
     },
     "qwen/qwen3-30b-a3b-thinking-2507": {
-      "_lastUpdated": "2026-04-08T13:44:59.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47070,8 +50055,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.08,
-          "output": 0.4,
+          "input": 0.13,
+          "output": 1.56,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -47172,7 +50157,7 @@
       "type": "chat"
     },
     "qwen/qwen3-32b": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47269,7 +50254,7 @@
         "currency": "USD",
         "tokens": {
           "input": 0.08,
-          "output": 0.24,
+          "output": 0.28,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -47478,7 +50463,7 @@
       "type": "chat"
     },
     "qwen/qwen3-8b": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47571,8 +50556,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.05,
-          "output": 0.4,
+          "input": 0.117,
+          "output": 0.455,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -47673,7 +50658,7 @@
       "type": "chat"
     },
     "qwen/qwen3-coder": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47769,8 +50754,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.22,
-          "output": 1.8,
+          "input": 0.3,
+          "output": 1,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -48813,7 +51798,7 @@
       "type": "chat"
     },
     "qwen/qwen3-next-80b-a3b-instruct": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -48909,7 +51894,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.09,
+          "input": 0.1,
           "output": 1.1,
           "unit": "USD_per_million_tokens"
         },
@@ -49119,7 +52104,7 @@
       "type": "chat"
     },
     "qwen/qwen3-vl-235b-a22b-instruct": {
-      "_lastUpdated": "2026-02-16T10:47:20.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -49215,8 +52200,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.2,
-          "output": 0.88,
+          "input": 0.21,
+          "output": 1.9,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -49641,7 +52626,7 @@
       "type": "chat"
     },
     "qwen/qwen3-vl-8b-instruct": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -49737,8 +52722,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.08,
-          "output": 0.5,
+          "input": 0.117,
+          "output": 0.455,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -50061,7 +53046,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-35b-a3b": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -50157,7 +53142,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.15,
+          "input": 0.14,
           "output": 1,
           "unit": "USD_per_million_tokens"
         },
@@ -50166,7 +53151,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-397b-a17b": {
-      "_lastUpdated": "2026-03-04T00:41:55.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -50262,8 +53247,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.39,
-          "output": 2.34,
+          "input": 0.45,
+          "output": 3,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -50586,7 +53571,7 @@
       "type": "chat"
     },
     "qwen/qwen3.5-plus-20260420": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -50682,8 +53667,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.4,
-          "output": 2.4,
+          "input": 0.3,
+          "output": 1.8,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -50691,7 +53676,7 @@
       "type": "chat"
     },
     "qwen/qwen3.6-27b": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -50787,8 +53772,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.32,
-          "output": 3.2,
+          "input": 0.45,
+          "output": 2.7,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -50796,7 +53781,7 @@
       "type": "chat"
     },
     "qwen/qwen3.6-35b-a3b": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -50892,7 +53877,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.15,
+          "input": 0.14,
           "output": 1,
           "unit": "USD_per_million_tokens"
         },
@@ -50901,7 +53886,7 @@
       "type": "chat"
     },
     "qwen/qwen3.6-flash": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -50997,8 +53982,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.25,
-          "output": 1.5,
+          "input": 0.1875,
+          "output": 1.125,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -51216,7 +54201,7 @@
       "type": "chat"
     },
     "qwen/qwen3.7-max": {
-      "_lastUpdated": "2026-05-27T16:41:30.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -51312,8 +54297,113 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 1.25,
-          "output": 3.75,
+          "input": 1.475,
+          "output": 4.425,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "qwen/qwen3.7-plus": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 65536,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "qwen/qwen3.7-plus",
+      "max_output_tokens": 65536,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.32,
+          "output": 1.28,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -52211,6 +55301,111 @@
         "tokens": {
           "input": 1,
           "output": 3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "sakana/fugu-ultra": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "sakana/fugu-ultra",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 5,
+          "output": 30,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -54194,6 +57389,111 @@
       },
       "type": "chat"
     },
+    "stepfun/step-3.7-flash": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 256000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "stepfun/step-3.7-flash",
+      "max_output_tokens": 256000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.2,
+          "output": 1.15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "switchpoint/router": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -54491,6 +57791,216 @@
       },
       "type": "chat"
     },
+    "tencent/hy3": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 131072,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "tencent/hy3",
+      "max_output_tokens": 131072,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.2,
+          "output": 0.8,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "tencent/hy3-preview": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "tencent/hy3-preview",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.063,
+          "output": 0.21,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "tencent/hy3-preview:free": {
       "_lastUpdated": "2026-05-08T13:42:10.000Z",
       "_parameters": [
@@ -54576,6 +58086,102 @@
         "function_calling": true
       },
       "id": "tencent/hy3-preview:free",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "chat"
+    },
+    "tencent/hy3:free": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "tencent/hy3:free",
       "max_output_tokens": 262144,
       "modality": {
         "input": [
@@ -54885,7 +58491,7 @@
       "type": "chat"
     },
     "thedrummer/rocinante-12b": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -54981,8 +58587,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.17,
-          "output": 0.43,
+          "input": 0.25,
+          "output": 0.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -58191,7 +61797,7 @@
       "type": "chat"
     },
     "x-ai/grok-4.20-multi-agent": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -58284,8 +61890,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -58598,6 +62204,111 @@
         "tokens": {
           "input": 2,
           "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "x-ai/grok-build-0.1": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "x-ai/grok-build-0.1",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1,
+          "output": 2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -59118,7 +62829,7 @@
       "type": "chat"
     },
     "xiaomi/mimo-v2.5": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -59214,8 +62925,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.4,
-          "output": 2,
+          "input": 0.14,
+          "output": 0.28,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -59223,7 +62934,7 @@
       "type": "chat"
     },
     "xiaomi/mimo-v2.5-pro": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -59319,8 +63030,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 1,
-          "output": 3,
+          "input": 0.435,
+          "output": 0.87,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -59841,7 +63552,7 @@
       "type": "chat"
     },
     "z-ai/glm-4.6": {
-      "_lastUpdated": "2026-03-05T01:40:19.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -59937,8 +63648,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.39,
-          "output": 1.9,
+          "input": 0.5,
+          "output": 2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -60156,7 +63867,7 @@
       "type": "chat"
     },
     "z-ai/glm-4.7": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -60252,8 +63963,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.38,
-          "output": 1.74,
+          "input": 0.4,
+          "output": 1.75,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -60366,7 +64077,7 @@
       "type": "chat"
     },
     "z-ai/glm-5": {
-      "_lastUpdated": "2026-05-07T07:13:22.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -60462,8 +64173,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.6,
-          "output": 1.92,
+          "input": 0.95,
+          "output": 3.15,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -60576,7 +64287,7 @@
       "type": "chat"
     },
     "z-ai/glm-5.1": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -60672,8 +64383,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 1.05,
-          "output": 3.5,
+          "input": 0.966,
+          "output": 3.036,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -60681,7 +64392,7 @@
       "type": "chat"
     },
     "z-ai/glm-5.2": {
-      "_lastUpdated": "2026-06-29T20:11:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -60777,8 +64488,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.94,
-          "output": 3,
+          "input": 0.9702,
+          "output": 3.0492,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -60884,6 +64595,111 @@
         "tokens": {
           "input": 1.2,
           "output": 4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "~anthropic/claude-fable-latest": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "~anthropic/claude-fable-latest",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10,
+          "output": 50,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -61101,7 +64917,7 @@
       "type": "chat"
     },
     "~anthropic/claude-sonnet-latest": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -61197,8 +65013,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 3,
-          "output": 15,
+          "input": 2,
+          "output": 10,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -61206,7 +65022,7 @@
       "type": "chat"
     },
     "~google/gemini-flash-latest": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -61302,8 +65118,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.5,
-          "output": 3,
+          "input": 1.5,
+          "output": 9,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -61416,7 +65232,7 @@
       "type": "chat"
     },
     "~moonshotai/kimi-latest": {
-      "_lastUpdated": "2026-05-08T13:42:10.000Z",
+      "_lastUpdated": "2026-07-16T06:08:32.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -61512,8 +65328,8 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.75,
-          "output": 3.5,
+          "input": 0.66,
+          "output": 3.41,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -61724,6 +65540,111 @@
         "tokens": {
           "input": 0.75,
           "output": 4.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "~x-ai/grok-latest": {
+      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "~x-ai/grok-latest",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2,
+          "output": 6,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

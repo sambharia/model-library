@@ -966,12 +966,12 @@
       "type": "chat"
     },
     "DeepSeek-V4-Flash": {
-      "_lastUpdated": "2026-07-15T02:04:20.000Z",
+      "_lastUpdated": "2026-07-20T05:11:08.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 4096,
+          "maxValue": 384000,
           "minValue": 1
         },
         {
@@ -1011,7 +1011,7 @@
         "function_calling": true
       },
       "id": "DeepSeek-V4-Flash",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 384000,
       "modality": {
         "input": [
           "text"
@@ -1033,12 +1033,12 @@
       "type": "chat"
     },
     "DeepSeek-V4-Pro": {
-      "_lastUpdated": "2026-07-15T02:04:20.000Z",
+      "_lastUpdated": "2026-07-20T05:11:08.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 4096,
+          "maxValue": 384000,
           "minValue": 1
         },
         {
@@ -1078,7 +1078,7 @@
         "function_calling": true
       },
       "id": "DeepSeek-V4-Pro",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 384000,
       "modality": {
         "input": [
           "text"

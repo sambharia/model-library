@@ -18337,7 +18337,7 @@
       "type": "responses"
     },
     "gpt-5.6-luna": {
-      "_lastUpdated": "2026-07-10T05:40:04.000Z",
+      "_lastUpdated": "2026-07-15T05:01:39.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18555,7 +18555,7 @@
       "type": "responses"
     },
     "gpt-5.6-sol": {
-      "_lastUpdated": "2026-07-10T05:40:04.000Z",
+      "_lastUpdated": "2026-07-15T05:01:39.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18773,7 +18773,7 @@
       "type": "responses"
     },
     "gpt-5.6-terra": {
-      "_lastUpdated": "2026-07-10T05:40:04.000Z",
+      "_lastUpdated": "2026-07-15T05:01:39.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

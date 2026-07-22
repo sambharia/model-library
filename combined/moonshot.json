@@ -723,7 +723,7 @@
       "type": "chat"
     },
     "kimi-k2.7-code-highspeed": {
-      "_lastUpdated": "2026-06-30T07:02:23.000Z",
+      "_lastUpdated": "2026-07-22T05:55:19.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -780,6 +780,70 @@
           "cached_input": 0.38,
           "input": 1.9,
           "output": 8,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "kimi-k3": {
+      "_lastUpdated": "2026-07-22T05:55:19.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 262144,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "kimi-k3",
+      "max_output_tokens": 262144,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.3,
+          "input": 3,
+          "output": 15,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

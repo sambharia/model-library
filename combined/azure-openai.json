@@ -18797,6 +18797,207 @@
       },
       "type": "responses"
     },
+    "gpt-5.6": {
+      "_lastUpdated": "2026-07-22T06:50:32.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            },
+            {
+              "name": "JSON Schema",
+              "params": {
+                "defaultValue": null,
+                "key": "json_schema",
+                "skipValues": [
+                  null
+                ],
+                "type": "json"
+              },
+              "schema": {
+                "properties": {
+                  "json_schema": {
+                    "type": "object"
+                  },
+                  "type": {
+                    "type": "string",
+                    "value": "json_schema"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_schema"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": 20000,
+          "key": "max_completion_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        }
+      ],
+      "_remove_parameters": [
+        "temperature",
+        "top_p",
+        "n",
+        "presence_penalty",
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gpt-5.6",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "file_search": {
+              "price": 25
+            },
+            "routing_units": {
+              "price": 0.0014
+            },
+            "web_search": {
+              "price": 100
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 6.25,
+          "cached_input": 0.5,
+          "input": 5,
+          "output": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "responses"
+    },
     "gpt-5.6-luna": {
       "_lastUpdated": "2026-07-10T05:27:49.000Z",
       "_parameters": [

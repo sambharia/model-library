@@ -16556,7 +16556,7 @@
       "type": "embedding"
     },
     "google/gemini-embedding-2": {
-      "_lastUpdated": "2026-07-22T05:55:19.000Z",
+      "_lastUpdated": "2026-07-22T09:28:46.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31880,12 +31880,12 @@
       "type": "chat"
     },
     "moonshotai/kimi-k3": {
-      "_lastUpdated": "2026-07-22T05:55:19.000Z",
+      "_lastUpdated": "2026-07-22T09:28:46.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
           "key": "max_tokens",
-          "maxValue": 4096,
+          "maxValue": 131072,
           "minValue": 1
         },
         {
@@ -31961,7 +31961,7 @@
         }
       ],
       "id": "moonshotai/kimi-k3",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 131072,
       "modality": {
         "input": [
           "text"

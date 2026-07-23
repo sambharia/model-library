@@ -2343,7 +2343,7 @@
       "type": "chat"
     },
     "chirp-3-hd": {
-      "_lastUpdated": "2026-05-05T18:27:41.000Z",
+      "_lastUpdated": "2026-07-20T09:25:05.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -12903,6 +12903,110 @@
       },
       "type": "chat"
     },
+    "grok-4.3": {
+      "_lastUpdated": "2026-07-20T09:25:05.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "grok-4.3",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 1.25,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "imagegeneration@002": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",
       "_parameters": [
@@ -17251,7 +17355,7 @@
       "type": "rerank"
     },
     "semantic-ranker-default-002": {
-      "_lastUpdated": "2026-05-07T13:19:21.000Z",
+      "_lastUpdated": "2026-07-20T09:25:05.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

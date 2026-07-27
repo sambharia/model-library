@@ -19632,7 +19632,7 @@
       "type": "video"
     },
     "veo-3.1-fast-generate-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-16T07:52:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -19730,8 +19730,14 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
+            "video_duration_seconds_1280_720": {
               "price": 1000
+            },
+            "video_duration_seconds_1920_1080": {
+              "price": 1200
+            },
+            "video_duration_seconds_3840_2160": {
+              "price": 3000
             }
           },
           "unit": "USD_per_unit"
@@ -19852,7 +19858,7 @@
       "type": "video"
     },
     "veo-3.1-generate-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-07-16T07:52:41.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -19950,8 +19956,14 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
-              "price": 2000
+            "video_duration_seconds_1280_720": {
+              "price": 4000
+            },
+            "video_duration_seconds_1920_1080": {
+              "price": 4000
+            },
+            "video_duration_seconds_3840_2160": {
+              "price": 6000
             }
           },
           "unit": "USD_per_unit"
@@ -19960,6 +19972,125 @@
         "type": "pay_as_you_go"
       },
       "type": "video"
+    },
+    "veo-3.1-lite-generate-001": {
+      "_lastUpdated": "2026-07-16T07:52:41.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "veo-3.1-lite-generate-001",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "video"
+    },
+    "veo-3.1-lite-generate-preview": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-07-16T07:52:41.000Z",
+      "id": "veo-3.1-lite-generate-preview",
+      "pricing": {
+        "additional": {
+          "prices": {
+            "default_duration_seconds": {
+              "price": 800
+            },
+            "default_sample_count": {
+              "price": 100
+            },
+            "video_duration_seconds_1280_720": {
+              "price": 500
+            },
+            "video_duration_seconds_1920_1080": {
+              "price": 800
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     }
   },
   "name": "vertex-ai",

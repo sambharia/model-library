@@ -10378,6 +10378,14 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "output_video_token": {
+              "price": 0.175
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "input": 1.5,
@@ -10388,6 +10396,14 @@
       },
       "pricing_tiers": {
         "gt_128k": {
+          "additional": {
+            "prices": {
+              "output_video_token": {
+                "price": 0.175
+              }
+            },
+            "unit": "USD_per_unit"
+          },
           "currency": "USD",
           "tokens": {
             "input": 1.5,

@@ -42,6 +42,66 @@
   },
   "id": "cerebras",
   "models": {
+    "gemma-4-31b": {
+      "_lastUpdated": "2026-07-28T20:14:05.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 1024,
+          "key": "max_tokens",
+          "maxValue": 40960,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "gemma-4-31b",
+      "max_output_tokens": 40960,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.99,
+          "output": 1.49,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "gpt-oss-120b": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
       "_parameters": [
@@ -697,7 +757,7 @@
       "type": "chat"
     },
     "zai-glm-4.7": {
-      "_lastUpdated": "2026-03-18T11:13:07.000Z",
+      "_lastUpdated": "2026-07-28T20:14:05.000Z",
       "_parameters": [
         {
           "defaultValue": 1024,

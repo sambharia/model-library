@@ -14691,6 +14691,69 @@
       },
       "type": "chat"
     },
+    "mistral.devstral-2-123b": {
+      "_lastUpdated": "2026-08-05T09:16:00.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 2048,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "mistral.devstral-2-123b",
+      "max_output_tokens": 2048,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.4,
+          "output": 2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "mistral.magistral-small-2509": {
       "_lastUpdated": "2026-05-13T19:30:48.000Z",
       "_parameters": [

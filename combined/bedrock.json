@@ -4156,7 +4156,7 @@
       "type": "chat"
     },
     "anthropic.claude-sonnet-4-6": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -4299,7 +4299,7 @@
       "type": "chat"
     },
     "anthropic.claude-sonnet-4-6-v1": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -4442,7 +4442,7 @@
       "type": "chat"
     },
     "anthropic.claude-sonnet-4-6-v1:0": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -6725,7 +6725,7 @@
     },
     "claude-sonnet-4-6": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "id": "claude-sonnet-4-6",
       "pricing": {
         "additional": {
@@ -6750,7 +6750,7 @@
     },
     "claude-sonnet-4-6-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "id": "claude-sonnet-4-6-v1",
       "pricing": {
         "additional": {
@@ -9939,7 +9939,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-sonnet-4-6": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -10082,7 +10082,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-sonnet-4-6-v1": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -10225,7 +10225,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-sonnet-4-6-v1:0": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -12709,7 +12709,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-sonnet-4-6": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -16048,7 +16048,7 @@
       "type": "chat"
     },
     "qwen.qwen3-235b-a22b-2507-v1:0": {
-      "_lastUpdated": "2026-02-06T17:42:36.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -16111,7 +16111,7 @@
       "type": "chat"
     },
     "qwen.qwen3-32b-v1:0": {
-      "_lastUpdated": "2026-02-06T17:42:36.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -16174,7 +16174,7 @@
       "type": "chat"
     },
     "qwen.qwen3-coder-30b-a3b-v1:0": {
-      "_lastUpdated": "2026-02-09T13:19:32.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -16237,7 +16237,7 @@
       "type": "chat"
     },
     "qwen.qwen3-coder-480b-a35b-v1:0": {
-      "_lastUpdated": "2026-02-06T17:42:36.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -16300,7 +16300,7 @@
       "type": "chat"
     },
     "qwen.qwen3-coder-next": {
-      "_lastUpdated": "2026-05-07T13:18:33.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -16363,7 +16363,7 @@
       "type": "chat"
     },
     "qwen.qwen3-next-80b-a3b": {
-      "_lastUpdated": "2026-02-06T17:42:36.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -16426,7 +16426,7 @@
       "type": "chat"
     },
     "qwen.qwen3-vl-235b-a22b": {
-      "_lastUpdated": "2026-02-18T08:21:00.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -21693,7 +21693,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-sonnet-4-6": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -21836,7 +21836,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-sonnet-4-6-v1": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -21979,7 +21979,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-sonnet-4-6-v1:0": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -24629,7 +24629,7 @@
       "type": "text"
     },
     "zai.glm-4.7": {
-      "_lastUpdated": "2026-03-18T10:47:43.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -24692,7 +24692,7 @@
       "type": "chat"
     },
     "zai.glm-4.7-flash": {
-      "_lastUpdated": "2026-03-18T10:47:43.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -24755,7 +24755,7 @@
       "type": "chat"
     },
     "zai.glm-5": {
-      "_lastUpdated": "2026-03-24T20:25:58.000Z",
+      "_lastUpdated": "2026-08-10T23:52:17.000Z",
       "_parameters": [
         {
           "defaultValue": 512,

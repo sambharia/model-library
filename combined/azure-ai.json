@@ -18063,6 +18063,144 @@
       },
       "type": "text"
     },
+    "gpt-realtime-2.1": {
+      "_lastUpdated": "2026-08-10T19:27:39.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gpt-realtime-2.1",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_cached_input": 0.4,
+          "audio_input": 32,
+          "audio_output": 64,
+          "cached_input": 0.4,
+          "image_input": 5,
+          "input": 4,
+          "output": 24,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "text"
+    },
+    "gpt-realtime-2.1-mini": {
+      "_lastUpdated": "2026-08-10T19:27:39.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gpt-realtime-2.1-mini",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_cached_input": 0.3,
+          "audio_input": 10,
+          "audio_output": 20,
+          "cached_input": 0.06,
+          "image_input": 0.8,
+          "input": 0.6,
+          "output": 2.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "text"
+    },
     "gpt-realtime-2025-08-28": {
       "_lastUpdated": "2026-06-25T14:21:56.000Z",
       "_parameters": [
@@ -18133,7 +18271,7 @@
       "type": "text"
     },
     "gpt-realtime-mini": {
-      "_lastUpdated": "2026-06-25T14:21:56.000Z",
+      "_lastUpdated": "2026-08-10T19:27:39.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -18185,10 +18323,24 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_cached_input": 0.3,
+          "audio_input": 10,
+          "audio_output": 20,
+          "cached_input": 0.06,
+          "image_input": 0.8,
+          "input": 0.6,
+          "output": 2.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "text"
     },
     "gpt-realtime-mini-2025-10-06": {
-      "_lastUpdated": "2026-06-25T14:21:56.000Z",
+      "_lastUpdated": "2026-08-10T19:27:39.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -18239,6 +18391,89 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_cached_input": 0.3,
+          "audio_input": 10,
+          "audio_output": 20,
+          "cached_input": 0.06,
+          "image_input": 0.8,
+          "input": 0.6,
+          "output": 2.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "text"
+    },
+    "gpt-realtime-mini-2025-12-15": {
+      "_lastUpdated": "2026-08-10T19:27:39.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gpt-realtime-mini-2025-12-15",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "audio_cached_input": 0.3,
+          "audio_input": 10,
+          "audio_output": 20,
+          "cached_input": 0.06,
+          "image_input": 0.8,
+          "input": 0.6,
+          "output": 2.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "text"
     },

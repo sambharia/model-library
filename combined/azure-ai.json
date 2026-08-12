@@ -1356,7 +1356,7 @@
       "type": "chat"
     },
     "Kimi-K3": {
-      "_lastUpdated": "2026-08-11T16:25:21.000Z",
+      "_lastUpdated": "2026-08-11T06:01:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -20479,6 +20479,72 @@
         "output": [
           "text"
         ]
+      },
+      "type": "chat"
+    },
+    "mistral-medium-3-5": {
+      "_lastUpdated": "2026-08-12T05:05:27.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "mistral-medium-3-5",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1.5,
+          "output": 7.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "chat"
     },

@@ -977,7 +977,7 @@
       "type": "chat"
     },
     "aion-labs/aion-3.0": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1082,7 +1082,7 @@
       "type": "chat"
     },
     "aion-labs/aion-3.0-mini": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5471,7 +5471,7 @@
       "type": "chat"
     },
     "anthropic/claude-opus-4.7-fast": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -5681,7 +5681,7 @@
       "type": "chat"
     },
     "anthropic/claude-opus-4.8-fast": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -10325,7 +10325,7 @@
       "type": "chat"
     },
     "cohere/north-mini-code:free": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -16663,6 +16663,111 @@
       },
       "type": "chat"
     },
+    "google/gemini-3.7-flash": {
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 65536,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "response_format",
+          "options": [
+            {
+              "name": "Text",
+              "value": null
+            },
+            {
+              "name": "JSON Object",
+              "schema": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "value": "json_object"
+                  }
+                },
+                "type": "object"
+              },
+              "value": "json_object"
+            }
+          ],
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "google/gemini-3.7-flash",
+      "max_output_tokens": 65536,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 1.5,
+          "output": 7.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "google/gemini-embedding-001": {
       "_lastUpdated": "2026-03-02T09:33:22.000Z",
       "_parameters": [
@@ -16766,7 +16871,7 @@
       "type": "embedding"
     },
     "google/gemini-embedding-2": {
-      "_lastUpdated": "2026-07-22T09:28:46.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19634,7 +19739,7 @@
       "type": "chat"
     },
     "inclusionai/ling-2.6-1t": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19940,7 +20045,7 @@
       "type": "chat"
     },
     "inclusionai/ring-2.6-1t": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20648,7 +20753,7 @@
       "type": "embedding"
     },
     "kwaipilot/kat-coder-air-v2.5": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -20963,7 +21068,7 @@
       "type": "chat"
     },
     "kwaipilot/kat-coder-pro-v2.5": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -26129,7 +26234,7 @@
       "type": "chat"
     },
     "minimax/minimax-m3": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -31889,7 +31994,7 @@
       "type": "chat"
     },
     "moonshotai/kimi-k2.7-code": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33093,7 +33198,7 @@
       "type": "chat"
     },
     "nex-agi/nex-n2-mini": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -33198,7 +33303,7 @@
       "type": "chat"
     },
     "nex-agi/nex-n2-pro": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35383,7 +35488,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-3-ultra-550b-a55b": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35488,7 +35593,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -35584,7 +35689,7 @@
       "type": "chat"
     },
     "nvidia/nemotron-3.5-content-safety:free": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41416,7 +41521,7 @@
       "type": "chat"
     },
     "openai/gpt-5.6-luna": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41521,7 +41626,7 @@
       "type": "chat"
     },
     "openai/gpt-5.6-luna-pro": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41626,7 +41731,7 @@
       "type": "chat"
     },
     "openai/gpt-5.6-sol": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41731,7 +41836,7 @@
       "type": "chat"
     },
     "openai/gpt-5.6-sol-pro": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41836,7 +41941,7 @@
       "type": "chat"
     },
     "openai/gpt-5.6-terra": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -41941,7 +42046,7 @@
       "type": "chat"
     },
     "openai/gpt-5.6-terra-pro": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -45745,7 +45850,7 @@
       "type": "chat"
     },
     "perceptron/perceptron-mk1": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46756,7 +46861,7 @@
       "type": "chat"
     },
     "poolside/laguna-m.1": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -46957,7 +47062,7 @@
       "type": "chat"
     },
     "poolside/laguna-xs-2.1": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -47062,7 +47167,7 @@
       "type": "chat"
     },
     "poolside/laguna-xs-2.1:free": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -54619,7 +54724,7 @@
       "type": "chat"
     },
     "qwen/qwen3.7-plus": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -55621,7 +55726,7 @@
       "type": "chat"
     },
     "sakana/fugu-ultra": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -57703,7 +57808,7 @@
       "type": "chat"
     },
     "stepfun/step-3.7-flash": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -58105,7 +58210,7 @@
       "type": "chat"
     },
     "tencent/hy3": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -58210,7 +58315,7 @@
       "type": "chat"
     },
     "tencent/hy3-preview": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -58411,7 +58516,7 @@
       "type": "chat"
     },
     "tencent/hy3:free": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -62524,7 +62629,7 @@
       "type": "chat"
     },
     "x-ai/grok-build-0.1": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -64915,7 +65020,7 @@
       "type": "chat"
     },
     "~anthropic/claude-fable-latest": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -65860,7 +65965,7 @@
       "type": "chat"
     },
     "~x-ai/grok-latest": {
-      "_lastUpdated": "2026-07-16T06:08:34.000Z",
+      "_lastUpdated": "2026-08-13T22:33:37.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

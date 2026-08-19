@@ -2603,7 +2603,7 @@
     },
     "anthropic.claude-fable-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-06-09T18:20:44.000Z",
+      "_lastUpdated": "2026-08-19T17:23:38.000Z",
       "id": "anthropic.claude-fable-5-v1",
       "pricing": {
         "additional": {
@@ -11395,7 +11395,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-fable-5": {
-      "_lastUpdated": "2026-06-16T09:51:31.000Z",
+      "_lastUpdated": "2026-08-19T17:23:38.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -13139,6 +13139,90 @@
         ]
       },
       "type": "text"
+    },
+    "global.xai.grok-4.6": {
+      "_lastUpdated": "2026-08-19T17:23:38.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "effort": "low"
+          },
+          "key": "reasoning",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        }
+      ],
+      "id": "global.xai.grok-4.6",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 5,
+          "input": 20,
+          "output": 60,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     },
     "google.gemma-3-12b-it": {
       "_lastUpdated": "2026-02-06T09:00:37.000Z",
@@ -24438,6 +24522,90 @@
         "type": "pay_as_you_go"
       },
       "type": "text"
+    },
+    "us.xai.grok-4.6": {
+      "_lastUpdated": "2026-08-19T17:23:38.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "effort": "low"
+          },
+          "key": "reasoning",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        }
+      ],
+      "id": "us.xai.grok-4.6",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 5.5,
+          "input": 22,
+          "output": 66,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     },
     "writer.palmyra-vision-7b-v1:0": {
       "_lastUpdated": "2026-06-09T11:57:09.000Z",

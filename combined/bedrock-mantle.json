@@ -2374,7 +2374,7 @@
       "type": "chat"
     },
     "openai.gpt-5.6-luna": {
-      "_lastUpdated": "2026-08-05T09:22:15.000Z",
+      "_lastUpdated": "2026-08-19T17:23:38.000Z",
       "_parameters": [
         {
           "defaultValue": 1024,
@@ -3342,6 +3342,84 @@
         "tokens": {
           "input": 0.15,
           "output": 0.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "xai.grok-4.6": {
+      "_lastUpdated": "2026-08-19T17:23:38.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 1024,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "effort": "low"
+          },
+          "key": "reasoning",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        }
+      ],
+      "id": "xai.grok-4.6",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 5.5,
+          "input": 22,
+          "output": 66,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

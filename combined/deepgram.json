@@ -1,0 +1,225 @@
+{
+  "_defaults": null,
+  "id": "deepgram",
+  "models": {
+    "aura-2-andromeda-en": {
+      "_lastUpdated": "2026-06-15T09:51:43.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "aura-2-andromeda-en",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "aura-2-apollo-en": {
+      "_lastUpdated": "2026-06-15T09:51:43.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "aura-2-apollo-en",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "aura-2-thalia-en": {
+      "_lastUpdated": "2026-06-15T09:51:43.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "aura-2-thalia-en",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "aura-asteria-en": {
+      "_lastUpdated": "2026-06-15T09:51:43.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "aura-asteria-en",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "aura-luna-en": {
+      "_lastUpdated": "2026-06-15T09:51:43.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "aura-luna-en",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 15,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "nova-2": {
+      "_lastUpdated": "2026-06-15T06:53:24.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "nova-2",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "request_audio_token": {
+              "price": 43
+            },
+            "response_audio_token": {
+              "price": 0
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "audio_input": 4300,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "nova-3": {
+      "_lastUpdated": "2026-06-15T06:53:24.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "nova-3",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "request_audio_token": {
+              "price": 43
+            },
+            "response_audio_token": {
+              "price": 0
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "audio_input": 4300,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "nova-3-general": {
+      "_lastUpdated": "2026-06-15T09:51:43.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "nova-3-general",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "request_audio_token": {
+              "price": 43
+            },
+            "response_audio_token": {
+              "price": 0
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "audio_input": 4300,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    }
+  },
+  "name": "deepgram",
+  "schema_version": "2.0"
+}

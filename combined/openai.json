@@ -18829,7 +18829,7 @@
       "type": "chat"
     },
     "gpt-5.6-sol": {
-      "_lastUpdated": "2026-07-15T05:01:39.000Z",
+      "_lastUpdated": "2026-08-22T01:32:25.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19036,10 +19036,10 @@
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 30,
+          "cache_write": 5,
+          "cached_input": 0.4,
+          "input": 4,
+          "output": 20,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -19048,7 +19048,7 @@
     },
     "gpt-5.6-sol-2026-07-09": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-07-29T09:11:29.000Z",
+      "_lastUpdated": "2026-08-22T01:32:25.000Z",
       "id": "gpt-5.6-sol-2026-07-09",
       "pricing": {
         "additional": {
@@ -19064,10 +19064,10 @@
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 30,
+          "cache_write": 5,
+          "cached_input": 0.4,
+          "input": 4,
+          "output": 20,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

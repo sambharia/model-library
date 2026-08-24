@@ -13156,7 +13156,7 @@
       "type": "chat"
     },
     "global.openai.gpt-5.6-sol": {
-      "_lastUpdated": "2026-08-19T08:34:50.000Z",
+      "_lastUpdated": "2026-08-24T17:55:58.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -13214,10 +13214,10 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 30,
+          "cache_write": 5,
+          "cached_input": 0.4,
+          "input": 4,
+          "output": 20,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -23611,7 +23611,7 @@
       "type": "chat"
     },
     "us.openai.gpt-5.6-sol": {
-      "_lastUpdated": "2026-08-19T08:34:50.000Z",
+      "_lastUpdated": "2026-08-24T17:55:58.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -23669,10 +23669,10 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.875,
-          "cached_input": 0.55,
-          "input": 5.5,
-          "output": 33,
+          "cache_write": 5.5,
+          "cached_input": 0.44,
+          "input": 4.4,
+          "output": 22,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

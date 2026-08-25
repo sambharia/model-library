@@ -43,7 +43,7 @@
   "id": "groq",
   "models": {
     "canopylabs/orpheus-arabic-saudi": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -78,6 +78,7 @@
           "type": "boolean"
         }
       ],
+      "_playground_disabled": true,
       "id": "canopylabs/orpheus-arabic-saudi",
       "max_output_tokens": 4096,
       "modality": {
@@ -87,6 +88,79 @@
         "output": [
           "audio"
         ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "characters": {
+              "price": 0.4
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "canopylabs/orpheus-v1-english": {
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "canopylabs/orpheus-v1-english",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "characters": {
+              "price": 0.22
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "type": "pay_as_you_go"
       },
       "type": "audio"
     },
@@ -588,12 +662,12 @@
       "type": "chat"
     },
     "groq/compound": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 4096,
+          "maxValue": 8192,
           "minValue": 1
         },
         {
@@ -624,7 +698,7 @@
         }
       ],
       "id": "groq/compound",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 8192,
       "modality": {
         "input": [
           "text"
@@ -636,12 +710,12 @@
       "type": "chat"
     },
     "groq/compound-mini": {
-      "_lastUpdated": "2026-02-08T09:27:33.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 4096,
+          "maxValue": 8192,
           "minValue": 1
         },
         {
@@ -672,7 +746,7 @@
         }
       ],
       "id": "groq/compound-mini",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 8192,
       "modality": {
         "input": [
           "text"
@@ -741,12 +815,12 @@
       "type": "chat"
     },
     "llama-3.1-8b-instant": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 8192,
+          "maxValue": 131072,
           "minValue": 1
         },
         {
@@ -868,7 +942,7 @@
         "function_calling": true
       },
       "id": "llama-3.1-8b-instant",
-      "max_output_tokens": 8192,
+      "max_output_tokens": 131072,
       "modality": {
         "input": [
           "text"
@@ -1311,7 +1385,7 @@
       "type": "chat"
     },
     "llama-3.3-70b-versatile": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1972,7 +2046,7 @@
       "type": "chat"
     },
     "meta-llama/llama-prompt-guard-2-22m": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2017,10 +2091,19 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.03,
+          "output": 0.03,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "chat"
     },
     "meta-llama/llama-prompt-guard-2-86m": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2057,6 +2140,63 @@
       ],
       "id": "meta-llama/llama-prompt-guard-2-86m",
       "max_output_tokens": 512,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.04,
+          "output": 0.04,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "minimaxai/minimax-m2.7": {
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 131072,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "minimaxai/minimax-m2.7",
+      "max_output_tokens": 131072,
       "modality": {
         "input": [
           "text"
@@ -2322,12 +2462,12 @@
       "type": "chat"
     },
     "openai/gpt-oss-120b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 32768,
+          "maxValue": 65536,
           "minValue": 1
         },
         {
@@ -2449,7 +2589,7 @@
         "stream"
       ],
       "id": "openai/gpt-oss-120b",
-      "max_output_tokens": 32768,
+      "max_output_tokens": 65536,
       "modality": {
         "input": [
           "text"
@@ -2470,12 +2610,12 @@
       "type": "chat"
     },
     "openai/gpt-oss-20b": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 32768,
+          "maxValue": 65536,
           "minValue": 1
         },
         {
@@ -2597,7 +2737,7 @@
         "stream"
       ],
       "id": "openai/gpt-oss-20b",
-      "max_output_tokens": 32768,
+      "max_output_tokens": 65536,
       "modality": {
         "input": [
           "text"
@@ -2830,8 +2970,65 @@
       },
       "type": "chat"
     },
+    "qwen/qwen3.6-27b": {
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 16384,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "qwen/qwen3.6-27b",
+      "max_output_tokens": 16384,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.6,
+          "output": 3,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "whisper-large-v3": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2877,10 +3074,22 @@
           "audio"
         ]
       },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "audio_hour": {
+              "price": 1110
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "type": "pay_as_you_go"
+      },
       "type": "audio"
     },
     "whisper-large-v3-turbo": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-08-25T06:54:09.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2925,6 +3134,18 @@
         "output": [
           "audio"
         ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "audio_hour": {
+              "price": 400
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "type": "pay_as_you_go"
       },
       "type": "audio"
     }

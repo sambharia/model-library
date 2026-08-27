@@ -9779,9 +9779,9 @@
         },
         "currency": "USD",
         "tokens": {
-          "cached_input": 0.15,
-          "input": 1.5,
-          "output": 7.5,
+          "cached_input": 0.075,
+          "input": 0.75,
+          "output": 3.75,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -9801,9 +9801,9 @@
           },
           "currency": "USD",
           "tokens": {
-            "cached_input": 0.15,
-            "input": 1.5,
-            "output": 7.5,
+            "cached_input": 0.075,
+            "input": 0.75,
+            "output": 3.75,
             "unit": "USD_per_million_tokens"
           },
           "type": "pay_as_you_go"
@@ -9988,9 +9988,9 @@
         },
         "currency": "USD",
         "tokens": {
-          "cached_input": 0.15,
-          "input": 1.5,
-          "output": 7.5,
+          "cached_input": 0.075,
+          "input": 0.75,
+          "output": 3.75,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10010,9 +10010,9 @@
           },
           "currency": "USD",
           "tokens": {
-            "cached_input": 0.15,
-            "input": 1.5,
-            "output": 7.5,
+            "cached_input": 0.075,
+            "input": 0.75,
+            "output": 3.75,
             "unit": "USD_per_million_tokens"
           },
           "type": "pay_as_you_go"

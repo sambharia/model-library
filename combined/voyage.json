@@ -122,8 +122,50 @@
   },
   "id": "voyage",
   "models": {
+    "rerank-1": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
+      "id": "rerank-1",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.05,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "rerank-2": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
+      "id": "rerank-2",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.05,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "rerank-2-lite": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
+      "id": "rerank-2-lite",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "rerank-2.5": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -248,10 +290,18 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.05,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "rerank"
     },
     "rerank-2.5-lite": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -376,10 +426,46 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "rerank"
     },
+    "rerank-lite-1": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
+      "id": "rerank-lite-1",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "voyage-3": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
+      "id": "voyage-3",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.06,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "voyage-3-large": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -504,10 +590,32 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.18,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
+    "voyage-3-lite": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
+      "id": "voyage-3-lite",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "voyage-3.5": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -632,10 +740,18 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.06,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
     "voyage-3.5-lite": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -760,10 +876,18 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
     "voyage-4": {
-      "_lastUpdated": "2026-02-09T10:19:10.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -888,10 +1012,18 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.06,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
     "voyage-4-large": {
-      "_lastUpdated": "2026-02-09T10:19:10.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1016,10 +1148,18 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
     "voyage-4-lite": {
-      "_lastUpdated": "2026-02-09T10:19:10.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1144,10 +1284,18 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
     "voyage-code-3": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1272,10 +1420,18 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.18,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
     "voyage-context-3": {
-      "_lastUpdated": "2026-02-09T10:19:10.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1400,10 +1556,18 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.18,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
     "voyage-finance-2": {
-      "_lastUpdated": "2026-02-17T11:53:21.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1528,10 +1692,18 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
     },
     "voyage-law-2": {
-      "_lastUpdated": "2026-02-09T10:19:10.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1656,7 +1828,29 @@
           "embedding"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "embedding"
+    },
+    "voyage-multilingual-2": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
+      "id": "voyage-multilingual-2",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     },
     "voyage-multimodal-3.5": {
       "_lastUpdated": "2026-02-09T10:19:10.000Z",

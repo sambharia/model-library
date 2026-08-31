@@ -289,7 +289,7 @@
       "type": "chat"
     },
     "amazon.nova-2-lite-v1:0": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -339,6 +339,16 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.075,
+          "input": 0.3,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "chat"
     },
@@ -7476,7 +7486,7 @@
       "type": "chat"
     },
     "eu.amazon.nova-2-lite-v1:0": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -7526,6 +7536,16 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.075,
+          "input": 0.3,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "chat"
     },
@@ -11392,6 +11412,16 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.075,
+          "input": 0.3,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "chat"
     },
     "global.anthropic.claude-fable-5": {
@@ -13732,7 +13762,7 @@
       "type": "chat"
     },
     "jp.amazon.nova-2-lite-v1:0": {
-      "_lastUpdated": "2026-02-06T09:00:37.000Z",
+      "_lastUpdated": "2026-08-31T07:02:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -13782,6 +13812,16 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.075,
+          "input": 0.3,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "chat"
     },
@@ -19311,6 +19351,16 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.075,
+          "input": 0.3,
+          "output": 2.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "chat"
     },

@@ -4131,6 +4131,158 @@
       },
       "type": "chat"
     },
+    "claude-fable-5-1": {
+      "_lastUpdated": "2026-09-02T03:49:35.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "type": "adaptive"
+          },
+          "key": "thinking",
+          "properties": {
+            "display": {
+              "enum": [
+                "omitted",
+                "summarized"
+              ],
+              "type": "string"
+            },
+            "type": {
+              "enum": [
+                "adaptive"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": {
+            "effort": "high"
+          },
+          "key": "output_config",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "claude-fable-5-1",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.2
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 12.5,
+          "cached_input": 0.25,
+          "input": 10,
+          "output": 50,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "claude-haiku-4-5-20251001": {
       "_lastUpdated": "2026-06-25T14:21:56.000Z",
       "_parameters": [

@@ -1345,7 +1345,7 @@
       "type": "image"
     },
     "fal-ai/nano-banana-pro": {
-      "_lastUpdated": "2026-05-13T13:40:37.000Z",
+      "_lastUpdated": "2026-09-02T12:44:42.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1388,7 +1388,7 @@
           "prices": {
             "default": {
               "default": {
-                "price": 398
+                "price": 1500
               }
             }
           }
@@ -2733,7 +2733,7 @@
       "type": "chat"
     },
     "openai/gpt-image-2": {
-      "_lastUpdated": "2026-05-13T13:40:37.000Z",
+      "_lastUpdated": "2026-09-03T05:51:33.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2775,8 +2775,95 @@
         "images": {
           "prices": {
             "default": {
+              "1024x1024": {
+                "price": 2110
+              },
+              "1024x1536": {
+                "price": 1650
+              },
+              "1024x768": {
+                "price": 1450
+              },
+              "1920x1080": {
+                "price": 1580
+              },
+              "2560x1440": {
+                "price": 2220
+              },
+              "3840x2160": {
+                "price": 4010
+              },
               "default": {
+                "price": 2110
+              }
+            },
+            "high": {
+              "1024x1024": {
+                "price": 2110
+              },
+              "1024x1536": {
+                "price": 1650
+              },
+              "1024x768": {
+                "price": 1450
+              },
+              "1920x1080": {
+                "price": 1580
+              },
+              "2560x1440": {
+                "price": 2220
+              },
+              "3840x2160": {
+                "price": 4010
+              },
+              "default": {
+                "price": 2110
+              }
+            },
+            "low": {
+              "1024x1024": {
+                "price": 60
+              },
+              "1024x1536": {
+                "price": 50
+              },
+              "1024x768": {
+                "price": 50
+              },
+              "1920x1080": {
+                "price": 50
+              },
+              "2560x1440": {
+                "price": 70
+              },
+              "3840x2160": {
+                "price": 120
+              },
+              "default": {
+                "price": 60
+              }
+            },
+            "medium": {
+              "1024x1024": {
+                "price": 530
+              },
+              "1024x1536": {
+                "price": 420
+              },
+              "1024x768": {
+                "price": 370
+              },
+              "1920x1080": {
                 "price": 400
+              },
+              "2560x1440": {
+                "price": 560
+              },
+              "3840x2160": {
+                "price": 1010
+              },
+              "default": {
+                "price": 530
               }
             }
           }

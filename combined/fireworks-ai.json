@@ -1183,7 +1183,7 @@
       "type": "chat"
     },
     "accounts/fireworks/models/deepseek-v4-flash-0731": {
-      "_lastUpdated": "2026-09-02T08:01:51.000Z",
+      "_lastUpdated": "2026-08-26T08:12:31.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -11981,6 +11981,38 @@
           "cached_input": 0.3,
           "input": 2,
           "output": 8,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "glm-5p3": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-03T18:35:33.000Z",
+      "id": "glm-5p3",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.26,
+          "input": 1.4,
+          "output": 4.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "glm-5p3-flash": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-03T18:35:33.000Z",
+      "id": "glm-5p3-flash",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.03,
+          "input": 0.15,
+          "output": 0.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

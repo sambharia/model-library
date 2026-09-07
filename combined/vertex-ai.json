@@ -17363,6 +17363,20 @@
       },
       "type": "chat"
     },
+    "mistral-ocr-2505": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-07T09:14:55.000Z",
+      "id": "mistral-ocr-2505",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 500,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "mistral-small-2503": {
       "_lastUpdated": "2026-09-02T04:05:35.000Z",
       "_parameters": [
@@ -17465,6 +17479,98 @@
         "type": "pay_as_you_go"
       },
       "type": "chat"
+    },
+    "mistralai.mistral-ocr-2505": {
+      "_lastUpdated": "2026-09-07T09:37:53.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "mistralai.mistral-ocr-2505",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "ocr"
     },
     "multimodalembedding": {
       "_lastUpdated": "2026-09-02T04:05:35.000Z",

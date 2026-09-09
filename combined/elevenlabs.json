@@ -1,0 +1,151 @@
+{
+  "_defaults": null,
+  "id": "elevenlabs",
+  "models": {
+    "eleven_flash_v2_5": {
+      "_lastUpdated": "2026-09-09T16:58:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "eleven_flash_v2_5",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 50,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "eleven_multilingual_v2": {
+      "_lastUpdated": "2026-09-09T16:58:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "eleven_multilingual_v2",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 100,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "eleven_turbo_v2_5": {
+      "_lastUpdated": "2026-09-09T16:58:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "eleven_turbo_v2_5",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 50,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "eleven_v3": {
+      "_lastUpdated": "2026-09-09T16:58:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "eleven_v3",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 100,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "scribe_v1": {
+      "_lastUpdated": "2026-09-09T16:58:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "scribe_v1",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "output": 61.1111,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "audio"
+    },
+    "speech-to-text": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-09T16:58:38.000Z",
+      "id": "speech-to-text",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "output": 61.1111,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "text-to-speech": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-09T16:58:38.000Z",
+      "id": "text-to-speech",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 100,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    }
+  },
+  "name": "elevenlabs",
+  "schema_version": "2.0"
+}

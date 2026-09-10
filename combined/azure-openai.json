@@ -16848,7 +16848,7 @@
       "type": "text"
     },
     "gpt-5.4": {
-      "_lastUpdated": "2026-04-16T20:36:16.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17042,7 +17042,7 @@
       "type": "chat"
     },
     "gpt-5.4-2026-03-05": {
-      "_lastUpdated": "2026-04-16T20:36:16.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17236,7 +17236,7 @@
       "type": "chat"
     },
     "gpt-5.4-mini": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17436,7 +17436,7 @@
       "type": "chat"
     },
     "gpt-5.4-mini-2026-03-17": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17636,7 +17636,7 @@
       "type": "chat"
     },
     "gpt-5.4-nano": {
-      "_lastUpdated": "2026-04-09T07:15:11.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -17836,7 +17836,7 @@
       "type": "chat"
     },
     "gpt-5.4-nano-2026-03-17": {
-      "_lastUpdated": "2026-04-23T18:32:37.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18036,7 +18036,7 @@
       "type": "chat"
     },
     "gpt-5.4-pro": {
-      "_lastUpdated": "2026-05-13T13:43:06.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18197,7 +18197,7 @@
       "type": "responses"
     },
     "gpt-5.5": {
-      "_lastUpdated": "2026-07-15T07:26:59.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18597,7 +18597,7 @@
       "type": "chat"
     },
     "gpt-5.5-pro": {
-      "_lastUpdated": "2026-05-28T15:45:35.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -18798,7 +18798,7 @@
       "type": "responses"
     },
     "gpt-5.6": {
-      "_lastUpdated": "2026-07-22T06:50:32.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19000,7 +19000,7 @@
     },
     "gpt-5.6-2026-07-09": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-07-29T09:11:29.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "id": "gpt-5.6-2026-07-09",
       "pricing": {
         "additional": {
@@ -19030,7 +19030,7 @@
       "type": "chat"
     },
     "gpt-5.6-luna": {
-      "_lastUpdated": "2026-09-04T04:17:18.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19232,7 +19232,7 @@
     },
     "gpt-5.6-luna-2026-07-09": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-08-07T13:51:36.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "id": "gpt-5.6-luna-2026-07-09",
       "pricing": {
         "additional": {
@@ -19262,7 +19262,7 @@
       "type": "chat"
     },
     "gpt-5.6-sol": {
-      "_lastUpdated": "2026-07-10T05:27:49.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19464,7 +19464,7 @@
     },
     "gpt-5.6-sol-2026-07-09": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-07-29T09:11:29.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "id": "gpt-5.6-sol-2026-07-09",
       "pricing": {
         "additional": {
@@ -19494,7 +19494,7 @@
       "type": "chat"
     },
     "gpt-5.6-terra": {
-      "_lastUpdated": "2026-08-07T13:51:36.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19696,7 +19696,7 @@
     },
     "gpt-5.6-terra-2026-07-09": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-04T04:17:18.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "id": "gpt-5.6-terra-2026-07-09",
       "pricing": {
         "additional": {
@@ -19726,7 +19726,7 @@
       "type": "chat"
     },
     "gpt-6-astra": {
-      "_lastUpdated": "2026-09-04T05:09:10.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -19922,7 +19922,7 @@
     },
     "gpt-6-astra-2026-09-03": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-04T05:09:10.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "id": "gpt-6-astra-2026-09-03",
       "pricing": {
         "additional": {
@@ -28613,7 +28613,7 @@
       "type": "moderation"
     },
     "sora-2": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -28763,7 +28763,7 @@
       "type": "text"
     },
     "sora-2-pro": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-09-09T11:35:31.000Z",
       "_parameters": [
         {
           "defaultValue": 128,

@@ -499,6 +499,67 @@
       },
       "type": "chat"
     },
+    "@cf/deepseek-ai/deepseek-v4-pro-0813": {
+      "_lastUpdated": "2026-09-11T00:14:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 1048576,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "@cf/deepseek-ai/deepseek-v4-pro-0813",
+      "max_output_tokens": 1048576,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.044,
+          "input": 1.32,
+          "output": 3.96,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "@cf/google/gemma-3-12b-it": {
       "_lastUpdated": "2026-07-14T01:03:17.000Z",
       "_parameters": [
@@ -1871,12 +1932,12 @@
       "type": "chat"
     },
     "@cf/moonshotai/kimi-k2.7-code": {
-      "_lastUpdated": "2026-07-14T01:03:17.000Z",
+      "_lastUpdated": "2026-09-11T00:14:12.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 4096,
+          "maxValue": 262144,
           "minValue": 1
         },
         {
@@ -1906,8 +1967,11 @@
           "type": "boolean"
         }
       ],
+      "features": {
+        "function_calling": true
+      },
       "id": "@cf/moonshotai/kimi-k2.7-code",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 262144,
       "modality": {
         "input": [
           "text"
@@ -2551,6 +2615,128 @@
           "cached_input": 0.26,
           "input": 1.4,
           "output": 4.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/zai-org/glm-5.3": {
+      "_lastUpdated": "2026-09-11T00:14:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 1048576,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "@cf/zai-org/glm-5.3",
+      "max_output_tokens": 1048576,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.26,
+          "input": 1.4,
+          "output": 4.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "@cf/zai-org/glm-5.3-flash": {
+      "_lastUpdated": "2026-09-11T00:14:12.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 1048576,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "@cf/zai-org/glm-5.3-flash",
+      "max_output_tokens": 1048576,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.03,
+          "input": 0.15,
+          "output": 0.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

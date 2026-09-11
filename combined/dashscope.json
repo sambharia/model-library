@@ -9404,7 +9404,7 @@
       "type": "chat"
     },
     "qwen3-asr-flash": {
-      "_lastUpdated": "2026-01-27T14:39:02.000Z",
+      "_lastUpdated": "2026-09-08T15:25:02.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -9495,8 +9495,7 @@
       "pricing": {
         "currency": "USD",
         "tokens": {
-          "input": 0.035,
-          "output": 0.035,
+          "audio_input": 1.4,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

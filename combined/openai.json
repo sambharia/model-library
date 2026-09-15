@@ -21211,7 +21211,7 @@
       "type": "text"
     },
     "gpt-image-2-2026-04-21": {
-      "_lastUpdated": "2026-04-22T13:27:19.000Z",
+      "_lastUpdated": "2026-09-15T03:51:04.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -21409,6 +21409,674 @@
         "type": "pay_as_you_go"
       },
       "type": "text"
+    },
+    "gpt-image-2.5-flare": {
+      "_lastUpdated": "2026-09-15T03:51:04.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gpt-image-2.5-flare",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "1024x1024": {
+                "price": 2107.2
+              },
+              "1024x1536": {
+                "price": 1646.4
+              },
+              "1536x1024": {
+                "price": 1646.4
+              },
+              "default": {
+                "price": 2107.2
+              }
+            },
+            "high": {
+              "1024x1024": {
+                "price": 526.8
+              },
+              "1024x1536": {
+                "price": 411.6
+              },
+              "1536x1024": {
+                "price": 411.6
+              },
+              "default": {
+                "price": 526.8
+              }
+            },
+            "low": {
+              "1024x1024": {
+                "price": 58.8
+              },
+              "1024x1536": {
+                "price": 47.4
+              },
+              "1536x1024": {
+                "price": 47.4
+              },
+              "default": {
+                "price": 58.8
+              }
+            },
+            "max": {
+              "1024x1024": {
+                "price": 2107.2
+              },
+              "1024x1536": {
+                "price": 1646.4
+              },
+              "1536x1024": {
+                "price": 1646.4
+              },
+              "default": {
+                "price": 2107.2
+              }
+            },
+            "medium": {
+              "1024x1024": {
+                "price": 131.7
+              },
+              "1024x1536": {
+                "price": 102.9
+              },
+              "1536x1024": {
+                "price": 102.9
+              },
+              "default": {
+                "price": 131.7
+              }
+            },
+            "xhigh": {
+              "1024x1024": {
+                "price": 936.6
+              },
+              "1024x1536": {
+                "price": 737.7
+              },
+              "1536x1024": {
+                "price": 737.7
+              },
+              "default": {
+                "price": 936.6
+              }
+            }
+          }
+        },
+        "tokens": {
+          "cached_image_input": 2,
+          "cached_input": 1.25,
+          "image_input": 8,
+          "input": 5,
+          "output": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "text"
+    },
+    "gpt-image-2.5-flare-2026-09-08": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-15T03:51:04.000Z",
+      "id": "gpt-image-2.5-flare-2026-09-08",
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "1024x1024": {
+                "price": 2107.2
+              },
+              "1024x1536": {
+                "price": 1646.4
+              },
+              "1536x1024": {
+                "price": 1646.4
+              },
+              "default": {
+                "price": 2107.2
+              }
+            },
+            "high": {
+              "1024x1024": {
+                "price": 526.8
+              },
+              "1024x1536": {
+                "price": 411.6
+              },
+              "1536x1024": {
+                "price": 411.6
+              },
+              "default": {
+                "price": 526.8
+              }
+            },
+            "low": {
+              "1024x1024": {
+                "price": 58.8
+              },
+              "1024x1536": {
+                "price": 47.4
+              },
+              "1536x1024": {
+                "price": 47.4
+              },
+              "default": {
+                "price": 58.8
+              }
+            },
+            "max": {
+              "1024x1024": {
+                "price": 2107.2
+              },
+              "1024x1536": {
+                "price": 1646.4
+              },
+              "1536x1024": {
+                "price": 1646.4
+              },
+              "default": {
+                "price": 2107.2
+              }
+            },
+            "medium": {
+              "1024x1024": {
+                "price": 131.7
+              },
+              "1024x1536": {
+                "price": 102.9
+              },
+              "1536x1024": {
+                "price": 102.9
+              },
+              "default": {
+                "price": 131.7
+              }
+            },
+            "xhigh": {
+              "1024x1024": {
+                "price": 936.6
+              },
+              "1024x1536": {
+                "price": 737.7
+              },
+              "1536x1024": {
+                "price": 737.7
+              },
+              "default": {
+                "price": 936.6
+              }
+            }
+          }
+        },
+        "tokens": {
+          "cached_image_input": 2,
+          "cached_input": 1.25,
+          "image_input": 8,
+          "input": 5,
+          "output": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "gpt-image-2.5-sunburst": {
+      "_lastUpdated": "2026-09-15T03:51:04.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "gpt-image-2.5-sunburst",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "1024x1024": {
+                "price": 2107.2
+              },
+              "1024x1536": {
+                "price": 1646.4
+              },
+              "1536x1024": {
+                "price": 1646.4
+              },
+              "default": {
+                "price": 2107.2
+              }
+            },
+            "high": {
+              "1024x1024": {
+                "price": 526.8
+              },
+              "1024x1536": {
+                "price": 411.6
+              },
+              "1536x1024": {
+                "price": 411.6
+              },
+              "default": {
+                "price": 526.8
+              }
+            },
+            "low": {
+              "1024x1024": {
+                "price": 58.8
+              },
+              "1024x1536": {
+                "price": 47.4
+              },
+              "1536x1024": {
+                "price": 47.4
+              },
+              "default": {
+                "price": 58.8
+              }
+            },
+            "max": {
+              "1024x1024": {
+                "price": 2107.2
+              },
+              "1024x1536": {
+                "price": 1646.4
+              },
+              "1536x1024": {
+                "price": 1646.4
+              },
+              "default": {
+                "price": 2107.2
+              }
+            },
+            "medium": {
+              "1024x1024": {
+                "price": 131.7
+              },
+              "1024x1536": {
+                "price": 102.9
+              },
+              "1536x1024": {
+                "price": 102.9
+              },
+              "default": {
+                "price": 131.7
+              }
+            },
+            "xhigh": {
+              "1024x1024": {
+                "price": 936.6
+              },
+              "1024x1536": {
+                "price": 737.7
+              },
+              "1536x1024": {
+                "price": 737.7
+              },
+              "default": {
+                "price": 936.6
+              }
+            }
+          }
+        },
+        "tokens": {
+          "cached_image_input": 2,
+          "cached_input": 1.25,
+          "image_input": 8,
+          "input": 5,
+          "output": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "text"
+    },
+    "gpt-image-2.5-sunburst-2026-09-08": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-15T03:51:04.000Z",
+      "id": "gpt-image-2.5-sunburst-2026-09-08",
+      "pricing": {
+        "currency": "USD",
+        "images": {
+          "prices": {
+            "default": {
+              "1024x1024": {
+                "price": 2107.2
+              },
+              "1024x1536": {
+                "price": 1646.4
+              },
+              "1536x1024": {
+                "price": 1646.4
+              },
+              "default": {
+                "price": 2107.2
+              }
+            },
+            "high": {
+              "1024x1024": {
+                "price": 526.8
+              },
+              "1024x1536": {
+                "price": 411.6
+              },
+              "1536x1024": {
+                "price": 411.6
+              },
+              "default": {
+                "price": 526.8
+              }
+            },
+            "low": {
+              "1024x1024": {
+                "price": 58.8
+              },
+              "1024x1536": {
+                "price": 47.4
+              },
+              "1536x1024": {
+                "price": 47.4
+              },
+              "default": {
+                "price": 58.8
+              }
+            },
+            "max": {
+              "1024x1024": {
+                "price": 2107.2
+              },
+              "1024x1536": {
+                "price": 1646.4
+              },
+              "1536x1024": {
+                "price": 1646.4
+              },
+              "default": {
+                "price": 2107.2
+              }
+            },
+            "medium": {
+              "1024x1024": {
+                "price": 131.7
+              },
+              "1024x1536": {
+                "price": 102.9
+              },
+              "1536x1024": {
+                "price": 102.9
+              },
+              "default": {
+                "price": 131.7
+              }
+            },
+            "xhigh": {
+              "1024x1024": {
+                "price": 936.6
+              },
+              "1024x1536": {
+                "price": 737.7
+              },
+              "1536x1024": {
+                "price": 737.7
+              },
+              "default": {
+                "price": 936.6
+              }
+            }
+          }
+        },
+        "tokens": {
+          "cached_image_input": 2,
+          "cached_input": 1.25,
+          "image_input": 8,
+          "input": 5,
+          "output": 30,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
     },
     "gpt-realtime": {
       "_lastUpdated": "2025-12-26T09:07:03.000Z",

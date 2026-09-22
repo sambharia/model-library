@@ -2354,6 +2354,122 @@
       },
       "type": "chat"
     },
+    "openai/gpt-6-luna": {
+      "_lastUpdated": "2026-09-22T21:55:43.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "openai/gpt-6-luna",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.01,
+          "input": 0.1,
+          "output": 0.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "openai/gpt-6-sol": {
+      "_lastUpdated": "2026-09-22T21:55:43.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "openai/gpt-6-sol",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 2,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "openai/o3": {
       "_lastUpdated": "2026-07-20T14:18:37.000Z",
       "_parameters": [

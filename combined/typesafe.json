@@ -1,0 +1,54 @@
+{
+  "_defaults": null,
+  "id": "typesafe",
+  "models": {
+    "jev-1.13.0": {
+      "_lastUpdated": "2026-09-23T17:35:12.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "jev-1.13.0",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.00042,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "decision"
+    },
+    "jev-latest": {
+      "_lastUpdated": "2026-09-23T17:35:12.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "jev-latest",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.00042,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "decision"
+    }
+  },
+  "name": "typesafe",
+  "schema_version": "2.0"
+}

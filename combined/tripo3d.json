@@ -1,0 +1,218 @@
+{
+  "_defaults": null,
+  "id": "tripo3d",
+  "models": {
+    "animate_prerigcheck": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "animate_prerigcheck",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "animate_retarget": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "animate_retarget",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "animate_rig": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "animate_rig",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "convert_model": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "convert_model",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "edit_multiview_image": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "edit_multiview_image",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "generate_image": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "generate_image",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "generate_multiview_image": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "generate_multiview_image",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "highpoly_to_lowpoly": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "highpoly_to_lowpoly",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "image_to_model": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "image_to_model",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "mesh_completion": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "mesh_completion",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "mesh_segmentation": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "mesh_segmentation",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "multiview_to_model": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "multiview_to_model",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "stylize_model": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "stylize_model",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "text_to_image": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "text_to_image",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "text_to_model": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "id": "text_to_model",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    }
+  },
+  "name": "tripo3d",
+  "schema_version": "2.0"
+}

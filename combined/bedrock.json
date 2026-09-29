@@ -15264,7 +15264,7 @@
       "type": "text"
     },
     "global.xai.grok-4.6": {
-      "_lastUpdated": "2026-09-09T04:18:23.000Z",
+      "_lastUpdated": "2026-09-29T02:01:24.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -15326,6 +15326,90 @@
         }
       ],
       "id": "global.xai.grok-4.6",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.5,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "global.xai.grok-4.7": {
+      "_lastUpdated": "2026-09-29T02:01:24.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "effort": "high"
+          },
+          "key": "reasoning",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        }
+      ],
+      "id": "global.xai.grok-4.7",
       "max_output_tokens": 32768,
       "modality": {
         "input": [
@@ -28133,6 +28217,90 @@
         }
       ],
       "id": "us.xai.grok-4.6",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.55,
+          "input": 2.2,
+          "output": 6.6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "us.xai.grok-4.7": {
+      "_lastUpdated": "2026-09-29T02:01:24.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "effort": "high"
+          },
+          "key": "reasoning",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        }
+      ],
+      "id": "us.xai.grok-4.7",
       "max_output_tokens": 32768,
       "modality": {
         "input": [

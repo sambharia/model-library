@@ -2468,7 +2468,7 @@
       "type": "chat"
     },
     "anthropic.claude-fable-5": {
-      "_lastUpdated": "2026-06-16T09:51:31.000Z",
+      "_lastUpdated": "2026-09-02T04:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -4941,7 +4941,7 @@
       "type": "chat"
     },
     "anthropic.claude-sonnet-5": {
-      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_lastUpdated": "2026-08-19T17:23:38.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -5255,7 +5255,7 @@
     },
     "anthropic.claude-sonnet-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_lastUpdated": "2026-09-02T03:49:35.000Z",
       "id": "anthropic.claude-sonnet-5-v1",
       "pricing": {
         "additional": {
@@ -8742,7 +8742,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-fable-5": {
-      "_lastUpdated": "2026-06-16T09:51:31.000Z",
+      "_lastUpdated": "2026-09-02T04:42:10.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -9064,7 +9064,7 @@
     },
     "eu.anthropic.claude-fable-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-06-09T18:20:44.000Z",
+      "_lastUpdated": "2026-08-21T13:20:59.000Z",
       "id": "eu.anthropic.claude-fable-5-v1",
       "pricing": {
         "additional": {
@@ -11249,7 +11249,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-sonnet-5": {
-      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_lastUpdated": "2026-09-02T03:49:35.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -13562,7 +13562,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-opus-5": {
-      "_lastUpdated": "2026-09-22T17:41:00.000Z",
+      "_lastUpdated": "2026-07-24T18:11:34.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -13706,7 +13706,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-opus-5-5": {
-      "_lastUpdated": "2026-09-28T20:15:58.000Z",
+      "_lastUpdated": "2026-09-22T17:41:00.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -14327,7 +14327,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-sonnet-5": {
-      "_lastUpdated": "2026-08-03T18:26:08.000Z",
+      "_lastUpdated": "2026-09-02T03:49:35.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -14796,7 +14796,7 @@
       "type": "chat"
     },
     "global.openai.gpt-5.6-luna": {
-      "_lastUpdated": "2026-08-21T14:53:47.000Z",
+      "_lastUpdated": "2026-08-19T08:34:50.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -15141,7 +15141,7 @@
       "type": "chat"
     },
     "global.openai.gpt-6-sol": {
-      "_lastUpdated": "2026-09-22T21:55:43.000Z",
+      "_lastUpdated": "2026-09-30T06:11:07.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -15264,7 +15264,7 @@
       "type": "text"
     },
     "global.xai.grok-4.6": {
-      "_lastUpdated": "2026-09-29T02:01:24.000Z",
+      "_lastUpdated": "2026-09-09T04:18:23.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -15594,7 +15594,7 @@
       "type": "chat"
     },
     "in.openai.gpt-5.6-luna": {
-      "_lastUpdated": "2026-08-19T08:34:50.000Z",
+      "_lastUpdated": "2026-08-21T13:20:59.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -18076,7 +18076,7 @@
       "type": "chat"
     },
     "moonshotai.kimi-k2.5": {
-      "_lastUpdated": "2026-09-20T10:37:41.000Z",
+      "_lastUpdated": "2026-06-05T15:48:49.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -18450,7 +18450,7 @@
       "type": "chat"
     },
     "openai.gpt-6-sol": {
-      "_lastUpdated": "2026-09-22T21:55:43.000Z",
+      "_lastUpdated": "2026-09-30T06:11:07.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -21399,7 +21399,7 @@
       "type": "chat"
     },
     "us-gov.anthropic.claude-sonnet-5": {
-      "_lastUpdated": "2026-08-03T18:27:22.000Z",
+      "_lastUpdated": "2026-09-02T03:49:35.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -22682,7 +22682,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-fable-5": {
-      "_lastUpdated": "2026-06-16T09:51:31.000Z",
+      "_lastUpdated": "2026-09-02T03:49:35.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -23004,7 +23004,7 @@
     },
     "us.anthropic.claude-fable-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-06-09T18:20:44.000Z",
+      "_lastUpdated": "2026-08-19T17:23:38.000Z",
       "id": "us.anthropic.claude-fable-5-v1",
       "pricing": {
         "additional": {
@@ -25189,7 +25189,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-sonnet-5": {
-      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_lastUpdated": "2026-09-02T03:49:35.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -25503,7 +25503,7 @@
     },
     "us.anthropic.claude-sonnet-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_lastUpdated": "2026-09-02T03:49:35.000Z",
       "id": "us.anthropic.claude-sonnet-5-v1",
       "pricing": {
         "additional": {
@@ -26759,7 +26759,7 @@
       "type": "chat"
     },
     "us.openai.gpt-6-sol": {
-      "_lastUpdated": "2026-09-22T21:55:43.000Z",
+      "_lastUpdated": "2026-09-30T06:11:07.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -26819,6 +26819,75 @@
         "tokens": {
           "cache_write": 2.75,
           "cached_input": 0.22,
+          "input": 2.2,
+          "output": 11,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "us.openai.gpt-6.1-sol": {
+      "_lastUpdated": "2026-09-30T06:17:05.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "_remove_parameters": [
+        "temperature",
+        "top_p"
+      ],
+      "id": "us.openai.gpt-6.1-sol",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 2.75,
+          "cached_input": 0.11,
           "input": 2.2,
           "output": 11,
           "unit": "USD_per_million_tokens"

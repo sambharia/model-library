@@ -386,7 +386,7 @@
       "type": "chat"
     },
     "deepseek-r1": {
-      "_lastUpdated": "2026-04-06T11:11:36.000Z",
+      "_lastUpdated": "2026-09-28T10:37:54.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2787,6 +2787,107 @@
       },
       "type": "chat"
     },
+    "qwen-image-3.0-pro": {
+      "_lastUpdated": "2026-09-28T10:37:54.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "qwen-image-3.0-pro",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 3000,
+          "output": 40000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "image"
+    },
     "qwen-long-2025-01-25": {
       "_lastUpdated": "2026-04-01T12:51:41.000Z",
       "_parameters": [
@@ -4089,7 +4190,7 @@
       "type": "chat"
     },
     "qwen-mt-lite": {
-      "_lastUpdated": "2026-04-06T10:15:44.000Z",
+      "_lastUpdated": "2026-09-28T10:37:54.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -14581,6 +14682,106 @@
         "type": "pay_as_you_go"
       },
       "type": "chat"
+    },
+    "wan2.7-image-pro": {
+      "_lastUpdated": "2026-09-28T10:37:54.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "wan2.7-image-pro",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "output": 75000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "image"
     }
   },
   "name": "dashscope",

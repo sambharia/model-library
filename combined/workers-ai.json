@@ -329,7 +329,7 @@
       "type": "embedding"
     },
     "@cf/baai/bge-reranker-base": {
-      "_lastUpdated": "2026-07-14T01:03:17.000Z",
+      "_lastUpdated": "2026-09-30T22:24:24.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

@@ -3986,6 +3986,22 @@
       },
       "type": "chat"
     },
+    "accounts/fireworks/models/kimi-k3-datazone": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-10-01T21:34:26.000Z",
+      "id": "accounts/fireworks/models/kimi-k3-datazone",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.33,
+          "input": 3.3,
+          "output": 16.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "accounts/fireworks/models/minimax-m2p5": {
       "_config_source": "pricing_only",
       "_lastUpdated": "2026-08-11T16:25:21.000Z",

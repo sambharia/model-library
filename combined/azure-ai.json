@@ -1166,6 +1166,73 @@
       },
       "type": "chat"
     },
+    "DeepSeek-V4.1-Flash": {
+      "_lastUpdated": "2026-10-05T19:11:31.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "DeepSeek-V4.1-Flash",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.006,
+          "input": 0.3,
+          "output": 1.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "Kimi-K2-Thinking": {
       "_lastUpdated": "2026-06-25T14:21:56.000Z",
       "_parameters": [
@@ -3884,6 +3951,73 @@
           "cached_input": 0.14,
           "input": 1.74,
           "output": 3.48,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "accounts/fireworks/models/deepseek-v4.1-flash": {
+      "_lastUpdated": "2026-10-05T19:11:31.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 1048576,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "accounts/fireworks/models/deepseek-v4.1-flash",
+      "max_output_tokens": 1048576,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.007,
+          "input": 0.37,
+          "output": 1.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -7516,6 +7650,22 @@
           "cached_input": 0.145,
           "input": 1.74,
           "output": 3.48,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "deepseek-v4.1-flash": {
+      "_config_source": "pricing_only",
+      "_lastUpdated": "2026-10-05T19:11:31.000Z",
+      "id": "deepseek-v4.1-flash",
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.006,
+          "input": 0.3,
+          "output": 1.2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

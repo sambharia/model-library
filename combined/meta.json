@@ -1,0 +1,341 @@
+{
+  "_defaults": {
+    "message_roles": [
+      "system",
+      "developer",
+      "user",
+      "assistant",
+      "tool"
+    ],
+    "parameters": [
+      {
+        "defaultValue": 4096,
+        "key": "max_tokens",
+        "maxValue": 1048576,
+        "minValue": 1
+      },
+      {
+        "defaultValue": 1,
+        "key": "temperature",
+        "maxValue": 2,
+        "minValue": 0
+      },
+      {
+        "defaultValue": 1,
+        "key": "top_p",
+        "maxValue": 1,
+        "minValue": 0
+      },
+      {
+        "defaultValue": true,
+        "key": "stream",
+        "type": "boolean"
+      }
+    ]
+  },
+  "id": "meta",
+  "models": {
+    "muse-spark-1.1": {
+      "_lastUpdated": "2026-08-14T08:46:16.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 4096,
+          "key": "max_tokens",
+          "maxValue": 1048576,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "muse-spark-1.1",
+      "max_output_tokens": 1048576,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "web_search": {
+              "price": 0.25
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.15,
+          "input": 1.25,
+          "output": 4.25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "muse-spark-1.2": {
+      "_lastUpdated": "2026-08-14T08:46:16.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 4096,
+          "key": "max_tokens",
+          "maxValue": 1048576,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "muse-spark-1.2",
+      "max_output_tokens": 1048576,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "web_search": {
+              "price": 0.25
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.15,
+          "input": 1.25,
+          "output": 4.25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "muse-spark-1.2-contributor": {
+      "_lastUpdated": "2026-09-03T06:22:25.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 4096,
+          "key": "max_tokens",
+          "maxValue": 1048576,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "muse-spark-1.2-contributor",
+      "max_output_tokens": 1048576,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "web_search": {
+              "price": 0.25
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.002,
+          "input": 0.1,
+          "output": 0.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "muse-spark-1.3": {
+      "_lastUpdated": "2026-09-03T06:22:25.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 4096,
+          "key": "max_tokens",
+          "maxValue": 1048576,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "muse-spark-1.3",
+      "max_output_tokens": 1048576,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "web_search": {
+              "price": 0.25
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.15,
+          "input": 1.25,
+          "output": 4.25,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "muse-spark-1.3-contributor": {
+      "_lastUpdated": "2026-09-03T06:22:25.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 4096,
+          "key": "max_tokens",
+          "maxValue": 1048576,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 1,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "muse-spark-1.3-contributor",
+      "max_output_tokens": 1048576,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "web_search": {
+              "price": 0.25
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.002,
+          "input": 0.1,
+          "output": 0.2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    }
+  },
+  "name": "meta",
+  "schema_version": "2.0"
+}

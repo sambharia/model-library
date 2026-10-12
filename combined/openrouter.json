@@ -40644,12 +40644,12 @@
       "type": "chat"
     },
     "moonshotai/kimi-k3": {
-      "_lastUpdated": "2026-10-06T11:16:29.000Z",
+      "_lastUpdated": "2026-10-12T06:11:08.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
           "key": "max_tokens",
-          "maxValue": 4096,
+          "maxValue": 1048576,
           "minValue": 1
         },
         {
@@ -40728,7 +40728,7 @@
         "function_calling": true
       },
       "id": "moonshotai/kimi-k3",
-      "max_output_tokens": 4096,
+      "max_output_tokens": 1048576,
       "modality": {
         "input": [
           "text"
@@ -40750,12 +40750,12 @@
       "type": "chat"
     },
     "moonshotai/kimi-k3:batch": {
-      "_lastUpdated": "2026-10-06T06:53:55.000Z",
+      "_lastUpdated": "2026-10-12T06:11:08.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
           "key": "max_tokens",
-          "maxValue": 16384,
+          "maxValue": 1048576,
           "minValue": 1
         },
         {
@@ -40834,7 +40834,7 @@
         "function_calling": true
       },
       "id": "moonshotai/kimi-k3:batch",
-      "max_output_tokens": 16384,
+      "max_output_tokens": 1048576,
       "modality": {
         "input": [
           "text"

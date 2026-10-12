@@ -2481,12 +2481,12 @@
       "type": "chat"
     },
     "moonshotai/kimi-k3": {
-      "_lastUpdated": "2026-07-22T07:04:58.000Z",
+      "_lastUpdated": "2026-10-12T06:11:08.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 8192,
+          "maxValue": 1048576,
           "minValue": 1
         },
         {
@@ -2523,7 +2523,7 @@
         }
       ],
       "id": "moonshotai/kimi-k3",
-      "max_output_tokens": 8192,
+      "max_output_tokens": 1048576,
       "modality": {
         "input": [
           "text"

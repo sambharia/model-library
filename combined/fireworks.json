@@ -2112,12 +2112,12 @@
       "type": "chat"
     },
     "accounts/fireworks/models/kimi-k3": {
-      "_lastUpdated": "2026-08-11T15:45:10.000Z",
+      "_lastUpdated": "2026-10-12T06:11:08.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
           "key": "max_tokens",
-          "maxValue": 131072,
+          "maxValue": 1048576,
           "minValue": 1
         },
         {
@@ -2194,7 +2194,7 @@
         "function_calling": true
       },
       "id": "accounts/fireworks/models/kimi-k3",
-      "max_output_tokens": 131072,
+      "max_output_tokens": 1048576,
       "modality": {
         "input": [
           "text"

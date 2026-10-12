@@ -301,7 +301,7 @@
       "type": "rerank"
     },
     "rerank-2.5-lite": {
-      "_lastUpdated": "2026-08-31T07:02:05.000Z",
+      "_lastUpdated": "2026-10-12T11:43:13.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -417,6 +417,142 @@
       ],
       "_playground_disabled": true,
       "id": "rerank-2.5-lite",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.02,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "rerank"
+    },
+    "rerank-3-lite": {
+      "_lastUpdated": "2026-10-12T11:48:48.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 128,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.8,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 0.1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0,
+          "key": "frequency_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": 0,
+          "key": "presence_penalty",
+          "maxValue": 2,
+          "minValue": -2
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            },
+            {
+              "name": "Required",
+              "value": "required"
+            },
+            {
+              "name": "Custom",
+              "schema": {
+                "type": "json"
+              },
+              "value": "custom"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        },
+        {
+          "defaultValue": true,
+          "key": "parallel_tool_calls",
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": true,
+              "then": true
+            }
+          },
+          "skipValues": [
+            null,
+            true
+          ],
+          "type": "boolean"
+        },
+        {
+          "defaultValue": null,
+          "key": "logit_bias",
+          "skipValues": [
+            null
+          ],
+          "type": "string"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "rerank-3-lite",
       "max_output_tokens": 4096,
       "modality": {
         "input": [
@@ -1853,7 +1989,7 @@
       "type": "chat"
     },
     "voyage-multimodal-3.5": {
-      "_lastUpdated": "2026-02-09T10:19:10.000Z",
+      "_lastUpdated": "2026-10-12T11:48:48.000Z",
       "_parameters": [
         {
           "defaultValue": 128,
@@ -1977,6 +2113,14 @@
         "output": [
           "embedding"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "embedding"
     }

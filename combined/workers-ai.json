@@ -442,6 +442,62 @@
       },
       "type": "embedding"
     },
+    "@cf/cloudflare/clef": {
+      "_lastUpdated": "2026-10-13T13:48:27.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 65536,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "@cf/cloudflare/clef",
+      "max_output_tokens": 65536,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.24,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b": {
       "_lastUpdated": "2026-07-14T01:03:17.000Z",
       "_parameters": [
@@ -1759,7 +1815,7 @@
       "type": "chat"
     },
     "@cf/moondream/moondream3.1-9B-A2B": {
-      "_lastUpdated": "2026-07-14T01:03:17.000Z",
+      "_lastUpdated": "2026-10-13T13:48:27.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

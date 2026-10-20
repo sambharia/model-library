@@ -9062,7 +9062,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-fable-5": {
-      "_lastUpdated": "2026-09-02T04:42:10.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -9188,17 +9188,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.2
+              "price": 0.22
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 12.5,
-          "cached_input": 1,
-          "input": 10,
-          "output": 50,
+          "cache_write": 13.75,
+          "cached_input": 1.1,
+          "input": 11,
+          "output": 55,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -9206,7 +9206,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-fable-5-1": {
-      "_lastUpdated": "2026-09-02T04:42:10.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -9340,17 +9340,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.2
+              "price": 0.22
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 12.5,
-          "cached_input": 0.25,
-          "input": 10,
-          "output": 50,
+          "cache_write": 13.75,
+          "cached_input": 0.275,
+          "input": 11,
+          "output": 55,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -9359,23 +9359,23 @@
     },
     "eu.anthropic.claude-fable-5-1-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-02T04:42:10.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "eu.anthropic.claude-fable-5-1-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.2
+              "price": 0.22
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 12.5,
-          "cached_input": 0.25,
-          "input": 10,
-          "output": 50,
+          "cache_write": 13.75,
+          "cached_input": 0.275,
+          "input": 11,
+          "output": 55,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -9384,23 +9384,23 @@
     },
     "eu.anthropic.claude-fable-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-08-21T13:20:59.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "eu.anthropic.claude-fable-5-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.2
+              "price": 0.22
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 12.5,
-          "cached_input": 1,
-          "input": 10,
-          "output": 50,
+          "cache_write": 13.75,
+          "cached_input": 1.1,
+          "input": 11,
+          "output": 55,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10049,7 +10049,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-4-6-v1": {
-      "_lastUpdated": "2026-04-16T14:54:36.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -10174,17 +10174,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10192,7 +10192,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-4-6-v1:0": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -10317,17 +10317,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10335,7 +10335,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-4-7": {
-      "_lastUpdated": "2026-06-16T09:51:31.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -10461,17 +10461,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10480,23 +10480,23 @@
     },
     "eu.anthropic.claude-opus-4-7-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-05-05T22:07:30.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "eu.anthropic.claude-opus-4-7-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10504,7 +10504,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-4-8": {
-      "_lastUpdated": "2026-06-16T09:51:31.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -10630,17 +10630,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10649,23 +10649,23 @@
     },
     "eu.anthropic.claude-opus-4-8-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-05-28T17:26:22.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "eu.anthropic.claude-opus-4-8-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10673,7 +10673,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-opus-5": {
-      "_lastUpdated": "2026-07-24T18:11:34.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -10799,17 +10799,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -10995,23 +10995,23 @@
     },
     "eu.anthropic.claude-opus-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-07-24T18:11:34.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "eu.anthropic.claude-opus-5-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -11300,7 +11300,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-sonnet-4-6": {
-      "_lastUpdated": "2026-08-10T23:52:17.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -11425,17 +11425,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.06
+              "price": 0.066
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 3.75,
-          "cached_input": 0.3,
-          "input": 3,
-          "output": 15,
+          "cache_write": 4.125,
+          "cached_input": 0.33,
+          "input": 3.3,
+          "output": 16.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -11443,7 +11443,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-sonnet-4-6-v1": {
-      "_lastUpdated": "2026-08-10T23:52:17.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -11568,17 +11568,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.06
+              "price": 0.066
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 3.75,
-          "cached_input": 0.3,
-          "input": 3,
-          "output": 15,
+          "cache_write": 4.125,
+          "cached_input": 0.33,
+          "input": 3.3,
+          "output": 16.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -11586,7 +11586,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-sonnet-4-6-v1:0": {
-      "_lastUpdated": "2026-08-10T23:52:17.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -11711,17 +11711,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.06
+              "price": 0.066
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 3.75,
-          "cached_input": 0.3,
-          "input": 3,
-          "output": 15,
+          "cache_write": 4.125,
+          "cached_input": 0.33,
+          "input": 3.3,
+          "output": 16.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -11729,7 +11729,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-sonnet-5": {
-      "_lastUpdated": "2026-09-02T03:49:35.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -11855,17 +11855,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.04
+              "price": 0.044
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 2.5,
-          "cached_input": 0.2,
-          "input": 2,
-          "output": 10,
+          "cache_write": 2.75,
+          "cached_input": 0.22,
+          "input": 2.2,
+          "output": 11,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -11874,23 +11874,23 @@
     },
     "eu.anthropic.claude-sonnet-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-06-30T18:43:05.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "eu.anthropic.claude-sonnet-5-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.04
+              "price": 0.044
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 2.5,
-          "cached_input": 0.2,
-          "input": 2,
-          "output": 10,
+          "cache_write": 2.75,
+          "cached_input": 0.22,
+          "input": 2.2,
+          "output": 11,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -23625,7 +23625,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-fable-5": {
-      "_lastUpdated": "2026-09-02T03:49:35.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -23751,17 +23751,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.2
+              "price": 0.22
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 12.5,
-          "cached_input": 1,
-          "input": 10,
-          "output": 50,
+          "cache_write": 13.75,
+          "cached_input": 1.1,
+          "input": 11,
+          "output": 55,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -23769,7 +23769,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-fable-5-1": {
-      "_lastUpdated": "2026-09-02T04:42:10.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -23903,17 +23903,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.2
+              "price": 0.22
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 12.5,
-          "cached_input": 0.25,
-          "input": 10,
-          "output": 50,
+          "cache_write": 13.75,
+          "cached_input": 0.275,
+          "input": 11,
+          "output": 55,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -23922,23 +23922,23 @@
     },
     "us.anthropic.claude-fable-5-1-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-02T04:42:10.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "us.anthropic.claude-fable-5-1-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.2
+              "price": 0.22
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 12.5,
-          "cached_input": 0.25,
-          "input": 10,
-          "output": 50,
+          "cache_write": 13.75,
+          "cached_input": 0.275,
+          "input": 11,
+          "output": 55,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -23947,23 +23947,23 @@
     },
     "us.anthropic.claude-fable-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-08-19T17:23:38.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "us.anthropic.claude-fable-5-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.2
+              "price": 0.22
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 12.5,
-          "cached_input": 1,
-          "input": 10,
-          "output": 50,
+          "cache_write": 13.75,
+          "cached_input": 1.1,
+          "input": 11,
+          "output": 55,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -24612,7 +24612,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-4-6-v1": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -24737,17 +24737,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -24755,7 +24755,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-4-6-v1:0": {
-      "_lastUpdated": "2026-04-13T15:27:41.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -24880,17 +24880,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -24898,7 +24898,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-4-7": {
-      "_lastUpdated": "2026-06-16T09:51:31.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -25024,17 +25024,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -25043,23 +25043,23 @@
     },
     "us.anthropic.claude-opus-4-7-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-05-05T22:07:30.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "us.anthropic.claude-opus-4-7-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -25067,7 +25067,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-4-8": {
-      "_lastUpdated": "2026-06-16T09:51:31.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -25193,17 +25193,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -25212,23 +25212,23 @@
     },
     "us.anthropic.claude-opus-4-8-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-05-28T17:26:22.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "us.anthropic.claude-opus-4-8-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -25236,7 +25236,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-opus-5": {
-      "_lastUpdated": "2026-07-24T18:11:34.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -25362,17 +25362,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -25558,23 +25558,23 @@
     },
     "us.anthropic.claude-opus-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-07-24T18:11:34.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "us.anthropic.claude-opus-5-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.1
+              "price": 0.11
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 6.25,
-          "cached_input": 0.5,
-          "input": 5,
-          "output": 25,
+          "cache_write": 6.875,
+          "cached_input": 0.55,
+          "input": 5.5,
+          "output": 27.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -25863,7 +25863,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-sonnet-4-6": {
-      "_lastUpdated": "2026-08-10T23:52:17.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -25988,17 +25988,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.06
+              "price": 0.066
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 3.75,
-          "cached_input": 0.3,
-          "input": 3,
-          "output": 15,
+          "cache_write": 4.125,
+          "cached_input": 0.33,
+          "input": 3.3,
+          "output": 16.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -26006,7 +26006,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-sonnet-4-6-v1": {
-      "_lastUpdated": "2026-08-10T23:52:17.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -26131,17 +26131,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.06
+              "price": 0.066
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 3.75,
-          "cached_input": 0.3,
-          "input": 3,
-          "output": 15,
+          "cache_write": 4.125,
+          "cached_input": 0.33,
+          "input": 3.3,
+          "output": 16.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -26149,7 +26149,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-sonnet-4-6-v1:0": {
-      "_lastUpdated": "2026-08-10T23:52:17.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -26274,17 +26274,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.06
+              "price": 0.066
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 3.75,
-          "cached_input": 0.3,
-          "input": 3,
-          "output": 15,
+          "cache_write": 4.125,
+          "cached_input": 0.33,
+          "input": 3.3,
+          "output": 16.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -26292,7 +26292,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-sonnet-5": {
-      "_lastUpdated": "2026-09-02T03:49:35.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -26418,17 +26418,17 @@
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.04
+              "price": 0.044
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 2.5,
-          "cached_input": 0.2,
-          "input": 2,
-          "output": 10,
+          "cache_write": 2.75,
+          "cached_input": 0.22,
+          "input": 2.2,
+          "output": 11,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -26437,23 +26437,23 @@
     },
     "us.anthropic.claude-sonnet-5-v1": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-02T03:49:35.000Z",
+      "_lastUpdated": "2026-10-20T12:49:05.000Z",
       "id": "us.anthropic.claude-sonnet-5-v1",
       "pricing": {
         "additional": {
           "prices": {
             "cache_write_1h": {
-              "price": 0.04
+              "price": 0.044
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cache_write": 2.5,
-          "cached_input": 0.2,
-          "input": 2,
-          "output": 10,
+          "cache_write": 2.75,
+          "cached_input": 0.22,
+          "input": 2.2,
+          "output": 11,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

@@ -21895,7 +21895,7 @@
       "type": "video"
     },
     "veo-3.1-fast-generate-001": {
-      "_lastUpdated": "2026-03-12T10:14:41.000Z",
+      "_lastUpdated": "2026-10-22T15:57:19.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -21993,8 +21993,14 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
-              "price": 1500
+            "video_duration_seconds_1280_720": {
+              "price": 10
+            },
+            "video_duration_seconds_1920_1080": {
+              "price": 12
+            },
+            "video_duration_seconds_3840_2160": {
+              "price": 30
             }
           },
           "unit": "USD_per_unit"
@@ -22005,7 +22011,7 @@
       "type": "video"
     },
     "veo-3.1-fast-generate-preview": {
-      "_lastUpdated": "2026-07-16T07:52:41.000Z",
+      "_lastUpdated": "2026-10-22T15:57:19.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22104,13 +22110,13 @@
               "price": 100
             },
             "video_duration_seconds_1280_720": {
-              "price": 1000
+              "price": 10
             },
             "video_duration_seconds_1920_1080": {
-              "price": 1200
+              "price": 12
             },
             "video_duration_seconds_3840_2160": {
-              "price": 3000
+              "price": 30
             }
           },
           "unit": "USD_per_unit"
@@ -22121,7 +22127,7 @@
       "type": "video"
     },
     "veo-3.1-generate-001": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-10-22T15:57:19.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22219,8 +22225,14 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
-              "price": 2000
+            "video_duration_seconds_1280_720": {
+              "price": 40
+            },
+            "video_duration_seconds_1920_1080": {
+              "price": 40
+            },
+            "video_duration_seconds_3840_2160": {
+              "price": 60
             }
           },
           "unit": "USD_per_unit"
@@ -22231,7 +22243,7 @@
       "type": "video"
     },
     "veo-3.1-generate-preview": {
-      "_lastUpdated": "2026-07-16T07:52:41.000Z",
+      "_lastUpdated": "2026-10-22T15:57:19.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22330,13 +22342,13 @@
               "price": 100
             },
             "video_duration_seconds_1280_720": {
-              "price": 4000
+              "price": 40
             },
             "video_duration_seconds_1920_1080": {
-              "price": 4000
+              "price": 40
             },
             "video_duration_seconds_3840_2160": {
-              "price": 6000
+              "price": 60
             }
           },
           "unit": "USD_per_unit"
@@ -22347,7 +22359,7 @@
       "type": "video"
     },
     "veo-3.1-lite-generate-001": {
-      "_lastUpdated": "2026-07-16T07:52:41.000Z",
+      "_lastUpdated": "2026-10-22T15:57:19.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22436,11 +22448,32 @@
           "text"
         ]
       },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "default_duration_seconds": {
+              "price": 800
+            },
+            "default_sample_count": {
+              "price": 100
+            },
+            "video_duration_seconds_1280_720": {
+              "price": 5
+            },
+            "video_duration_seconds_1920_1080": {
+              "price": 8
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "type": "pay_as_you_go"
+      },
       "type": "video"
     },
     "veo-3.1-lite-generate-preview": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-07-16T07:52:41.000Z",
+      "_lastUpdated": "2026-10-22T15:57:19.000Z",
       "id": "veo-3.1-lite-generate-preview",
       "pricing": {
         "additional": {
@@ -22452,10 +22485,10 @@
               "price": 100
             },
             "video_duration_seconds_1280_720": {
-              "price": 500
+              "price": 5
             },
             "video_duration_seconds_1920_1080": {
-              "price": 800
+              "price": 8
             }
           },
           "unit": "USD_per_unit"

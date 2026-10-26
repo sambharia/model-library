@@ -2,10 +2,19 @@
   "_defaults": null,
   "id": "meshy",
   "models": {
-    "image-to-3d": {
-      "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-25T19:02:24.000Z",
-      "id": "image-to-3d",
+    "animate": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "animate",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
       "pricing": {
         "currency": "USD",
         "tokens": {
@@ -14,12 +23,67 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "3d"
+    },
+    "convert": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "convert",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "3d"
+    },
+    "image-to-3d": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "image-to-3d",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "3d"
     },
     "image-to-image": {
-      "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
       "id": "image-to-image",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
       "pricing": {
         "currency": "USD",
         "tokens": {
@@ -28,12 +92,21 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "image"
     },
     "multi-image-to-3d": {
-      "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
       "id": "multi-image-to-3d",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
       "pricing": {
         "currency": "USD",
         "tokens": {
@@ -42,12 +115,105 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "3d"
+    },
+    "print-analyze": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "print-analyze",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "type": "3d"
+    },
+    "print-multi-color": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "print-multi-color",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "3d"
+    },
+    "print-repair": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "print-repair",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "3d"
+    },
+    "print-split": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "print-split",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "3d"
     },
     "remesh": {
-      "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
       "id": "remesh",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
       "pricing": {
         "currency": "USD",
         "tokens": {
@@ -56,12 +222,44 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "3d"
+    },
+    "resize": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "resize",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "3d"
     },
     "retexture": {
-      "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
       "id": "retexture",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
       "pricing": {
         "currency": "USD",
         "tokens": {
@@ -70,12 +268,21 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "3d"
     },
-    "text-to-3d": {
-      "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-25T19:02:24.000Z",
-      "id": "text-to-3d",
+    "rig": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "rig",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
       "pricing": {
         "currency": "USD",
         "tokens": {
@@ -84,12 +291,21 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "3d"
     },
     "text-to-3d-preview": {
-      "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
       "id": "text-to-3d-preview",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
       "pricing": {
         "currency": "USD",
         "tokens": {
@@ -98,12 +314,21 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "3d"
     },
     "text-to-3d-refine": {
-      "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
       "id": "text-to-3d-refine",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
       "pricing": {
         "currency": "USD",
         "tokens": {
@@ -112,12 +337,21 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "3d"
     },
     "text-to-image": {
-      "_config_source": "pricing_only",
-      "_lastUpdated": "2026-09-25T19:02:24.000Z",
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
       "id": "text-to-image",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
       "pricing": {
         "currency": "USD",
         "tokens": {
@@ -126,7 +360,53 @@
         },
         "type": "pay_as_you_go"
       },
-      "type": "chat"
+      "type": "image"
+    },
+    "text-to-motion": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "text-to-motion",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "3d"
+    },
+    "uv-unwrap": {
+      "_lastUpdated": "2026-10-26T20:51:38.000Z",
+      "_parameters": [],
+      "_playground_disabled": true,
+      "id": "uv-unwrap",
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 10000,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "3d"
     }
   },
   "name": "meshy",

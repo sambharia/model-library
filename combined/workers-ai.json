@@ -555,7 +555,7 @@
       "type": "chat"
     },
     "@cf/cloudflare/clef-omni": {
-      "_lastUpdated": "2026-10-15T08:46:17.000Z",
+      "_lastUpdated": "2026-11-04T17:00:22.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2905,6 +2905,62 @@
           "cached_input": 0.03,
           "input": 0.15,
           "output": 0.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "openai/decisions": {
+      "_lastUpdated": "2026-11-04T17:00:22.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "id": "openai/decisions",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.1,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

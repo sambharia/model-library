@@ -6746,7 +6746,7 @@
       "type": "responses"
     },
     "cohere-command-a": {
-      "_lastUpdated": "2026-06-25T14:21:56.000Z",
+      "_lastUpdated": "2026-11-05T12:00:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6796,6 +6796,15 @@
         "output": [
           "text"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 2.5,
+          "output": 10,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "chat"
     },
@@ -7142,6 +7151,132 @@
         ]
       },
       "type": "text"
+    },
+    "cohere-embed-v5-fast": {
+      "_lastUpdated": "2026-11-05T12:12:54.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "cohere-embed-v5-fast",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.08,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
+    },
+    "cohere-embed-v5-pro": {
+      "_lastUpdated": "2026-11-05T12:12:54.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "_playground_disabled": true,
+      "id": "cohere-embed-v5-pro",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "embedding"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "embedding"
     },
     "cohere.Cohere-rerank-v4.0-fast": {
       "_lastUpdated": "2026-03-18T11:13:07.000Z",
@@ -8326,7 +8461,7 @@
       "type": "chat"
     },
     "embed-v-4-0": {
-      "_lastUpdated": "2026-06-25T14:21:56.000Z",
+      "_lastUpdated": "2026-11-05T12:00:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8378,10 +8513,18 @@
           "text"
         ]
       },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
       "type": "text"
     },
     "embed-v4.0": {
-      "_lastUpdated": "2026-06-25T14:21:56.000Z",
+      "_lastUpdated": "2026-11-05T12:00:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -8432,6 +8575,14 @@
         "output": [
           "embedding"
         ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "input": 0.12,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
       },
       "type": "embedding"
     },
@@ -24553,6 +24704,73 @@
       },
       "type": "chat"
     },
+    "grok-4.7-global": {
+      "_lastUpdated": "2026-11-05T12:00:38.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 4096,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "grok-4.7-global",
+      "max_output_tokens": 4096,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.5,
+          "input": 2,
+          "output": 6,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "grok-code-fast-1": {
       "_lastUpdated": "2026-06-25T14:21:56.000Z",
       "_parameters": [
@@ -26152,7 +26370,7 @@
       "type": "chat"
     },
     "microsoft-decision-1": {
-      "_lastUpdated": "2026-11-05T07:31:49.000Z",
+      "_lastUpdated": "2026-11-05T12:00:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,

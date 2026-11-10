@@ -2638,7 +2638,7 @@
       "type": "chat"
     },
     "grok-4.20": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2716,8 +2716,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -2725,7 +2725,7 @@
       "type": "chat"
     },
     "grok-4.20-0309": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2803,8 +2803,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -2812,7 +2812,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-non-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2890,8 +2890,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -2899,7 +2899,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2977,8 +2977,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -2986,7 +2986,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-reasoning-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3064,8 +3064,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -4438,7 +4438,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4516,8 +4516,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -4525,7 +4525,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-0309": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4603,8 +4603,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -5038,7 +5038,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5116,8 +5116,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -5125,7 +5125,7 @@
       "type": "chat"
     },
     "grok-4.20-non-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5203,8 +5203,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -5299,7 +5299,7 @@
       "type": "chat"
     },
     "grok-4.20-non-reasoning-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5377,8 +5377,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -5386,7 +5386,7 @@
       "type": "chat"
     },
     "grok-4.20-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5464,8 +5464,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -5560,7 +5560,7 @@
       "type": "chat"
     },
     "grok-4.20-reasoning-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-09T12:42:47.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5638,8 +5638,8 @@
         "currency": "USD",
         "tokens": {
           "cached_input": 0.2,
-          "input": 2,
-          "output": 6,
+          "input": 1.25,
+          "output": 2.5,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

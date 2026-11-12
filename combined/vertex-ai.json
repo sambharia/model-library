@@ -21302,7 +21302,7 @@
       "type": "embedding"
     },
     "veo-2.0-generate-001": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -21400,7 +21400,7 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
+            "video_duration_seconds_1280_720": {
               "price": 5000
             }
           },
@@ -21412,7 +21412,7 @@
       "type": "video"
     },
     "veo-2.0-generate-exp": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -21510,7 +21510,7 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
+            "video_duration_seconds_1280_720": {
               "price": 5000
             }
           },
@@ -21522,7 +21522,7 @@
       "type": "video"
     },
     "veo-2.0-generate-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -21620,7 +21620,7 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
+            "video_duration_seconds_1280_720": {
               "price": 5000
             }
           },
@@ -21632,7 +21632,7 @@
       "type": "video"
     },
     "veo-3.0-fast-generate-001": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -21730,8 +21730,11 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
+            "video_duration_seconds_1280_720": {
               "price": 1000
+            },
+            "video_duration_seconds_1920_1080": {
+              "price": 1200
             }
           },
           "unit": "USD_per_unit"
@@ -21742,7 +21745,7 @@
       "type": "video"
     },
     "veo-3.0-fast-generate-preview": {
-      "_lastUpdated": "2026-03-12T10:14:41.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -21840,8 +21843,11 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
-              "price": 2000
+            "video_duration_seconds_1280_720": {
+              "price": 1000
+            },
+            "video_duration_seconds_1920_1080": {
+              "price": 1200
             }
           },
           "unit": "USD_per_unit"
@@ -21852,7 +21858,7 @@
       "type": "video"
     },
     "veo-3.0-generate-001": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -21950,8 +21956,11 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
-              "price": 2000
+            "video_duration_seconds_1280_720": {
+              "price": 4000
+            },
+            "video_duration_seconds_1920_1080": {
+              "price": 4000
             }
           },
           "unit": "USD_per_unit"
@@ -21962,7 +21971,7 @@
       "type": "video"
     },
     "veo-3.0-generate-preview": {
-      "_lastUpdated": "2025-12-26T09:07:03.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22060,8 +22069,11 @@
             "default_sample_count": {
               "price": 100
             },
-            "video_seconds": {
-              "price": 2000
+            "video_duration_seconds_1280_720": {
+              "price": 4000
+            },
+            "video_duration_seconds_1920_1080": {
+              "price": 4000
             }
           },
           "unit": "USD_per_unit"
@@ -22072,7 +22084,7 @@
       "type": "video"
     },
     "veo-3.1-fast-generate-001": {
-      "_lastUpdated": "2026-10-22T15:57:19.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22171,13 +22183,13 @@
               "price": 100
             },
             "video_duration_seconds_1280_720": {
-              "price": 10
+              "price": 1000
             },
             "video_duration_seconds_1920_1080": {
-              "price": 12
+              "price": 1200
             },
             "video_duration_seconds_3840_2160": {
-              "price": 30
+              "price": 3000
             }
           },
           "unit": "USD_per_unit"
@@ -22188,7 +22200,7 @@
       "type": "video"
     },
     "veo-3.1-fast-generate-preview": {
-      "_lastUpdated": "2026-10-22T15:57:19.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22287,13 +22299,13 @@
               "price": 100
             },
             "video_duration_seconds_1280_720": {
-              "price": 10
+              "price": 1000
             },
             "video_duration_seconds_1920_1080": {
-              "price": 12
+              "price": 1200
             },
             "video_duration_seconds_3840_2160": {
-              "price": 30
+              "price": 3000
             }
           },
           "unit": "USD_per_unit"
@@ -22304,7 +22316,7 @@
       "type": "video"
     },
     "veo-3.1-generate-001": {
-      "_lastUpdated": "2026-10-22T15:57:19.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22403,13 +22415,13 @@
               "price": 100
             },
             "video_duration_seconds_1280_720": {
-              "price": 40
+              "price": 4000
             },
             "video_duration_seconds_1920_1080": {
-              "price": 40
+              "price": 4000
             },
             "video_duration_seconds_3840_2160": {
-              "price": 60
+              "price": 6000
             }
           },
           "unit": "USD_per_unit"
@@ -22420,7 +22432,7 @@
       "type": "video"
     },
     "veo-3.1-generate-preview": {
-      "_lastUpdated": "2026-10-22T15:57:19.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22519,13 +22531,13 @@
               "price": 100
             },
             "video_duration_seconds_1280_720": {
-              "price": 40
+              "price": 4000
             },
             "video_duration_seconds_1920_1080": {
-              "price": 40
+              "price": 4000
             },
             "video_duration_seconds_3840_2160": {
-              "price": 60
+              "price": 6000
             }
           },
           "unit": "USD_per_unit"
@@ -22536,7 +22548,7 @@
       "type": "video"
     },
     "veo-3.1-lite-generate-001": {
-      "_lastUpdated": "2026-10-22T15:57:19.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -22635,10 +22647,10 @@
               "price": 100
             },
             "video_duration_seconds_1280_720": {
-              "price": 5
+              "price": 500
             },
             "video_duration_seconds_1920_1080": {
-              "price": 8
+              "price": 800
             }
           },
           "unit": "USD_per_unit"
@@ -22650,7 +22662,7 @@
     },
     "veo-3.1-lite-generate-preview": {
       "_config_source": "pricing_only",
-      "_lastUpdated": "2026-10-22T15:57:19.000Z",
+      "_lastUpdated": "2026-11-11T23:16:43.000Z",
       "id": "veo-3.1-lite-generate-preview",
       "pricing": {
         "additional": {
@@ -22662,10 +22674,10 @@
               "price": 100
             },
             "video_duration_seconds_1280_720": {
-              "price": 5
+              "price": 500
             },
             "video_duration_seconds_1920_1080": {
-              "price": 8
+              "price": 800
             }
           },
           "unit": "USD_per_unit"

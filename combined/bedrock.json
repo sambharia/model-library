@@ -2612,7 +2612,7 @@
       "type": "chat"
     },
     "anthropic.claude-fable-5-1": {
-      "_lastUpdated": "2026-09-02T04:42:10.000Z",
+      "_lastUpdated": "2026-11-20T09:59:26.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -3304,6 +3304,310 @@
         "tokens": {
           "input": 0.8,
           "output": 2.4,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "anthropic.claude-mythos-5-1": {
+      "_lastUpdated": "2026-11-23T15:43:25.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "type": "adaptive"
+          },
+          "key": "thinking",
+          "properties": {
+            "display": {
+              "enum": [
+                "omitted",
+                "summarized"
+              ],
+              "type": "string"
+            },
+            "type": {
+              "enum": [
+                "adaptive"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": {
+            "effort": "high"
+          },
+          "key": "output_config",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "anthropic.claude-mythos-5-1",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.2
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 12.5,
+          "cached_input": 0.25,
+          "input": 10,
+          "output": 50,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "anthropic.claude-mythos-5-2": {
+      "_lastUpdated": "2026-11-23T15:43:25.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "type": "adaptive"
+          },
+          "key": "thinking",
+          "properties": {
+            "display": {
+              "enum": [
+                "omitted",
+                "summarized"
+              ],
+              "type": "string"
+            },
+            "type": {
+              "enum": [
+                "adaptive"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": {
+            "effort": "high"
+          },
+          "key": "output_config",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "anthropic.claude-mythos-5-2",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.16
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 10,
+          "cached_input": 0.2,
+          "input": 8,
+          "output": 40,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -9705,7 +10009,7 @@
       "type": "chat"
     },
     "eu.anthropic.claude-fable-5-1": {
-      "_lastUpdated": "2026-10-20T12:49:05.000Z",
+      "_lastUpdated": "2026-11-23T07:15:34.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -13833,7 +14137,7 @@
       "type": "chat"
     },
     "global.anthropic.claude-fable-5-1": {
-      "_lastUpdated": "2026-11-10T11:15:33.000Z",
+      "_lastUpdated": "2026-11-23T07:15:34.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -14462,6 +14766,310 @@
           "cached_input": 0.01,
           "input": 0.1,
           "output": 0.5,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "global.anthropic.claude-mythos-5-1": {
+      "_lastUpdated": "2026-11-23T15:43:25.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "type": "adaptive"
+          },
+          "key": "thinking",
+          "properties": {
+            "display": {
+              "enum": [
+                "omitted",
+                "summarized"
+              ],
+              "type": "string"
+            },
+            "type": {
+              "enum": [
+                "adaptive"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": {
+            "effort": "high"
+          },
+          "key": "output_config",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "global.anthropic.claude-mythos-5-1",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.2
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 12.5,
+          "cached_input": 0.25,
+          "input": 10,
+          "output": 50,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "global.anthropic.claude-mythos-5-2": {
+      "_lastUpdated": "2026-11-23T15:43:25.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "type": "adaptive"
+          },
+          "key": "thinking",
+          "properties": {
+            "display": {
+              "enum": [
+                "omitted",
+                "summarized"
+              ],
+              "type": "string"
+            },
+            "type": {
+              "enum": [
+                "adaptive"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": {
+            "effort": "high"
+          },
+          "key": "output_config",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "global.anthropic.claude-mythos-5-2",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.16
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 10,
+          "cached_input": 0.2,
+          "input": 8,
+          "output": 40,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -25091,7 +25699,7 @@
       "type": "chat"
     },
     "us.anthropic.claude-fable-5-1": {
-      "_lastUpdated": "2026-10-20T12:49:05.000Z",
+      "_lastUpdated": "2026-11-23T07:15:34.000Z",
       "_parameters": [
         {
           "defaultValue": 512,
@@ -25720,6 +26328,310 @@
           "cached_input": 0.011,
           "input": 0.11,
           "output": 0.55,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "us.anthropic.claude-mythos-5-1": {
+      "_lastUpdated": "2026-11-23T15:43:25.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "type": "adaptive"
+          },
+          "key": "thinking",
+          "properties": {
+            "display": {
+              "enum": [
+                "omitted",
+                "summarized"
+              ],
+              "type": "string"
+            },
+            "type": {
+              "enum": [
+                "adaptive"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": {
+            "effort": "high"
+          },
+          "key": "output_config",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "us.anthropic.claude-mythos-5-1",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.22
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 13.75,
+          "cached_input": 0.275,
+          "input": 11,
+          "output": 55,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
+    "us.anthropic.claude-mythos-5-2": {
+      "_lastUpdated": "2026-11-23T15:43:25.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 512,
+          "key": "max_tokens",
+          "maxValue": 128000,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.5,
+          "key": "temperature",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 0.9,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        },
+        {
+          "defaultValue": {
+            "type": "adaptive"
+          },
+          "key": "thinking",
+          "properties": {
+            "display": {
+              "enum": [
+                "omitted",
+                "summarized"
+              ],
+              "type": "string"
+            },
+            "type": {
+              "enum": [
+                "adaptive"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": {
+            "effort": "high"
+          },
+          "key": "output_config",
+          "properties": {
+            "effort": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "xhigh",
+                "max"
+              ],
+              "type": "string"
+            }
+          },
+          "skipValues": [
+            null
+          ]
+        },
+        {
+          "defaultValue": null,
+          "key": "tool_choice",
+          "options": [
+            {
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "name": "Auto",
+              "value": "auto"
+            }
+          ],
+          "rule": {
+            "default": {
+              "condition": "tools",
+              "else": null,
+              "then": "auto"
+            }
+          },
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "non-view-manage-data"
+        }
+      ],
+      "_remove_parameters": [
+        "top_p",
+        "temperature",
+        "top_k"
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "us.anthropic.claude-mythos-5-2",
+      "max_output_tokens": 128000,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "cache_write_1h": {
+              "price": 0.176
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cache_write": 11,
+          "cached_input": 0.22,
+          "input": 8.8,
+          "output": 44,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"

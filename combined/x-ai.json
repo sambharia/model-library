@@ -49,7 +49,7 @@
   "id": "x-ai",
   "models": {
     "grok-2": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -104,7 +104,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -117,6 +117,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -132,7 +138,7 @@
       "type": "chat"
     },
     "grok-2-1212": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -187,7 +193,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -200,6 +206,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -215,7 +227,7 @@
       "type": "chat"
     },
     "grok-2-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -270,7 +282,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -283,6 +295,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -298,7 +316,7 @@
       "type": "chat"
     },
     "grok-2-vision": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -353,7 +371,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -366,6 +384,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -381,7 +405,7 @@
       "type": "chat"
     },
     "grok-2-vision-1212": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -436,7 +460,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -449,6 +473,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -464,7 +494,7 @@
       "type": "chat"
     },
     "grok-2-vision-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -519,7 +549,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -532,6 +562,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -547,7 +583,7 @@
       "type": "chat"
     },
     "grok-3": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -602,7 +638,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -615,6 +651,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -630,7 +672,7 @@
       "type": "chat"
     },
     "grok-3-beta": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -685,7 +727,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -698,6 +740,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -713,7 +761,7 @@
       "type": "chat"
     },
     "grok-3-fast": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -768,7 +816,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -781,6 +829,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -797,7 +851,7 @@
       "type": "chat"
     },
     "grok-3-fast-beta": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -852,7 +906,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -865,6 +919,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -881,7 +941,7 @@
       "type": "chat"
     },
     "grok-3-fast-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -936,7 +996,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -949,6 +1009,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -965,7 +1031,7 @@
       "type": "chat"
     },
     "grok-3-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1020,7 +1086,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1033,6 +1099,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1048,7 +1120,7 @@
       "type": "chat"
     },
     "grok-3-mini": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1103,7 +1175,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1116,6 +1188,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1131,7 +1209,7 @@
       "type": "chat"
     },
     "grok-3-mini-beta": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1186,7 +1264,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1199,6 +1277,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1214,7 +1298,7 @@
       "type": "chat"
     },
     "grok-3-mini-fast": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1269,7 +1353,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1282,6 +1366,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1298,7 +1388,7 @@
       "type": "chat"
     },
     "grok-3-mini-fast-beta": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1353,7 +1443,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1366,6 +1456,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1382,7 +1478,7 @@
       "type": "chat"
     },
     "grok-3-mini-fast-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1437,7 +1533,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1450,6 +1546,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1466,7 +1568,7 @@
       "type": "chat"
     },
     "grok-3-mini-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1521,7 +1623,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1534,6 +1636,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1549,7 +1657,7 @@
       "type": "chat"
     },
     "grok-4": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1604,7 +1712,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1617,6 +1725,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1632,7 +1746,7 @@
       "type": "chat"
     },
     "grok-4-0709": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1687,7 +1801,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1700,6 +1814,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1715,7 +1835,7 @@
       "type": "chat"
     },
     "grok-4-1-fast": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1770,7 +1890,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1783,6 +1903,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1799,7 +1925,7 @@
       "type": "chat"
     },
     "grok-4-1-fast-non-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1854,7 +1980,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1867,6 +1993,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1883,7 +2015,7 @@
       "type": "chat"
     },
     "grok-4-1-fast-non-reasoning-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -1938,7 +2070,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -1951,6 +2083,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -1967,7 +2105,7 @@
       "type": "chat"
     },
     "grok-4-1-fast-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2022,7 +2160,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2035,6 +2173,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2051,7 +2195,7 @@
       "type": "chat"
     },
     "grok-4-1-fast-reasoning-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2106,7 +2250,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2119,6 +2263,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2135,7 +2285,7 @@
       "type": "chat"
     },
     "grok-4-fast": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2190,7 +2340,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2203,6 +2353,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2219,7 +2375,7 @@
       "type": "chat"
     },
     "grok-4-fast-non-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2274,7 +2430,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2287,6 +2443,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2303,7 +2465,7 @@
       "type": "chat"
     },
     "grok-4-fast-non-reasoning-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2358,7 +2520,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2371,6 +2533,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2387,7 +2555,7 @@
       "type": "chat"
     },
     "grok-4-fast-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2442,7 +2610,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2455,6 +2623,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2471,7 +2645,7 @@
       "type": "chat"
     },
     "grok-4-fast-reasoning-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2526,7 +2700,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2539,6 +2713,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2555,7 +2735,7 @@
       "type": "chat"
     },
     "grok-4-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2610,7 +2790,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2623,6 +2803,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2638,7 +2824,7 @@
       "type": "chat"
     },
     "grok-4.20": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2696,7 +2882,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2709,6 +2895,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2725,7 +2917,7 @@
       "type": "chat"
     },
     "grok-4.20-0309": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2783,7 +2975,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2796,6 +2988,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2812,7 +3010,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-non-reasoning": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2870,7 +3068,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2883,6 +3081,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2899,7 +3103,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-reasoning": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -2957,7 +3161,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -2970,6 +3174,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -2986,7 +3196,7 @@
       "type": "chat"
     },
     "grok-4.20-0309-reasoning-latest": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3044,7 +3254,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3057,6 +3267,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3073,7 +3289,7 @@
       "type": "chat"
     },
     "grok-4.20-beta": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3128,7 +3344,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3141,6 +3357,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3157,7 +3379,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-0309": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3212,7 +3434,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3225,6 +3447,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3241,7 +3469,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-0309-non-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3296,7 +3524,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3309,6 +3537,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3325,7 +3559,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-0309-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3380,7 +3614,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3393,6 +3627,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3409,7 +3649,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-0309-reasoning-exp-sa": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3464,7 +3704,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3477,6 +3717,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3493,7 +3739,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3548,7 +3794,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3561,6 +3807,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3577,7 +3829,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-latest-non-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3632,7 +3884,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3645,6 +3897,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3661,7 +3919,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-latest-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3716,7 +3974,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3729,6 +3987,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3745,7 +4009,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-non-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3800,7 +4064,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3813,6 +4077,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3829,7 +4099,7 @@
       "type": "chat"
     },
     "grok-4.20-beta-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3887,7 +4157,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3900,6 +4170,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -3916,7 +4192,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-0304": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -3974,7 +4250,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -3987,6 +4263,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4003,7 +4285,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-0304-non-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4061,7 +4343,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4074,6 +4356,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4090,7 +4378,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-0304-reasoning": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4148,7 +4436,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4161,6 +4449,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4177,7 +4471,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4235,7 +4529,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4248,6 +4542,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4264,7 +4564,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-non-reasoning-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4322,7 +4622,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4335,6 +4635,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4351,7 +4657,7 @@
       "type": "chat"
     },
     "grok-4.20-experimental-beta-reasoning-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4409,7 +4715,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4422,6 +4728,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4438,7 +4750,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4496,7 +4808,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4509,6 +4821,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4525,7 +4843,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-0309": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4583,7 +4901,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4596,6 +4914,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4612,7 +4936,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-beta-0309": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4667,7 +4991,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4680,6 +5004,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4696,7 +5026,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-beta-0309-exp-ma": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4751,7 +5081,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4764,6 +5094,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4780,7 +5116,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-beta-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4835,7 +5171,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4848,6 +5184,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4864,7 +5206,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-experimental-beta-0304": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -4922,7 +5264,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -4935,6 +5277,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -4951,7 +5299,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-experimental-beta-latest": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5009,7 +5357,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5022,6 +5370,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5038,7 +5392,7 @@
       "type": "chat"
     },
     "grok-4.20-multi-agent-latest": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5096,7 +5450,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5109,6 +5463,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5125,7 +5485,7 @@
       "type": "chat"
     },
     "grok-4.20-non-reasoning": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5183,7 +5543,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5196,6 +5556,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5212,7 +5578,7 @@
       "type": "chat"
     },
     "grok-4.20-non-reasoning-gv2": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5270,7 +5636,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5283,6 +5649,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5299,7 +5671,7 @@
       "type": "chat"
     },
     "grok-4.20-non-reasoning-latest": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5357,7 +5729,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5370,6 +5742,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5386,7 +5764,7 @@
       "type": "chat"
     },
     "grok-4.20-reasoning": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5444,7 +5822,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5457,6 +5835,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5473,7 +5857,7 @@
       "type": "chat"
     },
     "grok-4.20-reasoning-gv2": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5531,7 +5915,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5544,6 +5928,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5560,7 +5950,7 @@
       "type": "chat"
     },
     "grok-4.20-reasoning-latest": {
-      "_lastUpdated": "2026-11-09T12:42:47.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5618,7 +6008,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5631,6 +6021,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5647,7 +6043,7 @@
       "type": "chat"
     },
     "grok-4.3": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5705,7 +6101,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5718,6 +6114,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5734,7 +6136,7 @@
       "type": "chat"
     },
     "grok-4.3-latest": {
-      "_lastUpdated": "2026-07-21T08:14:19.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5792,7 +6194,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5805,6 +6207,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5821,7 +6229,7 @@
       "type": "chat"
     },
     "grok-4.5": {
-      "_lastUpdated": "2026-07-21T08:14:19.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5879,7 +6287,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5892,6 +6300,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5908,7 +6322,7 @@
       "type": "chat"
     },
     "grok-4.5-latest": {
-      "_lastUpdated": "2026-07-21T08:14:19.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -5966,7 +6380,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -5979,6 +6393,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -5995,7 +6415,7 @@
       "type": "chat"
     },
     "grok-4.6": {
-      "_lastUpdated": "2026-09-21T19:39:37.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6053,7 +6473,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -6066,6 +6486,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -6082,7 +6508,7 @@
       "type": "chat"
     },
     "grok-4.7": {
-      "_lastUpdated": "2026-09-30T22:24:24.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6137,6 +6563,32 @@
         ]
       },
       "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 50
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
+            }
+          },
+          "unit": "USD_per_unit"
+        },
         "currency": "USD",
         "tokens": {
           "cached_input": 0.5,
@@ -6149,7 +6601,7 @@
       "type": "chat"
     },
     "grok-beta": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6204,7 +6656,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -6217,6 +6669,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -6231,8 +6689,101 @@
       },
       "type": "chat"
     },
+    "grok-build-0.1": {
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
+      "_parameters": [
+        {
+          "defaultValue": 256,
+          "key": "max_tokens",
+          "maxValue": 32768,
+          "minValue": 1
+        },
+        {
+          "defaultValue": 0.7,
+          "key": "temperature",
+          "maxValue": 2,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "top_p",
+          "maxValue": 1,
+          "minValue": 0
+        },
+        {
+          "defaultValue": 1,
+          "key": "n",
+          "maxValue": 10,
+          "minValue": 1
+        },
+        {
+          "defaultValue": null,
+          "key": "stop",
+          "skipValues": [
+            null,
+            []
+          ],
+          "type": "array-of-strings"
+        },
+        {
+          "defaultValue": true,
+          "key": "stream",
+          "type": "boolean"
+        }
+      ],
+      "features": {
+        "function_calling": true
+      },
+      "id": "grok-build-0.1",
+      "max_output_tokens": 32768,
+      "modality": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "pricing": {
+        "additional": {
+          "prices": {
+            "attachment_search": {
+              "price": 50
+            },
+            "code_execution": {
+              "price": 50
+            },
+            "file_search": {
+              "price": 25
+            },
+            "web_search": {
+              "price": 50
+            },
+            "x_search": {
+              "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
+            }
+          },
+          "unit": "USD_per_unit"
+        },
+        "currency": "USD",
+        "tokens": {
+          "cached_input": 0.2,
+          "input": 1,
+          "output": 2,
+          "unit": "USD_per_million_tokens"
+        },
+        "type": "pay_as_you_go"
+      },
+      "type": "chat"
+    },
     "grok-build-latest": {
-      "_lastUpdated": "2026-08-12T19:11:15.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6290,7 +6841,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -6303,15 +6854,21 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
         },
         "currency": "USD",
         "tokens": {
-          "cached_input": 0.3,
-          "input": 2,
-          "output": 6,
+          "cached_input": 0.2,
+          "input": 1,
+          "output": 2,
           "unit": "USD_per_million_tokens"
         },
         "type": "pay_as_you_go"
@@ -6319,7 +6876,7 @@
       "type": "chat"
     },
     "grok-code-fast": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6374,7 +6931,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -6387,6 +6944,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -6403,7 +6966,7 @@
       "type": "chat"
     },
     "grok-code-fast-1": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6458,7 +7021,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -6471,6 +7034,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -6486,7 +7055,7 @@
       "type": "chat"
     },
     "grok-code-fast-1-0825": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6541,7 +7110,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -6554,6 +7123,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
@@ -6735,7 +7310,7 @@
       "type": "image_generation"
     },
     "grok-vision-beta": {
-      "_lastUpdated": "2026-07-14T01:33:41.000Z",
+      "_lastUpdated": "2026-11-23T01:54:38.000Z",
       "_parameters": [
         {
           "defaultValue": 256,
@@ -6790,7 +7365,7 @@
         "additional": {
           "prices": {
             "attachment_search": {
-              "price": 100
+              "price": 50
             },
             "code_execution": {
               "price": 50
@@ -6803,6 +7378,12 @@
             },
             "x_search": {
               "price": 50
+            },
+            "x_search_post": {
+              "price": 50
+            },
+            "x_search_profile": {
+              "price": 100
             }
           },
           "unit": "USD_per_unit"
